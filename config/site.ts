@@ -1,8 +1,11 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + HeroUI",
-  description: "Make beautiful websites regardless of your design experience.",
+  name: "HellDads | Helldivers 2 Community",
+  description:
+    "Welcome to HellDads: The Parental Corps of Super Earth! Balancing the duty to spread managed democracy with caring for family or loved ones is no easy task. Late-night lullabies, diaper changes, or going AFK for those who need you—we understand the struggle. HellDads is for anyone juggling life’s responsibilities with a passion for Helldivers 2, we’re united by our commitment to those we care for—even if it’s after bedtime.",
+  url: "https://helldads.github.io",
+  logo: "/assets/helldads-logo.svg",
   navItems: [
     {
       label: "Home",
@@ -60,10 +63,9 @@ export const siteConfig = {
     },
   ],
   links: {
-    github: "https://github.com/heroui-inc/heroui",
-    twitter: "https://twitter.com/hero_ui",
-    docs: "https://heroui.com",
-    discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev",
+    github: "https://helldads.github.io",
+    reddit: "https://reddit.com/r/HellDads",
+    discord: "https://discord.gg/7rbdFMmGCz",
+    youtube: "https://www.youtube.com/@HellDadsHQ",
   },
 };
