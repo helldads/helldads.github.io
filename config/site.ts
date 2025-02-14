@@ -65,6 +65,7 @@ export const siteConfig = {
   links: {
     github: "https://helldads.github.io",
     reddit: "https://reddit.com/r/HellDads",
+    docs: "https://reddit.com/r/HellDads/wiki",
     discord: "https://discord.gg/7rbdFMmGCz",
     youtube: "https://www.youtube.com/@HellDadsHQ",
   },
