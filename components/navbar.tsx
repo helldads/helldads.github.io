@@ -25,6 +25,7 @@ import {
   HeartFilledIcon,
   SearchIcon,
   Logo,
+  RedditIcon,
 } from "@/components/icons";
 
 export const Navbar = () => {
@@ -89,49 +90,54 @@ export const Navbar = () => {
           <Link isExternal aria-label="Discord" href={siteConfig.links.discord}>
             <DiscordIcon className="text-default-500" />
           </Link>
-          <Link isExternal aria-label="Github" href={siteConfig.links.github}>
+          {/* <Link isExternal aria-label="Github" href={siteConfig.links.github}>
             <GithubIcon className="text-default-500" />
-          </Link>
+          </Link> */}
           <ThemeSwitch />
         </NavbarItem>
-        <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
-        {/* <NavbarItem className="hidden md:flex">
+        {/* <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem> */}
+        <NavbarItem className="hidden md:flex">
           <Button
             isExternal
             as={Link}
             className="text-sm font-normal text-default-600 bg-default-100"
-            href={siteConfig.links.sponsor}
-            startContent={<HeartFilledIcon className="text-danger" />}
+            href={siteConfig.links.reddit}
+            startContent={<RedditIcon />}
             variant="flat"
           >
-            Sponsor
+            Join on Reddit
           </Button>
-        </NavbarItem> */}
+        </NavbarItem>
       </NavbarContent>
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-        <Link isExternal aria-label="Github" href={siteConfig.links.github}>
-          <GithubIcon className="text-default-500" />
+        <Link isExternal aria-label="Discord" href={siteConfig.links.discord}>
+          <DiscordIcon className="text-default-500" />
         </Link>
+        {/* <Link isExternal aria-label="Github" href={siteConfig.links.github}>
+          <GithubIcon className="text-default-500" />
+        </Link> */}
         <ThemeSwitch />
         <NavbarMenuToggle />
       </NavbarContent>
 
       <NavbarMenu>
-        {searchInput}
+        {/* {searchInput} */}
         <div className="mx-4 mt-2 flex flex-col gap-2">
           {siteConfig.navMenuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
-                color={
-                  index === 2
-                    ? "primary"
-                    : index === siteConfig.navMenuItems.length - 1
-                      ? "danger"
-                      : "foreground"
-                }
-                href="#"
+                // color={
+                //   index === 2
+                //     ? "primary"
+                //     : index === siteConfig.navMenuItems.length - 1
+                //       ? "danger"
+                //       : "foreground"
+                // }
+                color={item.color ? item.color : "foreground"}
+                href={item.href}
                 size="lg"
+                showAnchorIcon={item.isExternal}
               >
                 {item.label}
               </Link>

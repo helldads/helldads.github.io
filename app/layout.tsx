@@ -45,8 +45,10 @@ export default function RootLayout({
               {children}
             </main>
             <footer className="w-full flex items-center justify-center py-3">
-              <p className="text-default-600">
-                Created by Volunteers, HellDads &copy; 2025
+              <p className="text-default-600 text-center italic">
+                &copy; HellDads {new Date().getFullYear()}, non-commercial fan
+                project, all rights reserved.{" "}
+                <Link href="/legal">Legal information</Link>
               </p>
             </footer>
           </div>

@@ -1,3 +1,5 @@
+import { isExternal } from "util/types";
+
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
@@ -8,20 +10,12 @@ export const siteConfig = {
   logo: "/assets/helldads-logo.svg",
   navItems: [
     {
-      label: "Home",
-      href: "/",
+      label: "Dadtionary",
+      href: "/dadtionary",
     },
     {
-      label: "Docs",
-      href: "/docs",
-    },
-    {
-      label: "Pricing",
-      href: "/pricing",
-    },
-    {
-      label: "Blog",
-      href: "/blog",
+      label: "Code of Conduct",
+      href: "/code-of-conduct",
     },
     {
       label: "About",
@@ -30,36 +24,28 @@ export const siteConfig = {
   ],
   navMenuItems: [
     {
-      label: "Profile",
-      href: "/profile",
+      label: "Reddit",
+      href: "https://reddit.com/r/HellDads",
+      color: "danger",
+      isExternal: true,
     },
     {
-      label: "Dashboard",
-      href: "/dashboard",
+      label: "Discord",
+      color: "danger",
+      href: "https://discord.gg/7rbdFMmGCz",
+      isExternal: true,
     },
     {
-      label: "Projects",
-      href: "/projects",
+      label: "Dadtionary",
+      href: "/dadtionary",
     },
     {
-      label: "Team",
-      href: "/team",
+      label: "Code of Conduct",
+      href: "/code-of-conduct",
     },
     {
-      label: "Calendar",
-      href: "/calendar",
-    },
-    {
-      label: "Settings",
-      href: "/settings",
-    },
-    {
-      label: "Help & Feedback",
-      href: "/help-feedback",
-    },
-    {
-      label: "Logout",
-      href: "/logout",
+      label: "About",
+      href: "/about",
     },
   ],
   links: {
