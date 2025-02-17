@@ -33,7 +33,7 @@ export default function AboutPage() {
         className="mt-12 leading-relaxed"
         height="414"
         src="/assets/helldads-salute-logo.webp"
-        unoptimized="true"
+        unoptimized
         width="736"
       />
 
@@ -190,7 +190,9 @@ export default function AboutPage() {
           width={150}
         />
         <div className="text-lg font-semibold">Patres inferni!</div>
-        <div className="italic text-xs">(Latin for “Fathers of Hell")</div>
+        <div className="italic text-xs">
+          (Latin for &quot;Fathers of Hell&quot;)
+        </div>
       </div>
     </div>
   );

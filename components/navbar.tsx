@@ -134,7 +134,7 @@ export const Navbar = () => {
                 //       ? "danger"
                 //       : "foreground"
                 // }
-                color={item.color ? item.color : "foreground"}
+                color={item.isExternal ? "danger" : "foreground"}
                 href={item.href}
                 size="lg"
                 showAnchorIcon={item.isExternal}

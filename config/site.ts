@@ -26,12 +26,10 @@ export const siteConfig = {
     {
       label: "Reddit",
       href: "https://reddit.com/r/HellDads",
-      color: "danger",
       isExternal: true,
     },
     {
       label: "Discord",
-      color: "danger",
       href: "https://discord.gg/7rbdFMmGCz",
       isExternal: true,
     },
