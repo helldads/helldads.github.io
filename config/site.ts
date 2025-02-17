@@ -34,6 +34,11 @@ export const siteConfig = {
       isExternal: true,
     },
     {
+      label: "YouTube",
+      href: "https://www.youtube.com/@HellDadsHQ",
+      isExternal: true,
+    },
+    {
       label: "Dadtionary",
       href: "/dadtionary",
     },

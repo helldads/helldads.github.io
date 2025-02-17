@@ -26,6 +26,7 @@ import {
   SearchIcon,
   Logo,
   RedditIcon,
+  YoutubeIcon,
 } from "@/components/icons";
 
 export const Navbar = () => {
@@ -87,16 +88,19 @@ export const Navbar = () => {
         justify="end"
       >
         <NavbarItem className="hidden sm:flex gap-2">
+          <ThemeSwitch />
+          <Link isExternal aria-label="YouTube" href={siteConfig.links.youtube}>
+            <YoutubeIcon className="text-default-500" />
+          </Link>
           <Link isExternal aria-label="Discord" href={siteConfig.links.discord}>
             <DiscordIcon className="text-default-500" />
           </Link>
           {/* <Link isExternal aria-label="Github" href={siteConfig.links.github}>
             <GithubIcon className="text-default-500" />
           </Link> */}
-          <ThemeSwitch />
         </NavbarItem>
         {/* <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem> */}
-        <NavbarItem className="hidden md:flex">
+        <NavbarItem className="hidden sm:flex">
           <Button
             isExternal
             as={Link}
@@ -104,7 +108,7 @@ export const Navbar = () => {
             color="danger"
             href={siteConfig.links.reddit}
             startContent={<RedditIcon />}
-            variant="ghost"
+            variant="shadow"
           >
             Join us on Reddit
           </Button>
@@ -112,13 +116,19 @@ export const Navbar = () => {
       </NavbarContent>
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
+        <ThemeSwitch />
+        <Link isExternal aria-label="YouTube" href={siteConfig.links.youtube}>
+          <YoutubeIcon className="text-default-500" />
+        </Link>
         <Link isExternal aria-label="Discord" href={siteConfig.links.discord}>
           <DiscordIcon className="text-default-500" />
         </Link>
+        <Link isExternal aria-label="Reddit" href={siteConfig.links.reddit}>
+          <RedditIcon className="text-default-500" />
+        </Link>{" "}
         {/* <Link isExternal aria-label="Github" href={siteConfig.links.github}>
           <GithubIcon className="text-default-500" />
         </Link> */}
-        <ThemeSwitch />
         <NavbarMenuToggle />
       </NavbarContent>
 
