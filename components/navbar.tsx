@@ -100,12 +100,13 @@ export const Navbar = () => {
           <Button
             isExternal
             as={Link}
-            className="text-sm font-normal text-default-600 bg-default-100"
+            className="font-semibold text-sm"
+            color="danger"
             href={siteConfig.links.reddit}
             startContent={<RedditIcon />}
-            variant="flat"
+            variant="ghost"
           >
-            Join on Reddit
+            Join us on Reddit
           </Button>
         </NavbarItem>
       </NavbarContent>
