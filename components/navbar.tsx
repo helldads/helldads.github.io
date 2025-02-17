@@ -58,11 +58,12 @@ export const Navbar = () => {
           <NextLink className="flex justify-start items-center gap-1" href="/">
             <Image
               alt="HellDads Logo"
-              className=""
+              className="w-12"
               src="/assets/helldads-logo.svg"
-              width={36}
+              width={48}
+              height={48}
             />
-            <p className="font-bold text-inherit">HellDads</p>
+            <p className="font-semibold text-2xl">HellDads</p>
           </NextLink>
         </NavbarBrand>
         <ul className="hidden lg:flex gap-4 justify-start ml-2">
