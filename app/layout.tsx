@@ -3,6 +3,8 @@ import { Metadata, Viewport } from "next";
 import { Link } from "@heroui/link";
 import clsx from "clsx";
 
+import { GoogleAnalytics } from "@next/third-parties/google";
+
 import { Providers } from "./providers";
 
 import { siteConfig } from "@/config/site";
@@ -55,6 +57,7 @@ export default function RootLayout({
             </footer>
           </div>
         </Providers>
+        <GoogleAnalytics gaId={siteConfig.analytics} />
       </body>
     </html>
   );
