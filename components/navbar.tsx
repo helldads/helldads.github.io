@@ -148,8 +148,8 @@ export const Navbar = () => {
                 // }
                 color={item.isExternal ? "danger" : "foreground"}
                 href={item.href}
-                size="lg"
                 showAnchorIcon={item.isExternal}
+                size="lg"
               >
                 {item.label}
               </Link>

@@ -10,16 +10,16 @@ export const siteConfig = {
   logo: "/assets/helldads-logo.svg",
   navItems: [
     {
+      label: "About",
+      href: "/about",
+    },
+    {
       label: "Dadtionary",
       href: "/dadtionary",
     },
     {
       label: "Code of Conduct",
       href: "/code-of-conduct",
-    },
-    {
-      label: "About",
-      href: "/about",
     },
   ],
   navMenuItems: [
@@ -39,16 +39,16 @@ export const siteConfig = {
       isExternal: true,
     },
     {
+      label: "About",
+      href: "/about",
+    },
+    {
       label: "Dadtionary",
       href: "/dadtionary",
     },
     {
       label: "Code of Conduct",
       href: "/code-of-conduct",
-    },
-    {
-      label: "About",
-      href: "/about",
     },
   ],
   links: {
