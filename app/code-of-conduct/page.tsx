@@ -1,18 +1,9 @@
 import { Link } from "@heroui/link";
-import { Divider } from "@heroui/divider";
-import { Image } from "@heroui/image";
-import NextImage from "next/image";
 import { Button } from "@heroui/button";
 
-import { title } from "@/components/primitives";
 import { siteConfig } from "@/config/site";
-
-import {
-  DiscordIcon,
-  PhotoIcon,
-  VideoIcon,
-  TextDocumentIcon,
-} from "@/components/icons";
+import { title } from "@/components/primitives";
+import { DiscordIcon } from "@/components/icons";
 
 export default function CodeOfConductPage() {
   return (
@@ -64,7 +55,7 @@ export default function CodeOfConductPage() {
       <ul className="list-disc list-outside my-6 pl-6">
         <li className="mb-2">
           <strong>PC:</strong> You can simply install{" "}
-          <Link href={siteConfig.links.discord} isExternal showAnchorIcon>
+          <Link isExternal showAnchorIcon href={siteConfig.links.discord}>
             Discord
           </Link>{" "}
           on your PC or join via browser.
@@ -173,10 +164,10 @@ export default function CodeOfConductPage() {
       </p>
       <p className="my-6">
         <Button
-          as={Link}
-          color="danger"
           isExternal
           showAnchorIcon
+          as={Link}
+          color="danger"
           href="https://www.reddit.com/message/compose?to=r/HellDads"
         >
           Message Mods

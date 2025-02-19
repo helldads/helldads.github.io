@@ -5,7 +5,6 @@ import { Divider } from "@heroui/divider";
 import { Card, CardBody, CardHeader, CardFooter } from "@heroui/card";
 
 import { siteConfig } from "@/config/site";
-import { title, subtitle } from "@/components/primitives";
 import { RedditIcon, DiscordIcon, YoutubeIcon } from "@/components/icons";
 
 export default function Home() {
@@ -52,11 +51,11 @@ export default function Home() {
               <p className="text-black text-tiny">Democracy Space Station</p>
             </div>
             <Button
-              as={Link}
-              href={siteConfig.links.reddit}
               isExternal
+              as={Link}
               className="text-large"
               color="danger"
+              href={siteConfig.links.reddit}
               radius="md"
               size="lg"
             >
@@ -87,11 +86,11 @@ export default function Home() {
               <p className="text-black text-tiny">Chat & Voice Squads</p>
             </div>
             <Button
-              as={Link}
-              href={siteConfig.links.discord}
               isExternal
+              as={Link}
               className="text-large"
               color="secondary"
+              href={siteConfig.links.discord}
               radius="md"
               size="lg"
             >
@@ -122,11 +121,11 @@ export default function Home() {
               <p className="text-black text-tiny">Featured Videos</p>
             </div>
             <Button
-              as={Link}
-              href={siteConfig.links.youtube}
               isExternal
+              as={Link}
               className="text-large"
               color="danger"
+              href={siteConfig.links.youtube}
               radius="md"
               size="lg"
             >

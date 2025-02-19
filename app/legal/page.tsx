@@ -1,11 +1,11 @@
-import { title } from "@/components/primitives";
-
 import { Link } from "@heroui/link";
 import { Image } from "@heroui/image";
 import { Divider } from "@heroui/divider";
 import { Card, CardHeader, CardBody, CardFooter } from "@heroui/card";
 import { Avatar } from "@heroui/avatar";
 import { Button } from "@heroui/button";
+
+import { title } from "@/components/primitives";
 import { HeartFilledIcon } from "@/components/icons";
 
 export default function LegalPage() {
@@ -219,10 +219,10 @@ export default function LegalPage() {
             showAnchorIcon
             as={Link}
             color="primary"
+            href="https://www.reddit.com/user/djchechin/"
             radius="full"
             size="sm"
             variant="solid"
-            href="https://www.reddit.com/user/djchechin/"
           >
             Open Profile
           </Button>

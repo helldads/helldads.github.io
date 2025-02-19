@@ -1,9 +1,9 @@
 import "@/styles/globals.css";
-import { Metadata, Viewport } from "next";
-import { Link } from "@heroui/link";
-import clsx from "clsx";
 
+import { Metadata, Viewport } from "next";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import clsx from "clsx";
+import { Link } from "@heroui/link";
 
 import { Providers } from "./providers";
 
@@ -38,7 +38,6 @@ export default function RootLayout({
         className={clsx(
           "min-h-screen bg-background font-sans antialiased",
           fontSans.variable,
-          /*"min-h-screen  bg-[url('/assets/helldads-aurora.webp')] bg-cover bg-fixed bg-center;",*/
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>

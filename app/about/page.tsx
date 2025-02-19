@@ -1,11 +1,9 @@
+import { Image } from "@heroui/image";
 import { Link } from "@heroui/link";
 import { Divider } from "@heroui/divider";
-import { Image } from "@heroui/image";
-import NextImage from "next/image";
 
-import { title } from "@/components/primitives";
 import { siteConfig } from "@/config/site";
-
+import { title } from "@/components/primitives";
 import {
   DiscordIcon,
   PhotoIcon,
@@ -28,12 +26,12 @@ export default function AboutPage() {
         the next generation of Helldivers—stronger, smarter, and ready to
         protect what we love.
       </p>
-      <NextImage
+      <Image
+        isBlurred
         alt="HellDads saluting the community logo"
         className="mt-12 leading-relaxed"
         height="414"
         src="/assets/helldads-salute-logo.webp"
-        unoptimized
         width="736"
       />
 
@@ -145,11 +143,11 @@ export default function AboutPage() {
         </li>
         <li className="flex gap-4">
           <Image
-            src="/assets/freedomalliance-logo.webp"
             alt="Freedom Alliance Logo"
-            width={24}
             height={24}
             radius="none"
+            src="/assets/freedomalliance-logo.webp"
+            width={24}
           />
           <div className="text-left">
             <strong>
@@ -184,6 +182,7 @@ export default function AboutPage() {
       <Divider className="my-12" />
       <div className="flex flex-col items-center text-center justify-center">
         <Image
+          isBlurred
           alt="HellDads Logo"
           height={150}
           src={siteConfig.logo}

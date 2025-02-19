@@ -19,12 +19,8 @@ import clsx from "clsx";
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
 import {
-  TwitterIcon,
-  GithubIcon,
   DiscordIcon,
-  HeartFilledIcon,
   SearchIcon,
-  Logo,
   RedditIcon,
   YoutubeIcon,
 } from "@/components/icons";
@@ -59,9 +55,9 @@ export const Navbar = () => {
             <Image
               alt="HellDads Logo"
               className="w-12"
+              height={48}
               src="/assets/helldads-logo.svg"
               width={48}
-              height={48}
             />
             <p className="font-semibold text-2xl">HellDads</p>
           </NextLink>
@@ -104,9 +100,6 @@ export const Navbar = () => {
           >
             <DiscordIcon className="text-default-500" />
           </Link>
-          {/* <Link isExternal aria-label="Github" href={siteConfig.links.github}>
-            <GithubIcon className="text-default-500" />
-          </Link> */}
         </NavbarItem>
         {/* <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem> */}
         <NavbarItem className="hidden sm:flex">
@@ -128,9 +121,9 @@ export const Navbar = () => {
         <ThemeSwitch />
         <Link
           isExternal
-          title="YouTube"
           aria-label="Open YouTube channel"
           href={siteConfig.links.youtube}
+          title="YouTube"
         >
           <YoutubeIcon className="text-default-500" />
         </Link>
@@ -147,10 +140,7 @@ export const Navbar = () => {
           href={siteConfig.links.reddit}
         >
           <RedditIcon className="text-default-500" />
-        </Link>{" "}
-        {/* <Link isExternal aria-label="Github" href={siteConfig.links.github}>
-          <GithubIcon className="text-default-500" />
-        </Link> */}
+        </Link>
         <NavbarMenuToggle />
       </NavbarContent>
 

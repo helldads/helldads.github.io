@@ -1,11 +1,9 @@
 "use client";
 
 import { redirect } from "next/navigation";
-
+import { useEffect, useState } from "react";
 import { Link } from "@heroui/link";
 import { Button } from "@heroui/button";
-
-import { useEffect, useState } from "react";
 
 export default function NotFound() {
   const [countdown, setCountdown] = useState(10);
@@ -14,6 +12,7 @@ export default function NotFound() {
   useEffect(() => {
     if (countdown > 0) {
       const timer = setTimeout(() => setCountdown(countdown - 1), 1000);
+
       return () => clearTimeout(timer);
     } else {
       setExplode(true);

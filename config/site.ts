@@ -1,5 +1,3 @@
-import { isExternal } from "util/types";
-
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
