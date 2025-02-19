@@ -271,6 +271,11 @@ export default function LegalPage() {
             <li>
               <Link href="/assets/helldads-logo.svg">helldads-logo.svg</Link>
             </li>
+            <li>
+              <Link href="/assets/join-the-helldads.webp">
+                join-the-helldads.webp
+              </Link>
+            </li>
           </ul>
         </CardBody>
         <CardFooter className="gap-3">
