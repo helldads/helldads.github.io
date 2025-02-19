@@ -1,6 +1,12 @@
 import { title } from "@/components/primitives";
+
 import { Link } from "@heroui/link";
+import { Image } from "@heroui/image";
 import { Divider } from "@heroui/divider";
+import { Card, CardHeader, CardBody, CardFooter } from "@heroui/card";
+import { Avatar } from "@heroui/avatar";
+import { Button } from "@heroui/button";
+import { HeartFilledIcon } from "@/components/icons";
 
 export default function LegalPage() {
   return (
@@ -127,6 +133,7 @@ export default function LegalPage() {
           </strong>
           .
         </li>
+
         <li>
           This fan website does not claim ownership of these trademarks and
           operates under <strong>fair use principles</strong>.
@@ -147,7 +154,152 @@ export default function LegalPage() {
 
       <Divider className="my-4" />
 
-      <p className="italic">
+      <h2 className="text-xl font-semibold">
+        5. License for Community-Created Content &amp; Media
+      </h2>
+      <p>
+        All content, images and media created by the HellDads community, unless
+        stated otherwise, are licensed under the:
+      </p>
+      <p>
+        <strong>
+          <Link
+            isExternal
+            showAnchorIcon
+            href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+          >
+            Creative Commons Attribution-NonCommercial-ShareAlike (CC BY-NC-SA)
+          </Link>
+        </strong>
+      </p>
+      <p>
+        This means you are free to share and adapt the material as long as you
+        provide proper attribution, do not use it for commercial purposes, and
+        distribute any modified content under the same license.
+      </p>
+      <div className="py-6">
+        <Link
+          isExternal
+          href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+        >
+          <Image height={40} src="/assets/cc-by-nc-sa.png" />
+        </Link>
+      </div>
+
+      <p>
+        For inquiries regarding media usage, please contact{" "}
+        <Link isExternal showAnchorIcon href="mailto:patres.inferni@gmail.com">
+          patres.inferni@gmail.com
+        </Link>
+        .
+      </p>
+
+      <h3 className="text-lg font-semibold mt-4">Attributions</h3>
+
+      <Card className="max-w-[320px]">
+        <CardHeader className="justify-between">
+          <div className="flex gap-5">
+            <Avatar
+              isBordered
+              radius="full"
+              size="md"
+              src="/assets/djchechin.webp"
+            />
+            <div className="flex flex-col gap-1 items-start justify-center">
+              <h4 className="text-small font-semibold leading-none text-default-600">
+                Chechin
+              </h4>
+              <h5 className="text-small tracking-tight text-default-400">
+                u/djchechin
+              </h5>
+            </div>
+          </div>
+          <Button
+            isExternal
+            showAnchorIcon
+            as={Link}
+            color="primary"
+            radius="full"
+            size="sm"
+            variant="solid"
+            href="https://www.reddit.com/user/djchechin/"
+          >
+            Open Profile
+          </Button>
+        </CardHeader>
+        <CardBody className="px-3 py-0 text-small text-default-400">
+          <p>
+            Special thanks to Chechin, the artist behind our community logo and
+            many other assets that enrich the Helldivers community.{" "}
+            <HeartFilledIcon className="inline" />
+          </p>
+          <ul>
+            <li>
+              <Link href="/assets/djchechin.webp">djchechin.webp</Link>
+            </li>
+            <li>
+              <Link href="/assets/emoji-helldad.png">emoji-helldad.png</Link>
+            </li>
+            <li>
+              <Link href="/assets/emoji-junior-cadet.webp">
+                emoji-junior-cadet.webp
+              </Link>
+            </li>
+            <li>
+              <Link href="/assets/emoji-triplets.webp">
+                emoji-triplets.webp
+              </Link>
+            </li>
+            <li>
+              <Link href="/assets/emoji-twins.webp">emoji-twins.webp</Link>
+            </li>
+            <li>
+              <Link href="/assets/freedom-alliance-logo.webp">
+                freedom-alliance-logo.webp
+              </Link>
+            </li>
+            <li>
+              <Link href="/assets/freedomalliance-logo.webp">
+                freedomalliance-logo.webp
+              </Link>
+            </li>
+            <li>
+              <Link href="/assets/helldads-logo-150x150.png">
+                helldads-logo-150x150.png
+              </Link>
+            </li>
+            <li>
+              <Link href="/assets/helldads-logo.svg">helldads-logo.svg</Link>
+            </li>
+          </ul>
+        </CardBody>
+        <CardFooter className="gap-3">
+          <div className="flex">
+            <Link
+              isExternal
+              href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+            >
+              <Image height={32} src="/assets/cc-by-nc-sa.png" />
+            </Link>
+          </div>
+          <div className="flex">
+            <Button
+              isExternal
+              as={Link}
+              className="bg-white text-black"
+              href="https://buymeacoffee.com/chechin"
+              startContent={
+                <Image height={32} src="/assets/buy-me-a-coffee-logo.svg" />
+              }
+              variant="bordered"
+            >
+              Buy me a coffee
+            </Button>
+          </div>
+        </CardFooter>
+      </Card>
+
+      <p className="italic mt-6 text-center">
         This document is subject to updates as necessary to reflect changes in
         policies or legal requirements.
       </p>
