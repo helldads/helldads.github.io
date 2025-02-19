@@ -135,6 +135,16 @@ export default function CodeOfConductPage() {
         </li>
       </ul>
       <h2 className="text-2xl font-semibold mt-12">
+        Maintain a Friendly, Family-First Atmosphere
+      </h2>
+      <p className="my-6">
+        We encourage every HellDad to help maintain a welcoming, family-friendly
+        environment. Check in with your squad, share a laugh, and have fun.
+        Remember, we’re all here because we share the same values—gaming,
+        family, and camaraderie in the face of anything the battlefield throws
+        at us.
+      </p>
+      <h2 className="text-2xl font-semibold mt-12">
         When the Going Gets Tough, Ask for Help
       </h2>
       <p className="my-6">
@@ -161,6 +171,17 @@ export default function CodeOfConductPage() {
         a conflict, have concerns about behavior, or just need some guidance,
         don’t hesitate to reach out—your experience and comfort matter to us.
       </p>
+      <p className="my-6">
+        <Button
+          as={Link}
+          color="danger"
+          isExternal
+          showAnchorIcon
+          href="https://www.reddit.com/message/compose?to=r/HellDads"
+        >
+          Message Mods
+        </Button>
+      </p>
       <h2 className="text-2xl font-semibold mt-12">Becoming a Volunteer</h2>
       <p className="my-6">
         Our HellDads mods are all dedicated volunteers, managing their roles
@@ -175,28 +196,6 @@ export default function CodeOfConductPage() {
         way, please reach out to one of the mods. Every bit of support helps us
         build and maintain this community we’re all proud of, and we’d love to
         hear from you!
-      </p>
-      <h2 className="text-2xl font-semibold mt-12">
-        Maintain a Friendly, Family-First Atmosphere
-      </h2>
-      <p className="my-6">
-        Lastly, we encourage every HellDad to help maintain a welcoming,
-        family-friendly environment. Check in with your squad, share a laugh,
-        and have fun. Remember, we’re all here because we share the same
-        values—gaming, family, and camaraderie in the face of anything the
-        battlefield throws at us.
-      </p>
-
-      <p className="my-6">
-        <Button
-          as={Link}
-          color="danger"
-          isExternal
-          showAnchorIcon
-          href="https://www.reddit.com/message/compose?to=r/HellDads"
-        >
-          Message Mods
-        </Button>
       </p>
     </div>
   );
