@@ -113,7 +113,7 @@ export const Navbar = () => {
           <Button
             isExternal
             as={Link}
-            className="font-semibold text-sm"
+            className="font-semibold text-sm bg-red-600"
             color="danger"
             href={siteConfig.links.reddit}
             startContent={<RedditIcon />}

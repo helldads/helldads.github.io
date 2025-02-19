@@ -1,9 +1,8 @@
 "use client";
 
-import { title } from "@/components/primitives";
+import { redirect } from "next/navigation";
 
 import { Link } from "@heroui/link";
-import { Image } from "@heroui/image";
 import { Button } from "@heroui/button";
 
 import { useEffect, useState } from "react";
@@ -19,8 +18,8 @@ export default function NotFound() {
     } else {
       setExplode(true);
       setTimeout(() => {
-        window.location.href = "/";
-      }, 1400);
+        redirect("/");
+      }, 1200);
     }
   }, [countdown]);
 
@@ -39,7 +38,7 @@ export default function NotFound() {
       <p className="mt-6">
         <Button
           as={Link}
-          className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg uppercase"
+          className="bt-return bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg uppercase"
           disabled={countdown === 0}
           href="/"
         >
