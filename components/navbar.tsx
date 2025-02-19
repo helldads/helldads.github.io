@@ -90,10 +90,18 @@ export const Navbar = () => {
       >
         <NavbarItem className="hidden sm:flex gap-2">
           <ThemeSwitch />
-          <Link isExternal aria-label="YouTube" href={siteConfig.links.youtube}>
+          <Link
+            isExternal
+            aria-label="Open YouTube channel"
+            href={siteConfig.links.youtube}
+          >
             <YoutubeIcon className="text-default-500" />
           </Link>
-          <Link isExternal aria-label="Discord" href={siteConfig.links.discord}>
+          <Link
+            isExternal
+            aria-label="Join Discord"
+            href={siteConfig.links.discord}
+          >
             <DiscordIcon className="text-default-500" />
           </Link>
           {/* <Link isExternal aria-label="Github" href={siteConfig.links.github}>
@@ -118,13 +126,26 @@ export const Navbar = () => {
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
         <ThemeSwitch />
-        <Link isExternal aria-label="YouTube" href={siteConfig.links.youtube}>
+        <Link
+          isExternal
+          title="YouTube"
+          aria-label="Open YouTube channel"
+          href={siteConfig.links.youtube}
+        >
           <YoutubeIcon className="text-default-500" />
         </Link>
-        <Link isExternal aria-label="Discord" href={siteConfig.links.discord}>
+        <Link
+          isExternal
+          aria-label="Join Discord server"
+          href={siteConfig.links.discord}
+        >
           <DiscordIcon className="text-default-500" />
         </Link>
-        <Link isExternal aria-label="Reddit" href={siteConfig.links.reddit}>
+        <Link
+          isExternal
+          aria-label="Goto Reddit community"
+          href={siteConfig.links.reddit}
+        >
           <RedditIcon className="text-default-500" />
         </Link>{" "}
         {/* <Link isExternal aria-label="Github" href={siteConfig.links.github}>
@@ -139,13 +160,6 @@ export const Navbar = () => {
           {siteConfig.navMenuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
-                // color={
-                //   index === 2
-                //     ? "primary"
-                //     : index === siteConfig.navMenuItems.length - 1
-                //       ? "danger"
-                //       : "foreground"
-                // }
                 color={item.isExternal ? "danger" : "foreground"}
                 href={item.href}
                 showAnchorIcon={item.isExternal}
