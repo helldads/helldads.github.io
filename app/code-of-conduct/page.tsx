@@ -81,7 +81,7 @@ export default function CodeOfConductPage() {
         </li>
       </ul>
       <h2 className="text-2xl font-semibold mt-12">
-        Uphold Mission Goals and Respect the Squad's Playstyle
+        Uphold Mission Goals and Respect the Squad&apos;s Playstyle
       </h2>
       <p className="my-6">
         We encourage all HellDads to respect the overall mission objectives,
