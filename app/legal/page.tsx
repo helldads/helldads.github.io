@@ -227,7 +227,7 @@ export default function LegalPage() {
             Open Profile
           </Button>
         </CardHeader>
-        <CardBody className="px-3 py-0 text-small text-default-400">
+        <CardBody className="px-3 py-0 text-small">
           <p>
             Special thanks to Chechin, the artist behind our community logo and
             many other assets that enrich the Helldivers community.{" "}
