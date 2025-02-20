@@ -20,9 +20,23 @@ export default function LegalPage() {
       </h2>
       <p>
         This website is a non-commercial fan project maintained by volunteers of
-        the HellDads gaming community. It is hosted on GitHub Pages and is not
-        affiliated with Arrowhead Game Studios or Sony Interactive
-        Entertainment.
+        the HellDads gaming community. It is hosted on{" "}
+        <Link isExternal showAnchorIcon href="https://pages.github.io">
+          GitHub Pages
+        </Link>{" "}
+        and is not affiliated with{" "}
+        <Link
+          isExternal
+          showAnchorIcon
+          href="https://www.arrowheadgamestudios.com/"
+        >
+          Arrowhead Game Studios
+        </Link>{" "}
+        or{" "}
+        <Link isExternal showAnchorIcon href="https://sonyinteractive.com/">
+          Sony Interactive Entertainment
+        </Link>
+        .
       </p>
 
       <h3 className="text-lg font-semibold mt-4">Contact</h3>
@@ -32,7 +46,11 @@ export default function LegalPage() {
           patres.inferni@gmail.com
         </Link>{" "}
         or contact the moderators of the{" "}
-        <Link showAnchorIcon href="https://www.reddit.com/r/HellDads">
+        <Link
+          isExternal
+          showAnchorIcon
+          href="https://www.reddit.com/message/compose?to=r/HellDads"
+        >
           r/HellDads
         </Link>{" "}
         subreddit on Reddit.
@@ -55,9 +73,16 @@ export default function LegalPage() {
       <p>
         This website does not actively collect personal data. However, GitHub
         Pages may log IP addresses and technical details for security and
-        operational purposes. Additionally, we use Google Analytics to gain
-        insights into our audience, with anonymised tracking in compliance with
-        GDPR.
+        operational purposes. Additionally, we use{" "}
+        <Link
+          isExternal
+          showAnchorIcon
+          href="https://developers.google.com/analytics"
+        >
+          Google Analytics
+        </Link>{" "}
+        to gain insights into our audience, with anonymised tracking in
+        compliance with GDPR.
       </p>
 
       <h3 className="text-lg font-semibold mt-4">Data Usage</h3>
@@ -128,9 +153,17 @@ export default function LegalPage() {
       <ul className="list-disc pl-6">
         <li>
           &quot;Helldivers 2&quot; and related assets are the property of{" "}
-          <strong>
-            Arrowhead Game Studios and Sony Interactive Entertainment
-          </strong>
+          <Link
+            isExternal
+            showAnchorIcon
+            href="https://www.arrowheadgamestudios.com/"
+          >
+            Arrowhead Game Studios
+          </Link>{" "}
+          and{" "}
+          <Link isExternal showAnchorIcon href="https://sonyinteractive.com/">
+            Sony Interactive Entertainment
+          </Link>
           .
         </li>
 
@@ -182,7 +215,11 @@ export default function LegalPage() {
           isExternal
           href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
         >
-          <Image height={40} src="/assets/cc-by-nc-sa.png" />
+          <Image
+            className="rounded-none"
+            height={40}
+            src="/assets/cc-by-nc-sa.png"
+          />
         </Link>
       </div>
 
@@ -235,7 +272,12 @@ export default function LegalPage() {
           </p>
           <ul>
             <li>
-              <Link href="/assets/djchechin.webp">djchechin.webp</Link>
+              <Link href="/assets/helldads-logo-150x150.png">
+                helldads-logo-150x150.png
+              </Link>
+            </li>
+            <li>
+              <Link href="/assets/helldads-logo.svg">helldads-logo.svg</Link>
             </li>
             <li>
               <Link href="/assets/emoji-helldad.png">emoji-helldad.png</Link>
@@ -264,12 +306,9 @@ export default function LegalPage() {
               </Link>
             </li>
             <li>
-              <Link href="/assets/helldads-logo-150x150.png">
-                helldads-logo-150x150.png
+              <Link href="/assets/helldads-1000-members.webp">
+                helldads-1000-members.webp
               </Link>
-            </li>
-            <li>
-              <Link href="/assets/helldads-logo.svg">helldads-logo.svg</Link>
             </li>
             <li>
               <Link href="/assets/join-the-helldads.webp">
@@ -284,7 +323,11 @@ export default function LegalPage() {
               isExternal
               href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
             >
-              <Image height={32} src="/assets/cc-by-nc-sa.png" />
+              <Image
+                className="rounded-none"
+                height={32}
+                src="/assets/cc-by-nc-sa.png"
+              />
             </Link>
           </div>
           <div className="flex">

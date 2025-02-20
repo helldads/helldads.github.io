@@ -27,7 +27,7 @@ export default function Home() {
       </h1>
 
       {/* 3-Column Teaser Section */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 max-w-6xl mx-auto">
+      <div className="drop-shadow-2xl grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 max-w-6xl mx-auto">
         {/* Card 1: Reddit */}
         <Card
           isFooterBlurred
@@ -53,7 +53,7 @@ export default function Home() {
             <Button
               isExternal
               as={Link}
-              className="text-large"
+              className="text-large bg-red-600"
               color="danger"
               href={siteConfig.links.reddit}
               radius="md"
@@ -123,7 +123,7 @@ export default function Home() {
             <Button
               isExternal
               as={Link}
-              className="text-large"
+              className="text-large bg-red-600"
               color="danger"
               href={siteConfig.links.youtube}
               radius="md"

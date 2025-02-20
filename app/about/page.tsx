@@ -75,6 +75,16 @@ export default function AboutPage() {
         cultivated a supportive, inclusive environment where everyone is
         welcome.
       </p>
+
+      <Image
+        isBlurred
+        alt="HellDads are celebrating 1000 members after only six weeks!"
+        className="mt-12 leading-relaxed"
+        height="414"
+        src="/assets/helldads-1000-members.webp"
+        width="736"
+      />
+
       <h3 className="text-1xl font-semibold mt-12">
         Milestones we achieved together
       </h3>
