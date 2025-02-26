@@ -1,0 +1,8 @@
+{
+  "reddit": { "subscribers": 2000 },
+  "discord": {
+    "approximate_member_count": 500,
+    "approximate_presence_count": 100
+  },
+  "lastUpdated": "2025-02-26T15:00:00Z"
+}
