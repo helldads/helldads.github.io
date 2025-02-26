@@ -4,7 +4,10 @@ import { useState, useEffect } from "react";
 
 export default function useStats() {
   const [stats, setStats] = useState<{
-    reddit: { subscribers: number };
+    reddit: {
+      subscribers: number;
+      active_user_count: number;
+    };
     discord: {
       approximate_member_count: number;
       approximate_presence_count: number;

@@ -61,9 +61,16 @@ export default function StatsCard() {
       <CardBody>
         <div className="flex h-24">
           <div className="w-24 flex-none my-auto items-center text-center">
-            <div className="relative inline-flex shrink-0">
+            <Badge
+              aria-label={
+                stats.reddit.active_user_count + " members currently online"
+              }
+              color="danger"
+              content={stats.reddit.active_user_count}
+              size="md"
+            >
               <RedditIcon fill="#fc4301" size={64} />
-            </div>
+            </Badge>
           </div>
           <div className="w-32 flex-1 text-center my-auto font-semibold text-4xl">
             {stats.reddit.subscribers}
