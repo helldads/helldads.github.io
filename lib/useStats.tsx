@@ -15,22 +15,46 @@ export default function useStats() {
     lastUpdated: string;
   } | null>(null);
 
+  const [lastFetchAttempt, setLastFetchAttempt] = useState<number | null>(null);
+
+  async function fetchStats() {
+    try {
+      const response = await fetch("/data/stats.json", { cache: "no-store" });
+
+      if (!response.ok) throw new Error("Failed to fetch stats");
+
+      const data = await response.json();
+
+      setStats(data);
+    } catch (error) {
+      console.error("Error loading stats:", error);
+    } finally {
+      setLastFetchAttempt(Date.now()); // Update last attempt time
+    }
+  }
+
   useEffect(() => {
-    async function fetchStats() {
-      try {
-        const response = await fetch("/data/stats.json");
+    async function checkAndFetchStats() {
+      const now = Date.now();
+      const oneHour = 60 * 60 * 1000;
 
-        if (!response.ok) throw new Error("Failed to fetch stats");
-        const data = await response.json();
+      if (stats?.lastUpdated) {
+        const lastUpdatedTime = new Date(stats.lastUpdated).getTime();
 
-        setStats(data);
-      } catch (error) {
-        console.log("Error loading stats:", error);
+        if (now - lastUpdatedTime > oneHour) {
+          // Check if we already attempted fetching within the last hour
+          if (!lastFetchAttempt || now - lastFetchAttempt > oneHour) {
+            await fetchStats();
+          }
+        }
+      } else {
+        // No stats found, fetching fresh data...
+        await fetchStats();
       }
     }
 
-    fetchStats();
-  }, []);
+    checkAndFetchStats(); // Check on mount
+  }, [stats, lastFetchAttempt]); // Dependency on `stats` and `lastFetchAttempt`
 
   return stats;
 }
