@@ -29,7 +29,7 @@ export const siteConfig = {
     },
     {
       label: "Discord",
-      href: "https://discord.gg/Vhqn7YXnF4",
+      href: "https://discord.gg/zJZPqnbKKw",
       isExternal: true,
     },
     {
@@ -54,7 +54,7 @@ export const siteConfig = {
     github: "https://github.com/helldads/helldads.github.io",
     reddit: "https://reddit.com/r/HellDads",
     docs: "https://reddit.com/r/HellDads/wiki",
-    discord: "https://discord.gg/Vhqn7YXnF4",
+    discord: "https://discord.gg/zJZPqnbKKw",
     youtube: "https://www.youtube.com/@HellDadsHQ",
   },
 };
