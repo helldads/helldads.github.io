@@ -112,7 +112,7 @@ export default function StatsCard() {
             </div>
           </div>
           <div className="w-32 flex-1 text-center my-auto font-semibold text-4xl">
-            7
+            6
           </div>
           <div className="w-64 flex-1 text-left my-auto font-light text-xl">
             Mods
