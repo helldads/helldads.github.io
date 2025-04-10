@@ -132,7 +132,7 @@ export default function Home() {
             <Button
               isExternal
               as={Link}
-              className="text-large bg-red-600"
+              className="text-large bg-[#CD201F]"
               color="danger"
               href={siteConfig.links.youtube}
               radius="md"

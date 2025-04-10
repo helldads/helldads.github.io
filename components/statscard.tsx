@@ -1,17 +1,19 @@
 "use client"; // This makes it a Client Component
 
-import { Spinner } from "@heroui/spinner";
-import { Image } from "@heroui/image";
 import { Badge } from "@heroui/badge";
-import { Divider } from "@heroui/divider";
 import { Card, CardBody, CardHeader, CardFooter } from "@heroui/card";
+import { Divider } from "@heroui/divider";
+import { Link } from "@heroui/react";
+import { Spinner } from "@heroui/spinner";
 
 import useStats from "@/lib/useStats";
+import { siteConfig } from "@/config/site";
 import {
   CalendarIcon,
   ChartBarIcon,
   DiscordIcon,
   RedditIcon,
+  YoutubeIcon,
 } from "@/components/icons";
 
 export default function StatsCard() {
@@ -61,16 +63,21 @@ export default function StatsCard() {
       <CardBody>
         <div className="flex h-24">
           <div className="w-24 flex-none my-auto items-center text-center">
-            <Badge
-              aria-label={
-                stats.reddit.active_user_count + " members currently online"
-              }
-              color="danger"
-              content={stats.reddit.active_user_count}
-              size="md"
-            >
-              <RedditIcon fill="#fc4301" size={64} />
-            </Badge>
+            <Link href={siteConfig.links.reddit}>
+              <Badge
+                aria-label={
+                  stats.reddit.active_user_count + " members currently online"
+                }
+                color="danger"
+                content={stats.reddit.active_user_count}
+                size="md"
+                title={
+                  stats.reddit.active_user_count + " members currently online"
+                }
+              >
+                <RedditIcon fill="#fc4301" size={64} />
+              </Badge>
+            </Link>
           </div>
           <div className="w-32 flex-1 text-center my-auto font-semibold text-4xl">
             {stats.reddit.subscribers}
@@ -81,17 +88,23 @@ export default function StatsCard() {
         </div>
         <div className="flex h-24">
           <div className="w-24 flex-none my-auto items-center text-center">
-            <Badge
-              aria-label={
-                stats.discord.approximate_presence_count +
-                " members currently online"
-              }
-              color="danger"
-              content={stats.discord.approximate_presence_count}
-              size="md"
-            >
-              <DiscordIcon fill="#5865F2" size={64} />
-            </Badge>
+            <Link href={siteConfig.links.discord}>
+              <Badge
+                aria-label={
+                  stats.discord.approximate_presence_count +
+                  " members currently online"
+                }
+                color="danger"
+                content={stats.discord.approximate_presence_count}
+                size="md"
+                title={
+                  stats.discord.approximate_presence_count +
+                  " members currently online"
+                }
+              >
+                <DiscordIcon fill="#5865F2" size={64} />
+              </Badge>
+            </Link>
           </div>
           <div className="w-32 flex-1 text-center my-auto font-semibold text-4xl">
             {stats.discord.approximate_member_count}
@@ -102,20 +115,23 @@ export default function StatsCard() {
         </div>
         <div className="flex h-24">
           <div className="w-24 flex-none my-auto items-center text-center">
-            <div className="relative inline-flex shrink-0">
-              {/* <UserIcon size={64} /> */}
-              <Image
-                aria-label="Emoji of a overtired HellDad"
-                height={64}
-                src="/assets/emoji-helldad.png"
-              />
-            </div>
+            <Link href={siteConfig.links.youtube}>
+              <Badge
+                aria-label={stats.youtube.video_count + " videos available"}
+                color="danger"
+                content={stats.youtube.video_count}
+                size="md"
+                title={stats.youtube.video_count + " videos available"}
+              >
+                <YoutubeIcon fill="#CD201F" size={64} />
+              </Badge>
+            </Link>
           </div>
           <div className="w-32 flex-1 text-center my-auto font-semibold text-4xl">
-            6
+            {stats.youtube.subscriber_count}
           </div>
           <div className="w-64 flex-1 text-left my-auto font-light text-xl">
-            Mods
+            Subscribers
           </div>
         </div>
       </CardBody>

@@ -12,6 +12,10 @@ export default function useStats() {
       approximate_member_count: number;
       approximate_presence_count: number;
     };
+    youtube: {
+      subscriber_count: number;
+      video_count: number;
+    };
     lastUpdated: string;
   } | null>(null);
 
