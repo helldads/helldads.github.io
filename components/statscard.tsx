@@ -12,6 +12,7 @@ import {
   CalendarIcon,
   ChartBarIcon,
   DiscordIcon,
+  TikTokIcon,
   RedditIcon,
   YoutubeIcon,
 } from "@/components/icons";
@@ -111,6 +112,27 @@ export default function StatsCard() {
           </div>
           <div className="w-64 flex-1 text-left my-auto font-light text-xl">
             Discordians
+          </div>
+        </div>
+        <div className="flex h-24">
+          <div className="w-24 flex-none my-auto items-center text-center">
+            <Link href={siteConfig.links.tiktok}>
+              <Badge
+                aria-label={stats.tiktok.video_count + " videos available"}
+                color="danger"
+                content={stats.tiktok.video_count}
+                size="md"
+                title={stats.tiktok.video_count + " videos available"}
+              >
+                <TikTokIcon fill="#000000" size={64} />
+              </Badge>
+            </Link>
+          </div>
+          <div className="w-32 flex-1 text-center my-auto font-semibold text-4xl">
+            {stats.tiktok.follower_count}
+          </div>
+          <div className="w-64 flex-1 text-left my-auto font-light text-xl">
+            Follower
           </div>
         </div>
         <div className="flex h-24">

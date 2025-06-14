@@ -55,6 +55,7 @@ export const siteConfig = {
     reddit: "https://reddit.com/r/HellDads",
     docs: "https://reddit.com/r/HellDads/wiki",
     discord: "https://discord.gg/helldads",
+    tiktok: "https://www.tiktok.com/@helldads",
     youtube: "https://www.youtube.com/@HellDadsHQ",
   },
 };
