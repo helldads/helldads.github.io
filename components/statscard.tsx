@@ -132,7 +132,7 @@ export default function StatsCard() {
             {stats.tiktok.follower_count}
           </div>
           <div className="w-64 flex-1 text-left my-auto font-light text-xl">
-            Follower
+            Followers
           </div>
         </div>
         <div className="flex h-24">
