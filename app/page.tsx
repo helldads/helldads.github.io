@@ -46,7 +46,7 @@ export default function Home() {
             className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
             src="/assets/helldads-dss.webp"
           />
-          <CardFooter className="absolute bg-white/50 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
+          <CardFooter className="absolute bg-white/50 bottom-0 border-t border-zinc-100/50 z-10 justify-between">
             <div>
               <p className="text-black text-left text-medium">
                 Community Center
@@ -85,7 +85,7 @@ export default function Home() {
             className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
             src="/assets/helldads-aurora.webp"
           />
-          <CardFooter className="absolute bg-white/50 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
+          <CardFooter className="absolute bg-white/50 bottom-0 border-t border-zinc-100/50 z-10 justify-between">
             <div>
               <p className="text-black text-left text-medium">Communication</p>
               <p className="text-black text-left text-tiny">
@@ -122,7 +122,7 @@ export default function Home() {
             className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
             src="/assets/helldads-return-of-the-mech.webp"
           />
-          <CardFooter className="absolute bg-white/50 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
+          <CardFooter className="absolute bg-white/50 bottom-0 border-t border-zinc-100/50 z-10 justify-between">
             <div>
               <p className="text-black text-left text-medium">
                 Highlights &amp; Clips
