@@ -1,10 +1,10 @@
 import { Link } from "@heroui/link";
 import { Button } from "@heroui/button";
-import { Card, CardBody } from "@heroui/card";
+import { Card, CardHeader, CardBody } from "@heroui/card";
 import { Code } from "@heroui/code";
 import { siteConfig } from "@/config/site";
 import { title } from "@/components/primitives";
-import { DiscordIcon } from "@/components/icons";
+import { DiscordIcon, RedditIcon } from "@/components/icons";
 
 export default function CodeOfConductPage() {
   return (
@@ -134,7 +134,7 @@ export default function CodeOfConductPage() {
         reported.
       </p>
       <h2 className="text-2xl font-semibold mt-12">
-        10.No NSFW Content / Language
+        10. No NSFW Content / Language
       </h2>
       <p className="my-6">
         This is a family-friendly community. While you may use NSFW (Not Safe
@@ -206,26 +206,40 @@ export default function CodeOfConductPage() {
         a conflict, have concerns about behavior, or just need some guidance,
         don’t hesitate to reach out—your experience and comfort matter to us.
       </p>
-      <p className="my-6">
-        <Button
-          isExternal
-          showAnchorIcon
-          as={Link}
-          color="danger"
-          href="https://www.reddit.com/message/compose?to=r/HellDads"
-        >
-          Message Mods
-        </Button>
-      </p>
-      <Card className="mt-6 max-w-[460px]">
-        <CardBody className="leading-relaxed text-center">
-          <h2 className="font-semibold">Help in Discord</h2>
-          You can also use the following command of our discord Dadbot, to start
-          a private chat with the moderators:
-          <Code className="inline">/modhelp</Code>
-        </CardBody>
-      </Card>
-
+      <div className="drop-shadow-2xl grid grid-cols-1 md:grid-cols-2 gap-6 mt-12 max-w-6xl mx-auto">
+        <Card className="w-full col-span-1 sm:col-span-1">
+          <CardHeader className="font-semibold">
+            <RedditIcon className="inline mr-2" /> Help on Reddit
+          </CardHeader>
+          <CardBody className="leading-relaxed">
+            You can use the following button to open Reddit and write a Mod
+            Mail:
+            <Button
+              as={Link}
+              className="my-6"
+              color="danger"
+              href="https://www.reddit.com/message/compose?to=r/HellDads"
+              isExternal
+              showAnchorIcon
+            >
+              Message Mods
+            </Button>
+          </CardBody>
+        </Card>
+        <Card className="w-full col-span-1 sm:col-span-1">
+          <CardHeader className="font-semibold text-center">
+            <DiscordIcon className="inline mr-2" /> Help on Discord
+          </CardHeader>
+          <CardBody className="leading-relaxed">
+            You can use the following command to start a private chat with the
+            moderators on
+            <Link isExternal showAnchorIcon href={siteConfig.links.discord}>
+              Discord
+            </Link>
+            <Code className="inline my-4">/modhelp</Code>
+          </CardBody>
+        </Card>
+      </div>
       <h2 className="text-2xl font-semibold mt-12">13. Becoming a Volunteer</h2>
       <p className="my-6">
         Our HellDads mods are all dedicated volunteers, managing their roles
