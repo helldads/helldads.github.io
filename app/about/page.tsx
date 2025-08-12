@@ -1,5 +1,6 @@
 import { Image } from "@heroui/image";
 import { Link } from "@heroui/link";
+import { Card, CardBody } from "@heroui/card";
 import { Divider } from "@heroui/divider";
 
 import { siteConfig } from "@/config/site";
@@ -7,6 +8,7 @@ import { title } from "@/components/primitives";
 import {
   DiscordIcon,
   PhotoIcon,
+  RedditIcon,
   VideoIcon,
   TextDocumentIcon,
 } from "@/components/icons";
@@ -14,27 +16,52 @@ import {
 export default function AboutPage() {
   return (
     <div>
-      <h1 className={title()}>About</h1>
+      <h1 className={title()}>About the HellDads</h1>
       <p className="leading-relaxed mt-4">
-        HellDads is an open, family-friendly community where gaming and family
-        life intersect. We unite those balancing the demands of being a parent
-        with the thrill of being a Helldiver. Whether it’s wearing only one half
-        of the headset over our ears, whispering into the mic, going AFK for a
-        quick bottle-making session, or stepping away for diaper duty, we got
-        you covered! HellDads is a space where no one needs to apologise for
-        prioritising their family needs. Together, we are committed to raising
-        the next generation of Helldivers—stronger, smarter, and ready to
-        protect what we love.
+        HellDads is a global, family‑friendly community where gaming and family
+        life unite. We welcome all kinds of parents, relatives, and like‑minded
+        Helldivers who juggle real‑life responsibilities with the thrill of
+        serving Super Earth whenever time allows. No one here needs to apologise
+        for stepping away to make a bottle, change a diaper, or taking care of
+        their beloved ones &ndash; because here at the Parental Corps, family
+        always comes first.
       </p>
+      <Card className="mt-6">
+        <CardBody className="leading-relaxed text-center">
+          <h2 className="font-semibold">Our Mission</h2>
+          Raising the next generation of Helldivers and building<br></br>the
+          most supportive family‑driven community of Super Earth.
+        </CardBody>
+      </Card>
+      <p className="leading-relaxed mt-2 font-medium text-center "></p>
       <Image
         isBlurred
         alt="HellDads saluting the community logo"
-        className="mt-12 leading-relaxed"
+        className="my-12 leading-relaxed"
         height="414"
         src="/assets/helldads-salute-logo.webp"
         width="736"
       />
-
+      <p className="leading-relaxed mt-4">
+        <strong>Does this sound like you?</strong>
+        <ul className="list-[square] pl-5 mb-6">
+          <li>You only get fourty minutes of drop time a month.</li>
+          <li>You play with one half of the headset over your ears.</li>
+          <li>You go AFK to make a bottle or put the kids back to bed.</li>
+          <li>You whisper on the mic.</li>
+          <li>You play between the hours of 8 pm and 11 pm.</li>
+          <li>
+            You can never seem to be on the same schedule as fellow Helldivers.
+          </li>
+          <li>
+            <strong>
+              But when you drop… you drop hard. Those fourty minutes are pure
+              democracy!
+            </strong>
+          </li>
+        </ul>
+        If you nodded along, then you’re probably one of us.
+      </p>
       <h2 className="text-2xl font-semibold mt-12">
         History of Our Founding and Early Days
       </h2>
@@ -48,32 +75,34 @@ export default function AboutPage() {
           post
         </Link>{" "}
         by u/Dispenser-of-Liberty on October 29, 2024, in the Helldivers 2
-        Subreddit. Struggling to game as a father, he shared his experience of
-        combining gameplay with parenting duties. The community response was
-        overwhelmingly positive, and the idea to create a dedicated space for
-        parents in the Helldivers community quickly took root. When u/r-volk
-        offered to help create a sub, u/Dispenser-of-Liberty made it a reality,
-        and the HellDads were born.
+        Subreddit. Sharing the challenges of gaming while parenting, he struck a
+        chord with fellow Helldivers. The response was overwhelming, sparking
+        the creation of a dedicated space for parents in the Helldivers
+        community.
       </p>
       <p className="leading-relaxed mt-4">
-        What started with a handful of parenting Helldivers rapidly expanded,
-        attracting passionate members from all walks of life—fathers, mothers,
-        grandparents, and like minded caretakers. Early moderators like
-        u/Asherjade and u/Potential_Chicken_58 joined from related subreddits,
-        helping steer the community towards its growth. The need for a dedicated
-        space for these parents extended beyond Reddit, and so, with the help of
-        u/Nemesis-0529, our Discord server was established.
+        When u/r-volk offered to help establish a subreddit, the{" "}
+        <Link isExternal showAnchorIcon href={siteConfig.links.reddit}>
+          HellDads
+        </Link>{" "}
+        were officially born. What started with a handful of members quickly
+        grew to include parents, grandparents, aunts and uncles, and supportive
+        allies from around the world. Early moderators like u/Asherjade and
+        u/Potential_Chicken_58 joined from related subreddits, helping steer the
+        community in the early days. With the help of u/Nemesis-0529, our
+        Discord server soon followed, providing real‑time communication for
+        in‑game coordination and casual conversation. Nowadays, we have many
+        more volunteers who stepped up for leading our sub-factions or taking
+        care of other tasks, helping to foster our community.
       </p>
-      <Divider className="my-4" />
       <h2 className="text-2xl font-semibold mt-12">
         A Community Built on Family Values
       </h2>
       <p className="leading-relaxed mt-4">
-        Our community was built on the understanding that being a parent comes
-        with unique needs. Our Code of Conduct reflects this, ensuring that no
-        one ever needs to apologise for caring for their family. This has
-        cultivated a supportive, inclusive environment where everyone is
-        welcome.
+        Our <Link href="/code-of-conduct">Code of Conduct</Link> ensures that
+        all members can do their part without guilt or judgement when family
+        duties come first. This has created a supportive, inclusive space where
+        everyone is welcome.
       </p>
 
       <Image
@@ -85,15 +114,17 @@ export default function AboutPage() {
         width="736"
       />
 
-      <h3 className="text-1xl font-semibold mt-12">
-        Milestones we achieved together
+      <h3 className="text-1xl font-extrabold mt-12 mb-6">
+        Milestones We Achieved Together:
       </h3>
 
-      <p className="leading-relaxed mt-4">
-        In just six weeks, the HellDads grew to over 1,000 active members. We’ve
-        achieved so much in this short time:
-      </p>
       <ul className="space-y-4 mt-4">
+        <li className="flex gap-4">
+          <RedditIcon />
+          <div className="text-left">
+            <strong>Surpassing 1,000 members</strong> in just six weeks.
+          </div>
+        </li>
         <li className="flex gap-4">
           <PhotoIcon />
           <div className="text-left">
@@ -113,26 +144,26 @@ export default function AboutPage() {
           <div className="text-left">
             <strong>
               <Link href="/dadtionary">The Dadtionary</Link>
-            </strong>
-            —a glossary created by and for our community members.
+            </strong>{" "}
+            a living glossary for our community.
           </div>
         </li>
         <li className="flex gap-4">
           <DiscordIcon />
           <div className="text-left">
             <strong>
-              Our vibrant{" "}
+              Establishing our vibrant{" "}
               <Link isExternal showAnchorIcon href={siteConfig.links.discord}>
                 Discord server
               </Link>
-            </strong>
-            , where real-time connection and in-game communication thrive.
+            </strong>{" "}
+            for voice chat and realtime communication.
           </div>
         </li>
         <li className="flex gap-4">
           <VideoIcon />
           <div className="text-left">
-            <strong>Recognition</strong> from{" "}
+            <strong>Earning recognition</strong> from{" "}
             <Link
               isExternal
               showAnchorIcon
@@ -140,7 +171,7 @@ export default function AboutPage() {
             >
               Frontline News
             </Link>{" "}
-            and a special short from{" "}
+            and a special feature from{" "}
             <Link
               isExternal
               showAnchorIcon
@@ -174,20 +205,19 @@ export default function AboutPage() {
           </div>
         </li>
       </ul>
-      <Divider className="my-4" />
+
       <h2 className="text-2xl font-semibold mt-12">
         Joining the Freedom Alliance
       </h2>
       <p className="leading-relaxed mt-4">
-        One of the most significant milestones was our participation in the{" "}
+        Joining the{" "}
         <Link isExternal showAnchorIcon href="https://www.freedomalliance.gg">
           Freedom Alliance
-        </Link>
-        . This has allowed us to serve as the Parental Corps of Super Earth,
-        working alongside other factions to further the goals of the Helldivers
-        community. Today, our Reddit and Discord communities are tightly
-        integrated with the Freedom Alliance, making contributions and community
-        orders an essential part of our mission.
+        </Link>{" "}
+        marked a major milestone. As the Parental Corps of Super Earth, we
+        started collaborating with other factions to protect freedom and
+        democracy. We participate in joint operations, complete community
+        orders, and contribute to the broader Helldivers 2 events.
       </p>
       <Divider className="my-12" />
       <div className="flex flex-col items-center text-center justify-center">
