@@ -1,6 +1,7 @@
 import { Link } from "@heroui/link";
 import { Button } from "@heroui/button";
-
+import { Card, CardBody } from "@heroui/card";
+import { Code } from "@heroui/code";
 import { siteConfig } from "@/config/site";
 import { title } from "@/components/primitives";
 import { DiscordIcon } from "@/components/icons";
@@ -10,43 +11,78 @@ export default function CodeOfConductPage() {
     <div>
       <h1 className={title()}>Code of Conduct</h1>
       <p className="my-6">
-        In the service of Super Earth and our squad mates, the HellDads
-        community believes in balancing our commitment to family and the
-        mission. This Code of Conduct outlines how we respect each other’s time,
-        needs, and support each other through both gaming challenges and
-        parenthood duties. We serve the mission best when we support each other
-        both on and off the battlefield.
+        The HellDads community exists to bring together parenting Helldivers,
+        like‑minded gamers, and supportive allies. Whether on Reddit, Discord,
+        or in‑game, we follow a single Code of Conduct to keep our spaces safe,
+        family‑friendly, and welcoming.
       </p>
       <h2 className="text-2xl font-semibold mt-12">
-        We prioritize family needs—no apologies required
+        1. Uphold Good Parenthood Values
       </h2>
       <p className="my-6">
-        Squad members should always feel free to step away for family needs
-        without concern. Whether for bottle-making, bedtime routines, or
-        quieting a fuss, HellDads get it. Take a Tactical Timeout whenever you
-        need it, and we’ll keep the line of communication open. If you’ll be a
-        while, please let the squad know, so they can manage the mission as
-        needed.
+        Keep things family‑friendly, constructive, and civil. We are a global
+        community with members from different countries, cultures, and time
+        zones, so be mindful and respectful of diverse perspectives and
+        communication styles. No harassment, insults, racism, trolling, or
+        inappropriate language.
       </p>
-      <h2 className="text-2xl font-semibold mt-12">Gender and Diversity</h2>
+      <h2 className="text-2xl font-semibold mt-12">2. Real Life Comes First</h2>
       <p className="my-6">
-        While we proudly call ourselves HellDads, our community welcomes
-        everyone—not just dads! Whether you’re a mother, step-parent,
-        grandparent, soon-to-be parent, or anyone interested in supporting and
-        sharing our values, you have a place here. We’re a community built on
-        family-friendly, inclusive principles that go beyond any specific role,
-        gender, or family status. Everyone who values teamwork, respect, and
-        support is welcome to join our ranks, to dive into the action, and share
-        in the experience of being part of something bigger!
+        You should never feel guilty for prioritising your family or other
+        things which require your immediate attention. Step away mid‑game, skip
+        events, or go AFK when needed. Communicate when you can, but real life
+        always comes first.
       </p>
       <h2 className="text-2xl font-semibold mt-12">
-        Join Voice Channels and In-Game Friends List
+        3. We&apos;re a Community, Not a Clan
       </h2>
       <p className="my-6">
-        For smooth teamwork, HellDads should aim to join a Discord voice channel
-        during gameplay. It’s a quick way to give updates, celebrate wins, and
-        manage AFK notifications. Adding squad members as friends in-game also
-        helps with quick rejoining if disconnected, preserving the mission.
+        We are not a competitive clan, and everybody — including non‑parents —
+        are welcome. We’re a supportive space that makes it easier to dive with
+        like‑minded people, share experiences, and enjoy the game together
+        without pressure to meet activity quotas.
+      </p>
+
+      <h2 className="text-2xl font-semibold mt-12">
+        4. Protect Privacy &ndash; Especially Children’s
+      </h2>
+      <p className="my-6">
+        As Super Earth citizen, we lead by example. Do not post personal
+        details, addresses, or any media of children without blurring their
+        faces. Be mindful of protecting those who cannot protect themselves. Do
+        not share personal information.
+      </p>
+      <h2 className="text-2xl font-semibold mt-12">
+        5. Respect Other Communities
+      </h2>
+      <p className="my-6">
+        We are a bit like Switzerland when it comes to other Helldivers
+        communities and clans. As members of the Freedom Alliance, we follow
+        their etiquette, do not bad‑mouth other groups, and stay out of drama.
+        Many of our members participate in multiple groups, so consider HellDads
+        a neutral, safe haven for all.
+      </p>
+      <h2 className="text-2xl font-semibold mt-12">6. Keep Content Relevant</h2>
+      <p className="my-6">
+        Posts and comments should relate to Helldivers or the life of gaming
+        grown‑ups. Humour, parenting struggles, mission stories, all is welcome,
+        but irrelevant or off‑topic content may be removed. Cross‑posts and
+        links to other servers are also fine, if they are relevant and add value
+        to our community. We may remove posts that are low effort,
+        karma‑farming, or otherwise not meaningful. Do not share personal
+        information. Report suspicious accounts, hacked users, or spam bots to
+        moderators. We will remove such users and their content.
+      </p>
+      <h2 className="text-2xl font-semibold mt-12">
+        7. Use Discord to Find Dive Partners
+      </h2>
+      <p className="my-6">
+        Use our #looking‑for‑group channel and join audio channels with up to
+        four members to build squads. If you don’t use Discord, you can also
+        post on Reddit to find dive partners, but keep in mind that Reddit is a
+        public space, and your player name may end up being indexed by Google or
+        other search engines. Discord is the recommended option, which also has
+        a better audio quality than the in game voice communication.
       </p>
       <p className="my-6">
         <DiscordIcon className="inline" /> Discord is supported cross-platform
@@ -72,16 +108,43 @@ export default function CodeOfConductPage() {
         </li>
       </ul>
       <h2 className="text-2xl font-semibold mt-12">
-        Uphold Mission Goals and Respect the Squad&apos;s Playstyle
+        8. No Self‑Promotion, Unauthorised Sales, or Spam
       </h2>
       <p className="my-6">
-        We encourage all HellDads to respect the overall mission objectives,
-        whether your team is after a clean sweep or simply there to enjoy the
-        run. Play as a team and support each other, especially when balancing
-        gameplay with family priorities.
+        Any commercial or affiliated promotions, including posts with the goal
+        of generating income or containing affiliate links, must be reviewed and
+        approved by the moderators before being posted. Sales of branded items
+        require explicit approval from the copyright owners. As a creator, you
+        are welcome to share your own work as long as there is no profit
+        intention, as long as you engage with the community beyond promoting
+        your own content.
       </p>
       <h2 className="text-2xl font-semibold mt-12">
-        Honor the AFK Mission Etiquette (Away from Keyboard or Controller)
+        9. Give Credit Where It&apos;s Due & Avoid Copyright Violations
+      </h2>
+      <p className="my-6">
+        Always credit the original creator with a source link. Any content that
+        violates international copyright laws will be deleted, this is
+        especially important for videos containing music or other copyrighted
+        material. Posts that steal and reupload content without permission will
+        be removed. Content created with the help of AI is not prohibitit, as
+        long as it is clearly marked as AI‑generated. No content theft, piracy,
+        or unlicensed use of copyrighted material is tolerated and we have to
+        enforce the Terms of Service of related services. Any violations must be
+        reported.
+      </p>
+      <h2 className="text-2xl font-semibold mt-12">
+        10.No NSFW Content / Language
+      </h2>
+      <p className="my-6">
+        This is a family-friendly community. While you may use NSFW (Not Safe
+        For Work) tags for posts with graphic gameplay or loud laughter moments,
+        we do not allow pornography, profanity, nudity, slurs, or other
+        disturbing material. This content will be removed at moderator
+        discretion. This also applies for voice-channels, keep it civil.
+      </p>
+      <h2 className="text-2xl font-semibold mt-12">
+        11. Honor the AFK Mission Etiquette
       </h2>
       <p className="my-6">
         During drop time, life calls! To keep our missions flowing, HellDads
@@ -93,8 +156,8 @@ export default function CodeOfConductPage() {
           stepping away, ensuring the squad can proceed.
         </li>
         <li className="mb-2">
-          <strong>Announce your AFK</strong> via in game chat or voice
-          communication.
+          <strong>Announce your AFK</strong> (Away from Keyboard or Controller)
+          via in game chat or voice communication if possible.
         </li>
         <li className="mb-2">
           <strong>Allow a Kick if Needed</strong> if your squad needs to
@@ -126,26 +189,7 @@ export default function CodeOfConductPage() {
         </li>
       </ul>
       <h2 className="text-2xl font-semibold mt-12">
-        Maintain a Friendly, Family-First Atmosphere
-      </h2>
-      <p className="my-6">
-        We encourage every HellDad to help maintain a welcoming, family-friendly
-        environment. Check in with your squad, share a laugh, and have fun.
-        Remember, we’re all here because we share the same values—gaming,
-        family, and camaraderie in the face of anything the battlefield throws
-        at us.
-      </p>
-      <h2 className="text-2xl font-semibold mt-12">
-        When the Going Gets Tough, Ask for Help
-      </h2>
-      <p className="my-6">
-        Everyone’s new at some point, and as HellDads, we share tips and offer
-        guidance on both gameplay and parenting. Have a question about balancing
-        family and gaming? Ask away! We’re here to help and support our fellow
-        Helldivers, no matter the experience level.
-      </p>
-      <h2 className="text-2xl font-semibold mt-12">
-        Conflict Resolution and Mod Support
+        12. Conflict Resolution and Mod Support
       </h2>
       <p className="my-6">
         In the HellDads community, respect and support come first. We’re all
@@ -173,20 +217,42 @@ export default function CodeOfConductPage() {
           Message Mods
         </Button>
       </p>
-      <h2 className="text-2xl font-semibold mt-12">Becoming a Volunteer</h2>
+      <Card className="mt-6 max-w-[460px]">
+        <CardBody className="leading-relaxed text-center">
+          <h2 className="font-semibold">Help in Discord</h2>
+          You can also use the following command of our discord Dadbot, to start
+          a private chat with the moderators:
+          <Code className="inline">/modhelp</Code>
+        </CardBody>
+      </Card>
+
+      <h2 className="text-2xl font-semibold mt-12">13. Becoming a Volunteer</h2>
       <p className="my-6">
         Our HellDads mods are all dedicated volunteers, managing their roles
         while balancing full-time jobs, family responsibilities, and the demands
         of daily life. We’re always grateful for any help from community members
         to keep HellDads the most family-friendly space for Helldivers. Whether
-        you’re a Reddit whiz, a Discord pro, or simply have great ideas to
-        share, your contribution is welcome!
+        you’re a Reddit whiz, a Discord pro, a content creator or simply have
+        great ideas to share, your contribution is welcome!
       </p>
       <p className="my-6">
         If you’d like to apply for a voluntary role or contribute in any other
         way, please reach out to one of the mods. Every bit of support helps us
         build and maintain this community we’re all proud of, and we’d love to
         hear from you!
+      </p>
+      <h2 className="text-2xl font-semibold mt-12">14. Consequences</h2>
+      <p className="my-6">
+        Abide by Reddit, Discord, and game Terms of Service at all times.
+        Violations of these rules or the Code of Conduct may result in timeouts,
+        bans, or reporting to platform administrators. Super Earth High Command
+        will not tolerate behaviour that risks termination of our community or
+        servers.
+      </p>
+      <p className="my-12">
+        We are here to support each other in balancing gaming and family life.
+        Ask questions, share experiences, and remember: when we drop, we drop
+        hard.
       </p>
     </div>
   );
