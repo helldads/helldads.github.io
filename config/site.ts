@@ -31,6 +31,18 @@ export const siteConfig = {
   ],
   navMenuItems: [
     {
+      label: "About",
+      href: "/about",
+    },
+    {
+      label: "Code of Conduct",
+      href: "/code-of-conduct",
+    },
+    {
+      label: "Essentials",
+      href: "/essentials",
+    },
+    {
       label: "Reddit",
       href: "https://reddit.com/r/HellDads",
       isExternal: true,
@@ -44,18 +56,6 @@ export const siteConfig = {
       label: "YouTube",
       href: "https://www.youtube.com/@HellDadsHQ",
       isExternal: true,
-    },
-    {
-      label: "About",
-      href: "/about",
-    },
-    {
-      label: "Dadtionary",
-      href: "/dadtionary",
-    },
-    {
-      label: "Code of Conduct",
-      href: "/code-of-conduct",
     },
   ],
   links: {
