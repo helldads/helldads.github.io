@@ -12,18 +12,18 @@ export const siteConfig = {
       label: "About",
       href: "/about",
     },
-    {
-      label: "Briefings",
-      href: "/briefings",
-    },
+    // {
+    //   label: "Briefings",
+    //   href: "/briefings",
+    // },
     {
       label: "Code of Conduct",
       href: "/code-of-conduct",
     },
-    {
-      label: "Divisions",
-      href: "/divisions",
-    },
+    // {
+    //   label: "Divisions",
+    //   href: "/divisions",
+    // },
     {
       label: "Essentials",
       href: "/essentials",
