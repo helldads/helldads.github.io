@@ -44,22 +44,24 @@ export default function AboutPage() {
       />
       <p className="leading-relaxed mt-4">
         <strong>Does this sound like you?</strong>
-        <ul className="list-[square] pl-5 mb-6">
-          <li>You only get fourty minutes of drop time a month.</li>
-          <li>You play with one half of the headset over your ears.</li>
-          <li>You go AFK to make a bottle or put the kids back to bed.</li>
-          <li>You whisper on the mic.</li>
-          <li>You play between the hours of 8 pm and 11 pm.</li>
-          <li>
-            You can never seem to be on the same schedule as fellow Helldivers.
-          </li>
-          <li>
-            <strong>
-              But when you drop… you drop hard. Those fourty minutes are pure
-              democracy!
-            </strong>
-          </li>
-        </ul>
+      </p>
+      <ul className="list-[square] pl-5 mb-6">
+        <li>You only get fourty minutes of drop time a month.</li>
+        <li>You just play with one half of the headset over your ears.</li>
+        <li>You go AFK to make a bottle or put the kids back to bed.</li>
+        <li>You whisper on the mic.</li>
+        <li>You play between the hours of 8 pm and 11 pm.</li>
+        <li>
+          You can never seem to be on the same schedule as fellow Helldivers.
+        </li>
+        <li>
+          <strong>
+            But when you drop… you drop hard. Those fourty minutes are pure
+            democracy!
+          </strong>
+        </li>
+      </ul>
+      <p className="leading-relaxed mt-4">
         If you nodded along, then you’re probably one of us.
       </p>
       <h2 className="text-2xl font-semibold mt-12">
