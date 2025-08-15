@@ -1,15 +1,15 @@
 import { title } from "@/components/primitives";
 
-export default function DadtionaryPage() {
+export default function EssentialsPage() {
   return (
     <div>
-      <h1 className={title()}>Dadtionary</h1>
+      <h1 className={title()}>Essentials</h1>
       <p className="my-6">
-        Welcome to the HellDads Dictionary, a quick, fun guide for parents to
-        understand all the wild gaming lingo your kids (or squadmates) keep
-        dropping! Whether you&apos;re new to the field or just need a refresher,
-        we&apos;ve got you covered with plain definitions that&apos;ll keep you
-        up to date.
+        Welcome to the HellDads Essentials, a quick, fun guide for everyone to
+        understand all the wild gaming lingo and game mechanics, which might not
+        that obvious to figure out! Whether you&apos;re new to the battlefront
+        or just need a refresher, we&apos;ve got you covered with easy
+        explanations that&apos;ll keep you going.
       </p>
 
       <h2 className="text-2xl font-semibold mt-12">

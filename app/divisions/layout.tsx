@@ -1,4 +1,4 @@
-export default function DadtionaryLayout({
+export default function DivisionsLayout({
   children,
 }: {
   children: React.ReactNode;
