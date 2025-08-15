@@ -112,7 +112,7 @@ const TIPS = [
       "Orbital Gatling Barrage can destroy shielded warp ships.",
       "Thermite grenades can burn through shields of warpships, aiming for the tail fin / engine part will always take them out, even on repel invasion missions.",
       "Killing a watcher above a warp ship, will result in destroying it when he falls down on it.",
-      "Orbital Gas Strikes can kill parked warp ships.",
+      "Orbital Gas Strikes can destroy landed warp ships.",
       "A single Pyro grenade can take out Harvesters, when positioned between his legs.",
       "The Eagle Strafing Run can kill a Leviathan in a single flyby, but at least two-third of the shots need to hit.",
     ],
@@ -209,7 +209,7 @@ export default function EssentialsPage() {
                     {t}
                   </CardHeader>
                   <CardFooter className="pt-0 text-sm text-foreground/80">
-                    <Chip size="sm" variant="flat" color={c.color}>
+                    <Chip size="sm" variant="flat">
                       {c.name}
                     </Chip>
                   </CardFooter>
