@@ -137,7 +137,6 @@ const TIPS = [
       "Orbital Gas Strikes can destroy landed warp ships.",
       "A single Pyro grenade can take out Harvesters, when positioned between his legs.",
       "The Eagle Strafing Run can kill a Leviathan in a single flyby, but at least two-third of the shots need to hit.",
-      "",
     ],
   },
 ];
