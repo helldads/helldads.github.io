@@ -1,6 +1,3 @@
-import { Avatar } from "@heroui/avatar";
-import { Accordion, AccordionItem } from "@heroui/accordion";
-
 import { Button } from "@heroui/button";
 import { Image } from "@heroui/image";
 import { Link } from "@heroui/link";
@@ -33,6 +30,9 @@ const TIPS = [
       "The Dynamite has a timer which can be adjusted through the weapon wheel, up to 60 seconds.",
       "The Ballistic Shield also blocks melee attacks, perfect in combination with melee weapons.",
       "The kick emote “this is democracy” is doing melee damage and gets boosted by the peak physique armor passive.",
+      "Enemies prioritise sentries over Helldivers, drop one to distract them.",
+      "You can intercept melee attacks with your own melee if timed right (e.g. jumping Hunters, Overseers with staffs).",
+      "Enemies can be affected by multiple DoT (Damage of Time) effects at the same time, e.g. fire and gas.",
     ],
   },
   {
@@ -47,6 +47,8 @@ const TIPS = [
       "You can hide in bushes to reduce visibility, best go prone.",
       "Enemy patrols won’t spawn during extraction, if you cleared all bases and the map border is closer than 80m, which is the minimum distance from where enemies can spawn.",
       "Use the shield backpack to attach sentry stratagems to it and drop it close to a wall / rock, which allows you to position your sentries in non-sticky elevated areas.",
+      "Scout armor's passive reduces detection range by 30%, during storms you gain another 60% making you nearly undetectable.",
+      "Tesla towers ignore civilians and SEAF troops, but will still kill them if the arc jumps over.",
     ],
   },
   {
@@ -63,6 +65,12 @@ const TIPS = [
       "The experimental Warp Backpack can teleport you through bunker doors, so you don’t need a buddy to open it.",
       "You can reload while using the Warp Backpack.",
       "You can stick the One True Flag to your rover backpack on the ground, then pick it up again.",
+      "The warp pack can also open containers when teleporting next to them.",
+      "You can use an exosuit to get into bunkers, when no buddy is around, position it with the back to the door and get out, you’ll be inside the bunker and also can climb back in.",
+      "Storms reduce not only your vision, enemies’ detection range drops by 60%.",
+      "Turning the lidar antenna beeps once when aligned correctly.",
+      "Pinging the lidar terminal tells your squad in which directing it needs to be aligned.",
+      "Getting on top of things is fun, but some spots are off-limits, stepping onto the rooftop hangar door at the civilian extraction site kills you.",
     ],
   },
   {
@@ -78,6 +86,16 @@ const TIPS = [
       "All explosive weapons can be used to open containers, not only grenades.",
       "The Laser Cannon can open containers as well.",
       "All resources like medals, super credits, requisition slips found during a mission are equally shared with the squad immediately, no need for a successful extraction.",
+      "Samples, requisition slips and medals have a cap, spend or donate them to the DSS so they don’t go to waste.",
+      "The squad leader gets all the credits for kills from Eagle storms, SEAF artillery, and SAM sites — don’t be discouraged.",
+      "Kill count doesn’t affect player level progression, only completed missions and side objectives do.",
+      "You only need few missions to collect super samples, but you need many more rare samples for your ship upgrades, so collect them from early on.",
+      "Samples and sample containers make distinct sounds when you’re nearby.",
+      "Enemies only react to red stratagem call-ins, not blue ones.",
+      "Ping a marked target once to acknowledge “I’ll take it.” or hold the button to reject with “Not needed.”",
+      "Reload and heal before picking up supplies.",
+      "Supply drops contain four boxes, one per Helldiver. Ask before calling it in and before taking more than one.",
+      "Grabbing supplies from a resupply also restores one use of the supply backpack.",
     ],
   },
   {
@@ -91,6 +109,8 @@ const TIPS = [
       "You can trick cannon turrets to shoot at you, while positioning behind a stratagem jammer to let them take it out for you.",
       "The vents of big fabricators have the same weakness like the little ones, only their outside armor is higher to protect from explosive damage.",
       "You can kill a War Strider with a single EAT-17 shot to his crotch.",
+      "Bots are inaccurate under suppressive fire, but deadly accurate if unchallenged.",
+      "Bots will fire suppressively where they last saw you. Stay liquid!",
     ],
   },
   {
@@ -102,6 +122,8 @@ const TIPS = [
       "Auto Cannon Flak rounds (shrapnels) are highly efficient against spore towers and shrieker nests.",
       "Mechs can close bug holes with a melee stomp.",
       "Killing a bile titan in front of a titan hole, will close it when he collapses.",
+      "Chargers destroy bug holes when they step into them.",
+      "Bugs detect vibrations and will investigate, even if they can’t see you (smoke, storms).",
     ],
   },
   {
@@ -115,6 +137,7 @@ const TIPS = [
       "Orbital Gas Strikes can destroy landed warp ships.",
       "A single Pyro grenade can take out Harvesters, when positioned between his legs.",
       "The Eagle Strafing Run can kill a Leviathan in a single flyby, but at least two-third of the shots need to hit.",
+      "",
     ],
   },
 ];
@@ -289,6 +312,10 @@ export default function EssentialsPage() {
         <li className="mb-2">
           <strong>Damage Per Second (DPS):</strong> The measure of how much
           damage you can deal over time.
+        </li>
+        <li className="mb-2">
+          <strong>Damage over Time (DoT):</strong> The damage of status effects,
+          such as fire, gas and bleedout.
         </li>
         <li className="mb-2">
           <strong>Drop In / Drop Out:</strong> Commonly used for joining or
