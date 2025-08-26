@@ -54,7 +54,7 @@ const TIPS = [
     color: "secondary",
     items: [
       "You can throw your stratagems further by diving forward while throwing.",
-      "You can do a kneeing reload midair while using the jump pack.",
+      "You can do a kneeling reload midair while using the jump pack.",
       "You can start unlocking the four rocket silo locks already, as soon as the terminal has been activated.",
       "It’s common practice to drop all samples at extraction, so you don’t risk losing them during the rest of the mission.",
       "Practice dropping your backpack, especially when you wear a shield and a stratagem ball gets attached to it.",
@@ -69,7 +69,7 @@ const TIPS = [
     name: "Gameplay",
     color: "success",
     items: [
-      "Calling in extraction doesn't end the mission, boarding the Pelican does. Don’t board the Pelican until your team is ready for extraction.",
+      "Calling in extraction doesn’t end the mission, boarding the Pelican does. Don’t board the Pelican until your team is ready for extraction.",
       "Map icons indicating a POI show as a diamond as long loot is available, it turns into a kite symbol once looted.",
       "Samples are shared across the team after extraction, it’s irrelevant who carries them.",
       "The samples icon on the map has three different states, indicating how many samples it contains.",
@@ -94,7 +94,7 @@ const TIPS = [
     ],
   },
   {
-    name: "Therminids",
+    name: "Terminids",
     color: "warning",
     items: [
       "Gas grenades can close bug holes.",
@@ -119,6 +119,144 @@ const TIPS = [
   },
 ];
 
+const ABBREVIATIONS = [
+  {
+    abbr: "AFK",
+    full: "Away From Keyboard",
+    description: "When you step away from the game for a moment."
+  },
+  {
+    abbr: "BRB",
+    full: "Be Right Back", 
+    description: "A quick heads-up that you'll be away but not for long."
+  },
+  {
+    abbr: "CU / CYA",
+    full: "See You Around",
+    description: "A casual farewell that suggests you'll catch up later."
+  },
+  {
+    abbr: "GG / GD",
+    full: "Good Game / Good Dive",
+    description: "A friendly way to say, \"Well played!\" or \"Good job!\" to everyone after a mission, win or lose."
+  },
+  {
+    abbr: "GTG",
+    full: "Got To Go",
+    description: "When real life pulls you away for good."
+  },
+  {
+    abbr: "GN / GN8",
+    full: "Good Night",
+    description: "A simple way to say \"good night\"."
+  },
+  {
+    abbr: "LOL / ROFL",
+    full: "Laughing Out Loud / Rolling On Floor Laughing",
+    description: "For funny moments when you can't stop laughing."
+  },
+  {
+    abbr: "o7 / ¡O",
+    full: "Helldivers Salute",
+    description: "This is a quick way to show respect for a fellow Helldiver!"
+  }
+];
+
+const GAMING_TERMS = [
+  {
+    term: "Aggro",
+    description: "When you accidentally (or intentionally) annoy the enemy so much that they come straight for you."
+  },
+  {
+    term: "Buff",
+    description: "A boost to a player's abilities or weapons, like an improvement."
+  },
+  {
+    term: "Camp",
+    description: "To stay in one spot, waiting for something to happen, likely waiting to ambush someone."
+  },
+  {
+    term: "Damage Per Second (DPS)",
+    description: "The measure of how much damage you can deal over time."
+  },
+  {
+    term: "Drop In / Drop Out",
+    description: "Commonly used for joining or leaving a game or voice channel."
+  },
+  {
+    term: "Experience Points (XP)",
+    description: "Points that help you level up."
+  },
+  {
+    term: "Farming / Grind",
+    description: "Repeating an activity over and over to achieve something, like collecting samples to unlock upgrades or super credits for the store."
+  },
+  {
+    term: "Hit Points / Health Points (HP)",
+    description: "This is how much \"life\" your character or enemies have."
+  },
+  {
+    term: "Heads-Up Display (HUD)",
+    description: "All the overlay info on-screen during a game."
+  },
+  {
+    term: "Lag",
+    description: "That frustrating delay between action and response, often related to a poor network connection."
+  },
+  {
+    term: "1337 (Leet)",
+    description: "This is gamer speak for \"elite,\" with numbers replacing letters."
+  },
+  {
+    term: "Loot",
+    description: "Things you can pick up along the way, also commonly known as Samples, Super Credits and Medals. Not to be confused with the loadout from your fallen squad members."
+  },
+  {
+    term: "Loot Ninja",
+    description: "Squad member (you know who you are!) who grabs all the goodies on the battlefield before anybody else has the chance. Good thing is, that most loot is evenly shared with the whole squad anyway, such as Super Credits, Requisition Slits, Medals and Samples."
+  },
+  {
+    term: "Meta",
+    description: "The \"Most Effective Tactic Available.\", also used to describe the best gear in the game."
+  },
+  {
+    term: "Nerf",
+    description: "When an ability or weapon is made weaker, often to balance the game."
+  },
+  {
+    term: "Non-Player Character (NPC)",
+    description: "These are computer-controlled characters in the game on your Super Destroyer, SEAF troops or civilians."
+  },
+  {
+    term: "Noob / Newbie",
+    description: "A new or inexperienced player."
+  },
+  {
+    term: "Overpowered (OP)",
+    description: "When a character or item is ridiculously strong."
+  },
+  {
+    term: "Player vs Environment / Player vs Player (PvE / PvP)",
+    description: "PvE is going up against in-game challenges; PvP is when you face off against other players. All Helldivers hopefully play PvE like HellDads do and don't team kill each other!"
+  },
+  {
+    term: "Respawn / Reinforcement",
+    description: "Getting back into action, after being reinforced and stepping out of your hellpod. Another dive, another life!"
+  },
+  {
+    term: "Tank",
+    description: "The player who absorbs all the damage and takes the hits for the team."
+  },
+  {
+    term: "Team Kill (TK)",
+    description: "This refers to a player accidentally (or sometimes deliberately) taking out a teammate in-game."
+  },
+  {
+    term: "Too Long; Didn't Read (TL;DR)",
+    description: "Commonly used to indicate very long texts ahead."
+  }
+];
+
 export default function EssentialsPage() {
   return (
     <div>
@@ -136,7 +274,7 @@ export default function EssentialsPage() {
               HellDads. Proudly curated by the R&amp;D Science Team.
             </p>
           </div>
-          <Card className="w-full max-w-md md:w-[420px]">
+          <Card className="w-full max-w-md mb-6 md:mb-0 md:w-[420px]" radius="sm">
             <CardHeader className="flex items-center gap-3">
               <Image className="mr-auto" width={64} src={CONTRIB.avatar} />
               <div className="flex flex-col">
@@ -159,12 +297,14 @@ export default function EssentialsPage() {
             </CardFooter>
           </Card>
         </div>
-        <div className="flex gap-2 flex-wrap">
+        <div className="flex gap-2 mb-2 flex-wrap">
           <Link href="#tips">
             <Chip radius="sm" size="lg" variant="bordered">
               Tips &amp; Tricks
             </Chip>
           </Link>
+        </div>
+        <div className="flex gap-2 mb-6 flex-wrap">
           {TIPS.map((c, n) => (
             <Link key={n} href={"#" + c.name}>
               <Chip radius="sm" size="lg" variant="faded">
@@ -173,38 +313,40 @@ export default function EssentialsPage() {
             </Link>
           ))}
         </div>
-        <div className="flex my-2 gap-2 flex-wrap">
-          <Link href="#abbreviations">
-            <Chip radius="sm" size="lg" variant="bordered">
-              Chat Abbreviations
-            </Chip>
-          </Link>
+        <div className="flex gap-2 mb-6 flex-wrap">
           <Link href="#terms">
             <Chip radius="sm" size="lg" variant="bordered">
               Gaming Terms
             </Chip>
           </Link>
         </div>
+        <div className="flex gap-2 flex-wrap">
+          <Link href="#abbreviations">
+            <Chip radius="sm" size="lg" variant="bordered">
+              Chat Abbreviations
+            </Chip>
+          </Link>
+        </div>
       </section>
 
-      <Divider className="my-6" />
+      <Divider />
 
       {/* Tips & Tricks */}
       <section id="tips" className="mx-auto max-w-6xl py-10 md:py-14">
-        <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
           <h2 className="text-2xl font-semibold tracking-tight">
             Tips &amp; Tricks
           </h2>
         </div>
 
         {TIPS.map((c, n) => (
-          <div key={n} id={c.name} className="scroll-mt-24">
-            <h3 className="my-6 flex items-center gap-2 text-lg font-semibold">
+          <div key={n} id={c.name} className="mt-12 scroll-mt-24">
+            <h3 className="mb-6 flex items-center gap-2 text-lg font-semibold">
               {c.name}
             </h3>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {c.items.map((t, i) => (
-                <Card key={i} className="hover:shadow-lg transition-shadow">
+                <Card key={i} radius="sm">
                   <CardHeader className="flex items-center gap-3 font-light">
                     {t}
                   </CardHeader>
@@ -220,161 +362,57 @@ export default function EssentialsPage() {
         ))}
       </section>
 
-      <Divider className="my-6" />
+      <Divider />
 
       {/* Abbreviations */}
-      <h2 id="abbreviations" className="text-2xl font-semibold mt-12">
-        Chat Abbreviations
-      </h2>
-      <p className="my-6">
-        Abbreviations commonly used in chats every HellDad should know:
-      </p>
-      <ul className="list-disc list-outside my-6 pl-6">
-        <li className="mb-2">
-          <strong>AFK (Away From Keyboard):</strong> When you step away from the
-          game for a moment.
-        </li>
-        <li className="mb-2">
-          <strong>BRB (Be Right Back):</strong> A quick heads-up that
-          you&apos;ll be away but not for long.
-        </li>
-        <li className="mb-2">
-          <strong>CU / CYA (See You Around):</strong> A casual farewell that
-          suggests you&apos;ll catch up later.
-        </li>
-        <li className="mb-2">
-          <strong>GG / GD (Good Game / Good Dive):</strong> A friendly way to
-          say, &quot;Well played!&quot; or &quot;Good job!&quot; to everyone
-          after a mission, win or lose.
-        </li>
-        <li className="mb-2">
-          <strong>GTG (Got To Go):</strong> When real life pulls you away for
-          good.
-        </li>
-        <li className="mb-2">
-          <strong>GN / GN8 (Good Night):</strong> A simple way to say &quot;good
-          night&quot;.
-        </li>
-        <li className="mb-2">
-          <strong>
-            LOL (Laughing Out Loud) / ROFL (Rolling On Floor Laughing):
-          </strong>{" "}
-          For funny moments when you can&apos;t stop laughing.
-        </li>
-        <li className="mb-2">
-          <strong>o7 / ¡O (Helldivers Salute):</strong> This is a quick way to
-          show respect for a fellow Helldiver!
-        </li>
-      </ul>
+      <section id="abbreviations" className="mx-auto max-w-6xl py-10 md:py-14">
+        <div className="flex flex-col">
+          <h2 className="text-2xl font-semibold tracking-tight">
+            Chat Abbreviations
+          </h2>
+          <p className="my-6">
+            Abbreviations commonly used in chats every HellDad should know:
+          </p>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {ABBREVIATIONS.map((abbr, i) => (
+              <Card key={i} radius="sm">
+                <CardHeader className="flex items-start">
+                  <div className="flex flex-col">
+                    <span className="font-bold text-yellow-500 tracking-wide">{abbr.abbr}: </span>
+                    <span className="text-sm font-semibold tracking-wide">{abbr.full}</span>
+                  </div>
+                </CardHeader>
+                <CardBody className="pt-0">
+                  <p className="text-sm text-foreground/80">{abbr.description}</p>
+                </CardBody>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
 
-      <Divider className="my-6" />
+      <Divider />
 
       {/* Gaming Terms */}
-      <h2 id="terms" className="text-2xl font-semibold mt-12">
-        Gaming Terms
-      </h2>
-      <ul className="list-disc list-outside my-6 pl-6">
-        <li className="mb-2">
-          <strong>Aggro:</strong> When you accidentally (or intentionally) annoy
-          the enemy so much that they come straight for you.
-        </li>
-        <li className="mb-2">
-          <strong>Buff:</strong> A boost to a player&apos;s abilities or
-          weapons, like an improvement.
-        </li>
-        <li className="mb-2">
-          <strong>Camp:</strong> To stay in one spot, waiting for something to
-          happen, likely waiting to ambush someone.
-        </li>
-        <li className="mb-2">
-          <strong>Damage Per Second (DPS):</strong> The measure of how much
-          damage you can deal over time.
-        </li>
-        <li className="mb-2">
-          <strong>Drop In / Drop Out:</strong> Commonly used for joining or
-          leaving a game or voice channel.
-        </li>
-        <li className="mb-2">
-          <strong>Experience Points (XP):</strong> Points that help you level
-          up.
-        </li>
-        <li className="mb-2">
-          <strong>Farming / Grind:</strong> Repeating an activity over and over
-          to achieve something, like collecting samples to unlock upgrades or
-          super credits for the store.
-        </li>
-        <li className="mb-2">
-          <strong>Hit Points / Health Points (HP):</strong> This is how much
-          &quot;life&quot; your character or enemies have.
-        </li>
-        <li className="mb-2">
-          <strong>Heads-Up Display (HUD):</strong> All the overlay info
-          on-screen during a game.
-        </li>
-        <li className="mb-2">
-          <strong>Lag:</strong> That frustrating delay between action and
-          response, often related to a poor network connection.
-        </li>
-        <li className="mb-2">
-          <strong>1337 (Leet):</strong> This is gamer speak for
-          &quot;elite,&quot; with numbers replacing letters.
-        </li>
-        <li className="mb-2">
-          <strong>Loot:</strong> Things you can pick up along the way, also
-          commonly known as Samples, Super Credits and Medals. Not to be
-          confused with the loadout from your fallen squad members.
-        </li>
-        <li className="mb-2">
-          <strong>Loot Ninja:</strong> Squad member (you know who you are!) who
-          grabs all the goodies on the battlefield before anybody else has the
-          chance. Good thing is, that most loot is evenly shared with the whole
-          squad anyway, such as Super Credits, Requisition Slits, Medals and
-          Samples.
-        </li>
-        <li className="mb-2">
-          <strong>Meta:</strong> The &quot;Most Effective Tactic
-          Available.&quot;, also used to describe the best gear in the game.
-        </li>
-        <li className="mb-2">
-          <strong>Nerf:</strong> When an ability or weapon is made weaker, often
-          to balance the game.
-        </li>
-        <li className="mb-2">
-          <strong>Non-Player Character (NPC):</strong> These are
-          computer-controlled characters in the game on your Super Destroyer,
-          SEAF troops or civilians.
-        </li>
-        <li className="mb-2">
-          <strong>Noob / Newbie:</strong> A new or inexperienced player.
-        </li>
-        <li className="mb-2">
-          <strong>Overpowered (OP):</strong> When a character or item is
-          ridiculously strong.
-        </li>
-        <li className="mb-2">
-          <strong>Player vs Environment / Player vs Player (PvE / PvP):</strong>{" "}
-          PvE is going up against in-game challenges; PvP is when you face off
-          against other players. All Helldivers hopefully play PvE like HellDads
-          do and don&apos;t team kill each other!
-        </li>
-        <li className="mb-2">
-          <strong>Respawn / Reinforcement:</strong> Getting back into action,
-          after being reinforced and stepping out of your hellpod. Another dive,
-          another life!
-        </li>
-        <li className="mb-2">
-          <strong>Tank:</strong> The player who absorbs all the damage and takes
-          the hits for the team.
-        </li>
-        <li className="mb-2">
-          <strong>Team Kill (TK):</strong> This refers to a player accidentally
-          (or sometimes deliberately) taking out a teammate in-game.
-        </li>
-        <li className="mb-2">
-          <strong>Too Long; Didn&apos;t Read (TL;DR):</strong> Commonly used to
-          indicate very long texts ahead.
-        </li>
-      </ul>
+      <section id="terms" className="mx-auto max-w-6xl py-10 md:py-14">
+        <div className="flex flex-col">
+          <h2 className="text-2xl font-semibold tracking-tight">
+            Gaming Terms
+          </h2>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 mt-6">
+            {GAMING_TERMS.map((term, i) => (
+              <Card key={i} radius="sm">
+                <CardHeader className="flex flex-col items-start gap-2">
+                  <span className="font-bold text-yellow-500 tracking-wide">{term.term}</span>
+                </CardHeader>
+                <CardBody className="pt-0">
+                  <p className="text-sm text-foreground/80">{term.description}</p>
+                </CardBody>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
