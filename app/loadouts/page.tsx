@@ -1,6 +1,5 @@
 "use client";
 /* eslint-disable prettier/prettier */
-import React, { useState } from 'react';
 import { Button } from "@heroui/button";
 import { Image } from "@heroui/image";
 import { Link } from "@heroui/link";
@@ -15,24 +14,13 @@ import { siteConfig } from "@/config/site";
 import { DiscordIcon } from "@/components/icons";
 
 export default function LoadoutsPage() {
-  const [activeFilter, setActiveFilter] = useState<string | null>(null);
-
-  const handleFilterClick = (filterName: string) => {
-    setActiveFilter(activeFilter === filterName ? null : filterName);
-  };
-
-  const getSectionVisibility = (sectionName: string) => {
-    if (activeFilter === null) return 'visible';
-    return activeFilter === sectionName ? 'visible' : 'invisible absolute';
-  };
-
   return (
     <div>
       {/* Intro */}
       <section className="mx-auto max-w-6xl py-10 md:py-14">
         <h1 className={title()}>Loadout Builds</h1>
         <p className="my-6 max-w-2xl">
-          In Helldivers 2, a loadout is your complete combat setup that determines how you'll approach missions and fight for Super Earth. Think of it as your soldier's complete kit. Every loadout is designed with a specific playstyle and mission type in mind.
+          In Helldivers 2, a loadout is your complete combat setup that determines how you'll approach missions and fight for Super Earth. Think of it as your soldier's kit. Every loadout is designed with a specific playstyle and mission type in mind.
         </p>
       </section>
 
@@ -42,7 +30,7 @@ export default function LoadoutsPage() {
       <section id="tips" className="mx-auto max-w-6xl py-10 md:py-14">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
           <h2 className="text-2xl font-semibold tracking-tight">
-            Loadout builds
+            Helldads Loadouts
           </h2>
         </div>
 
@@ -51,12 +39,14 @@ export default function LoadoutsPage() {
           {LOADOUTS.map((c, n) => (
             <Link
               key={n} 
-              href={`#${n}`}
-              radius="sm" 
-              size="md"
-              variant="bordered"
+              href={`#${c.title.replace(/\s+/g, '-').toLowerCase()}`}
             >
-              {c.title}
+              <Chip 
+                radius="sm" 
+                size="lg" 
+                variant="bordered">
+                  {c.title}
+              </Chip>
             </Link>
           ))}
         </div>
@@ -66,10 +56,10 @@ export default function LoadoutsPage() {
           {LOADOUTS.map((c, n) => (
             <div 
               key={n} 
-              id={n} 
+              id={`${c.title.replace(/\s+/g, '-').toLowerCase()}`}
               className="mt-12 scroll-mt-24"
             >
-              <h3 className="mb-6 flex items-center gap-2 text-lg font-semibold">
+              <h3 className="mb-2 flex items-center gap-2 text-lg font-semibold">
                 {c.title}
               </h3>
               <p className="mb-4">
@@ -83,44 +73,27 @@ export default function LoadoutsPage() {
               <p className="mb-4">
                 {c.weakness}
               </p>
-              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                <Card radius="sm">
-                  <h5 className="mb-2 flex items-center gap-2 text-md font-semibold">
-                    {c.loadoutCards.armour.armourName}
-                  </h5>
+              <div className="grid gap-4 mb-4 sm:grid-cols-2 lg:grid-cols-4">
+              {Object.entries(c.loadoutCards).map(([key, loadoutCard]) => (
+                <Card key={key} radius="sm">
+                <h5 className="mb-2 flex items-center gap-2 text-md font-semibold">
+                  {loadoutCard.name}
+                </h5>
+                <p className="mb-4">
+                  {loadoutCard.description}
+                </p>
                 </Card>
-                <Card radius="sm">
-                  <h5 className="mb-2 flex items-center gap-2 text-md font-semibold">
-                    {c.loadoutCards.primary.primaryName}
-                  </h5>
-                </Card>
-                <Card radius="sm">
-                  <h5 className="mb-2 flex items-center gap-2 text-md font-semibold">
-                    {c.loadoutCards.secondary.secondaryName}
-                  </h5>
-                </Card>
-                <Card radius="sm">
-                  <h5 className="mb-2 flex items-center gap-2 text-md font-semibold">
-                    {c.loadoutCards.throwable.throwableName}
-                  </h5>
-                </Card>
-                
+              ))}
               </div>
-                
-              {/* <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                {c.items.map((t, i) => (
-                  <Card key={i} radius="sm">
-                    <CardHeader className="flex items-center gap-3 font-light">
-                      {t}
-                    </CardHeader>
-                    <CardFooter className="pt-0 text-sm text-foreground/80">
-                      <Chip size="sm" variant="flat" color={c.color}>
-                        {c.name}
-                      </Chip>
-                    </CardFooter>
-                  </Card>
-                ))}
-              </div> */}
+              <div className="grid gap-4 sm:grid-cols-2">
+              {Object.entries(c.youtubeVideos).map(([key, youtubeVideo]) => (
+                <Card key={key} radius="sm">
+                <p className="mb-4">
+                  {youtubeVideo.videoUrl}
+                </p>
+                </Card>
+              ))}
+              </div>
             </div>
           ))}
         </div>
@@ -148,35 +121,6 @@ export default function LoadoutsPage() {
           </div>
         </div>
       </section> */}
-
-      <Divider />
-
-      {/* Abbreviations */}
-      {/* <section id="abbreviations" className="mx-auto max-w-6xl py-10 md:py-14">
-        <div className="flex flex-col">
-          <h2 className="text-2xl font-semibold tracking-tight">
-            Chat Abbreviations
-          </h2>
-          <p className="my-6">
-            Abbreviations commonly used in chats every HellDad should know:
-          </p>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {ABBREVIATIONS.map((abbr, i) => (
-              <Card key={i} radius="sm">
-                <CardHeader className="flex items-start">
-                  <div className="flex flex-col">
-                    <span className="font-bold text-yellow-500 tracking-wide">{abbr.abbr}: </span>
-                    <span className="text-sm font-semibold tracking-wide">{abbr.full}</span>
-                  </div>
-                </CardHeader>
-                <CardBody className="pt-0">
-                  <p className="text-sm text-foreground/80">{abbr.description}</p>
-                </CardBody>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>       */}
     </div>
   );
 }
