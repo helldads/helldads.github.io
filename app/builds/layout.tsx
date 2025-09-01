@@ -1,4 +1,4 @@
-export default function BriefingsLayout({
+export default function BuildsLayout({
   children,
 }: {
   children: React.ReactNode;

@@ -12,10 +12,10 @@ export const siteConfig = {
       label: "About",
       href: "/about",
     },
-    // {
-    //   label: "Briefings",
-    //   href: "/briefings",
-    // },
+    {
+      label: "Builds",
+      href: "/builds",
+    },
     {
       label: "Code of Conduct",
       href: "/code-of-conduct",
@@ -31,12 +31,16 @@ export const siteConfig = {
     {
       label: "Loadouts",
       href: "/loadouts",
-    },    
+    },
   ],
   navMenuItems: [
     {
       label: "About",
       href: "/about",
+    },
+    {
+      label: "Builds",
+      href: "/builds",
     },
     {
       label: "Code of Conduct",
@@ -49,7 +53,7 @@ export const siteConfig = {
     {
       label: "Loadouts",
       href: "/loadouts",
-    },    
+    },
     {
       label: "Reddit",
       href: "https://reddit.com/r/HellDads",
