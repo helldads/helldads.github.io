@@ -28,6 +28,10 @@ export const siteConfig = {
       label: "Essentials",
       href: "/essentials",
     },
+    {
+      label: "Loadouts",
+      href: "/loadouts",
+    },    
   ],
   navMenuItems: [
     {
@@ -42,6 +46,10 @@ export const siteConfig = {
       label: "Essentials",
       href: "/essentials",
     },
+    {
+      label: "Loadouts",
+      href: "/loadouts",
+    },    
     {
       label: "Reddit",
       href: "https://reddit.com/r/HellDads",
