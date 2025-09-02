@@ -1,19 +1,11 @@
+import type { AssetId } from "./assets";
+
 // npm i zod (optional but recommended for runtime validation during dev)
 import { z } from "zod";
 
-export const LoadoutRole = {
-  Armor: "armor",
-  Primary: "primary",
-  Secondary: "secondary",
-  Throwable: "throwable",
-  Stratagem: "stratagem",
-} as const;
-export type LoadoutRole = (typeof LoadoutRole)[keyof typeof LoadoutRole];
-
-export type LoadoutItem = {
-  role: LoadoutRole;
-  asset: string;
-  description?: string;
+export type LoadoutEntry = {
+  assetId: AssetId; // reference into ASSETS
+  note?: string; // optional per-build note/override
 };
 
 export type BuildLinks = {
@@ -31,12 +23,12 @@ export type Build = {
   weakness?: string;
   image?: string; // path under /public
   tags?: string[];
-  loadout?: LoadoutItem[];
+  loadout?: LoadoutEntry[];
   links?: BuildLinks;
 };
 
 export const BuildSchema = z.object({
-  //slug: z.string().min(1),
+  slug: z.string().min(1),
   title: z.string().min(1),
   slogan: z.string().optional(),
   description: z.string().optional(),
@@ -46,11 +38,8 @@ export const BuildSchema = z.object({
   loadout: z
     .array(
       z.object({
-        role: z.enum(
-          Object.values(LoadoutRole) as [LoadoutRole, ...LoadoutRole[]],
-        ),
-        asset: z.string(),
-        description: z.string().optional(),
+        assetId: z.string(),
+        note: z.string().optional(),
       }),
     )
     .optional(),

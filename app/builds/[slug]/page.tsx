@@ -2,7 +2,7 @@ import { Card, CardHeader, CardBody, CardFooter } from "@heroui/card";
 import { Image } from "@heroui/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-
+import { getAsset } from "@/data/assets";
 import { getAllSlugs, getBuildBySlug } from "@/data/builds-index";
 
 // Prebuild static paths
@@ -50,30 +50,39 @@ export default async function BuildPage({
         <section>
           <h2 className="text-xl font-semibold mb-2">Loadout</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {build.loadout.map((l, i) => (
-              <Card key={i} className="flex flex-col">
-                <CardHeader className="pb-2">
-                  <Image
-                    alt="placeholder"
-                    height={40}
-                    radius="sm"
-                    src="/assets/builds/judge-dredd-build.jpeg"
-                    width={40}
-                  />
-                  <div className="flex flex-col">
-                    <p className="text-md">{l.asset}</p>
-                  </div>
-                </CardHeader>
-                {l.description && (
-                  <CardBody>
-                    <p className="text-sm opacity-90">{l.description}</p>
-                  </CardBody>
-                )}
-                <CardFooter>
-                  <p className="text-small text-default-500">{l.role}</p>
-                </CardFooter>
-              </Card>
-            ))}
+            {build.loadout?.map((entry, i) => {
+              const asset = getAsset(entry.assetId);
+
+              return (
+                <Card key={i} className="flex flex-col">
+                  <CardHeader className="pb-2">
+                    {asset.image && (
+                      <Image
+                        alt={asset.description}
+                        height={40}
+                        radius="sm"
+                        src={asset.image}
+                        width={40}
+                      />
+                    )}
+
+                    <div className="flex flex-col">
+                      <p className="text-md">{asset.name}</p>
+                    </div>
+                  </CardHeader>
+                  {(entry.note || asset.description) && (
+                    <CardBody>
+                      <p className="text-sm opacity-90">
+                        {entry.note ?? asset.description}
+                      </p>
+                    </CardBody>
+                  )}
+                  <CardFooter>
+                    <p className="text-small text-default-500">{asset.role}</p>
+                  </CardFooter>
+                </Card>
+              );
+            })}
           </div>
         </section>
       )}

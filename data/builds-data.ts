@@ -1,4 +1,4 @@
-import { Build, LoadoutRole } from "./builds";
+import { Build } from "./builds";
 
 export const BUILDS: Record<string, Build> = {
   "judge-dredd-build": {
@@ -11,52 +11,36 @@ export const BUILDS: Record<string, Build> = {
     tags: ["terminids", "movies", "chaff", "demolition", "gas"],
     loadout: [
       {
-        role: LoadoutRole.Armor,
-        asset: "BP-77 Grand Juror",
-        description:
-          "You can't be Judge Dredd without looking like Judge Dredd. B-77 Grand Juror is what we will wear for this build.",
+        assetId: "BP-77",
+        note: "You can't be Judge Dredd without looking like Judge Dredd. B-77 Grand Juror is what we will wear for this build.",
       },
       {
-        role: LoadoutRole.Primary,
-        asset: "SG-225SP Breaker Spray&Pray",
-        description:
-          "Breaker S&P is our crowd clear weapon. When our enemies start swarming we put them down with a relentless stream of Fully automatic shotgun firepower.",
+        assetId: "SG-225SP",
+        note: "Breaker S&P is our crowd clear weapon. When our enemies start swarming we put them down with a relentless stream of Fully automatic shotgun firepower.",
       },
       {
-        role: LoadoutRole.Secondary,
-        asset: "P-92 Warrant",
-        description:
-          "P-92 Warrant is our secondary. It is the iconic Lawgiver pistol. The auto aim is useful for flyers or for shooting at enemies concealed by spore clouds.",
+        assetId: "P-92",
+        note: "P-92 Warrant is our secondary. It is the iconic Lawgiver pistol. The auto aim is useful for flyers or for shooting at enemies concealed by spore clouds.",
       },
       {
-        role: LoadoutRole.Throwable,
-        asset: "G-4 Gas",
-        description:
-          "Gas grenades are our version of the Stumm Gas Grenades. Use them to deny enemy movements, or confuse them long enough to pump rounds into them.",
+        assetId: "G-4",
+        note: "Gas grenades are our version of the Stumm Gas Grenades. Use them to deny enemy movements, or confuse them long enough to pump rounds into them.",
       },
       {
-        role: LoadoutRole.Stratagem,
-        asset: "M-102 Fast Reconnaissance Vehicle",
-        description:
-          "The FRV is our Paddy Wagon. Roll up, sirens blazing! Zip through the Mega Cities in style",
+        assetId: "M-102",
+        note: "The FRV is our Paddy Wagon. Roll up, sirens blazing! Zip through the Mega Cities in style",
       },
       {
-        role: LoadoutRole.Stratagem,
-        asset: "B-100 Portable Hellbomb",
-        description:
-          "This is our “Total Annihilation Device”. Use this for breaches, or when you are being overwhelmed!",
+        assetId: "B-100",
+        note: "This is our “Total Annihilation Device”. Use this for breaches, or when you are being overwhelmed!",
       },
       {
-        role: LoadoutRole.Stratagem,
-        asset: "LAS-98 Laser Cannon",
-        description:
-          "This is our “Stub Gun”. Our laser that can cut through anything. Use this for any Medium or Heavies that our other guns can’t handle, as well as objectives like Spore Spewers or Shrieker Nests.",
+        assetId: "LAS-98",
+        note: "This is our “Stub Gun”. Our laser that can cut through anything. Use this for any Medium or Heavies that our other guns can’t handle, as well as objectives like Spore Spewers or Shrieker Nests.",
       },
       {
-        role: LoadoutRole.Stratagem,
-        asset: "Orbital Precision Strike",
-        description:
-          "The OPS is a shell fired from our Manta Tank, giving us additional firepower for any Heavies or Objectives we need to take care of. Quick CD means you should use it often.",
+        assetId: "OPS",
+        note: "The OPS is a shell fired from our Manta Tank, giving us additional firepower for any Heavies or Objectives we need to take care of. Quick CD means you should use it often.",
       },
     ],
     links: {
