@@ -1,14 +1,26 @@
-import { Card, CardBody, CardFooter, CardHeader } from "@heroui/card";
+import { Card, CardBody } from "@heroui/card"; // CardFooter, CardHeader
 import { Tooltip } from "@heroui/tooltip";
 import { Image } from "@heroui/image";
-import Link from "next/link";
+import { Link } from "@heroui/link";
+import { Chip } from "@heroui/chip";
 import { notFound } from "next/navigation";
+
 import { getAsset } from "@/data/assets";
 import { getAllSlugs, getBuildBySlug } from "@/data/builds-index";
+import { DiscordIcon, RedditIcon, YoutubeIcon, PhotoIcon } from "@/components/icons";
+import { Divider } from "@heroui/react";
 
 // Prebuild static paths
 export function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
+}
+
+// Helper function to extract YouTube video ID from URL
+function getYouTubeVideoId(url: string): string | null {
+  const regex = /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/;
+  const match = url.match(regex);
+
+  return match ? match[1] : null;
 }
 
 export default async function BuildPage({
@@ -21,30 +33,139 @@ export default async function BuildPage({
 
   if (!build) return notFound();
 
+  // Check if we have a highlights video to show
+  const highlightsVideoId = build.links?.highlights
+    ? getYouTubeVideoId(build.links.highlights)
+    : null;
+
   return (
-    <div className="max-w-3xl mx-auto py-6 space-y-6">
-      {build.image && (
+    <div className="py-6 space-y-6">
+
+      {highlightsVideoId ? (
         <div className="relative aspect-video">
-          <Image
-            alt={build.title}
-            className="object-cover rounded-xl"
-            src={build.image}
+          <iframe
+            allowFullScreen
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            className="w-full h-full rounded-xl"
+            frameBorder="0"
+            referrerPolicy="strict-origin-when-cross-origin"
+            src={`https://www.youtube.com/embed/${highlightsVideoId}?modestbranding=1&showinfo=0&rel=0&controls=1&disablekb=0&fs=1&cc_load_policy=0&iv_load_policy=3&autohide=1&color=white&theme=dark`}
+            title={`${build.title} - Highlights`}
           />
         </div>
-      )}
+      ) : null}
+
       <header>
-        <h1 className="text-2xl font-semibold">{build.title}</h1>
-        {build.slogan && <p className="opacity-80">{build.slogan}</p>}
+        <h1 className="text-4xl font-semibold">{build.title}</h1>
+        {build.slogan && <p className="opacity-80 text-2xl mt-2">{build.slogan}</p>}
       </header>
+
+      {build.links && (
+        <section className="space-y-1">
+          <Divider />
+          {/* <h2 className="text-xl font-semibold">Links</h2> */}
+          <div className="flex gap-4 flex-wrap py-2">
+            {build.links.reddit && (
+              <Link isExternal aria-label="Open Reddit" href={build.links.reddit}>
+                <Chip radius="sm" size="lg" variant="bordered" className="py-5 px-0.5 transition-discrete transition-colors hover:border-[#fc4301]">
+                  <span className="flex items-center gap-2 whitespace-nowrap">
+                    <RedditIcon className="text-[#fc4301]" /> Reddit
+                  </span>
+                </Chip>
+              </Link>
+            )}
+            {build.links.full && (
+              <Link isExternal aria-label="Open Youtube with full video" href={build.links.full}>
+                <Chip radius="sm" size="lg" variant="bordered" className="py-5 px-0.5 transition-discrete transition-colors hover:border-red-500">
+                  <span className="flex items-center gap-2 whitespace-nowrap">
+                    <YoutubeIcon className="text-red-500" /> Full Video
+                  </span>
+                </Chip>
+              </Link>
+            )}
+            {build.links.discord && (
+              <Link isExternal aria-label="Open Discord" href={build.links.discord}>
+                <Chip radius="sm" size="lg" variant="bordered" className="py-5 px-0.5 transition-discrete transition-colors hover:border-indigo-500">
+                  <span className="flex items-center gap-2 whitespace-nowrap">
+                    <DiscordIcon className="text-indigo-500" /> Discord
+                  </span>
+                </Chip>
+              </Link>
+            )}
+            {build.image && (
+              <Link isExternal aria-label="Open Image" href={build.image}>
+                <Chip radius="sm" size="lg" variant="bordered" className="py-5 px-0.5 transition-discrete transition-colors hover:border-green-500">
+                  <span className="flex items-center gap-2 whitespace-nowrap">
+                    <PhotoIcon className="text-green-500" /> Download
+                  </span>
+                </Chip>
+              </Link>
+            )}
+          </div>
+          <Divider />
+        </section>
+      )}
+
+      {build.loadout && build.loadout.length > 0 && (
+        <section className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {build.loadout?.map((entry, i) => {
+            const asset = getAsset(entry.assetId);
+
+            return (
+              <Card key={i} radius="sm">
+                <CardBody className="flex flex-row gap-3">
+                  <div className="basis-1/4 flex-shrink-0 max-w-[110px]">
+                    <Tooltip
+                      color="warning"
+                      content={
+                        <a
+                          href={`${asset.wiki}`}
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
+                          Helldivers Wiki: {asset.name}
+                        </a>
+                      }
+                      delay={1000}
+                      showArrow={true}
+                    >
+                      <span> {/* Explicitly use span instead of letting Tooltip decide */}
+                        {asset.image && (
+                          <Image
+                            alt={asset.description}
+                            className="max-w-[110px]"
+                            radius="sm"
+                            src={asset.image}
+                          />
+                        )}
+                      </span>
+                    </Tooltip>
+                  </div>
+                  <div className="flex flex-col gap-2">
+                    <p className="text-md font-bold text-yellow-500 tracking-wide">{asset.name}</p>
+                    {(entry.note || asset.description) && (
+                      <p className="text-sm opacity-90">{entry.note ?? asset.description}</p>
+                    )}
+                    <Chip size="sm" variant="bordered" className="max-w-fit px-2 opacity-60">
+                      {asset.role}
+                    </Chip>
+                  </div>
+                </CardBody>
+              </Card>
+            );
+          })}
+        </section>
+      )}
 
       {build.description && (
         <div className="space-y-4">
-          {Array.isArray(build.description) 
-            ? build.description.map((paragraph, index) => (
-                <p key={index} className="my-2">{paragraph}</p>
-              ))
-            : <p>{build.description}</p>
-          }
+          {Array.isArray(build.description) ? (
+            build.description.map((paragraph, index) => (
+              <p key={index} className="my-2">{paragraph}</p>
+            ))
+          ) : (
+            <p>{build.description}</p>
+          )}
         </div>
       )}
       {build.weakness && (
@@ -52,103 +173,6 @@ export default async function BuildPage({
           <strong>Weakness</strong>
           <p>{build.weakness}</p>
         </div>
-      )}
-
-      {build.loadout && build.loadout.length > 0 && (
-        <section>
-          <h2 className="text-xl font-semibold mb-2">Loadout</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {build.loadout?.map((entry, i) => {
-              const asset = getAsset(entry.assetId);
-
-              return (
-                <Card key={i} className="flex flex-row gap-4">
-                  <CardBody className="flex flex-row gap-2">
-                    <div className="basis-1/4 flex-shrink-0 aspect-square">
-                      <Tooltip
-                        color="warning"
-                        content={<a href={`https://helldivers.wiki.gg/wiki/${asset.wiki}`} target="_blank" rel="noopener noreferrer">Helldivers Wiki: {asset.name}</a>}
-                        delay={1000}
-                        showArrow={true}
-                      >
-                        {asset.image && (
-                          <Image
-                            alt={asset.description}
-                            className="max-h-[110px] max-w-[110px]"
-                            radius="sm"
-                            src={asset.image}
-                          />
-                        )}
-                      </Tooltip>
-                    </div>
-                    <div className="flex basis-3/4 flex-col gap-2">
-                      <p className="text-md font-bold text-yellow-500 tracking-wide">{asset.name}</p>
-                      {(entry.note || asset.description) && (
-                        <p className="text-sm opacity-90">{entry.note ?? asset.description}</p>
-                      )}
-                      <p className="text-small text-default-500">{asset.role}</p>
-                    </div>
-                  </CardBody>
-                </Card>
-                // <Card key={i} className="flex flex-col">
-                //   <CardHeader className="pb-2">
-                //     {asset.image && (
-                //       <Image
-                //         alt={asset.description}
-                //         height={40}
-                //         radius="sm"
-                //         src={asset.image}
-                //         width={40}
-                //       />
-                //     )}
-
-                //     <div className="flex flex-col">
-                //       <p className="text-md">{asset.name}</p>
-                //     </div>
-                //   </CardHeader>
-                //   {(entry.note || asset.description) && (
-                //     <CardBody>
-                //       <p className="text-sm opacity-90">
-                //         {entry.note ?? asset.description}
-                //       </p>
-                //     </CardBody>
-                //   )}
-                //   <CardFooter>
-                //     <p className="text-small text-default-500">{asset.role}</p>
-                //   </CardFooter>
-                // </Card>
-              );
-            })}
-          </div>
-        </section>
-      )}
-
-      {build.links && (
-        <section className="space-y-1">
-          <h2 className="text-xl font-semibold">Links</h2>
-          <ul className="list-disc pl-6">
-            {build.links.reddit && (
-              <li>
-                <Link href={build.links.reddit}>Reddit</Link>
-              </li>
-            )}
-            {build.links.full && (
-              <li>
-                <Link href={build.links.full}>Full video</Link>
-              </li>
-            )}
-            {build.links.highlights && (
-              <li>
-                <Link href={build.links.highlights}>Highlights</Link>
-              </li>
-            )}
-            {build.links.discord && (
-              <li>
-                <Link href={build.links.discord}>Discord</Link>
-              </li>
-            )}
-          </ul>
-        </section>
       )}
     </div>
   );
