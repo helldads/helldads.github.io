@@ -1,10 +1,10 @@
 // Reuse your roles
 export const LoadoutRole = {
-  Armor: "armor",
-  Primary: "primary",
-  Secondary: "secondary",
-  Throwable: "throwable",
-  Stratagem: "stratagem",
+  Armor: "Armor",
+  Primary: "Primary",
+  Secondary: "Secondary",
+  Throwable: "Throwable",
+  Stratagem: "Stratagem",
 } as const;
 export type LoadoutRole = (typeof LoadoutRole)[keyof typeof LoadoutRole];
 
@@ -21,17 +21,17 @@ export const ASSETS = {
   "BP-77": {
     role: LoadoutRole.Armor,
     name: "BP-77 Grand Juror",
-    image: "/assets/armor/",
+    image: "/assets/armor/BP-77_Grand_Juror_Body_Icon.png",
     description:
       "Each gilded detail is polished to perfection by re-educated dissidents, as part of the Lifelong Post-Infraction Atonement Program.",
-    wiki: "https://helldivers.wiki.gg/wiki/BP-77_Grand_Juror",
+    wiki: "https://helldivers.wiki.gg/index.php?curid=12788",
   },
   "SG-225SP": {
     role: LoadoutRole.Primary,
     name: "SG-225SP Breaker Spray&Pray",
-    image: "/assets/primary/",
+    image: "/assets/primary/SG-225SP_Breaker_Spray&Pray_Primary_Weaponry.png",
     description: "",
-    wiki: "https://helldivers.wiki.gg/wiki/",
+    wiki: "https://helldivers.wiki.gg/wiki/SG-225SP_Breaker_Spray%26Pray",
   },
   "P-92": {
     role: LoadoutRole.Secondary,

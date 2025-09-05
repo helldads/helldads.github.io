@@ -19,7 +19,7 @@ export type Build = {
   slug: string; // keep explicit slug to allow renames of keys later
   title: string;
   slogan?: string;
-  description?: string;
+  description?: string | string[]; // markdown or array of paragraphs
   weakness?: string;
   image?: string; // path under /public
   tags?: string[];
@@ -31,7 +31,7 @@ export const BuildSchema = z.object({
   slug: z.string().min(1),
   title: z.string().min(1),
   slogan: z.string().optional(),
-  description: z.string().optional(),
+  description: z.union([z.string(), z.array(z.string())]).optional(),
   weakness: z.string().optional(),
   image: z.string().optional(),
   tags: z.array(z.string()).optional(),

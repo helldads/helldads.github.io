@@ -7,7 +7,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.red-alert {
+.red-helper {
   border: 1px solid red;
   background-color: #830000;
 }
