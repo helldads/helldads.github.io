@@ -28,10 +28,6 @@ export const siteConfig = {
       label: "Essentials",
       href: "/essentials",
     },
-    {
-      label: "Loadouts",
-      href: "/loadouts",
-    },
   ],
   navMenuItems: [
     {
