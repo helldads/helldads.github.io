@@ -43,7 +43,10 @@ export const TIPS = [
       "Some weapons allow rounds-reload, get used to reload them often and in between.",
       "Reloading weapons is faster, when there is one bullet left in the champer.",
       "Use the ping command to measure the distance to a target, it allows you to account for the projectile drop.",
-      "You can hit targets up to 500m with anti-tank weapons, before their projectile disappears."
+      "You can hit targets up to 500m with anti-tank weapons, before their projectile disappears.",
+      "Mechs are immune to shockwaves and gas damage, also highly resistant to fire damage.",
+      "Mechs can easily crush smaller enemies by simply walking over them. Medium enemies might need a melee stomp.",
+      "The Vitality Enhancement booster combined with the Advanced Filtration passive gives 100% immunity to gas damage."
     ],
   },
   {
@@ -65,7 +68,11 @@ export const TIPS = [
       "Stims keep on healing you for the next 4 seconds, use them before you expect to take damage.",
       "Stay away from red beams.",
       "The Vitality Enhancement booster reduces all incoming damage types by 10%. It may not sound like much, but it adds up fast.",
-      "You don't need to waste a stratagem slot for a support weapon, there are always plenty of weapons spread across the map."
+      "You don't need to waste a stratagem slot for a support weapon, there are always plenty of weapons spread across the map.",
+      "The stim pistol can't shoot through shields backpacks, you have to stim them manually.",
+      "The shield backpack also works in mechs and emplacements, granting you an additional protection layer.",
+      "You can stim other Helldivers in critical condition (below 50% HP or injured). If you hear 'I NEED STIMS!', help them out.",
+      "You can still use SEAF artillery after the mission timer runs out, even once the Super Destroyers have left orbit."
     ],
   },
   {
@@ -90,7 +97,11 @@ export const TIPS = [
       "Getting on top of things is fun, but some spots are off-limits, stepping onto the rooftop hangar door at the civilian extraction site kills you.",
       "Your stance directly affects the stamina recovery rate, being prone recovers the fastest.",
       "You run slightly faster and consume less stamina, when your secondary weapon is equipped.",
-      "The Dead Sprint booster won’t kill you, it only drains your life until you’re near death."
+      "The Dead Sprint booster won’t kill you, it only drains your life until you’re near death.",
+      "The FRV can be flipped back on its wheels with explosive shockwaves, e.g. grenades or crossbow.",
+      "You can use the outer shockwave of an explosion, to free Helldivers who got stuck somewhere.",
+      "The VG-70 Variable can be used for rocket jumps, switch to full fire mode, jump, and shoot backwards to boost your distance.",
+      "Aiming backwards with two-handed weapons makes you turn around and walking backwards, but most can be fired without the need to aim first, allowing you to keep on sprinting."
     ],
   },
   {
@@ -126,7 +137,11 @@ export const TIPS = [
       "Reloading a weapon will discard the remaining ammunition. Waste enemies, not bullets!",
       "Helldivers don't need shovels to reach the samples below ground, simply go prone and grab them.",
       "Carrying the SSSD across the map should be done by the Helldiver with an one-handed primary weapon.",
-      "Democratic Detonation is probably the best first warbond to unlock, because freedom requires firepower!"
+      "Democratic Detonation is probably the best first warbond to unlock, because freedom requires firepower!",
+      "Avoid the Localization Confusion booster on Eradicate missions, it may reduce spawn rates so much that you can’t finish in time.",
+      "The UAV Recon booster stacks with Scout/Unflinching bonuses, letting you scan areas more thoroughly for enemies and side objectives.",
+      "A Helldiver without a backpack is like Freedom without Managed Democracy. Always check with your team if an extra backpack is available, especially after cooldown.",
+      "You can't use stratagems or reinforce Helldivers during ION storms."
     ],
   },
   {
@@ -146,7 +161,13 @@ export const TIPS = [
       "Command Bunkers can be easily destroy with only two GR-8 / EAT-17 / LAS-99 shots, simply aim at the main structure below their corner turrets.",
       "Ping turrets as soon as you see them, they are known for their dealy precision and need anti-tank weaponry.",
       "You can kill a Factory Strider by hitting it twice into the same foot with anti-tank weapons (EAT-17, LAS-99, GR-8).",
-      "Using cover is key to success."
+      "Using cover is key to success.",
+      "All heavy Automaton enemies are susceptible to fire damage.",
+      "The crisper, also known as pocket lighter, can destroy Factory Striders with the fuel of a single canister.",
+      "Tanks can be easily destroyed from behind, their engine compartment between the tracks is a less obvious weakspot.",
+      "Automaton anti-tank cannons (Annihilator Tanks, Factory Striders, Cannon Towers) can destroy Stratagem Jammers and Detector Towers. Take cover behind them, luring them to fire at these structures.",
+      "Place sentry stratagems inside Automaton bunkers, the hellpod lands on top, leaving your sentry or emplacement in a strong position.",
+      "You can destroy the double gunship facbricators at once, by placeing the hellbomb exactly between them."
     ],
   },
   {
@@ -163,7 +184,8 @@ export const TIPS = [
       "The Tesla Tower is ideal for silently clearing a bug nest, drop it in the centre, let it wipe the enemies, then close the holes from a safe distance.",
       "Bile Titans are known for killing their own, while spewing their bile.",
       "Use the Muscle Enhancement booster, to counter act the slow effect from acid spits.",
-      "Mobility is key to success."
+      "Mobility is key to success.",
+      "Killing Chargers with a GL-21 Grenade Launcher is easier if you bounce the grenade under them."
     ],
   },
   {
