@@ -152,6 +152,13 @@ export const ASSETS = {
     description: "Ceremonial armor with gilded details and enhanced durability.",
     wiki: "https://helldivers.wiki.gg/wiki/BP-77_Grand_Juror",
   },
+  "GS-11": {
+    role: LoadoutRole.Armor,
+    name: "GS-11 Guardian",
+    image: "https://helldivers.wiki.gg/images/thumb/GS-11_Democracy%27s_Deputy_Body_Icon.png/256px-GS-11_Democracy%27s_Deputy_Body_Icon.png",
+    description: "Increases sidearms reload speed by 40%. Sidearm draw/holster speed increased by 50%. Sidearm recoil reduced by 70%.",
+    wiki: "https://helldivers.wiki.gg/wiki/GS-11_Democracy%27s_Deputy",
+  },
 
   // PRIMARY WEAPONS
   "R-36": {
@@ -181,6 +188,13 @@ export const ASSETS = {
     image: "https://helldivers.wiki.gg/images/thumb/3/30/AR-23_Liberator_Primary_Weaponry.png/256px-AR-23_Liberator_Primary_Weaponry.png",
     description: "The standard assault rifle for Helldivers.",
     wiki: "https://helldivers.wiki.gg/wiki/AR-23_Liberator",
+  },
+  "AR-23A": {
+    role: LoadoutRole.Primary,
+    name: "AR-23A Liberator Carbine",
+    image: "https://helldivers.wiki.gg/images/AR-23A_Liberator_Carbine_Primary_Render.png",
+    description: "A shortened version of the AR-23 Liberator with 50% boost to rate of fire at the cost of increased recoil.",
+    wiki: "https://helldivers.wiki.gg/wiki/AR-23A_Liberator_Carbine",
   },
   "AR-23P": {
     role: LoadoutRole.Primary,
@@ -699,7 +713,7 @@ export const ASSETS = {
   "StA-X3": {
     role: LoadoutRole.Stratagem,
     name: "StA-X3 W.A.S.P. Launcher",
-    image: "https://helldivers.wiki.gg/images/thumb/a/aa/StA-X3_WASP_Launcher_Stratagem_Icon.png/256px-StA-X3_WASP_Launcher_Stratagem_Icon.png",
+    image: "https://helldivers.wiki.gg/images/StA-X3_W.A.S.P._Launcher_Stratagem_Icon.png",
     description: "Launches guided missiles with advanced targeting.",
     wiki: "https://helldivers.wiki.gg/wiki/StA-X3_W.A.S.P._Launcher",
   },
@@ -711,20 +725,6 @@ export const ASSETS = {
     image: "https://helldivers.wiki.gg/images/thumb/3/30/Anti-Tank_Emplacement_Stratagem_Icon.png/256px-Anti-Tank_Emplacement_Stratagem_Icon.png",
     description: "A stationary anti-tank gun for defensive positions.",
     wiki: "https://helldivers.wiki.gg/wiki/Anti-Tank_Emplacement",
-  },
-  "APM": {
-    role: LoadoutRole.Stratagem,
-    name: "Anti-Personnel Minefield",
-    image: "https://helldivers.wiki.gg/images/thumb/5/5c/Anti-Personnel_Minefield_Stratagem_Icon.png/256px-Anti-Personnel_Minefield_Stratagem_Icon.png",
-    description: "Deploys mines that detonate when enemies approach.",
-    wiki: "https://helldivers.wiki.gg/wiki/Anti-Personnel_Minefield",
-  },
-  "IM": {
-    role: LoadoutRole.Stratagem,
-    name: "Incendiary Minefield",
-    image: "https://helldivers.wiki.gg/images/thumb/4/45/Incendiary_Minefield_Stratagem_Icon.png/256px-Incendiary_Minefield_Stratagem_Icon.png",
-    description: "Mines that create fire when detonated.",
-    wiki: "https://helldivers.wiki.gg/wiki/Incendiary_Minefield",
   },
   "HMG-E": {
     role: LoadoutRole.Stratagem,
@@ -740,13 +740,6 @@ export const ASSETS = {
     description: "Creates a protective energy shield dome.",
     wiki: "https://helldivers.wiki.gg/wiki/Shield_Generator_Relay",
   },
-  "ATM": {
-    role: LoadoutRole.Stratagem,
-    name: "Anti-Tank Mines",
-    image: "https://helldivers.wiki.gg/images/thumb/6/64/Anti-Tank_Mines_Stratagem_Icon.png/256px-Anti-Tank_Mines_Stratagem_Icon.png",
-    description: "Heavy mines designed to destroy vehicles.",
-    wiki: "https://helldivers.wiki.gg/wiki/Anti-Tank_Mines",
-  },
   "GB": {
     role: LoadoutRole.Stratagem,
     name: "Grenadier Battlement",
@@ -761,12 +754,35 @@ export const ASSETS = {
     description: "An electrical tower that chains lightning between enemies.",
     wiki: "https://helldivers.wiki.gg/wiki/Tesla_Tower",
   },
-  "GM": {
+
+  // MINEFIELDS
+    "APM": {
     role: LoadoutRole.Stratagem,
-    name: "Gas Mines",
-    image: "https://helldivers.wiki.gg/images/thumb/1/16/Gas_Mines_Stratagem_Icon.png/256px-Gas_Mines_Stratagem_Icon.png",
-    description: "Mines that release toxic gas clouds.",
-    wiki: "https://helldivers.wiki.gg/wiki/Gas_Mines",
+    name: "Anti-Personnel Minefield",
+    image: "https://helldivers.wiki.gg/images/thumb/5/5c/Anti-Personnel_Minefield_Stratagem_Icon.png/256px-Anti-Personnel_Minefield_Stratagem_Icon.png",
+    description: "Deploys mines that detonate when enemies approach.",
+    wiki: "https://helldivers.wiki.gg/wiki/Anti-Personnel_Minefield",
+  },
+  "ATM": {
+    role: LoadoutRole.Stratagem,
+    name: "Anti-Tank Mines",
+    image: "https://helldivers.wiki.gg/images/thumb/6/64/Anti-Tank_Mines_Stratagem_Icon.png/256px-Anti-Tank_Mines_Stratagem_Icon.png",
+    description: "Heavy mines designed to destroy vehicles.",
+    wiki: "https://helldivers.wiki.gg/wiki/Anti-Tank_Mines",
+  },
+  "IM": {
+    role: LoadoutRole.Stratagem,
+    name: "Incendiary Minefield",
+    image: "https://helldivers.wiki.gg/images/thumb/4/45/Incendiary_Minefield_Stratagem_Icon.png/256px-Incendiary_Minefield_Stratagem_Icon.png",
+    description: "Mines that create fire when detonated.",
+    wiki: "https://helldivers.wiki.gg/wiki/Incendiary_Minefield",
+  },
+  "MD-8": {
+    role: LoadoutRole.Stratagem,
+    name: "MD-8 Gas Mines",
+    image: "https://helldivers.wiki.gg/images/Gas_Minefield_Stratagem_Icon.png",
+    description: "A minefield that releases toxic gas when triggered by enemies.",
+    wiki: "https://helldivers.wiki.gg/wiki/MD-8_Gas_Mines",
   },
 
   // SENTRY STRATAGEMS
