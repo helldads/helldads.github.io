@@ -60,12 +60,12 @@ export default async function BuildPage({
         {build.slogan && <p className="opacity-80 text-2xl mt-2">{build.slogan}</p>}
       </header>
 
-      {build.links && (
+      {(build.links || build.image) && (
         <section className="space-y-1">
           <Divider />
           {/* <h2 className="text-xl font-semibold">Links</h2> */}
           <div className="flex gap-4 flex-wrap py-2">
-            {build.links.reddit && (
+            {build.links?.reddit && (
               <Link isExternal aria-label="Open Reddit" href={build.links.reddit}>
                 <Chip radius="sm" size="lg" variant="bordered" className="py-5 px-0.5 transition-discrete transition-colors hover:border-[#fc4301]">
                   <span className="flex items-center gap-2 whitespace-nowrap">
@@ -74,7 +74,7 @@ export default async function BuildPage({
                 </Chip>
               </Link>
             )}
-            {build.links.discord && (
+            {build.links?.discord && (
               <Link isExternal aria-label="Open Discord" href={build.links.discord}>
                 <Chip radius="sm" size="lg" variant="bordered" className="py-5 px-0.5 transition-discrete transition-colors hover:border-indigo-500">
                   <span className="flex items-center gap-2 whitespace-nowrap">
@@ -83,7 +83,7 @@ export default async function BuildPage({
                 </Chip>
               </Link>
             )}
-            {build.links.full && (
+            {build.links?.full && (
               <Link isExternal aria-label="Open Youtube with full video" href={build.links.full}>
                 <Chip radius="sm" size="lg" variant="bordered" className="py-5 px-0.5 transition-discrete transition-colors hover:border-red-500">
                   <span className="flex items-center gap-2 whitespace-nowrap">
@@ -92,7 +92,6 @@ export default async function BuildPage({
                 </Chip>
               </Link>
             )}
-            
             {build.image && (
               <Link isExternal aria-label="Open Image" href={build.image}>
                 <Chip radius="sm" size="lg" variant="bordered" className="py-5 px-0.5 transition-discrete transition-colors hover:border-green-500">

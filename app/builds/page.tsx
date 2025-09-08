@@ -12,7 +12,7 @@ export default function BuildsPage() {
   return (
     <div>
       <h1 className={title()}>Builds</h1>
-      <section className="mx-auto max-w-6xl py-10 md:py-14">
+      {/* <section className="mx-auto max-w-6xl py-10 md:py-14"> */}
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
           {builds.map(({ slug, title, slogan, image }) => (
             <Card
@@ -47,7 +47,7 @@ export default function BuildsPage() {
             </Card>
           ))}
         </div>
-      </section>
+      {/* </section> */}
     </div>
   );
 }

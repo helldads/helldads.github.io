@@ -78,7 +78,7 @@ export const BUILDS: Record<string, Build> = {
       `Now go! Show those Squids why they chose the Wrong Planets to Invade! And if they make it to Super Earths door! We shall be ready!`,
     ],
     weakness: `The only weakness is really close range. If overseers run up to you you will not be able to hit them with the WASP. But I wouldn't call this a weakness as you can just blast them with that 920 RPM Carbine or with your Senator. Other than that, this build absolutely shuts down the Illuminate with ease.`,
-    image: "/assets/builds/squid-slayer-build.jpeg",
+    image: "",
     tags: ["illuminate", "anti-vehicle", "shield-stripping", "gas", "sentry"],
     loadout: [
       {
@@ -114,10 +114,6 @@ export const BUILDS: Record<string, Build> = {
         note: "Orbital Gas Strike is used like our Gas Grenade but bigger and free. It is also used to take out Illuminate Ships through their shields in one hit.",
       },
     ],
-    links: {
-      // Links to be added when available
-    },
   },
-
   // add more builds here...
 };
