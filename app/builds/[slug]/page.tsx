@@ -130,11 +130,11 @@ export default async function BuildPage({
                       delay={1000}
                       showArrow={true}
                     >
-                      <span> {/* Explicitly use span instead of letting Tooltip decide */}
+                      <span className="flex justify-center"> {/* Explicitly use span instead of letting Tooltip decide */}
                         {asset.image && (
                           <Image
                             alt={asset.description}
-                            className="max-w-[110px]"
+                            className="flex max-w-[110px] max-h-[120px]"
                             radius="sm"
                             src={asset.image}
                           />
