@@ -69,16 +69,7 @@ export default async function BuildPage({
               <Link isExternal aria-label="Open Reddit" href={build.links.reddit}>
                 <Chip radius="sm" size="lg" variant="bordered" className="py-5 px-0.5 transition-discrete transition-colors hover:border-[#fc4301]">
                   <span className="flex items-center gap-2 whitespace-nowrap">
-                    <RedditIcon className="text-[#fc4301]" /> Reddit
-                  </span>
-                </Chip>
-              </Link>
-            )}
-            {build.links.full && (
-              <Link isExternal aria-label="Open Youtube with full video" href={build.links.full}>
-                <Chip radius="sm" size="lg" variant="bordered" className="py-5 px-0.5 transition-discrete transition-colors hover:border-red-500">
-                  <span className="flex items-center gap-2 whitespace-nowrap">
-                    <YoutubeIcon className="text-red-500" /> Full Video
+                    <RedditIcon className="text-[#fc4301]" /> Discuss on Reddit
                   </span>
                 </Chip>
               </Link>
@@ -87,16 +78,26 @@ export default async function BuildPage({
               <Link isExternal aria-label="Open Discord" href={build.links.discord}>
                 <Chip radius="sm" size="lg" variant="bordered" className="py-5 px-0.5 transition-discrete transition-colors hover:border-indigo-500">
                   <span className="flex items-center gap-2 whitespace-nowrap">
-                    <DiscordIcon className="text-indigo-500" /> Discord
+                    <DiscordIcon className="text-indigo-500" /> Discuss on Discord
                   </span>
                 </Chip>
               </Link>
             )}
+            {build.links.full && (
+              <Link isExternal aria-label="Open Youtube with full video" href={build.links.full}>
+                <Chip radius="sm" size="lg" variant="bordered" className="py-5 px-0.5 transition-discrete transition-colors hover:border-red-500">
+                  <span className="flex items-center gap-2 whitespace-nowrap">
+                    <YoutubeIcon className="text-red-500" /> Watch Full Video
+                  </span>
+                </Chip>
+              </Link>
+            )}
+            
             {build.image && (
               <Link isExternal aria-label="Open Image" href={build.image}>
                 <Chip radius="sm" size="lg" variant="bordered" className="py-5 px-0.5 transition-discrete transition-colors hover:border-green-500">
                   <span className="flex items-center gap-2 whitespace-nowrap">
-                    <PhotoIcon className="text-green-500" /> Download
+                    <PhotoIcon className="text-green-500" /> Download Poster
                   </span>
                 </Chip>
               </Link>
@@ -107,7 +108,7 @@ export default async function BuildPage({
       )}
 
       {build.loadout && build.loadout.length > 0 && (
-        <section className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <section className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {build.loadout?.map((entry, i) => {
             const asset = getAsset(entry.assetId);
 
@@ -158,7 +159,7 @@ export default async function BuildPage({
       )}
 
       {build.description && (
-        <div className="space-y-4">
+        <div className="my-8">
           {Array.isArray(build.description) ? (
             build.description.map((paragraph, index) => (
               <p key={index} className="my-2">{paragraph}</p>
