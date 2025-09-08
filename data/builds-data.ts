@@ -82,8 +82,8 @@ export const BUILDS: Record<string, Build> = {
     tags: ["illuminate", "anti-vehicle", "shield-stripping", "gas", "sentry"],
     loadout: [
       {
-        assetId: "GS-11",
-        note: "We are using the GS-11 armor to amplify our Senators capabilities. I chose the Medium Armor because it looks better than the Light Armor. Allows for quick weapon swapping and reduced recoil.",
+        assetId: "GS-17",
+        note: "We are using the GS-17 armor to amplify our Senators capabilities. I chose the Medium Armor because it looks better than the Light Armor. Allows for quick weapon swapping and reduced recoil.",
       },
       {
         assetId: "AR-23A",
