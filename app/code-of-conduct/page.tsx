@@ -6,7 +6,7 @@ import { Divider } from "@heroui/divider";
 
 import { siteConfig } from "@/config/site";
 import { title } from "@/components/primitives";
-import { DiscordIcon, RedditIcon } from "@/components/icons";
+import { DiscordIcon, LinkIcon, RedditIcon } from "@/components/icons";
 
 export default function CodeOfConductPage() {
   return (
@@ -64,6 +64,13 @@ export default function CodeOfConductPage() {
         id="1-uphold-good-parenthood-values"
       >
         1. Uphold Good Parenthood Values
+        <Link
+          aria-hidden
+          className="ml-1.5"
+          href="#1-uphold-good-parenthood-values"
+        >
+          <LinkIcon className="" />
+        </Link>
       </h2>
       <p className="my-6">
         Keep things family‑friendly, constructive, and civil. We are a global
@@ -75,6 +82,9 @@ export default function CodeOfConductPage() {
 
       <h2 className="text-2xl font-semibold mt-12" id="2-real-life-comes-first">
         2. Real Life Comes First
+        <Link aria-hidden className="ml-1.5" href="#2-real-life-comes-first">
+          <LinkIcon className="" />
+        </Link>
       </h2>
       <p className="my-6">
         You should never feel guilty for prioritising your family or other
@@ -88,6 +98,13 @@ export default function CodeOfConductPage() {
         id="3-were-a-community-not-a-clan"
       >
         3. We&apos;re a Community, Not a Clan
+        <Link
+          aria-hidden
+          className="ml-1.5"
+          href="#3-were-a-community-not-a-clan"
+        >
+          <LinkIcon className="" />
+        </Link>
       </h2>
       <p className="my-6">
         We are not a competitive clan, and everybody &ndash; including
@@ -99,6 +116,9 @@ export default function CodeOfConductPage() {
 
       <h2 className="text-2xl font-semibold mt-12" id="4-protect-privacy">
         4. Protect Privacy &ndash; Especially Children’s
+        <Link aria-hidden className="ml-1.5" href="#4-protect-privacy">
+          <LinkIcon className="" />
+        </Link>
       </h2>
       <p className="my-6">
         As Super Earth citizen, we lead by example. Do not post personal
@@ -112,6 +132,13 @@ export default function CodeOfConductPage() {
         id="5-respect-other-communities"
       >
         5. Respect Other Communities
+        <Link
+          aria-hidden
+          className="ml-1.5"
+          href="#5-respect-other-communities"
+        >
+          <LinkIcon className="" />
+        </Link>
       </h2>
       <p className="my-6">
         We are a bit like Switzerland when it comes to other Helldivers
@@ -123,6 +150,9 @@ export default function CodeOfConductPage() {
 
       <h2 className="text-2xl font-semibold mt-12" id="6-use-discord">
         6. Use Discord to Find Dive Partners
+        <Link aria-hidden className="ml-1.5" href="#6-use-discord">
+          <LinkIcon className="" />
+        </Link>
       </h2>
       <p className="my-6">
         Use our{" "}
@@ -181,6 +211,9 @@ export default function CodeOfConductPage() {
 
       <h2 className="text-2xl font-semibold mt-12" id="7-keep-content-relevant">
         7. Keep Content Relevant and Spoiler-Free
+        <Link aria-hidden className="ml-1.5" href="#7-keep-content-relevant">
+          <LinkIcon className="" />
+        </Link>
       </h2>
       <p className="my-6">
         Posts and comments should relate to Helldivers or the life of gaming
@@ -197,6 +230,9 @@ export default function CodeOfConductPage() {
 
       <h2 className="text-2xl font-semibold mt-12" id="8-no-self-promotion">
         8. No Self-Promotion or Recruitment
+        <Link aria-hidden className="ml-1.5" href="#8-no-self-promotion">
+          <LinkIcon className="" />
+        </Link>
       </h2>
       <p className="my-6">
         Members may share their own creations only if there is no profit
@@ -211,6 +247,13 @@ export default function CodeOfConductPage() {
         id="9-no-sales-funcraising-donations-soliciting-money"
       >
         9. No Sales, Fundraising, Donations or Soliciting Money
+        <Link
+          aria-hidden
+          className="ml-1.5"
+          href="#9-no-sales-funcraising-donations-soliciting-money"
+        >
+          <LinkIcon className="" />
+        </Link>
       </h2>
       <p className="my-6">
         Commercial promotions, affiliate links, sales of merchandise,
@@ -224,6 +267,13 @@ export default function CodeOfConductPage() {
         id="10-no-spam-or-low-effort-content"
       >
         10. No Spam or Low-Effort Content
+        <Link
+          aria-hidden
+          className="ml-1.5"
+          href="#10-no-spam-or-low-effort-content"
+        >
+          <LinkIcon className="" />
+        </Link>
       </h2>
       <p className="my-6">
         Posts designed for spam, karma farming, click-bait, rage-bait, or other
@@ -239,6 +289,13 @@ export default function CodeOfConductPage() {
         id="11-no-nsfw-content-language"
       >
         11. No NSFW Content / Language
+        <Link
+          aria-hidden
+          className="ml-1.5"
+          href="#11-no-nsfw-content-language"
+        >
+          <LinkIcon className="" />
+        </Link>
       </h2>
       <p className="my-6">
         This is a family-friendly community. While you may use NSFW (Not Safe
@@ -254,6 +311,13 @@ export default function CodeOfConductPage() {
         id="12-give-credit-where-its-due"
       >
         12. Give Credit Where It&apos;s Due & Avoid Copyright Violations
+        <Link
+          aria-hidden
+          className="ml-1.5"
+          href="#12-give-credit-where-its-due"
+        >
+          <LinkIcon className="" />
+        </Link>
       </h2>
       <p className="my-6">
         Always credit the original creator with a source link. Any content that
@@ -271,6 +335,13 @@ export default function CodeOfConductPage() {
         id="13-honor-the-afk-mission-etiquette"
       >
         13. Honor the AFK Mission Etiquette
+        <Link
+          aria-hidden
+          className="ml-1.5"
+          href="#13-honor-the-afk-mission-etiquette"
+        >
+          <LinkIcon className="" />
+        </Link>
       </h2>
       <p className="my-6">
         During drop time, life calls! To keep our missions flowing, HellDads
@@ -317,6 +388,9 @@ export default function CodeOfConductPage() {
 
       <h2 className="text-2xl font-semibold mt-12" id="14-conflict-resolution">
         14. Conflict Resolution and Mod Support
+        <Link aria-hidden className="ml-1.5" href="#14-conflict-resolution">
+          <LinkIcon className="" />
+        </Link>
       </h2>
       <p className="my-6">
         In the HellDads community, respect and support come first. We’re all
@@ -331,6 +405,9 @@ export default function CodeOfConductPage() {
 
       <h2 className="text-2xl font-semibold mt-12" id="15-becoming-a-volunteer">
         15. Becoming a Volunteer
+        <Link aria-hidden className="ml-1.5" href="#15-becoming-a-volunteer">
+          <LinkIcon className="" />
+        </Link>
       </h2>
       <p className="my-6">
         Our HellDads contributors are all dedicated volunteers, managing their
@@ -353,6 +430,13 @@ export default function CodeOfConductPage() {
         id="16-report-suspicious-accounts"
       >
         16. Report Suspicious Accounts or Cheating Behaviour
+        <Link
+          aria-hidden
+          className="ml-1.5"
+          href="#16-report-suspicious-accounts"
+        >
+          <LinkIcon className="" />
+        </Link>
       </h2>
       <p className="my-6">
         Report suspicious accounts, hacked users, cheaters, or spam bots to the
@@ -369,6 +453,9 @@ export default function CodeOfConductPage() {
 
       <h2 className="text-2xl font-semibold mt-12" id="17-consequences">
         17. Consequences
+        <Link aria-hidden className="ml-1.5" href="#17-consequences">
+          <LinkIcon className="" />
+        </Link>
       </h2>
       <p className="my-6">
         Abide by Reddit, Discord, and game Terms of Service at all times.
