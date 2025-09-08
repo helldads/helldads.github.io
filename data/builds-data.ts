@@ -69,7 +69,7 @@ export const BUILDS: Record<string, Build> = {
     slogan: "You Shall Fear No Squid!",
     description: [
       `You Shall Fear No Squid! Especially not the New Ones! WASP is our main focus of this build. It will one shot ALL Overseers and Watchers. It will take down the New Illuminate Ship in 2 shots! It will take out the beefy Meatbag in 4 shots! This thing is amazing on this front.`,
-      `It cannot really deal with Tripods though (its not worth the ammo) and that's where our Armor and Weapons come in. We will be wearing the Quick Draw Armor because the Senator takes down Tripods in 8 shots. You will need to reload to take it down, hence the armor.`,
+      `It cannot really deal with Tripods though (its not worth the ammo) and that's where our Armor and Weapons come in. We will be wearing the Quick Draw Armor (Gunslinger) because the Senator takes down Tripods in 8 shots. You will need to reload to take it down, hence the armor.`,
       `You will also need to strip the shield, thats where the Liberator Carbine comes in. With 920 RPM It will drop the shield in less than a second. Not to mention with the new Weapon Mod System, you can unlock a Drum Magazine for it, giving it a whopping 60 rounds! That's easily 2 shields before having to reload!`,
       `The armor will also allow us to quick swap right after the shield is down and will give the Senator almost no recoil so popping those joints is easy. Everything else we bring supports this playstyle.`,
       `The Gatling Sentry is the undeniable king of Squids. It will kill EVERYTHING they have in seconds. Overseers, Meatbags, New Ships, Tripods, all drop near instantly when this thing locks on. Not to mention it shreds hordes of voteless.`,
@@ -77,7 +77,7 @@ export const BUILDS: Record<string, Build> = {
       `And last but not least we bring the Gas Mines as an Anti-Drop option. When that flare goes up, your mines go down and you are shooting Squids in a Barrel with your WASP when they land.`,
       `Now go! Show those Squids why they chose the Wrong Planets to Invade! And if they make it to Super Earths door! We shall be ready!`,
     ],
-    weakness: `The only weakness is really close range. If overseers run up to you you will not be able to hit them with the WASP. But I wouldn't call this a weakness as you can just blast them with that 920 RPM Carbine or with your Senator. Other then that, this build absolutely shuts down the Illuminate with ease.`,
+    weakness: `The only weakness is really close range. If overseers run up to you you will not be able to hit them with the WASP. But I wouldn't call this a weakness as you can just blast them with that 920 RPM Carbine or with your Senator. Other than that, this build absolutely shuts down the Illuminate with ease.`,
     image: "/assets/builds/squid-slayer-build.jpeg",
     tags: ["illuminate", "anti-vehicle", "shield-stripping", "gas", "sentry"],
     loadout: [
