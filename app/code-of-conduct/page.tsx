@@ -2,9 +2,11 @@ import { Link } from "@heroui/link";
 import { Button } from "@heroui/button";
 import { Card, CardHeader, CardBody } from "@heroui/card";
 import { Code } from "@heroui/code";
+import { Divider } from "@heroui/divider";
+
 import { siteConfig } from "@/config/site";
 import { title } from "@/components/primitives";
-import { DiscordIcon, RedditIcon } from "@/components/icons";
+import { DiscordIcon, LinkIcon, RedditIcon } from "@/components/icons";
 
 export default function CodeOfConductPage() {
   return (
@@ -13,11 +15,62 @@ export default function CodeOfConductPage() {
       <p className="my-6">
         The HellDads community exists to bring together parenting Helldivers,
         like‑minded gamers, and supportive allies. Whether on Reddit, Discord,
-        or in‑game, we follow a single Code of Conduct to keep our spaces safe,
-        family‑friendly, and welcoming.
+        or in‑game, we follow a single Code of Conduct. Our moderators are
+        committed to keeping HellDads a welcoming, family-friendly community for
+        everyone. Whether you need assistance with a conflict, have concerns
+        about behavior, or just need some guidance, don’t hesitate to reach out,
+        your experience and comfort matter to us.
       </p>
-      <h2 className="text-2xl font-semibold mt-12">
+
+      <div className="drop-shadow-2xl grid grid-cols-1 md:grid-cols-2 gap-6 mt-12 max-w-6xl mx-auto">
+        <Card className="w-full col-span-1 sm:col-span-1">
+          <CardHeader className="font-semibold">
+            <RedditIcon className="inline mr-2" /> Help on Reddit
+          </CardHeader>
+          <CardBody className="leading-relaxed">
+            You can use the following button to open Reddit and write a Mod
+            Mail:
+            <Button
+              isExternal
+              showAnchorIcon
+              as={Link}
+              className="my-6"
+              color="danger"
+              href="https://www.reddit.com/message/compose?to=r/HellDads"
+            >
+              Message Mods
+            </Button>
+          </CardBody>
+        </Card>
+        <Card className="w-full col-span-1 sm:col-span-1">
+          <CardHeader className="font-semibold text-center">
+            <DiscordIcon className="inline mr-2" /> Help on Discord
+          </CardHeader>
+          <CardBody className="leading-relaxed">
+            You can use the following command to start a private chat with the
+            moderators on
+            <Link isExternal showAnchorIcon href={siteConfig.links.discord}>
+              Discord
+            </Link>
+            <Code className="inline my-4">/modhelp</Code>
+          </CardBody>
+        </Card>
+      </div>
+
+      <Divider className="mt-12" />
+
+      <h2
+        className="text-2xl font-semibold mt-12"
+        id="1-uphold-good-parenthood-values"
+      >
         1. Uphold Good Parenthood Values
+        <Link
+          aria-hidden
+          className="ml-1.5"
+          href="#1-uphold-good-parenthood-values"
+        >
+          <LinkIcon className="" />
+        </Link>
       </h2>
       <p className="my-6">
         Keep things family‑friendly, constructive, and civil. We are a global
@@ -26,25 +79,46 @@ export default function CodeOfConductPage() {
         communication styles. No harassment, insults, racism, trolling, or
         inappropriate language.
       </p>
-      <h2 className="text-2xl font-semibold mt-12">2. Real Life Comes First</h2>
+
+      <h2 className="text-2xl font-semibold mt-12" id="2-real-life-comes-first">
+        2. Real Life Comes First
+        <Link aria-hidden className="ml-1.5" href="#2-real-life-comes-first">
+          <LinkIcon className="" />
+        </Link>
+      </h2>
       <p className="my-6">
         You should never feel guilty for prioritising your family or other
         things which require your immediate attention. Step away mid‑game, skip
-        events, or go AFK when needed. Communicate when you can, but real life
-        always comes first.
-      </p>
-      <h2 className="text-2xl font-semibold mt-12">
-        3. We&apos;re a Community, Not a Clan
-      </h2>
-      <p className="my-6">
-        We are not a competitive clan, and everybody — including non‑parents —
-        are welcome. We’re a supportive space that makes it easier to dive with
-        like‑minded people, share experiences, and enjoy the game together
-        without pressure to meet activity quotas.
+        events, or go AFK when needed. Real life always comes first &ndash; no
+        applogies required!
       </p>
 
-      <h2 className="text-2xl font-semibold mt-12">
+      <h2
+        className="text-2xl font-semibold mt-12"
+        id="3-were-a-community-not-a-clan"
+      >
+        3. We&apos;re a Community, Not a Clan
+        <Link
+          aria-hidden
+          className="ml-1.5"
+          href="#3-were-a-community-not-a-clan"
+        >
+          <LinkIcon className="" />
+        </Link>
+      </h2>
+      <p className="my-6">
+        We are not a competitive clan, and everybody &ndash; including
+        non‑parents &ndash; are welcome. We’re a supportive space that makes it
+        easier to dive with like‑minded people, share experiences, and enjoy the
+        game together without pressure to meet activity quotas. Get some rest
+        and enjoy a hot cup of Liber-Tea!
+      </p>
+
+      <h2 className="text-2xl font-semibold mt-12" id="4-protect-privacy">
         4. Protect Privacy &ndash; Especially Children’s
+        <Link aria-hidden className="ml-1.5" href="#4-protect-privacy">
+          <LinkIcon className="" />
+        </Link>
       </h2>
       <p className="my-6">
         As Super Earth citizen, we lead by example. Do not post personal
@@ -52,8 +126,19 @@ export default function CodeOfConductPage() {
         faces. Be mindful of protecting those who cannot protect themselves. Do
         not share personal information.
       </p>
-      <h2 className="text-2xl font-semibold mt-12">
+
+      <h2
+        className="text-2xl font-semibold mt-12"
+        id="5-respect-other-communities"
+      >
         5. Respect Other Communities
+        <Link
+          aria-hidden
+          className="ml-1.5"
+          href="#5-respect-other-communities"
+        >
+          <LinkIcon className="" />
+        </Link>
       </h2>
       <p className="my-6">
         We are a bit like Switzerland when it comes to other Helldivers
@@ -62,31 +147,28 @@ export default function CodeOfConductPage() {
         Many of our members participate in multiple groups, so consider HellDads
         a neutral, safe haven for all.
       </p>
-      <h2 className="text-2xl font-semibold mt-12">6. Keep Content Relevant</h2>
-      <p className="my-6">
-        Posts and comments should relate to Helldivers or the life of gaming
-        grown‑ups. Humour, parenting struggles, mission stories, all is welcome,
-        but irrelevant or off‑topic content may be removed. Cross‑posts and
-        links to other servers are also fine, if they are relevant and add value
-        to our community. We may remove posts that are low effort,
-        karma‑farming, or otherwise not meaningful. Do not share personal
-        information. Report suspicious accounts, hacked users, or spam bots to
-        moderators. We will remove such users and their content.
-      </p>
-      <h2 className="text-2xl font-semibold mt-12">
-        7. Use Discord to Find Dive Partners
+
+      <h2 className="text-2xl font-semibold mt-12" id="6-use-discord">
+        6. Use Discord to Find Dive Partners
+        <Link aria-hidden className="ml-1.5" href="#6-use-discord">
+          <LinkIcon className="" />
+        </Link>
       </h2>
       <p className="my-6">
-        Use our #looking‑for‑group channel and join audio channels with up to
-        four members to build squads. If you don’t use Discord, you can also
-        post on Reddit to find dive partners, but keep in mind that Reddit is a
-        public space, and your player name may end up being indexed by Google or
-        other search engines. Discord is the recommended option, which also has
-        a better audio quality than the in game voice communication.
+        Use our{" "}
+        <Link
+          isExternal
+          showAnchorIcon
+          href="https://discord.com/channels/1301285072896266252/1301290839661875202"
+        >
+          #looking‑for‑group
+        </Link>{" "}
+        channel to find a squad of up to four Helldivers, or join one of the
+        many voice channels to meet and play with others.
       </p>
       <p className="my-6">
         <DiscordIcon className="inline" /> Discord is supported cross-platform
-        on PC and PlayStation 5:
+        on PC, PlayStation 5 and Xbox Series X|S:
       </p>
       <ul className="list-disc list-outside my-6 pl-6">
         <li className="mb-2">
@@ -101,50 +183,165 @@ export default function CodeOfConductPage() {
           <Link
             isExternal
             showAnchorIcon
+            className="truncate"
             href="https://www.playstation.com/en-us/support/games/discord-voice-chat/"
           >
-            https://www.playstation.com/en-us/support/games/discord-voice-chat/
+            https://www.playstation.com/../discord-voice-chat/
+          </Link>
+        </li>
+        <li className="mb-2">
+          <strong>Xbox: </strong>
+          <Link
+            isExternal
+            showAnchorIcon
+            className="truncate"
+            href="https://support.xbox.com/en-US/help/friends-social-activity/parties-chat/using-discord-with-xbox"
+          >
+            https://support.xbox.com/../using-discord-with-xbox
           </Link>
         </li>
       </ul>
-      <h2 className="text-2xl font-semibold mt-12">
-        8. No Self‑Promotion, Unauthorised Sales, or Spam
+      <p className="my-6">
+        If you don’t use Discord, you can also post on Reddit to find dive
+        partners, but keep in mind that Reddit is a public space, and your
+        player name may end up being indexed by Google or other search engines.
+        Discord is the recommended option, which also has a better audio quality
+        than the in game voice communication.
+      </p>
+
+      <h2 className="text-2xl font-semibold mt-12" id="7-keep-content-relevant">
+        7. Keep Content Relevant and Spoiler-Free
+        <Link aria-hidden className="ml-1.5" href="#7-keep-content-relevant">
+          <LinkIcon className="" />
+        </Link>
       </h2>
       <p className="my-6">
-        Any commercial or affiliated promotions, including posts with the goal
-        of generating income or containing affiliate links, must be reviewed and
-        approved by the moderators before being posted. Sales of branded items
-        require explicit approval from the copyright owners. As a creator, you
-        are welcome to share your own work as long as there is no profit
-        intention, as long as you engage with the community beyond promoting
-        your own content.
+        Posts and comments should relate to Helldivers or the life of gaming
+        grown‑ups. Humour, parenting struggles, mission stories, all is welcome,
+        but irrelevant or off‑topic content may be removed. Cross‑posts and
+        links to other servers are also fine, if they are relevant and add value
+        to our community. Do not share personal information.
       </p>
-      <h2 className="text-2xl font-semibold mt-12">
-        9. Give Credit Where It&apos;s Due & Avoid Copyright Violations
+      <p className="my-6">
+        Posting upcoming content mined or extracted from the game is not
+        permitted. Many members prefer to discover new content when it is
+        officially released, without advance leaks or spoilers.
+      </p>
+
+      <h2 className="text-2xl font-semibold mt-12" id="8-no-self-promotion">
+        8. No Self-Promotion or Recruitment
+        <Link aria-hidden className="ml-1.5" href="#8-no-self-promotion">
+          <LinkIcon className="" />
+        </Link>
       </h2>
       <p className="my-6">
-        Always credit the original creator with a source link. Any content that
-        violates international copyright laws will be deleted, this is
-        especially important for videos containing music or other copyrighted
-        material. Posts that steal and reupload content without permission will
-        be removed. Content created with the help of AI is not prohibitit, as
-        long as it is clearly marked as AI‑generated. No content theft, piracy,
-        or unlicensed use of copyrighted material is tolerated and we have to
-        enforce the Terms of Service of related services. Any violations must be
-        reported.
+        Members may share their own creations only if there is no profit
+        intention and they actively participate in the community beyond growing
+        their followers. Links, posts, or invitations with the purpose of
+        recruiting members (such as other Discord servers, subreddits, or gaming
+        groups) are not permitted without prior approval.
       </p>
-      <h2 className="text-2xl font-semibold mt-12">
-        10. No NSFW Content / Language
+
+      <h2
+        className="text-2xl font-semibold mt-12"
+        id="9-no-sales-funcraising-donations-soliciting-money"
+      >
+        9. No Sales, Fundraising, Donations or Soliciting Money
+        <Link
+          aria-hidden
+          className="ml-1.5"
+          href="#9-no-sales-funcraising-donations-soliciting-money"
+        >
+          <LinkIcon className="" />
+        </Link>
+      </h2>
+      <p className="my-6">
+        Commercial promotions, affiliate links, sales of merchandise,
+        fundraising, donations or begging for money are strictly prohibited. Any
+        exceptions, including sales of branded items, require prior written
+        approval from the moderators.
+      </p>
+
+      <h2
+        className="text-2xl font-semibold mt-12"
+        id="10-no-spam-or-low-effort-content"
+      >
+        10. No Spam or Low-Effort Content
+        <Link
+          aria-hidden
+          className="ml-1.5"
+          href="#10-no-spam-or-low-effort-content"
+        >
+          <LinkIcon className="" />
+        </Link>
+      </h2>
+      <p className="my-6">
+        Posts designed for spam, karma farming, click-bait, rage-bait, or other
+        low-effort engagement are not permitted. All contributions should add
+        meaningful value to the community. AI-generated content, or content with
+        AI-assisted elements, must be clearly marked as such. Low-effort AI
+        content (AI slop) without artistic value creation, curation, or creative
+        intent is not welcome.
+      </p>
+
+      <h2
+        className="text-2xl font-semibold mt-12"
+        id="11-no-nsfw-content-language"
+      >
+        11. No NSFW Content / Language
+        <Link
+          aria-hidden
+          className="ml-1.5"
+          href="#11-no-nsfw-content-language"
+        >
+          <LinkIcon className="" />
+        </Link>
       </h2>
       <p className="my-6">
         This is a family-friendly community. While you may use NSFW (Not Safe
         For Work) tags for posts with graphic gameplay or loud laughter moments,
         we do not allow pornography, profanity, nudity, slurs, or other
         disturbing material. This content will be removed at moderator
-        discretion. This also applies for voice-channels, keep it civil.
+        discretion. This also applies for voice-channels, recordings and videos,
+        keep it civil.
       </p>
-      <h2 className="text-2xl font-semibold mt-12">
-        11. Honor the AFK Mission Etiquette
+
+      <h2
+        className="text-2xl font-semibold mt-12"
+        id="12-give-credit-where-its-due"
+      >
+        12. Give Credit Where It&apos;s Due & Avoid Copyright Violations
+        <Link
+          aria-hidden
+          className="ml-1.5"
+          href="#12-give-credit-where-its-due"
+        >
+          <LinkIcon className="" />
+        </Link>
+      </h2>
+      <p className="my-6">
+        Always credit the original creator with a source link. Any content that
+        violates international copyright laws will be deleted, this is
+        especially important for videos containing music or other copyrighted
+        material. Posts that steal and reupload content without permission of
+        the copyright holder will be removed. No content theft, piracy, or
+        unlicensed use of copyrighted material is tolerated and we have to
+        enforce the Terms of Service of related services. Any violations must be
+        reported.
+      </p>
+
+      <h2
+        className="text-2xl font-semibold mt-12"
+        id="13-honor-the-afk-mission-etiquette"
+      >
+        13. Honor the AFK Mission Etiquette
+        <Link
+          aria-hidden
+          className="ml-1.5"
+          href="#13-honor-the-afk-mission-etiquette"
+        >
+          <LinkIcon className="" />
+        </Link>
       </h2>
       <p className="my-6">
         During drop time, life calls! To keep our missions flowing, HellDads
@@ -188,8 +385,12 @@ export default function CodeOfConductPage() {
           their chance of survival.
         </li>
       </ul>
-      <h2 className="text-2xl font-semibold mt-12">
-        12. Conflict Resolution and Mod Support
+
+      <h2 className="text-2xl font-semibold mt-12" id="14-conflict-resolution">
+        14. Conflict Resolution and Mod Support
+        <Link aria-hidden className="ml-1.5" href="#14-conflict-resolution">
+          <LinkIcon className="" />
+        </Link>
       </h2>
       <p className="my-6">
         In the HellDads community, respect and support come first. We’re all
@@ -197,65 +398,65 @@ export default function CodeOfConductPage() {
         arises, we encourage open and respectful conversation to clear things up
         directly whenever possible. Should a conflict remain unresolved, or if
         you feel uncomfortable addressing it, the moderators are here to help.
-        Simply reach out to us through a private message, and we’ll work with
-        you to find a fair solution.
+        Simply reach out to us through{" "}
+        <Code className="inline my-4">/modhelp</Code> on discord, and we’ll work
+        with you to find a fair solution.
       </p>
+
+      <h2 className="text-2xl font-semibold mt-12" id="15-becoming-a-volunteer">
+        15. Becoming a Volunteer
+        <Link aria-hidden className="ml-1.5" href="#15-becoming-a-volunteer">
+          <LinkIcon className="" />
+        </Link>
+      </h2>
       <p className="my-6">
-        Our moderators are committed to keeping HellDads a welcoming,
-        family-friendly community for everyone. Whether you need assistance with
-        a conflict, have concerns about behavior, or just need some guidance,
-        don’t hesitate to reach out—your experience and comfort matter to us.
-      </p>
-      <div className="drop-shadow-2xl grid grid-cols-1 md:grid-cols-2 gap-6 mt-12 max-w-6xl mx-auto">
-        <Card className="w-full col-span-1 sm:col-span-1">
-          <CardHeader className="font-semibold">
-            <RedditIcon className="inline mr-2" /> Help on Reddit
-          </CardHeader>
-          <CardBody className="leading-relaxed">
-            You can use the following button to open Reddit and write a Mod
-            Mail:
-            <Button
-              as={Link}
-              className="my-6"
-              color="danger"
-              href="https://www.reddit.com/message/compose?to=r/HellDads"
-              isExternal
-              showAnchorIcon
-            >
-              Message Mods
-            </Button>
-          </CardBody>
-        </Card>
-        <Card className="w-full col-span-1 sm:col-span-1">
-          <CardHeader className="font-semibold text-center">
-            <DiscordIcon className="inline mr-2" /> Help on Discord
-          </CardHeader>
-          <CardBody className="leading-relaxed">
-            You can use the following command to start a private chat with the
-            moderators on
-            <Link isExternal showAnchorIcon href={siteConfig.links.discord}>
-              Discord
-            </Link>
-            <Code className="inline my-4">/modhelp</Code>
-          </CardBody>
-        </Card>
-      </div>
-      <h2 className="text-2xl font-semibold mt-12">13. Becoming a Volunteer</h2>
-      <p className="my-6">
-        Our HellDads mods are all dedicated volunteers, managing their roles
-        while balancing full-time jobs, family responsibilities, and the demands
-        of daily life. We’re always grateful for any help from community members
-        to keep HellDads the most family-friendly space for Helldivers. Whether
-        you’re a Reddit whiz, a Discord pro, a content creator or simply have
-        great ideas to share, your contribution is welcome!
+        Our HellDads contributors are all dedicated volunteers, managing their
+        roles while balancing full-time jobs, family responsibilities, and the
+        demands of daily life. We’re always grateful for any help from community
+        members to keep HellDads the most family-friendly space for Helldivers.
+        Whether you’re a Reddit whiz, a Discord pro, a content creator or simply
+        have great ideas to share, your contribution is welcome!
       </p>
       <p className="my-6">
         If you’d like to apply for a voluntary role or contribute in any other
-        way, please reach out to one of the mods. Every bit of support helps us
-        build and maintain this community we’re all proud of, and we’d love to
-        hear from you!
+        way, please reach out via discord to our mods team (enter{" "}
+        <Code className="inline my-4">/modhelp</Code> in Discord). Every bit of
+        support helps us build and maintain this community we’re all proud of,
+        and we’d love to hear from you!
       </p>
-      <h2 className="text-2xl font-semibold mt-12">14. Consequences</h2>
+
+      <h2
+        className="text-2xl font-semibold mt-12"
+        id="16-report-suspicious-accounts"
+      >
+        16. Report Suspicious Accounts or Cheating Behaviour
+        <Link
+          aria-hidden
+          className="ml-1.5"
+          href="#16-report-suspicious-accounts"
+        >
+          <LinkIcon className="" />
+        </Link>
+      </h2>
+      <p className="my-6">
+        Report suspicious accounts, hacked users, cheaters, or spam bots to the
+        moderators using the <Code className="inline my-4">/modhelp</Code>{" "}
+        command in Discord. Such users and their content will be removed to
+        protect the community.
+      </p>
+      <p className="my-6">
+        Strictly cosmetic modifications for Helldivers are not forbidden. Any
+        non-cosmetic modifications intended to gain undemocratic advantages
+        &ndash; also known as cheats &ndash; will result in a ban and be
+        reported to Arrowhead.
+      </p>
+
+      <h2 className="text-2xl font-semibold mt-12" id="17-consequences">
+        17. Consequences
+        <Link aria-hidden className="ml-1.5" href="#17-consequences">
+          <LinkIcon className="" />
+        </Link>
+      </h2>
       <p className="my-6">
         Abide by Reddit, Discord, and game Terms of Service at all times.
         Violations of these rules or the Code of Conduct may result in timeouts,
@@ -263,7 +464,8 @@ export default function CodeOfConductPage() {
         will not tolerate behaviour that risks termination of our community or
         servers.
       </p>
-      <p className="my-12">
+      <Divider className="mt-12" />
+      <p className="my-12 italic text-center">
         We are here to support each other in balancing gaming and family life.
         Ask questions, share experiences, and remember: when we drop, we drop
         hard.
