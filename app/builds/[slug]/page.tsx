@@ -7,7 +7,12 @@ import { notFound } from "next/navigation";
 
 import { getAsset } from "@/data/assets";
 import { getAllSlugs, getBuildBySlug } from "@/data/builds-index";
-import { DiscordIcon, RedditIcon, YoutubeIcon, PhotoIcon } from "@/components/icons";
+import {
+  DiscordIcon,
+  RedditIcon,
+  YoutubeIcon,
+  PhotoIcon,
+} from "@/components/icons";
 import { Divider } from "@heroui/react";
 
 // Prebuild static paths
@@ -17,7 +22,8 @@ export function generateStaticParams() {
 
 // Helper function to extract YouTube video ID from URL
 function getYouTubeVideoId(url: string): string | null {
-  const regex = /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/;
+  const regex =
+    /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/;
   const match = url.match(regex);
 
   return match ? match[1] : null;
@@ -40,7 +46,6 @@ export default async function BuildPage({
 
   return (
     <div className="py-6 space-y-6">
-
       {highlightsVideoId ? (
         <div className="relative aspect-video">
           <iframe
@@ -57,7 +62,9 @@ export default async function BuildPage({
 
       <header>
         <h1 className="text-4xl font-semibold">{build.title}</h1>
-        {build.slogan && <p className="opacity-80 text-2xl mt-2">{build.slogan}</p>}
+        {build.slogan && (
+          <p className="opacity-80 text-2xl mt-2">{build.slogan}</p>
+        )}
       </header>
 
       {(build.links || build.image) && (
@@ -66,8 +73,17 @@ export default async function BuildPage({
           {/* <h2 className="text-xl font-semibold">Links</h2> */}
           <div className="flex gap-4 flex-wrap py-2">
             {build.links?.reddit && (
-              <Link isExternal aria-label="Open Reddit" href={build.links.reddit}>
-                <Chip radius="sm" size="lg" variant="bordered" className="py-5 px-0.5 transition-discrete transition-colors hover:border-[#fc4301]">
+              <Link
+                isExternal
+                aria-label="Open Reddit"
+                href={build.links.reddit}
+              >
+                <Chip
+                  radius="sm"
+                  size="lg"
+                  variant="bordered"
+                  className="py-5 px-0.5 transition-discrete transition-colors hover:border-[#fc4301]"
+                >
                   <span className="flex items-center gap-2 whitespace-nowrap">
                     <RedditIcon className="text-[#fc4301]" /> Discuss on Reddit
                   </span>
@@ -75,17 +91,36 @@ export default async function BuildPage({
               </Link>
             )}
             {build.links?.discord && (
-              <Link isExternal aria-label="Open Discord" href={build.links.discord}>
-                <Chip radius="sm" size="lg" variant="bordered" className="py-5 px-0.5 transition-discrete transition-colors hover:border-indigo-500">
+              <Link
+                isExternal
+                aria-label="Open Discord"
+                href={build.links.discord}
+              >
+                <Chip
+                  radius="sm"
+                  size="lg"
+                  variant="bordered"
+                  className="py-5 px-0.5 transition-discrete transition-colors hover:border-indigo-500"
+                >
                   <span className="flex items-center gap-2 whitespace-nowrap">
-                    <DiscordIcon className="text-indigo-500" /> Discuss on Discord
+                    <DiscordIcon className="text-indigo-500" /> Discuss on
+                    Discord
                   </span>
                 </Chip>
               </Link>
             )}
             {build.links?.full && (
-              <Link isExternal aria-label="Open Youtube with full video" href={build.links.full}>
-                <Chip radius="sm" size="lg" variant="bordered" className="py-5 px-0.5 transition-discrete transition-colors hover:border-red-500">
+              <Link
+                isExternal
+                aria-label="Open Youtube with full video"
+                href={build.links.full}
+              >
+                <Chip
+                  radius="sm"
+                  size="lg"
+                  variant="bordered"
+                  className="py-5 px-0.5 transition-discrete transition-colors hover:border-red-500"
+                >
                   <span className="flex items-center gap-2 whitespace-nowrap">
                     <YoutubeIcon className="text-red-500" /> Watch Full Video
                   </span>
@@ -94,7 +129,12 @@ export default async function BuildPage({
             )}
             {build.image && (
               <Link isExternal aria-label="Open Image" href={build.image}>
-                <Chip radius="sm" size="lg" variant="bordered" className="py-5 px-0.5 transition-discrete transition-colors hover:border-green-500">
+                <Chip
+                  radius="sm"
+                  size="lg"
+                  variant="bordered"
+                  className="py-5 px-0.5 transition-discrete transition-colors hover:border-green-500"
+                >
                   <span className="flex items-center gap-2 whitespace-nowrap">
                     <PhotoIcon className="text-green-500" /> Download Poster
                   </span>
@@ -110,6 +150,16 @@ export default async function BuildPage({
         <section className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {build.loadout?.map((entry, i) => {
             const asset = getAsset(entry.assetId);
+
+            // temporary exit to skip missing assets
+            if (!asset)
+              return (
+                <Card key={i} radius="sm">
+                  <CardBody className="flex bg-warning-200 flex-row gap-3">
+                    {entry.note}
+                  </CardBody>
+                </Card>
+              );
 
             return (
               <Card key={i} radius="sm">
@@ -131,7 +181,9 @@ export default async function BuildPage({
                       delay={1000}
                       showArrow={true}
                     >
-                      <span className="flex justify-center"> {/* Explicitly use span instead of letting Tooltip decide */}
+                      <span className="flex justify-center">
+                        {" "}
+                        {/* Explicitly use span instead of letting Tooltip decide */}
                         {asset.image && (
                           <Image
                             alt={asset.description}
@@ -154,9 +206,15 @@ export default async function BuildPage({
                       {asset.name}
                     </Link>
                     {(entry.note || asset.description) && (
-                      <p className="text-sm opacity-90">{entry.note ?? asset.description}</p>
+                      <p className="text-sm opacity-90">
+                        {entry.note ?? asset.description}
+                      </p>
                     )}
-                    <Chip size="sm" variant="bordered" className="max-w-fit px-2 opacity-60">
+                    <Chip
+                      size="sm"
+                      variant="bordered"
+                      className="max-w-fit px-2 opacity-60"
+                    >
                       {asset.role}
                     </Chip>
                   </div>
@@ -171,7 +229,9 @@ export default async function BuildPage({
         <div className="my-8">
           {Array.isArray(build.description) ? (
             build.description.map((paragraph, index) => (
-              <p key={index} className="my-2">{paragraph}</p>
+              <p key={index} className="my-2">
+                {paragraph}
+              </p>
             ))
           ) : (
             <p>{build.description}</p>

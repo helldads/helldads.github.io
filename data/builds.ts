@@ -4,7 +4,7 @@ import type { AssetId } from "./assets";
 import { z } from "zod";
 
 export type LoadoutEntry = {
-  assetId: AssetId; // reference into ASSETS
+  assetId?: AssetId; // reference into ASSETS
   note?: string; // optional per-build note/override
 };
 
@@ -38,17 +38,17 @@ export const BuildSchema = z.object({
   loadout: z
     .array(
       z.object({
-        assetId: z.string(),
+        assetId: z.string().optional(),
         note: z.string().optional(),
       }),
     )
     .optional(),
   links: z
     .object({
-      reddit: z.string().url().optional(),
-      full: z.string().url().optional(),
-      highlights: z.string().url().optional(),
-      discord: z.string().url().optional(),
+      reddit: z.union([z.literal(""), z.string().trim().url()]),
+      full: z.union([z.literal(""), z.string().trim().url()]),
+      highlights: z.union([z.literal(""), z.string().trim().url()]),
+      discord: z.union([z.literal(""), z.string().trim().url()]),
     })
     .optional(),
 });
