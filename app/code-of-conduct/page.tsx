@@ -90,7 +90,7 @@ export default function CodeOfConductPage() {
         You should never feel guilty for prioritising your family or other
         things which require your immediate attention. Step away mid‑game, skip
         events, or go AFK when needed. Real life always comes first &ndash; no
-        applogies required!
+        apologies required!
       </p>
 
       <h2
