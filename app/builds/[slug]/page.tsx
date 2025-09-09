@@ -118,13 +118,15 @@ export default async function BuildPage({
                     <Tooltip
                       color="warning"
                       content={
-                        <a
+                        <Link
+                          isExternal
+                          showAnchorIcon
+                          className="text-amber-50"
                           href={`${asset.wiki}`}
                           rel="noopener noreferrer"
-                          target="_blank"
                         >
-                          Helldivers Wiki: {asset.name}
-                        </a>
+                          Open Helldivers Wiki: {asset.name}
+                        </Link>
                       }
                       delay={1000}
                       showArrow={true}
@@ -142,7 +144,15 @@ export default async function BuildPage({
                     </Tooltip>
                   </div>
                   <div className="flex flex-col gap-2">
-                    <p className="text-md font-bold text-yellow-500 tracking-wide">{asset.name}</p>
+                    <Link
+                      isExternal
+                      showAnchorIcon
+                      className="text-md font-bold text-yellow-500 tracking-wide"
+                      href={asset.wiki}
+                      title="Open Helldivers Wiki"
+                    >
+                      {asset.name}
+                    </Link>
                     {(entry.note || asset.description) && (
                       <p className="text-sm opacity-90">{entry.note ?? asset.description}</p>
                     )}
