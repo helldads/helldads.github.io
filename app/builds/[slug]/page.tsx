@@ -244,6 +244,20 @@ export default async function BuildPage({
           <p>{build.weakness}</p>
         </div>
       )}
+
+      <p className="text-xs text-gray-500 text-center">
+        The Helldiver asset images on our build pages are provided in
+        cooperation with the{" "}
+        <Link
+          isExternal
+          showAnchorIcon
+          className="text-xs text-gray-500"
+          href="https://helldivers.wiki.gg"
+        >
+          Helldivers Wiki
+        </Link>{" "}
+        &ndash; see their detail pages for licensing, copyright, and credits.
+      </p>
     </div>
   );
 }

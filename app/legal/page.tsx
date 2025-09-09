@@ -233,120 +233,179 @@ export default function LegalPage() {
 
       <h3 className="text-lg font-semibold mt-4">Attributions</h3>
 
-      <Card className="max-w-[320px]">
-        <CardHeader className="justify-between">
-          <div className="flex gap-5">
-            <Avatar
-              isBordered
-              radius="full"
-              size="md"
-              src="/assets/djchechin.webp"
-            />
-            <div className="flex flex-col gap-1 items-start justify-center">
-              <h4 className="text-small font-semibold leading-none text-default-600">
-                Chechin
-              </h4>
-              <h5 className="text-small tracking-tight text-default-400">
-                u/djchechin
-              </h5>
-            </div>
-          </div>
-          <Button
-            isExternal
-            showAnchorIcon
-            as={Link}
-            color="primary"
-            href="https://www.reddit.com/user/djchechin/"
-            radius="full"
-            size="sm"
-            variant="solid"
-          >
-            Open Profile
-          </Button>
-        </CardHeader>
-        <CardBody className="px-3 py-0 text-small">
-          <p>
-            Special thanks to Chechin, the artist behind our community logo and
-            many other assets that enrich the Helldivers community.{" "}
-            <HeartFilledIcon className="inline" />
-          </p>
-          <ul>
-            <li>
-              <Link href="/assets/helldads-logo-150x150.png">
-                helldads-logo-150x150.png
-              </Link>
-            </li>
-            <li>
-              <Link href="/assets/helldads-logo.svg">helldads-logo.svg</Link>
-            </li>
-            <li>
-              <Link href="/assets/emoji-helldad.png">emoji-helldad.png</Link>
-            </li>
-            <li>
-              <Link href="/assets/emoji-junior-cadet.webp">
-                emoji-junior-cadet.webp
-              </Link>
-            </li>
-            <li>
-              <Link href="/assets/emoji-triplets.webp">
-                emoji-triplets.webp
-              </Link>
-            </li>
-            <li>
-              <Link href="/assets/emoji-twins.webp">emoji-twins.webp</Link>
-            </li>
-            <li>
-              <Link href="/assets/freedom-alliance-logo.webp">
-                freedom-alliance-logo.webp
-              </Link>
-            </li>
-            <li>
-              <Link href="/assets/freedomalliance-logo.webp">
-                freedomalliance-logo.webp
-              </Link>
-            </li>
-            <li>
-              <Link href="/assets/helldads-1000-members.webp">
-                helldads-1000-members.webp
-              </Link>
-            </li>
-            <li>
-              <Link href="/assets/join-the-helldads.webp">
-                join-the-helldads.webp
-              </Link>
-            </li>
-          </ul>
-        </CardBody>
-        <CardFooter className="gap-3">
-          <div className="flex">
-            <Link
-              isExternal
-              href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
-            >
-              <Image
-                className="rounded-none"
-                height={32}
-                src="/assets/cc-by-nc-sa.png"
+      <div className="gap-2 grid grid-cols-2">
+        <Card className="">
+          <CardHeader className="justify-between">
+            <div className="flex gap-5">
+              <Avatar
+                isBordered
+                radius="full"
+                size="md"
+                src="/assets/djchechin.webp"
               />
-            </Link>
-          </div>
-          <div className="flex">
+              <div className="flex flex-col gap-1 items-start justify-center">
+                <h4 className="text-small font-semibold leading-none text-default-600">
+                  Chechin
+                </h4>
+                <h5 className="text-small tracking-tight text-default-400">
+                  u/djchechin
+                </h5>
+              </div>
+            </div>
             <Button
               isExternal
+              showAnchorIcon
               as={Link}
-              className="bg-white text-black"
-              href="https://buymeacoffee.com/chechin"
-              startContent={
-                <Image height={32} src="/assets/buy-me-a-coffee-logo.svg" />
-              }
-              variant="bordered"
+              color="primary"
+              href="https://www.reddit.com/user/djchechin/"
+              radius="full"
+              size="sm"
+              variant="solid"
             >
-              Buy me a coffee
+              Open Profile
             </Button>
-          </div>
-        </CardFooter>
-      </Card>
+          </CardHeader>
+          <CardBody className="px-3 py-0">
+            <p>
+              Special thanks to Chechin, the artist behind our community logo
+              and many other assets that enrich the Helldivers community.{" "}
+              <HeartFilledIcon className="inline" />
+            </p>
+            <ul className="text-small">
+              <li>
+                <Link href="/assets/helldads-logo-150x150.png">
+                  helldads-logo-150x150.png
+                </Link>
+              </li>
+              <li>
+                <Link href="/assets/helldads-logo.svg">helldads-logo.svg</Link>
+              </li>
+              <li>
+                <Link href="/assets/emoji-helldad.png">emoji-helldad.png</Link>
+              </li>
+              <li>
+                <Link href="/assets/emoji-junior-cadet.webp">
+                  emoji-junior-cadet.webp
+                </Link>
+              </li>
+              <li>
+                <Link href="/assets/emoji-triplets.webp">
+                  emoji-triplets.webp
+                </Link>
+              </li>
+              <li>
+                <Link href="/assets/emoji-twins.webp">emoji-twins.webp</Link>
+              </li>
+              <li>
+                <Link href="/assets/freedom-alliance-logo.webp">
+                  freedom-alliance-logo.webp
+                </Link>
+              </li>
+              <li>
+                <Link href="/assets/freedomalliance-logo.webp">
+                  freedomalliance-logo.webp
+                </Link>
+              </li>
+              <li>
+                <Link href="/assets/helldads-1000-members.webp">
+                  helldads-1000-members.webp
+                </Link>
+              </li>
+              <li>
+                <Link href="/assets/join-the-helldads.webp">
+                  join-the-helldads.webp
+                </Link>
+              </li>
+            </ul>
+          </CardBody>
+          <CardFooter className="gap-3">
+            <div className="flex">
+              <Link
+                isExternal
+                href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+              >
+                <Image
+                  className="rounded-none"
+                  height={32}
+                  src="/assets/cc-by-nc-sa.png"
+                />
+              </Link>
+            </div>
+            <div className="flex">
+              <Button
+                isExternal
+                as={Link}
+                className="bg-white text-black"
+                href="https://buymeacoffee.com/chechin"
+                startContent={
+                  <Image height={32} src="/assets/buy-me-a-coffee-logo.svg" />
+                }
+                variant="bordered"
+              >
+                Buy me a coffee
+              </Button>
+            </div>
+          </CardFooter>
+        </Card>
 
+        <Card className="">
+          <CardHeader className="justify-between">
+            <div className="flex gap-5">
+              <Avatar
+                isBordered
+                radius="full"
+                size="md"
+                src="/assets/helldivers.wiki.gg-icon.png"
+              />
+              <div className="flex flex-col gap-1 items-start justify-center">
+                <h4 className="text-small font-semibold leading-none text-default-600">
+                  The Helldivers Wiki
+                </h4>
+                <h5 className="text-small tracking-tight text-default-400">
+                  <Link
+                    isExternal
+                    showAnchorIcon
+                    href="https://helldivers.wiki.gg"
+                  >
+                    helldivers.wiki.gg
+                  </Link>
+                </h5>
+              </div>
+            </div>
+            <Button
+              isExternal
+              showAnchorIcon
+              as={Link}
+              color="primary"
+              href="https://helldivers.wiki.gg/"
+              radius="full"
+              size="sm"
+              variant="solid"
+            >
+              Open Wiki
+            </Button>
+          </CardHeader>
+          <CardBody className="px-3 py-0">
+            <p>
+              Special thanks to the contributors of the Helldivers Wiki for
+              providing images and reference material used in our builds
+              section. <HeartFilledIcon className="inline" />
+            </p>
+            <Divider className="my-2" />
+            <p className="text-small py-2 text-gray-500">
+              Unless stated otherwise, all rights remain with Arrowhead Game
+              Studios and its licensors, under the HELLDIVERS™ EULA. All
+              trademarks and registered trademarks are their property.
+            </p>
+            <p className="text-small py-2 text-gray-500">
+              Licensing and copyright information for their media assets can be
+              found on the respective detail pages, linked directly from the
+              assets we use.
+            </p>
+          </CardBody>
+          <CardFooter className="gap-3 text-small grayscale-50"></CardFooter>
+        </Card>
+      </div>
       <p className="italic mt-6 text-center">
         This document is subject to updates as necessary to reflect changes in
         policies or legal requirements.
