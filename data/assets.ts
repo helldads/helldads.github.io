@@ -149,7 +149,7 @@ export const ASSETS = {
     image: "/assets/armor/BP-20_Correct_Officer.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/BP-20_Correct_Officer",
-    warbond: "Truth Enforcers",
+    warbond: "Force of Law",
   },
   "BP-32": {
     role: LoadoutRole.Armor,
@@ -157,7 +157,7 @@ export const ASSETS = {
     image: "/assets/armor/BP-32_Jackboot.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/BP-32_Jackboot",
-    warbond: "Truth Enforcers",
+    warbond: "Force of Law",
   },
   "BP-77": {
     role: LoadoutRole.Armor,
@@ -502,7 +502,7 @@ export const ASSETS = {
     image: "/assets/armor/IE-3_Martyr.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/IE-3_Martyr",
-    warbond: "Freedom's Flame",
+    warbond: "Servants of Freedom",
   },
   "IE-12": {
     role: LoadoutRole.Armor,
@@ -510,7 +510,7 @@ export const ASSETS = {
     image: "/assets/armor/IE-12_Righteous.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/IE-12_Righteous",
-    warbond: "Freedom's Flame",
+    warbond: "Servants of Freedom",
   },
   "IE-57": {
     role: LoadoutRole.Armor,
@@ -518,7 +518,7 @@ export const ASSETS = {
     image: "/assets/armor/IE-57_Hell-Bent.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/IE-57_Hell-Bent",
-    warbond: "Freedom's Flame",
+    warbond: "Servants of Freedom",
   },
   "PH-9": {
     role: LoadoutRole.Armor,
@@ -550,7 +550,7 @@ export const ASSETS = {
     image: "/assets/armor/RE-824_Bearer_of_the_Standard.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/RE-824_Bearer_of_the_Standard",
-    warbond: "Servants of Freedom",
+    warbond: "Masters of Ceremony",
   },
   "RE-1861": {
     role: LoadoutRole.Armor,
@@ -558,7 +558,7 @@ export const ASSETS = {
     image: "/assets/armor/RE-1861_Parade_Commander.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/RE-1861_Parade_Commander",
-    warbond: "Servants of Freedom",
+    warbond: "Masters of Ceremony",
   },
   "RE-2310": {
     role: LoadoutRole.Armor,
@@ -566,7 +566,7 @@ export const ASSETS = {
     image: "/assets/armor/RE-2310_Honorary_Guard.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/RE-2310_Honorary_Guard",
-    warbond: "Servants of Freedom",
+    warbond: "Masters of Ceremony",
   },
   "SA-04": {
     role: LoadoutRole.Armor,
@@ -727,6 +727,7 @@ export const ASSETS = {
     image: "/assets/primary/R-2_Amendment.png",
     description: "A semi-automatic rifle with balanced performance.",
     wiki: "https://helldivers.wiki.gg/wiki/R-2_Amendment",
+    warbond: "Servants of Freedom",
   },
   "R-6": {
     role: LoadoutRole.Primary,
@@ -772,9 +773,9 @@ export const ASSETS = {
     role: LoadoutRole.Primary,
     name: "AR-2 Coyote",
     image: "/assets/primary/AR-2_Coyote.png",
-    description: "A versatile assault rifle with modular capabilities.",
+    description: "The AR-2 Coyote is a Primary assault rifle with incendiary rounds.",
     wiki: "https://helldivers.wiki.gg/wiki/AR-2_Coyote",
-    warbond: "Control Group",
+    warbond: "Dust Devils",
   },
   "AR-23": {
     role: LoadoutRole.Primary,
@@ -813,7 +814,7 @@ export const ASSETS = {
     image: "/assets/primary/AR-32_Pacifier.png",
     description: "A suppressed assault rifle for stealth operations.",
     wiki: "https://helldivers.wiki.gg/wiki/AR-32_Pacifier",
-    warbond: "Borderline Justice",
+    warbond: "Force of Law",
   },
   "AR-61": {
     role: LoadoutRole.Primary,
@@ -821,7 +822,7 @@ export const ASSETS = {
     image: "/assets/primary/AR-61_Tenderizer.png",
     description: "A high-damage assault rifle with armor penetration.",
     wiki: "https://helldivers.wiki.gg/wiki/AR-61_Tenderizer",
-    warbond: "Steeled Veterans",
+    warbond: "Polar Patriots",
   },
   "BR-14": {
     role: LoadoutRole.Primary,
@@ -852,7 +853,7 @@ export const ASSETS = {
     image: "/assets/primary/SMG-32_Reprimand.png",
     description: "A high-rate-of-fire submachine gun for close combat.",
     wiki: "https://helldivers.wiki.gg/wiki/SMG-32_Reprimand",
-    warbond: "Borderline Justice",
+    warbond: "Truth Enforcers",
   },
   "SMG-37": {
     role: LoadoutRole.Primary,
@@ -868,7 +869,7 @@ export const ASSETS = {
     image: "/assets/primary/SMG-72_Pummeler.png",
     description: "A concussive submachine gun that staggers enemies.",
     wiki: "https://helldivers.wiki.gg/wiki/SMG-72_Pummeler",
-    warbond: "Viper Commandos",
+    warbond: "Polar Patriots",
   },
   "M7S": {
     role: LoadoutRole.Primary,
@@ -916,7 +917,7 @@ export const ASSETS = {
     image: "/assets/primary/SG-20_Halt.png",
     description: "A tactical shotgun with stopping power and reliability.",
     wiki: "https://helldivers.wiki.gg/wiki/SG-20_Halt",
-    warbond: "Polar Patriots",
+    warbond: "Truth Enforcers",
   },
   "SG-225": {
     role: LoadoutRole.Primary,
@@ -1012,7 +1013,7 @@ export const ASSETS = {
     image: "/assets/primary/LAS-17_Double-Edge_Sickle.png",
     description: "An advanced laser rifle with dual beam capability.",
     wiki: "https://helldivers.wiki.gg/wiki/LAS-17_Double-Edge_Sickle",
-    warbond: "Cutting Edge",
+    warbond: "Servants of Freedom",
   },
   "PLAS-1": {
     role: LoadoutRole.Primary,
@@ -1036,7 +1037,7 @@ export const ASSETS = {
     image: "/assets/primary/PLAS-101_Purifier.png",
     description: "A charged plasma weapon that can be overcharged for extra damage.",
     wiki: "https://helldivers.wiki.gg/wiki/PLAS-101_Purifier",
-    warbond: "Freedom's Flame",
+    warbond: "Polar Patriots",
   },
   "ARC-12": {
     role: LoadoutRole.Primary,
@@ -1085,7 +1086,7 @@ export const ASSETS = {
     image: "/assets/secondary/P-11_Stim_Pistol.png",
     description: "A medical device that heals teammates from a distance.",
     wiki: "https://helldivers.wiki.gg/wiki/P-11_Stim_Pistol",
-    warbond: "Cutting Edge",
+    warbond: "Chemical Agents",
   },
   "P-19": {
     role: LoadoutRole.Secondary,
@@ -1117,7 +1118,7 @@ export const ASSETS = {
     image: "/assets/secondary/P-113_Verdict.png",
     description: "A semi-automatic pistol with armor-piercing capabilities.",
     wiki: "https://helldivers.wiki.gg/wiki/P-113_Verdict",
-    warbond: "Democratic Detonation",
+    warbond: "Polar Patriots",
   },
   "GP-31": {
     role: LoadoutRole.Secondary,
@@ -1149,7 +1150,7 @@ export const ASSETS = {
     image: "/assets/secondary/PLAS-15_Loyalist.png",
     description: "A rapid-firing plasma weapon with burst mode.",
     wiki: "https://helldivers.wiki.gg/wiki/PLAS-15_Loyalist",
-    warbond: "Polar Patriots",
+    warbond: "Truth Enforcers",
   },
   "M6C": {
     role: LoadoutRole.Secondary,
@@ -1173,6 +1174,7 @@ export const ASSETS = {
     image: "/assets/secondary/CQC-2_Saber.png",
     description: "A melee weapon for close combat situations.",
     wiki: "https://helldivers.wiki.gg/wiki/CQC-2_Saber",
+    warbond: "Servants of Freedom",
   },
   "CQC-5": {
     role: LoadoutRole.Secondary,
@@ -1187,7 +1189,7 @@ export const ASSETS = {
     image: "/assets/secondary/CQC-19_Stun_Lance.png",
     description: "An electrified lance that stuns enemies.",
     wiki: "https://helldivers.wiki.gg/wiki/CQC-19_Stun_Lance",
-    warbond: "Polar Patriots",
+    warbond: "Urban Legends",
   },
   "CQC-30": {
     role: LoadoutRole.Secondary,
@@ -1240,6 +1242,7 @@ export const ASSETS = {
     image: "/assets/throwable/G-4_Gas.png",
     description: "Releases toxic gas that damages enemies in the area.",
     wiki: "https://helldivers.wiki.gg/wiki/G-4_Gas",
+    warbond: "Chemical Agents",
   },
   "G-6": {
     role: LoadoutRole.Throwable,
@@ -1255,6 +1258,7 @@ export const ASSETS = {
     image: "/assets/throwable/G-7_Pineapple.png",
     description: "A classic pineapple-style fragmentation grenade.",
     wiki: "https://helldivers.wiki.gg/wiki/G-7_Pineapple",
+    warbond: "Dust Devils",
   },
   "G-10": {
     role: LoadoutRole.Throwable,
@@ -1277,6 +1281,7 @@ export const ASSETS = {
     image: "/assets/throwable/G-13_Incendiary_Impact.png",
     description: "An impact grenade that creates fire on detonation.",
     wiki: "https://helldivers.wiki.gg/wiki/G-13_Incendiary_Impact",
+    warbond: "Polar Patriots",
   },
   "G-16": {
     role: LoadoutRole.Throwable,
@@ -1300,6 +1305,7 @@ export const ASSETS = {
     image: "/assets/throwable/G-31_ARC.png",
     description: "An electrical grenade that chains lightning between enemies.",
     wiki: "https://helldivers.wiki.gg/wiki/G-31_ARC",
+    warbond: "Control Group",
   },
   "G-50": {
     role: LoadoutRole.Throwable,
@@ -1307,6 +1313,7 @@ export const ASSETS = {
     image: "/assets/throwable/G-50_Seeker.png",
     description: "A smart grenade that seeks out nearby enemies.",
     wiki: "https://helldivers.wiki.gg/wiki/G-50_Seeker",
+    warbond: "Servants of Freedom",
   },
   "G-109": {
     role: LoadoutRole.Throwable,
@@ -1314,6 +1321,7 @@ export const ASSETS = {
     image: "/assets/throwable/G-109_Urchin.png",
     description: "A spiky grenade that releases multiple explosive fragments.",
     wiki: "https://helldivers.wiki.gg/wiki/G-109_Urchin",
+    warbond: "Force of Law",
   },
   "G-123": {
     role: LoadoutRole.Throwable,
@@ -1329,6 +1337,7 @@ export const ASSETS = {
     image: "/assets/throwable/G-142_Pyrotech.png",
     description: "An advanced incendiary grenade with enhanced fire effects.",
     wiki: "https://helldivers.wiki.gg/wiki/G-142_Pyrotech",
+    warbond: "Masters of Ceremony",
   },
   "K-2": {
     role: LoadoutRole.Throwable,
@@ -1336,6 +1345,7 @@ export const ASSETS = {
     image: "/assets/throwable/K-2_Throwing_Knife.png",
     description: "A precision throwing knife for silent eliminations.",
     wiki: "https://helldivers.wiki.gg/wiki/K-2_Throwing_Knife",
+    warbond: "Viper Commandos",
   },
   "TED-63": {
     role: LoadoutRole.Throwable,
@@ -1483,12 +1493,12 @@ export const ASSETS = {
   },
 
   // HANGAR STRATAGEMS (SUPPORT WEAPONS)
-  "MG-43": {
+  "AC-8": {
     role: LoadoutRole.Stratagem,
-    name: "MG-43 Machine Gun",
-    image: "https://helldivers.wiki.gg/images/thumb/0/0b/MG-43_Machine_Gun_Stratagem_Icon.png/256px-MG-43_Machine_Gun_Stratagem_Icon.png",
-    description: "A reliable machine gun for sustained fire support.",
-    wiki: "https://helldivers.wiki.gg/wiki/MG-43_Machine_Gun",
+    name: "AC-8 Autocannon",
+    image: "https://helldivers.wiki.gg/images/thumb/3/3c/AC-8_Autocannon_Stratagem_Icon.png/256px-AC-8_Autocannon_Stratagem_Icon.png",
+    description: "A rapid-firing cannon effective against medium armor.",
+    wiki: "https://helldivers.wiki.gg/wiki/AC-8_Autocannon",
   },
   "APW-1": {
     role: LoadoutRole.Stratagem,
@@ -1497,12 +1507,20 @@ export const ASSETS = {
     description: "A high-powered rifle for long-range precision shots.",
     wiki: "https://helldivers.wiki.gg/wiki/APW-1_Anti-Materiel_Rifle",
   },
-  "M-105": {
+  "ARC-3": {
     role: LoadoutRole.Stratagem,
-    name: "M-105 Stalwart",
-    image: "https://helldivers.wiki.gg/images/thumb/4/49/M-105_Stalwart_Stratagem_Icon.png/256px-M-105_Stalwart_Stratagem_Icon.png",
-    description: "A lightweight machine gun for mobile support.",
-    wiki: "https://helldivers.wiki.gg/wiki/M-105_Stalwart",
+    name: "ARC-3 Arc Thrower",
+    image: "https://helldivers.wiki.gg/images/thumb/8/8a/ARC-3_Arc_Thrower_Stratagem_Icon.png/256px-ARC-3_Arc_Thrower_Stratagem_Icon.png",
+    description: "An electrical weapon that chains between targets.",
+    wiki: "https://helldivers.wiki.gg/wiki/ARC-3_Arc_Thrower",
+  },
+  "CQC-1": {
+    role: LoadoutRole.Stratagem,
+    name: "CQC-1 One True Flag",
+    image: "https://helldivers.wiki.gg/images/CQC-1_One_True_Flag_Stratagem_Icon.png",
+    description: "The One True Flag is a Melee Support Weapon. Attacking will thrust the One True Flag at a moderately fast speed.",
+    wiki: "https://helldivers.wiki.gg/wiki/CQC-1_One_True_Flag",
+    warbond: "Masters of Ceremony",
   },
   "EAT-17": {
     role: LoadoutRole.Stratagem,
@@ -1511,12 +1529,13 @@ export const ASSETS = {
     description: "A disposable anti-tank rocket launcher.",
     wiki: "https://helldivers.wiki.gg/wiki/EAT-17_Expendable_Anti-tank",
   },
-  "GR-8": {
+  "EAT-700": {
     role: LoadoutRole.Stratagem,
-    name: "GR-8 Recoilless Rifle",
-    image: "https://helldivers.wiki.gg/images/thumb/b/b6/GR-8_Recoilless_Rifle_Stratagem_Icon.png/256px-GR-8_Recoilless_Rifle_Stratagem_Icon.png",
-    description: "A powerful anti-tank rifle that requires teamwork to reload.",
-    wiki: "https://helldivers.wiki.gg/wiki/GR-8_Recoilless_Rifle",
+    name: "EAT-700 Expendable Napalm",
+    image: "https://helldivers.wiki.gg/images/EAT-700_Expendable_Napalm_Stratagem_Icon.png?",
+    description: "The EAT-700 Expendable Napalm or NEAT for short is a Stratagem that calls down 2 disposable anti-tank Support Weapons.",
+    wiki: "https://helldivers.wiki.gg/wiki/EAT-700_Expendable_Napalm",
+    warbond: "Dust Devils",
   },
   "FAF-14": {
     role: LoadoutRole.Stratagem,
@@ -1532,19 +1551,20 @@ export const ASSETS = {
     description: "A versatile grenade launcher for area damage.",
     wiki: "https://helldivers.wiki.gg/wiki/GL-21_Grenade_Launcher",
   },
-  "LAS-98": {
+  "GL-51": {
     role: LoadoutRole.Stratagem,
-    name: "LAS-98 Laser Cannon",
-    image: "https://helldivers.wiki.gg/images/thumb/5/51/Laser_Cannon_Stratagem_Icon.png/256px-Laser_Cannon_Stratagem_Icon.png",
-    description: "A laser weapon that builds up heat to penetrate armor.",
-    wiki: "https://helldivers.wiki.gg/wiki/LAS-98_Laser_Cannon",
+    name: "GL-52 De-Escalator",
+    image: "https://helldivers.wiki.gg/images/GL-52_De-Escalator_Stratagem_Icon.png",
+    description: "A versatile grenade launcher for area damage.",
+    wiki: "https://helldivers.wiki.gg/wiki/GL-52_De-Escalator",
+    warbond: "Force of Law",
   },
-  "AC-8": {
+  "GR-8": {
     role: LoadoutRole.Stratagem,
-    name: "AC-8 Autocannon",
-    image: "https://helldivers.wiki.gg/images/thumb/3/3c/AC-8_Autocannon_Stratagem_Icon.png/256px-AC-8_Autocannon_Stratagem_Icon.png",
-    description: "A rapid-firing cannon effective against medium armor.",
-    wiki: "https://helldivers.wiki.gg/wiki/AC-8_Autocannon",
+    name: "GR-8 Recoilless Rifle",
+    image: "https://helldivers.wiki.gg/images/thumb/b/b6/GR-8_Recoilless_Rifle_Stratagem_Icon.png/256px-GR-8_Recoilless_Rifle_Stratagem_Icon.png",
+    description: "A powerful anti-tank rifle that requires teamwork to reload.",
+    wiki: "https://helldivers.wiki.gg/wiki/GR-8_Recoilless_Rifle",
   },
   "FLAM-40": {
     role: LoadoutRole.Stratagem,
@@ -1560,12 +1580,12 @@ export const ASSETS = {
     description: "A charged weapon that fires electromagnetic projectiles.",
     wiki: "https://helldivers.wiki.gg/wiki/RS-422_Railgun",
   },
-  "ARC-3": {
+  "LAS-98": {
     role: LoadoutRole.Stratagem,
-    name: "ARC-3 Arc Thrower",
-    image: "https://helldivers.wiki.gg/images/thumb/8/8a/ARC-3_Arc_Thrower_Stratagem_Icon.png/256px-ARC-3_Arc_Thrower_Stratagem_Icon.png",
-    description: "An electrical weapon that chains between targets.",
-    wiki: "https://helldivers.wiki.gg/wiki/ARC-3_Arc_Thrower",
+    name: "LAS-98 Laser Cannon",
+    image: "https://helldivers.wiki.gg/images/thumb/5/51/Laser_Cannon_Stratagem_Icon.png/256px-Laser_Cannon_Stratagem_Icon.png",
+    description: "A laser weapon that builds up heat to penetrate armor.",
+    wiki: "https://helldivers.wiki.gg/wiki/LAS-98_Laser_Cannon",
   },
   "LAS-99": {
     role: LoadoutRole.Stratagem,
@@ -1574,6 +1594,20 @@ export const ASSETS = {
     description: "A powerful laser cannon with a long charge time.",
     wiki: "https://helldivers.wiki.gg/wiki/LAS-99_Quasar_Cannon",
   },
+  "M-105": {
+    role: LoadoutRole.Stratagem,
+    name: "M-105 Stalwart",
+    image: "https://helldivers.wiki.gg/images/thumb/4/49/M-105_Stalwart_Stratagem_Icon.png/256px-M-105_Stalwart_Stratagem_Icon.png",
+    description: "A lightweight machine gun for mobile support.",
+    wiki: "https://helldivers.wiki.gg/wiki/M-105_Stalwart",
+  },
+  "MG-43": {
+    role: LoadoutRole.Stratagem,
+    name: "MG-43 Machine Gun",
+    image: "https://helldivers.wiki.gg/images/thumb/0/0b/MG-43_Machine_Gun_Stratagem_Icon.png/256px-MG-43_Machine_Gun_Stratagem_Icon.png",
+    description: "A reliable machine gun for sustained fire support.",
+    wiki: "https://helldivers.wiki.gg/wiki/MG-43_Machine_Gun",
+  },
   "MG-206": {
     role: LoadoutRole.Stratagem,
     name: "MG-206 Heavy Machine Gun",
@@ -1581,12 +1615,36 @@ export const ASSETS = {
     description: "A heavy machine gun for sustained suppression.",
     wiki: "https://helldivers.wiki.gg/wiki/MG-206_Heavy_Machine_Gun",
   },
-  "AIRBURST-RL": {
+  "MS-11": {
     role: LoadoutRole.Stratagem,
-    name: "Airburst Rocket Launcher",
-    image: "https://helldivers.wiki.gg/images/thumb/6/64/Airburst_Rocket_Launcher_Stratagem_Icon.png/256px-Airburst_Rocket_Launcher_Stratagem_Icon.png",
+    name: "MS-11 Solo Silo",
+    image: "https://helldivers.wiki.gg/images/MS-11_Solo_Silo_Stratagem_Icon.png",
+    description: "The MS-11 Solo Silo is a Support Weapon Stratagem that deploys a stationary missile launcher capable of firing powerful missiles at targets.",
+    wiki: "https://helldivers.wiki.gg/wiki/MS-11_Solo_Silo",
+    warbond: "Dust Devils",
+  },
+  "PLAS-45": {
+    role: LoadoutRole.Stratagem,
+    name: "PLAS-45 Epoch",
+    image: "https://helldivers.wiki.gg/images/PLAS-45_Epoch_Stratagem_Icon.png",
+    description: "The PLAS-45 Epoch is an energy-based plasma Support Weapon Stratagem with Heavy armor penetration that scales armor penetration and damage.",
+    wiki: "https://helldivers.wiki.gg/wiki/PLAS-45_Epoch",
+    warbond: "Control Group",
+  },
+  "RL-77": {
+    role: LoadoutRole.Stratagem,
+    name: "RL-77 Airburst Rocket Launcher",
+    image: "https://helldivers.wiki.gg/images/RL-77_Airburst_Rocket_Launcher_Stratagem_Icon.png",
     description: "Fires rockets that explode above targets.",
-    wiki: "https://helldivers.wiki.gg/wiki/Airburst_Rocket_Launcher",
+    wiki: "https://helldivers.wiki.gg/wiki/RL-77_Airburst_Rocket_Launcher",
+  },
+  "S-11": {
+    role: LoadoutRole.Stratagem,
+    name: "S-11 Speargun",
+    image: "https://helldivers.wiki.gg/images/S-11_Speargun_Stratagem_Icon.png",
+    description: "A speargun firing heavy-duty projectiles. These projectiles release a cloud of gas on impact, and must be carefully loaded one at a time.",
+    wiki: "https://helldivers.wiki.gg/wiki/S-11_Speargun",
+    warbond: "Dust Devils",
   },
   "StA-X3": {
     role: LoadoutRole.Stratagem,
@@ -1595,14 +1653,23 @@ export const ASSETS = {
     description: "Launches guided missiles with advanced targeting.",
     wiki: "https://helldivers.wiki.gg/wiki/StA-X3_W.A.S.P._Launcher",
   },
+  "TX-41": {
+    role: LoadoutRole.Stratagem,
+    name: "TX-41 Sterilizer",
+    image: "https://helldivers.wiki.gg/images/Sterilizer_Stratagem_Icon.png",
+    description: "The Sterilizer is a Support Weapon Stratagem that sprays a caustic gas which slows and blinds enemies.",
+    wiki: "https://helldivers.wiki.gg/wiki/TX-41_Sterilizer",
+    warbond: "Chemical Agents",
+  },
 
   // DEFENSIVE STRATAGEMS
-  "ATE": {
+  "E/AT-12": {
     role: LoadoutRole.Stratagem,
-    name: "Anti-Tank Emplacement",
+    name: "E/AT-12 Anti-Tank Emplacement",
     image: "https://helldivers.wiki.gg/images/thumb/3/30/Anti-Tank_Emplacement_Stratagem_Icon.png/256px-Anti-Tank_Emplacement_Stratagem_Icon.png",
     description: "A stationary anti-tank gun for defensive positions.",
     wiki: "https://helldivers.wiki.gg/wiki/Anti-Tank_Emplacement",
+    warbond: "Urban Legends",
   },
   "HMG-E": {
     role: LoadoutRole.Stratagem,
@@ -1664,19 +1731,21 @@ export const ASSETS = {
   },
 
   // SENTRY STRATAGEMS
-  "FS": {
+  "A/FLAM-40": {
     role: LoadoutRole.Stratagem,
-    name: "Flame Sentry",
+    name: "A/FLAM-40 Flame Sentry",
     image: "https://helldivers.wiki.gg/images/thumb/9/90/Flame_Sentry_Stratagem_Icon.png/256px-Flame_Sentry_Stratagem_Icon.png",
     description: "An automated sentry that burns enemies with flames.",
     wiki: "https://helldivers.wiki.gg/wiki/Flame_Sentry",
+    warbond: "Urban Legends",
   },
-  "LS": {
+  "A/LAS-98": {
     role: LoadoutRole.Stratagem,
     name: "Laser Sentry",
     image: "https://helldivers.wiki.gg/images/thumb/0/06/Laser_Sentry_Stratagem_Icon.png/256px-Laser_Sentry_Stratagem_Icon.png",
     description: "A sentry that fires precise laser beams.",
     wiki: "https://helldivers.wiki.gg/wiki/Laser_Sentry",
+    warbond: "Control Group",
   },
   "MGS": {
     role: LoadoutRole.Stratagem,
@@ -1735,6 +1804,7 @@ export const ASSETS = {
     image: "https://helldivers.wiki.gg/images/Portable_Hellbomb_Stratagem_Icon.png",
     description: "A portable tactical nuclear weapon capable of obliterating anything nearby.",
     wiki: "https://helldivers.wiki.gg/wiki/B-100_Portable_Hellbomb",
+    warbond: "Servants of Freedom",
   },
   "SH-20": {
     role: LoadoutRole.Stratagem,
@@ -1743,47 +1813,65 @@ export const ASSETS = {
     description: "Provides portable cover against enemy small arms fire.",
     wiki: "https://helldivers.wiki.gg/wiki/SH-20_Ballistic_Shield_Backpack",
   },
-  "SH-32": {
+  "SH-51": {
     role: LoadoutRole.Stratagem,
-    name: "SH-32 Directional Shield",
-    image: "https://helldivers.wiki.gg/images/thumb/3/35/SH-32_Directional_Shield_Stratagem_Icon.png/256px-SH-32_Directional_Shield_Stratagem_Icon.png",
+    name: "SH-51 Directional Shield",
+    image: "https://helldivers.wiki.gg/images/thumb/3/35/SH-51_Directional_Shield_Stratagem_Icon.png/256px-SH-51_Directional_Shield_Stratagem_Icon.png",
     description: "A directional energy shield for protection.",
-    wiki: "https://helldivers.wiki.gg/wiki/SH-32_Directional_Shield",
+    wiki: "https://helldivers.wiki.gg/wiki/SH-51_Directional_Shield",
+    warbond: "Urban Legends",
   },
-  "JUMP-PACK": {
+  "LIFT-182": {
+    role: LoadoutRole.Stratagem,
+    name: "LIFT-182 Warp Pack",
+    image: "https://helldivers.wiki.gg/images/LIFT-182_Warp_Pack_Stratagem_Icon.png",
+    description: "A basic jet pack for short bursts of flight.",
+    wiki: "https://helldivers.wiki.gg/wiki/LIFT-182_Warp_Pack",
+    warbond: "Control Group",
+  },
+  "LIFT-850": {
     role: LoadoutRole.Stratagem,
     name: "LIFT-850 Jump Pack",
     image: "https://helldivers.wiki.gg/images/thumb/5/5b/LIFT-850_Jump_Pack_Stratagem_Icon.png/256px-LIFT-850_Jump_Pack_Stratagem_Icon.png",
     description: "Allows the user to make powered jumps over obstacles.",
     wiki: "https://helldivers.wiki.gg/wiki/LIFT-850_Jump_Pack",
   },
-  "HOVER-PACK": {
+  "LIFT-860K": {
     role: LoadoutRole.Stratagem,
     name: "LIFT-860 Hover Pack",
     image: "https://helldivers.wiki.gg/images/thumb/7/73/LIFT-860_Hover_Pack_Stratagem_Icon.png/256px-LIFT-860_Hover_Pack_Stratagem_Icon.png",
     description: "Propels the wearer in the air for extended flight time.",
     wiki: "https://helldivers.wiki.gg/wiki/LIFT-860_Hover_Pack",
   },
-  "GUARD-DOG": {
+  "AX/LAS-5": {
     role: LoadoutRole.Stratagem,
     name: "AX/LAS-5 \"Guard Dog\" Rover",
     image: "https://helldivers.wiki.gg/images/thumb/b/b4/Guard_Dog_Rover_Stratagem_Icon.png/256px-Guard_Dog_Rover_Stratagem_Icon.png",
     description: "An automated drone that fires laser beams at enemies.",
     wiki: "https://helldivers.wiki.gg/wiki/AX/LAS-5_%22Guard_Dog%22_Rover",
   },
-  "GUARD-DOG-BREATH": {
+  "AX/AR-23": {
     role: LoadoutRole.Stratagem,
     name: "AX/AR-23 \"Guard Dog\" Dog Breath",
     image: "https://helldivers.wiki.gg/images/thumb/8/84/Guard_Dog_Dog_Breath_Stratagem_Icon.png/256px-Guard_Dog_Dog_Breath_Stratagem_Icon.png",
     description: "A flame-based version of the Guard Dog drone.",
     wiki: "https://helldivers.wiki.gg/wiki/AX/AR-23_%22Guard_Dog%22_Dog_Breath",
   },
-  "GUARD-DOG-K9": {
+  "AX/ARC-3": {
     role: LoadoutRole.Stratagem,
     name: "AX/ARC-3 \"Guard Dog\" K-9",
     image: "https://helldivers.wiki.gg/images/thumb/3/3b/Guard_Dog_K9_Stratagem_Icon.png/256px-Guard_Dog_K9_Stratagem_Icon.png",
     description: "An arc-based version of the Guard Dog drone.",
     wiki: "https://helldivers.wiki.gg/wiki/AX/ARC-3_%22Guard_Dog%22_K-9",
+    warbond: "Force of Law",
+  },
+  "AX/TX-13": {
+    role: LoadoutRole.Stratagem,
+    name: "AX/TX-13 \"Guard Dog\" Dog Breath",
+    image: "https://helldivers.wiki.gg/images/Guard_Dog_Dog_Breath_Stratagem_Icon.png",
+    description: "It slows and blinds nearby enemies by spraying them with caustic gas, helping the owner avoid being overwhelmed by swarms.",
+    wiki: "https://helldivers.wiki.gg/wiki/AX/TX-13_%22Guard_Dog%22_Dog_Breath",
+    warbond: "Chemical Agents",
   },
 
   // VEHICLES
