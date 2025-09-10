@@ -13,6 +13,7 @@ export type Asset = {
   name: string; // display name
   image?: string; // under /public
   description?: string;
+  warbond?: string;
   wiki?: string;
 };
 
@@ -25,6 +26,7 @@ export const ASSETS = {
     image: "/assets/armor/A-9_Helljumper.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/A-9_Helljumper",
+    warbond: "ODST",
   },
   "A-35": {
     role: LoadoutRole.Armor,
@@ -39,6 +41,7 @@ export const ASSETS = {
     image: "/assets/armor/AC-1_Dutiful.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/AC-1_Dutiful",
+    warbond: "Chemical Agents",
   },
   "AC-2": {
     role: LoadoutRole.Armor,
@@ -46,6 +49,7 @@ export const ASSETS = {
     image: "/assets/armor/AC-2_Obedient.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/AC-2_Obedient",
+    warbond: "Chemical Agents",
   },
   "AD-11": {
     role: LoadoutRole.Armor,
@@ -53,6 +57,7 @@ export const ASSETS = {
     image: "/assets/armor/AD-11_Livewire.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/AD-11_Livewire",
+    warbond: "Control Group",
   },
   "AD-26": {
     role: LoadoutRole.Armor,
@@ -60,6 +65,7 @@ export const ASSETS = {
     image: "/assets/armor/AD-26_Bleeding_Edge.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/AD-26_Bleeding_Edge",
+    warbond: "Control Group",
   },
   "AD-49": {
     role: LoadoutRole.Armor,
@@ -67,6 +73,7 @@ export const ASSETS = {
     image: "/assets/armor/AD-49_Apollonian.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/AD-49_Apollonian",
+    warbond: "Control Group",
   },
   "AF-02": {
     role: LoadoutRole.Armor,
@@ -74,6 +81,7 @@ export const ASSETS = {
     image: "/assets/armor/AF-02_Haz-Master.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/AF-02_Haz-Master",
+    warbond: "Chemical Agents",
   },
   "AF-50": {
     role: LoadoutRole.Armor,
@@ -81,6 +89,7 @@ export const ASSETS = {
     image: "/assets/armor/AF-50_Noxious_Ranger.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/AF-50_Noxious_Ranger",
+    warbond: "Chemical Agents",
   },
   "AF-52": {
     role: LoadoutRole.Armor,
@@ -88,6 +97,7 @@ export const ASSETS = {
     image: "/assets/armor/AF-52_Lockdown.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/AF-52_Lockdown",
+    warbond: "Chemical Agents",
   },
   "AF-91": {
     role: LoadoutRole.Armor,
@@ -95,6 +105,7 @@ export const ASSETS = {
     image: "/assets/armor/AF-91_Field_Chemist.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/AF-91_Field_Chemist",
+    warbond: "Chemical Agents",
   },
   "B-01": {
     role: LoadoutRole.Armor,
@@ -130,6 +141,7 @@ export const ASSETS = {
     image: "/assets/armor/B-27_Fortified_Commando.png",
     description: "Fortified armor with explosive resistance.",
     wiki: "https://helldivers.wiki.gg/wiki/B-27_Fortified_Commando",
+    warbond: "Steeled Veterans",
   },
   "BP-20": {
     role: LoadoutRole.Armor,
@@ -137,6 +149,7 @@ export const ASSETS = {
     image: "/assets/armor/BP-20_Correct_Officer.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/BP-20_Correct_Officer",
+    warbond: "Truth Enforcers",
   },
   "BP-32": {
     role: LoadoutRole.Armor,
@@ -144,6 +157,7 @@ export const ASSETS = {
     image: "/assets/armor/BP-32_Jackboot.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/BP-32_Jackboot",
+    warbond: "Truth Enforcers",
   },
   "BP-77": {
     role: LoadoutRole.Armor,
@@ -151,6 +165,7 @@ export const ASSETS = {
     image: "/assets/armor/BP-77_Grand_Juror.png",
     description: "Ceremonial armor with gilded details and enhanced durability.",
     wiki: "https://helldivers.wiki.gg/wiki/BP-77_Grand_Juror",
+    warbond: "Truth Enforcers",
   },
   "CE-07": {
     role: LoadoutRole.Armor,
@@ -158,6 +173,7 @@ export const ASSETS = {
     image: "/assets/armor/CE-07_Demolition_Specialist.png",
     description: "Specialized armor for explosive ordnance disposal.",
     wiki: "https://helldivers.wiki.gg/wiki/CE-07_Demolition_Specialist",
+    warbond: "Democratic Detonation",
   },
   "CE-27": {
     role: LoadoutRole.Armor,
@@ -165,6 +181,7 @@ export const ASSETS = {
     image: "/assets/armor/CE-27_Ground_Breaker.png",
     description: "Heavy engineering armor with enhanced explosive protection.",
     wiki: "https://helldivers.wiki.gg/wiki/CE-27_Ground_Breaker",
+    warbond: "Democratic Detonation",
   },
   "CE-35": {
     role: LoadoutRole.Armor,
@@ -172,6 +189,7 @@ export const ASSETS = {
     image: "/assets/armor/CE-35_Trench_Engineer.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/CE-35_Trench_Engineer",
+    warbond: "Helldivers Mobilize!",
   },
   "CE-64": {
     role: LoadoutRole.Armor,
@@ -179,6 +197,7 @@ export const ASSETS = {
     image: "/assets/armor/CE-64_Grenadier.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/CE-64_Grenadier",
+    warbond: "Democratic Detonation",
   },
   "CE-67": {
     role: LoadoutRole.Armor,
@@ -186,6 +205,7 @@ export const ASSETS = {
     image: "/assets/armor/CE-67_Titan.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/CE-67_Titan",
+    warbond: "Democratic Detonation",
   },
   "CE-74": {
     role: LoadoutRole.Armor,
@@ -193,6 +213,7 @@ export const ASSETS = {
     image: "/assets/armor/CE-74_Breaker.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/CE-74_Breaker",
+    warbond: "Democratic Detonation",
   },
   "CE-81": {
     role: LoadoutRole.Armor,
@@ -200,6 +221,7 @@ export const ASSETS = {
     image: "/assets/armor/CE-81_Juggernaut.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/CE-81_Juggernaut",
+    warbond: "Democratic Detonation",
   },
   "CE-101": {
     role: LoadoutRole.Armor,
@@ -207,6 +229,7 @@ export const ASSETS = {
     image: "/assets/armor/CE-101_Guerilla_Gorilla.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/CE-101_Guerilla_Gorilla",
+    warbond: "Viper Commandos",
   },
   "CM-09": {
     role: LoadoutRole.Armor,
@@ -214,6 +237,7 @@ export const ASSETS = {
     image: "/assets/armor/CM-09_Bonesnapper.png",
     description: "Close combat armor with melee damage bonus.",
     wiki: "https://helldivers.wiki.gg/wiki/CM-09_Bonesnapper",
+    warbond: "Helldivers Mobilize!",
   },
   "CM-10": {
     role: LoadoutRole.Armor,
@@ -221,6 +245,7 @@ export const ASSETS = {
     image: "/assets/armor/CM-10_Clinician.png",
     description: "Armor designed for close-quarters combat operations.",
     wiki: "https://helldivers.wiki.gg/wiki/CM-10_Clincher",
+    warbond: "Viper Commandos",
   },
   "CM-14": {
     role: LoadoutRole.Armor,
@@ -228,6 +253,7 @@ export const ASSETS = {
     image: "/assets/armor/CM-14_Physician.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/CM-14_Physician",
+    warbond: "Helldivers Mobilize!",
   },
   "CM-17": {
     role: LoadoutRole.Armor,
@@ -235,6 +261,7 @@ export const ASSETS = {
     image: "/assets/armor/CM-17_Butcher.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/CM-17_Butcher",
+    warbond: "Viper Commandos",
   },
   "CM-21": {
     role: LoadoutRole.Armor,
@@ -242,6 +269,7 @@ export const ASSETS = {
     image: "/assets/armor/CM-21_Trench_Paramedic.png",
     description: "Medical armor with enhanced stim efficiency.",
     wiki: "https://helldivers.wiki.gg/wiki/CM-21_Trench_Paramedic",
+    warbond: "Cutting Edge",
   },
   "CW-4": {
     role: LoadoutRole.Armor,
@@ -249,6 +277,7 @@ export const ASSETS = {
     image: "/assets/armor/CW-4_Arctic_Ranger.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/CW-4_Arctic_Ranger",
+    warbond: "Polar Patriots",
   },
   "CW-9": {
     role: LoadoutRole.Armor,
@@ -256,6 +285,7 @@ export const ASSETS = {
     image: "/assets/armor/CW-9_White_Wolf.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/CW-9_White_Wolf",
+    warbond: "Polar Patriots",
   },
   "CW-22": {
     role: LoadoutRole.Armor,
@@ -263,6 +293,7 @@ export const ASSETS = {
     image: "/assets/armor/CW-22_Kodiak.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/CW-22_Kodiak",
+    warbond: "Polar Patriots",
   },
   "CW-36": {
     role: LoadoutRole.Armor,
@@ -270,6 +301,7 @@ export const ASSETS = {
     image: "/assets/armor/CW-36_Winter_Warrior.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/CW-36_Winter_Warrior",
+    warbond: "Polar Patriots",
   },
   "DP-00": {
     role: LoadoutRole.Armor,
@@ -284,6 +316,7 @@ export const ASSETS = {
     image: "/assets/armor/DP-11_Champion_of_the_People.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/DP-11_Champion_of_the_People",
+    warbond: "Helldivers Mobilize!",
   },
   "DP-40": {
     role: LoadoutRole.Armor,
@@ -291,6 +324,7 @@ export const ASSETS = {
     image: "/assets/armor/DP-40_Hero_of_the_Federation.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/DP-40_Hero_of_the_Federation",
+    warbond: "Helldivers Mobilize!",
   },
   "DP-53": {
     role: LoadoutRole.Armor,
@@ -305,6 +339,7 @@ export const ASSETS = {
     image: "/assets/armor/DS-10_Big_Game_Hunter.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/DS-10_Big_Game_Hunter",
+    warbond: "Dust Devils",
   },
   "DS-42": {
     role: LoadoutRole.Armor,
@@ -312,6 +347,7 @@ export const ASSETS = {
     image: "/assets/armor/DS-42_Federations_Blade.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/DS-42_Federation's_Blade",
+    warbond: "Dust Devils",
   },
   "DS-191": {
     role: LoadoutRole.Armor,
@@ -319,6 +355,7 @@ export const ASSETS = {
     image: "/assets/armor/DS-191_Scorpion.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/DS-191_Scorpion",
+    warbond: "Dust Devils",
   },
   "EX-00": {
     role: LoadoutRole.Armor,
@@ -326,6 +363,7 @@ export const ASSETS = {
     image: "/assets/armor/EX-00_Prototype_X.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/EX-00_Prototype_X",
+    warbond: "Cutting Edge",
   },
   "EX-03": {
     role: LoadoutRole.Armor,
@@ -333,6 +371,7 @@ export const ASSETS = {
     image: "/assets/armor/EX-03_Prototype_3.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/EX-03_Prototype_3",
+    warbond: "Cutting Edge",
   },
   "EX-16": {
     role: LoadoutRole.Armor,
@@ -340,6 +379,7 @@ export const ASSETS = {
     image: "/assets/armor/EX-16_Prototype_16.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/EX-16_Prototype_16",
+    warbond: "Cutting Edge",
   },
   "FS-05": {
     role: LoadoutRole.Armor,
@@ -347,6 +387,7 @@ export const ASSETS = {
     image: "/assets/armor/FS-05_Marksman.png",
     description: "Precision armor with improved accuracy and stability.",
     wiki: "https://helldivers.wiki.gg/wiki/FS-05_Marksman",
+    warbond: "Helldivers Mobilize!",
   },
   "FS-11": {
     role: LoadoutRole.Armor,
@@ -361,6 +402,7 @@ export const ASSETS = {
     image: "/assets/armor/FS-23_Battle_Master.png",
     description: "Command armor with tactical bonuses.",
     wiki: "https://helldivers.wiki.gg/wiki/FS-23_Battle_Master",
+    warbond: "Helldivers Mobilize!",
   },
   "FS-34": {
     role: LoadoutRole.Armor,
@@ -389,6 +431,7 @@ export const ASSETS = {
     image: "/assets/armor/FS-55_Devastator.png",
     description: "Ultra-heavy armor with maximum protection.",
     wiki: "https://helldivers.wiki.gg/wiki/FS-55_Devastator",
+    warbond: "Democratic Detonation",
   },
   "FS-61": {
     role: LoadoutRole.Armor,
@@ -403,6 +446,7 @@ export const ASSETS = {
     image: "/assets/armor/GS-11_Democracys_Deputy.png",
     description: "Increases sidearms reload speed by 40%. Sidearm draw/holster speed increased by 50%. Sidearm recoil reduced by 70%.",
     wiki: "https://helldivers.wiki.gg/wiki/GS-11_Democracy%27s_Deputy",
+    warbond: "Freedom's Flame",
   },
   "GS-17": {
     role: LoadoutRole.Armor,
@@ -410,6 +454,7 @@ export const ASSETS = {
     image: "/assets/armor/GS-17_Frontier_Marshal.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/GS-17_Frontier_Marshal",
+    warbond: "Freedom's Flame",
   },
   "GS-66": {
     role: LoadoutRole.Armor,
@@ -417,6 +462,7 @@ export const ASSETS = {
     image: "/assets/armor/GS-66_Lawmaker.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/GS-66_Lawmaker",
+    warbond: "Freedom's Flame",
   },
   "I-09": {
     role: LoadoutRole.Armor,
@@ -424,6 +470,7 @@ export const ASSETS = {
     image: "/assets/armor/I-09_Heatseeker.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/I-09_Heatseeker",
+    warbond: "Freedom's Flame",
   },
   "I-44": {
     role: LoadoutRole.Armor,
@@ -431,6 +478,7 @@ export const ASSETS = {
     image: "/assets/armor/I-44_Salamander.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/I-44_Salamander",
+    warbond: "Freedom's Flame",
   },
   "I-92": {
     role: LoadoutRole.Armor,
@@ -438,6 +486,7 @@ export const ASSETS = {
     image: "/assets/armor/I-92_Fire_Fighter.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/I-92_Fire_Fighter",
+    warbond: "Freedom's Flame",
   },
   "I-102": {
     role: LoadoutRole.Armor,
@@ -445,6 +494,7 @@ export const ASSETS = {
     image: "/assets/armor/I-102_Draconaught.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/I-102_Draconaught",
+    warbond: "Freedom's Flame",
   },
   "IE-3": {
     role: LoadoutRole.Armor,
@@ -452,6 +502,7 @@ export const ASSETS = {
     image: "/assets/armor/IE-3_Martyr.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/IE-3_Martyr",
+    warbond: "Freedom's Flame",
   },
   "IE-12": {
     role: LoadoutRole.Armor,
@@ -459,6 +510,7 @@ export const ASSETS = {
     image: "/assets/armor/IE-12_Righteous.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/IE-12_Righteous",
+    warbond: "Freedom's Flame",
   },
   "IE-57": {
     role: LoadoutRole.Armor,
@@ -466,6 +518,7 @@ export const ASSETS = {
     image: "/assets/armor/IE-57_Hell-Bent.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/IE-57_Hell-Bent",
+    warbond: "Freedom's Flame",
   },
   "PH-9": {
     role: LoadoutRole.Armor,
@@ -473,6 +526,7 @@ export const ASSETS = {
     image: "/assets/armor/PH-9_Predator.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/PH-9_Predator",
+    warbond: "Viper Commandos",
   },
   "PH-56": {
     role: LoadoutRole.Armor,
@@ -480,6 +534,7 @@ export const ASSETS = {
     image: "/assets/armor/PH-56_Jaguar.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/PH-56_Jaguar",
+    warbond: "Viper Commandos",
   },
   "PH-202": {
     role: LoadoutRole.Armor,
@@ -487,6 +542,7 @@ export const ASSETS = {
     image: "/assets/armor/PH-202_Twigsnapper.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/PH-202_Twigsnapper",
+    warbond: "Viper Commandos",
   },
   "RE-824": {
     role: LoadoutRole.Armor,
@@ -494,6 +550,7 @@ export const ASSETS = {
     image: "/assets/armor/RE-824_Bearer_of_the_Standard.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/RE-824_Bearer_of_the_Standard",
+    warbond: "Servants of Freedom",
   },
   "RE-1861": {
     role: LoadoutRole.Armor,
@@ -501,6 +558,7 @@ export const ASSETS = {
     image: "/assets/armor/RE-1861_Parade_Commander.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/RE-1861_Parade_Commander",
+    warbond: "Servants of Freedom",
   },
   "RE-2310": {
     role: LoadoutRole.Armor,
@@ -508,6 +566,7 @@ export const ASSETS = {
     image: "/assets/armor/RE-2310_Honorary_Guard.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/RE-2310_Honorary_Guard",
+    warbond: "Servants of Freedom",
   },
   "SA-04": {
     role: LoadoutRole.Armor,
@@ -515,6 +574,7 @@ export const ASSETS = {
     image: "/assets/armor/SA-04_Combat_Technician.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/SA-04_Combat_Technician",
+    warbond: "Cutting Edge",
   },
   "SA-12": {
     role: LoadoutRole.Armor,
@@ -522,6 +582,7 @@ export const ASSETS = {
     image: "/assets/armor/SA-12_Servo_Assisted.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/SA-12_Servo_Assisted",
+    warbond: "Steeled Veterans",
   },
   "SA-25": {
     role: LoadoutRole.Armor,
@@ -529,6 +590,7 @@ export const ASSETS = {
     image: "/assets/armor/SA-25_Steel_Trooper.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/SA-25_Steel_Trooper",
+    warbond: "Steeled Veterans",
   },
   "SA-32": {
     role: LoadoutRole.Armor,
@@ -536,6 +598,7 @@ export const ASSETS = {
     image: "/assets/armor/SA-32_Dynamo.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/SA-32_Dynamo",
+    warbond: "Steeled Veterans",
   },
   "SC-15": {
     role: LoadoutRole.Armor,
@@ -543,6 +606,7 @@ export const ASSETS = {
     image: "/assets/armor/SC-15_Drone_Master.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/SC-15_Drone_Master",
+    warbond: "Cutting Edge",
   },
   "SC-30": {
     role: LoadoutRole.Armor,
@@ -550,6 +614,7 @@ export const ASSETS = {
     image: "/assets/armor/SC-30_Trailblazer_Scout.png",
     description: "Light scout armor with enhanced mobility.",
     wiki: "https://helldivers.wiki.gg/wiki/SC-30_Trailblazer_Scout",
+    warbond: "Helldivers Mobilize!",
   },
   "SC-34": {
     role: LoadoutRole.Armor,
@@ -557,6 +622,7 @@ export const ASSETS = {
     image: "/assets/armor/SC-34_Infiltrator.png",
     description: "Stealth armor with reduced detection range.",
     wiki: "https://helldivers.wiki.gg/wiki/SC-34_Infiltrator",
+    warbond: "Helldivers Mobilize!",
   },
   "SC-37": {
     role: LoadoutRole.Armor,
@@ -571,6 +637,7 @@ export const ASSETS = {
     image: "/assets/armor/SR-18_Roadblock.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/SR-18_Roadblock",
+    warbond: "Urban Legends",
   },
   "SR-24": {
     role: LoadoutRole.Armor,
@@ -578,6 +645,7 @@ export const ASSETS = {
     image: "/assets/armor/SR-24_Street_Scout.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/SR-24_Street_Scout",
+    warbond: "Urban Legends",
   },
   "SR-64": {
     role: LoadoutRole.Armor,
@@ -585,6 +653,7 @@ export const ASSETS = {
     image: "/assets/armor/SR-64_Cinderblock.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/SR-64_Cinderblock",
+    warbond: "Urban Legends",
   },
   "TR-7": {
     role: LoadoutRole.Armor,
@@ -592,6 +661,7 @@ export const ASSETS = {
     image: "/assets/armor/TR-7_Ambassador_of_the_Brand.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/TR-7_Ambassador_of_the_Brand",
+    warbond: "Masters of Style",
   },
   "TR-9": {
     role: LoadoutRole.Armor,
@@ -599,6 +669,7 @@ export const ASSETS = {
     image: "/assets/armor/TR-9_Cavalier_of_Democracy.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/TR-9_Cavalier_of_Democracy",
+    warbond: "Masters of Style",
   },
   "TR-40": {
     role: LoadoutRole.Armor,
@@ -606,6 +677,7 @@ export const ASSETS = {
     image: "/assets/armor/TR-40_Gold_Eagle.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/TR-40_Gold_Eagle",
+    warbond: "Masters of Style",
   },
   "TR-62": {
     role: LoadoutRole.Armor,
@@ -613,6 +685,7 @@ export const ASSETS = {
     image: "/assets/armor/TR-62_Knight.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/TR-62_Knight",
+    warbond: "Masters of Style",
   },
   "TR-117": {
     role: LoadoutRole.Armor,
@@ -620,6 +693,7 @@ export const ASSETS = {
     image: "/assets/armor/TR-117_Alpha_Commander.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/TR-117_Alpha_Commander",
+    warbond: "Masters of Style",
   },
   "UF-16": {
     role: LoadoutRole.Armor,
@@ -627,6 +701,7 @@ export const ASSETS = {
     image: "/assets/armor/UF-16_Inspector.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/UF-16_Inspector",
+    warbond: "Truth Enforcers",
   },
   "UF-50": {
     role: LoadoutRole.Armor,
@@ -634,6 +709,7 @@ export const ASSETS = {
     image: "/assets/armor/UF-50_Bloodhound.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/UF-50_Bloodhound",
+    warbond: "Truth Enforcers",
   },
   "UF-84": {
     role: LoadoutRole.Armor,
@@ -641,6 +717,7 @@ export const ASSETS = {
     image: "/assets/armor/UF-84_Doubt_Killer.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/UF-84_Doubt_Killer",
+    warbond: "Truth Enforcers",
   },
 
   // PRIMARY WEAPONS
@@ -657,6 +734,7 @@ export const ASSETS = {
     image: "/assets/primary/R-6_Deadeye.png",
     description: "A precision rifle designed for long-range engagements.",
     wiki: "https://helldivers.wiki.gg/wiki/R-6_Deadeye",
+    warbond: "Dust Devils",
   },
   "R-36": {
     role: LoadoutRole.Primary,
@@ -664,6 +742,7 @@ export const ASSETS = {
     image: "/assets/primary/R-36_Eruptor.png",
     description: "A bolt-action rifle that fires explosive rounds.",
     wiki: "https://helldivers.wiki.gg/wiki/R-36_Eruptor",
+    warbond: "Democratic Detonation",
   },
   "R-63": {
     role: LoadoutRole.Primary,
@@ -671,6 +750,7 @@ export const ASSETS = {
     image: "/assets/primary/R-63_Diligence.png",
     description: "A semi-automatic marksman rifle with high accuracy.",
     wiki: "https://helldivers.wiki.gg/wiki/R-63_Diligence",
+    warbond: "Helldivers Mobilize!",
   },
   "R-63CS": {
     role: LoadoutRole.Primary,
@@ -678,6 +758,7 @@ export const ASSETS = {
     image: "/assets/primary/R-63CS_Diligence_Counter_Sniper.png",
     description: "An upgraded version with scope and armor penetration.",
     wiki: "https://helldivers.wiki.gg/wiki/R-63CS_Diligence_Counter_Sniper",
+    warbond: "Helldivers Mobilize!",
   },
   "R-2124": {
     role: LoadoutRole.Primary,
@@ -685,6 +766,7 @@ export const ASSETS = {
     image: "/assets/primary/R-2124_Constitution.png",
     description: "A vintage rifle with historical significance and reliable performance.",
     wiki: "https://helldivers.wiki.gg/wiki/R-2124_Constitution",
+    warbond: "Servants of Freedom",
   },
   "AR-2": {
     role: LoadoutRole.Primary,
@@ -692,6 +774,7 @@ export const ASSETS = {
     image: "/assets/primary/AR-2_Coyote.png",
     description: "A versatile assault rifle with modular capabilities.",
     wiki: "https://helldivers.wiki.gg/wiki/AR-2_Coyote",
+    warbond: "Control Group",
   },
   "AR-23": {
     role: LoadoutRole.Primary,
@@ -706,6 +789,7 @@ export const ASSETS = {
     image: "/assets/primary/AR-23A_Liberator_Carbine.png",
     description: "A shortened version of the AR-23 Liberator with 50% boost to rate of fire at the cost of increased recoil.",
     wiki: "https://helldivers.wiki.gg/wiki/AR-23A_Liberator_Carbine",
+    warbond: "Viper Commandos",
   },
   "AR-23P": {
     role: LoadoutRole.Primary,
@@ -713,6 +797,7 @@ export const ASSETS = {
     image: "/assets/primary/AR-23P_Liberator_Penetrator.png",
     description: "An armor-piercing variant of the Liberator.",
     wiki: "https://helldivers.wiki.gg/wiki/AR-23P_Liberator_Penetrator",
+    warbond: "Helldivers Mobilize!",
   },
   "AR-23C": {
     role: LoadoutRole.Primary,
@@ -720,6 +805,7 @@ export const ASSETS = {
     image: "/assets/primary/AR-23C_Liberator_Concussive.png",
     description: "A burst-fire variant with concussive rounds.",
     wiki: "https://helldivers.wiki.gg/wiki/AR-23C_Liberator_Concussive",
+    warbond: "Steeled Veterans",
   },
   "AR-32": {
     role: LoadoutRole.Primary,
@@ -727,6 +813,7 @@ export const ASSETS = {
     image: "/assets/primary/AR-32_Pacifier.png",
     description: "A suppressed assault rifle for stealth operations.",
     wiki: "https://helldivers.wiki.gg/wiki/AR-32_Pacifier",
+    warbond: "Borderline Justice",
   },
   "AR-61": {
     role: LoadoutRole.Primary,
@@ -734,6 +821,7 @@ export const ASSETS = {
     image: "/assets/primary/AR-61_Tenderizer.png",
     description: "A high-damage assault rifle with armor penetration.",
     wiki: "https://helldivers.wiki.gg/wiki/AR-61_Tenderizer",
+    warbond: "Steeled Veterans",
   },
   "BR-14": {
     role: LoadoutRole.Primary,
@@ -741,6 +829,7 @@ export const ASSETS = {
     image: "/assets/primary/BR-14_Adjudicator.png",
     description: "A battle rifle with excellent range and stopping power.",
     wiki: "https://helldivers.wiki.gg/wiki/BR-14_Adjudicator",
+    warbond: "Democratic Detonation",
   },
   "StA-11": {
     role: LoadoutRole.Primary,
@@ -755,6 +844,7 @@ export const ASSETS = {
     image: "/assets/primary/StA-52_Assault_Rifle.png",
     description: "A reliable assault rifle with balanced performance.",
     wiki: "https://helldivers.wiki.gg/wiki/StA-52_Assault_Rifle",
+    warbond: "Cutting Edge",
   },
   "SMG-32": {
     role: LoadoutRole.Primary,
@@ -762,6 +852,7 @@ export const ASSETS = {
     image: "/assets/primary/SMG-32_Reprimand.png",
     description: "A high-rate-of-fire submachine gun for close combat.",
     wiki: "https://helldivers.wiki.gg/wiki/SMG-32_Reprimand",
+    warbond: "Borderline Justice",
   },
   "SMG-37": {
     role: LoadoutRole.Primary,
@@ -769,6 +860,7 @@ export const ASSETS = {
     image: "/assets/primary/SMG-37_Defender.png",
     description: "A compact submachine gun for close-quarters combat.",
     wiki: "https://helldivers.wiki.gg/wiki/SMG-37_Defender",
+    warbond: "Helldivers Mobilize!",
   },
   "SMG-72": {
     role: LoadoutRole.Primary,
@@ -776,6 +868,7 @@ export const ASSETS = {
     image: "/assets/primary/SMG-72_Pummeler.png",
     description: "A concussive submachine gun that staggers enemies.",
     wiki: "https://helldivers.wiki.gg/wiki/SMG-72_Pummeler",
+    warbond: "Viper Commandos",
   },
   "M7S": {
     role: LoadoutRole.Primary,
@@ -783,6 +876,7 @@ export const ASSETS = {
     image: "/assets/primary/M7S_SMG.png",
     description: "A military-grade submachine gun with high mobility.",
     wiki: "https://helldivers.wiki.gg/wiki/M7S_SMG",
+    warbond: "ODST",
   },
   "MA5C": {
     role: LoadoutRole.Primary,
@@ -790,6 +884,7 @@ export const ASSETS = {
     image: "/assets/primary/MA5C_Assault_Rifle.png",
     description: "A heavy assault rifle with sustained fire capability.",
     wiki: "https://helldivers.wiki.gg/wiki/MA5C_Assault_Rifle",
+    warbond: "ODST",
   },
   "SG-8": {
     role: LoadoutRole.Primary,
@@ -797,6 +892,7 @@ export const ASSETS = {
     image: "/assets/primary/SG-8_Punisher.png",
     description: "A pump-action shotgun for devastating close-range damage.",
     wiki: "https://helldivers.wiki.gg/wiki/SG-8_Punisher",
+    warbond: "Helldivers Mobilize!",
   },
   "SG-8P": {
     role: LoadoutRole.Primary,
@@ -804,6 +900,7 @@ export const ASSETS = {
     image: "/assets/primary/SG-8P_Punisher_Plasma.png",
     description: "Fires plasma projectiles that explode on impact.",
     wiki: "https://helldivers.wiki.gg/wiki/SG-8P_Punisher_Plasma",
+    warbond: "Cutting Edge",
   },
   "SG-8S": {
     role: LoadoutRole.Primary,
@@ -811,6 +908,7 @@ export const ASSETS = {
     image: "/assets/primary/SG-8S_Slugger.png",
     description: "Fires single armor-piercing slugs instead of pellets.",
     wiki: "https://helldivers.wiki.gg/wiki/SG-8S_Slugger",
+    warbond: "Helldivers Mobilize!",
   },
   "SG-20": {
     role: LoadoutRole.Primary,
@@ -818,6 +916,7 @@ export const ASSETS = {
     image: "/assets/primary/SG-20_Halt.png",
     description: "A tactical shotgun with stopping power and reliability.",
     wiki: "https://helldivers.wiki.gg/wiki/SG-20_Halt",
+    warbond: "Polar Patriots",
   },
   "SG-225": {
     role: LoadoutRole.Primary,
@@ -825,6 +924,7 @@ export const ASSETS = {
     image: "/assets/primary/SG-225_Breaker.png",
     description: "A fully automatic shotgun with high rate of fire.",
     wiki: "https://helldivers.wiki.gg/wiki/SG-225_Breaker",
+    warbond: "Helldivers Mobilize!",
   },
   "SG-225IE": {
     role: LoadoutRole.Primary,
@@ -832,6 +932,7 @@ export const ASSETS = {
     image: "/assets/primary/SG-225IE_Breaker_Incendiary.png",
     description: "An incendiary variant of the Breaker that sets enemies on fire.",
     wiki: "https://helldivers.wiki.gg/wiki/SG-225IE_Breaker_Incendiary",
+    warbond: "Steeled Veterans",
   },
   "SG-225SP": {
     role: LoadoutRole.Primary,
@@ -839,6 +940,7 @@ export const ASSETS = {
     image: "/assets/primary/SG-225SP_Breaker_SprayPray.png",
     description: "A high-capacity variant with extended magazine.",
     wiki: "https://helldivers.wiki.gg/wiki/SG-225SP_Breaker_Spray%26Pray",
+    warbond: "Helldivers Mobilize!",
   },
   "SG-225NS": {
     role: LoadoutRole.Primary,
@@ -846,6 +948,7 @@ export const ASSETS = {
     image: "/assets/primary/SG-225NS_Breaker_Nailspitter.png",
     description: "Fires flechette rounds that penetrate armor.",
     wiki: "https://helldivers.wiki.gg/wiki/SG-225NS_Breaker_Nailspitter",
+    warbond: "Viper Commandos",
   },
   "SG-225BB": {
     role: LoadoutRole.Primary,
@@ -853,6 +956,7 @@ export const ASSETS = {
     image: "/assets/primary/SG-225BB_Breaker_Bugbiter.png",
     description: "An acid-based shotgun effective against bugs.",
     wiki: "https://helldivers.wiki.gg/wiki/SG-225BB_Breaker_Bugbiter",
+    warbond: "Chemical Agents",
   },
   "SG-451": {
     role: LoadoutRole.Primary,
@@ -860,6 +964,7 @@ export const ASSETS = {
     image: "/assets/primary/SG-451_Cookout.png",
     description: "A flamethrower shotgun that ignites enemies on contact.",
     wiki: "https://helldivers.wiki.gg/wiki/SG-451_Cookout",
+    warbond: "Freedom's Flame",
   },
   "M90A": {
     role: LoadoutRole.Primary,
@@ -867,6 +972,7 @@ export const ASSETS = {
     image: "/assets/primary/M90A_Shotgun.png",
     description: "A military-grade shotgun with reliable performance.",
     wiki: "https://helldivers.wiki.gg/wiki/M90A_Shotgun",
+    warbond: "ODST",
   },
   "JAR-5": {
     role: LoadoutRole.Primary,
@@ -874,6 +980,7 @@ export const ASSETS = {
     image: "/assets/primary/JAR-5_Dominator.png",
     description: "A heavy rifle with explosive rounds.",
     wiki: "https://helldivers.wiki.gg/wiki/JAR-5_Dominator",
+    warbond: "Steeled Veterans",
   },
   "CB-9": {
     role: LoadoutRole.Primary,
@@ -881,6 +988,7 @@ export const ASSETS = {
     image: "/assets/primary/CB-9_Exploding_Crossbow.png",
     description: "A silent crossbow that fires explosive bolts.",
     wiki: "https://helldivers.wiki.gg/wiki/CB-9_Exploding_Crossbow",
+    warbond: "Democratic Detonation",
   },
   "LAS-5": {
     role: LoadoutRole.Primary,
@@ -888,6 +996,7 @@ export const ASSETS = {
     image: "/assets/primary/LAS-5_Scythe.png",
     description: "A continuous beam laser rifle that overheats with use.",
     wiki: "https://helldivers.wiki.gg/wiki/LAS-5_Scythe",
+    warbond: "Helldivers Mobilize!",
   },
   "LAS-16": {
     role: LoadoutRole.Primary,
@@ -895,6 +1004,7 @@ export const ASSETS = {
     image: "/assets/primary/LAS-16_Sickle.png",
     description: "A pulsed laser rifle with unlimited ammunition.",
     wiki: "https://helldivers.wiki.gg/wiki/LAS-16_Sickle",
+    warbond: "Cutting Edge",
   },
   "LAS-17": {
     role: LoadoutRole.Primary,
@@ -902,6 +1012,7 @@ export const ASSETS = {
     image: "/assets/primary/LAS-17_Double-Edge_Sickle.png",
     description: "An advanced laser rifle with dual beam capability.",
     wiki: "https://helldivers.wiki.gg/wiki/LAS-17_Double-Edge_Sickle",
+    warbond: "Cutting Edge",
   },
   "PLAS-1": {
     role: LoadoutRole.Primary,
@@ -909,6 +1020,7 @@ export const ASSETS = {
     image: "/assets/primary/PLAS-1_Scorcher.png",
     description: "A plasma rifle that fires explosive energy projectiles.",
     wiki: "https://helldivers.wiki.gg/wiki/PLAS-1_Scorcher",
+    warbond: "Helldivers Mobilize!",
   },
   "PLAS-39": {
     role: LoadoutRole.Primary,
@@ -916,6 +1028,7 @@ export const ASSETS = {
     image: "/assets/primary/PLAS-39_Accelerator_Rifle.png",
     description: "A high-velocity plasma rifle with rapid projectiles.",
     wiki: "https://helldivers.wiki.gg/wiki/PLAS-39_Accelerator_Rifle",
+    warbond: "Control Group",
   },
   "PLAS-101": {
     role: LoadoutRole.Primary,
@@ -923,6 +1036,7 @@ export const ASSETS = {
     image: "/assets/primary/PLAS-101_Purifier.png",
     description: "A charged plasma weapon that can be overcharged for extra damage.",
     wiki: "https://helldivers.wiki.gg/wiki/PLAS-101_Purifier",
+    warbond: "Freedom's Flame",
   },
   "ARC-12": {
     role: LoadoutRole.Primary,
@@ -930,6 +1044,7 @@ export const ASSETS = {
     image: "/assets/primary/ARC-12_Blitzer.png",
     description: "An electrical weapon that chains lightning between enemies.",
     wiki: "https://helldivers.wiki.gg/wiki/ARC-12_Blitzer",
+    warbond: "Cutting Edge",
   },
   "FLAM-66": {
     role: LoadoutRole.Primary,
@@ -937,6 +1052,7 @@ export const ASSETS = {
     image: "/assets/primary/FLAM-66_Torcher.png",
     description: "A flamethrower for close-range area denial and crowd control.",
     wiki: "https://helldivers.wiki.gg/wiki/FLAM-66_Torcher",
+    warbond: "Freedom's Flame",
   },
   "VG-70": {
     role: LoadoutRole.Primary,
@@ -944,6 +1060,7 @@ export const ASSETS = {
     image: "/assets/primary/VG-70_Variable.png",
     description: "A versatile weapon with multiple firing modes.",
     wiki: "https://helldivers.wiki.gg/wiki/VG-70_Variable",
+    warbond: "Control Group",
   },
 
   // SECONDARY WEAPONS
@@ -960,6 +1077,7 @@ export const ASSETS = {
     image: "/assets/secondary/P-4_Senator.png",
     description: "A powerful revolver with high damage per shot.",
     wiki: "https://helldivers.wiki.gg/wiki/P-4_Senator",
+    warbond: "Steeled Veterans",
   },
   "P-11": {
     role: LoadoutRole.Secondary,
@@ -967,6 +1085,7 @@ export const ASSETS = {
     image: "/assets/secondary/P-11_Stim_Pistol.png",
     description: "A medical device that heals teammates from a distance.",
     wiki: "https://helldivers.wiki.gg/wiki/P-11_Stim_Pistol",
+    warbond: "Cutting Edge",
   },
   "P-19": {
     role: LoadoutRole.Secondary,
@@ -974,6 +1093,7 @@ export const ASSETS = {
     image: "/assets/secondary/P-19_Redeemer.png",
     description: "A high-capacity submachine gun for close combat.",
     wiki: "https://helldivers.wiki.gg/wiki/P-19_Redeemer",
+    warbond: "Helldivers Mobilize!",
   },
   "P-72": {
     role: LoadoutRole.Secondary,
@@ -981,6 +1101,7 @@ export const ASSETS = {
     image: "/assets/secondary/P-72_Crisper.png",
     description: "A flamethrower pistol for close-range burning damage.",
     wiki: "https://helldivers.wiki.gg/wiki/P-72_Crisper",
+    warbond: "Freedom's Flame",
   },
   "P-92": {
     role: LoadoutRole.Secondary,
@@ -988,6 +1109,7 @@ export const ASSETS = {
     image: "/assets/secondary/P-92_Warrant.png",
     description: "A high-velocity pistol with excellent range and accuracy.",
     wiki: "https://helldivers.wiki.gg/wiki/P-92_Warrant",
+    warbond: "Borderline Justice",
   },
   "P-113": {
     role: LoadoutRole.Secondary,
@@ -995,6 +1117,7 @@ export const ASSETS = {
     image: "/assets/secondary/P-113_Verdict.png",
     description: "A semi-automatic pistol with armor-piercing capabilities.",
     wiki: "https://helldivers.wiki.gg/wiki/P-113_Verdict",
+    warbond: "Democratic Detonation",
   },
   "GP-31": {
     role: LoadoutRole.Secondary,
@@ -1002,6 +1125,7 @@ export const ASSETS = {
     image: "/assets/secondary/GP-31_Grenade_Pistol.png",
     description: "A single-shot grenade launcher for explosive damage.",
     wiki: "https://helldivers.wiki.gg/wiki/GP-31_Grenade_Pistol",
+    warbond: "Democratic Detonation",
   },
   "LAS-7": {
     role: LoadoutRole.Secondary,
@@ -1009,6 +1133,7 @@ export const ASSETS = {
     image: "/assets/secondary/LAS-7_Dagger.png",
     description: "A laser sidearm that doesn't require ammunition.",
     wiki: "https://helldivers.wiki.gg/wiki/LAS-7_Dagger",
+    warbond: "Cutting Edge",
   },
   "LAS-58": {
     role: LoadoutRole.Secondary,
@@ -1016,6 +1141,7 @@ export const ASSETS = {
     image: "/assets/secondary/LAS-58_Talon.png",
     description: "A laser weapon with improved range and damage.",
     wiki: "https://helldivers.wiki.gg/wiki/LAS-58_Talon",
+    warbond: "Urban Legends",
   },
   "PLAS-15": {
     role: LoadoutRole.Secondary,
@@ -1023,6 +1149,7 @@ export const ASSETS = {
     image: "/assets/secondary/PLAS-15_Loyalist.png",
     description: "A rapid-firing plasma weapon with burst mode.",
     wiki: "https://helldivers.wiki.gg/wiki/PLAS-15_Loyalist",
+    warbond: "Polar Patriots",
   },
   "M6C": {
     role: LoadoutRole.Secondary,
@@ -1030,6 +1157,7 @@ export const ASSETS = {
     image: "/assets/secondary/M6C_SOCOM_Pistol.png",
     description: "A tactical pistol with enhanced accuracy and stopping power.",
     wiki: "https://helldivers.wiki.gg/wiki/M6C_SOCOM_Pistol",
+    warbond: "ODST",
   },
   "SG-22": {
     role: LoadoutRole.Secondary,
@@ -1037,6 +1165,7 @@ export const ASSETS = {
     image: "/assets/secondary/SG-22_Bushwhacker.png",
     description: "A compact shotgun for close-quarters combat.",
     wiki: "https://helldivers.wiki.gg/wiki/SG-22_Bushwhacker",
+    warbond: "Viper Commandos",
   },
   "CQC-2": {
     role: LoadoutRole.Secondary,
@@ -1058,6 +1187,7 @@ export const ASSETS = {
     image: "/assets/secondary/CQC-19_Stun_Lance.png",
     description: "An electrified lance that stuns enemies.",
     wiki: "https://helldivers.wiki.gg/wiki/CQC-19_Stun_Lance",
+    warbond: "Polar Patriots",
   },
   "CQC-30": {
     role: LoadoutRole.Secondary,
@@ -1065,7 +1195,28 @@ export const ASSETS = {
     image: "/assets/secondary/CQC-30_Stun_Baton.png",
     description: "A non-lethal weapon that incapacitates enemies.",
     wiki: "https://helldivers.wiki.gg/wiki/CQC-30_Stun_Baton",
+    warbond: "Truth Enforcers",
   },
+  // ****************************************
+  // ****************************************
+  // ****************************************
+  // ****************************************
+  // ****************************************
+  // ****************************************
+  // ****************************************
+  //adding warbond tags - all done until here
+  // ****************************************
+  // ****************************************
+  // ****************************************
+  // ****************************************
+  // ****************************************
+  // ****************************************
+  // ****************************************
+  // I need you to add the asset type warbond: "warbond name" to this list of assets from Helldivers 2. 
+  // Follow this template on how to add the warbond when needed. 
+  // "GS-17": { role: LoadoutRole.Armor, name: "GS-17 Frontier Marshal", image: "/assets/armor/GS-17_Frontier_Marshal.png", description: "Description needed", wiki: "https://helldivers.wiki.gg/wiki/GS-17_Frontier_Marshal", }, 
+  // If the asset doesn't belong to a warbond, don't add it. Don't add new assets or change any other fields.
+  // Send me the new asset file. I don't need to review here.
   "CQC-42": {
     role: LoadoutRole.Secondary,
     name: "CQC-42 Machete",
@@ -1081,6 +1232,7 @@ export const ASSETS = {
     image: "/assets/throwable/G-3_Smoke.png",
     description: "Creates a smoke screen to obscure vision.",
     wiki: "https://helldivers.wiki.gg/wiki/G-3_Smoke",
+    warbond: "Helldivers Mobilize!",
   },
   "G-4": {
     role: LoadoutRole.Throwable,
@@ -1095,6 +1247,7 @@ export const ASSETS = {
     image: "/assets/throwable/G-6_Frag.png",
     description: "A standard fragmentation grenade with timed fuse.",
     wiki: "https://helldivers.wiki.gg/wiki/G-6_Frag",
+    warbond: "Helldivers Mobilize!",
   },
   "G-7": {
     role: LoadoutRole.Throwable,
@@ -1109,6 +1262,7 @@ export const ASSETS = {
     image: "/assets/throwable/G-10_Incendiary.png",
     description: "Creates a burning area that damages enemies over time.",
     wiki: "https://helldivers.wiki.gg/wiki/G-10_Incendiary",
+    warbond: "Steeled Veterans",
   },
   "G-12": {
     role: LoadoutRole.Throwable,
@@ -1130,6 +1284,7 @@ export const ASSETS = {
     image: "/assets/throwable/G-16_Impact.png",
     description: "An impact grenade that detonates on contact.",
     wiki: "https://helldivers.wiki.gg/wiki/G-16_Impact",
+    warbond: "Helldivers Mobilize!",
   },
   "G-23": {
     role: LoadoutRole.Throwable,
@@ -1137,6 +1292,7 @@ export const ASSETS = {
     image: "/assets/throwable/G-23_Stun.png",
     description: "A non-lethal grenade that stuns enemies temporarily.",
     wiki: "https://helldivers.wiki.gg/wiki/G-23_Stun",
+    warbond: "Cutting Edge",
   },
   "G-31": {
     role: LoadoutRole.Throwable,
@@ -1165,6 +1321,7 @@ export const ASSETS = {
     image: "/assets/throwable/G-123_Thermite.png",
     description: "A thermite grenade that burns through heavy armor.",
     wiki: "https://helldivers.wiki.gg/wiki/G-123_Thermite",
+    warbond: "Democratic Detonation",
   },
   "G-142": {
     role: LoadoutRole.Throwable,

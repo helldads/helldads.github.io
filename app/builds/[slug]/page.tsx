@@ -1,5 +1,4 @@
 import { Card, CardBody } from "@heroui/card"; // CardFooter, CardHeader
-import { Tooltip } from "@heroui/tooltip";
 import { Image } from "@heroui/image";
 import { Link } from "@heroui/link";
 import { Chip } from "@heroui/chip";
@@ -164,36 +163,15 @@ export default async function BuildPage({
             return (
               <Card key={i} radius="sm">
                 <CardBody className="flex flex-row gap-3">
-                  <div className="basis-1/4 flex-shrink-0 max-w-[110px]">
-                    <Tooltip
-                      color="warning"
-                      content={
-                        <Link
-                          isExternal
-                          showAnchorIcon
-                          className="text-amber-50"
-                          href={`${asset.wiki}`}
-                          rel="noopener noreferrer"
-                        >
-                          Open Helldivers Wiki: {asset.name}
-                        </Link>
-                      }
-                      delay={1000}
-                      showArrow={true}
-                    >
-                      <span className="flex justify-center">
-                        {" "}
-                        {/* Explicitly use span instead of letting Tooltip decide */}
-                        {asset.image && (
-                          <Image
-                            alt={asset.description}
-                            className="flex max-w-[110px] max-h-[120px]"
-                            radius="sm"
-                            src={asset.image}
-                          />
-                        )}
-                      </span>
-                    </Tooltip>
+                  <div className="flex basis-1/4 flex-shrink-0 justify-center max-w-[110px]">
+                    {asset.image && (
+                      <Image
+                        alt={asset.description}
+                        className="flex max-w-[110px] max-h-[120px]"
+                        radius="sm"
+                        src={asset.image}
+                      />
+                    )}
                   </div>
                   <div className="flex flex-col gap-2">
                     <Link
@@ -210,13 +188,24 @@ export default async function BuildPage({
                         {entry.note ?? asset.description}
                       </p>
                     )}
-                    <Chip
-                      size="sm"
-                      variant="bordered"
-                      className="max-w-fit px-2 opacity-60"
-                    >
-                      {asset.role}
-                    </Chip>
+                    <div className="flex flex-wrap flex-row gap-2 mt-auto">
+                      <Chip
+                        size="sm"
+                        variant="bordered"
+                        className="max-w-fit px-2 opacity-60"
+                      >
+                        {asset.role}
+                      </Chip>
+                      {asset.warbond && (
+                        <Chip
+                          size="sm"
+                          variant="bordered"
+                          className="max-w-fit px-2 opacity-60"
+                        >
+                          {asset.warbond}
+                        </Chip>
+                      )}
+                    </div>
                   </div>
                 </CardBody>
               </Card>
