@@ -5,6 +5,7 @@ export const LoadoutRole = {
   Secondary: "Secondary",
   Throwable: "Throwable",
   Stratagem: "Stratagem",
+  MultiFaction: "Multi-Faction Options",
 } as const;
 export type LoadoutRole = (typeof LoadoutRole)[keyof typeof LoadoutRole];
 
@@ -19,6 +20,13 @@ export type Asset = {
 
 // Use slug keys to avoid spaces/punctuation issues
 export const ASSETS = {
+  "multi-faction": {
+    role: LoadoutRole.MultiFaction,
+    name: "Multi-Faction Options",
+    image: "/assets/emoji-triplets.webp",
+    description: "Items available to all factions.",
+  },
+
   // ARMOR SETS
   "A-9": {
     role: LoadoutRole.Armor,
@@ -1119,6 +1127,14 @@ export const ASSETS = {
     description: "A semi-automatic pistol with armor-piercing capabilities.",
     wiki: "https://helldivers.wiki.gg/wiki/P-113_Verdict",
     warbond: "Polar Patriots",
+  },
+  "GP-20": {
+    role: LoadoutRole.Secondary,
+    name: "GP-20 Ultimatum",
+    image: "/assets/secondary/GP-20_Ultimatum.png",
+    description: "A pistol front-loaded with a single, powerful explosive. The weight of the projectile limits the weapon's range.",
+    wiki: "https://helldivers.wiki.gg/wiki/GP-20_Ultimatum",
+    warbond: "Servants of Freedom",
   },
   "GP-31": {
     role: LoadoutRole.Secondary,

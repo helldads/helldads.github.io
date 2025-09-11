@@ -44,6 +44,7 @@ export const BUILDS: Record<string, Build> = {
     tags: ["terminids", "movies", "chaff", "demolition", "gas"],
     loadout: [
       {
+        // assetId: "multi-faction",
         assetId: "BP-77",
         note: "You can't be Judge Dredd without looking like Judge Dredd. B-77 Grand Juror is what we will wear for this build.",
       },
