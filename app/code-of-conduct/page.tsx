@@ -210,23 +210,39 @@ export default function CodeOfConductPage() {
       </p>
 
       <h2 className="text-2xl font-semibold mt-12" id="7-keep-content-relevant">
-        7. Keep Content Relevant and Spoiler-Free
+        7. Keep Content Relevant
         <Link aria-hidden className="ml-1.5" href="#7-keep-content-relevant">
           <LinkIcon className="" />
         </Link>
       </h2>
       <p className="my-6">
-        Posts and comments should relate to Helldivers or the life of gaming
-        grown‑ups. Humour, parenting struggles, mission stories, all is welcome,
-        but irrelevant or off‑topic content may be removed. Cross‑posts and
-        links to other servers are also fine, if they are relevant and add value
-        to our community. Do not share personal information.
+        Our community is about Helldivers and the life of gaming grown-ups. To
+        keep things clear and welcoming, please follow these guidelines:
       </p>
-      <p className="my-6">
-        Posting upcoming content mined or extracted from the game is not
-        permitted. Many members prefer to discover new content when it is
-        officially released, without advance leaks or spoilers.
-      </p>
+      <ul className="list-disc list-outside my-6 pl-6">
+        <li className="mb-2">
+          <strong>Stay on topic:</strong> Posts and comments should relate to
+          Helldivers or gaming as parents. Humour, parenting struggles, and
+          mission stories are all welcome. Off-topic content may be removed.
+        </li>
+        <li className="mb-2">
+          <strong>Avoid divisive real-world topics:</strong> Please do not post
+          about politics, religion, sports, or other non-gaming subjects that
+          risk creating conflict. Our focus is on Helldivers 2 and maintaining
+          the immersion of a supportive, family-driven community as the Parental
+          Corps of Super Earth.
+        </li>
+        <li className="mb-2">
+          <strong>No spoilers:</strong> Posting upcoming content mined or
+          extracted from the game is not permitted. Many members prefer to
+          discover new content when it is officially released.
+        </li>
+        <li className="mb-2">
+          <strong>Cross-posting and links:</strong> Sharing content or links to
+          other servers is fine if it is relevant and adds value to the
+          community.
+        </li>
+      </ul>
 
       <h2 className="text-2xl font-semibold mt-12" id="8-no-self-promotion">
         8. No Self-Promotion or Recruitment
@@ -427,13 +443,34 @@ export default function CodeOfConductPage() {
 
       <h2
         className="text-2xl font-semibold mt-12"
-        id="16-report-suspicious-accounts"
+        id="16-scope-of-the-code-of-conduct"
       >
-        16. Report Suspicious Accounts or Cheating Behaviour
+        16. Scope of the Code of Conduct
         <Link
           aria-hidden
           className="ml-1.5"
-          href="#16-report-suspicious-accounts"
+          href="#16-scope-of-the-code-of-conduct"
+        >
+          <LinkIcon className="" />
+        </Link>
+      </h2>
+      <p className="my-6">
+        These rules apply across all HellDads platforms, including Reddit,
+        Discord, Voice Chats, YouTube, TikTok, In-Game and any other official
+        channels. They also apply whenever members represent the HellDads
+        community outside our platforms. By participating, you agree to uphold
+        this Code of Conduct in all community-related spaces.
+      </p>
+
+      <h2
+        className="text-2xl font-semibold mt-12"
+        id="17-report-suspicious-accounts"
+      >
+        17. Report Suspicious Accounts or Cheating Behaviour
+        <Link
+          aria-hidden
+          className="ml-1.5"
+          href="#17-report-suspicious-accounts"
         >
           <LinkIcon className="" />
         </Link>
@@ -451,9 +488,9 @@ export default function CodeOfConductPage() {
         reported to Arrowhead.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-12" id="17-consequences">
-        17. Consequences
-        <Link aria-hidden className="ml-1.5" href="#17-consequences">
+      <h2 className="text-2xl font-semibold mt-12" id="18-consequences">
+        18. Consequences
+        <Link aria-hidden className="ml-1.5" href="#18-consequences">
           <LinkIcon className="" />
         </Link>
       </h2>
