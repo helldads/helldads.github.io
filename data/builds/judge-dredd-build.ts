@@ -19,38 +19,19 @@ export const judgeDreddBuild: Build = {
   image: "/assets/builds/judge-dredd-build.jpg",
   tags: ["terminids", "movies", "chaff", "demolition", "gas"],
   loadout: [
-    {
-      assetId: "BP-77",
-      note: `You can't be Judge Dredd without looking like Judge Dredd. B-77 Grand Juror is what we will wear for this build.`,
-    },
-    {
-      assetId: "SG-225SP",
-      note: `Breaker S&P is our crowd clear weapon. When our enemies start swarming we put them down with a relentless stream of Fully automatic shotgun firepower.`,
-    },
-    {
-      assetId: "P-92",
-      note: `P-92 Warrant is our secondary. It is the iconic Lawgiver pistol. The auto aim is useful for flyers or for shooting at enemies concealed by spore clouds.`,
-    },
-    {
-      assetId: "G-4",
-      note: `Gas grenades are our version of the Stumm Gas Grenades. Use them to deny enemy movements, or confuse them long enough to pump rounds into them.`,
-    },
-    {
-      assetId: "M-102",
-      note: `The FRV is our Paddy Wagon. Roll up, sirens blazing! Zip through the Mega Cities in style`,
-    },
-    {
-      assetId: "B-100",
-      note: `This is our "Total Annihilation Device". Use this for breaches, or when you are being overwhelmed!`,
-    },
-    {
-      assetId: "LAS-98",
-      note: `This is our "Stub Gun". Our laser that can cut through anything. Use this for any Medium or Heavies that our other guns can't handle, as well as objectives like Spore Spewers or Shrieker Nests.`,
-    },
-    {
-      assetId: "OPS",
-      note: `The OPS is a shell fired from our Manta Tank, giving us additional firepower for any Heavies or Objectives we need to take care of. Quick CD means you should use it often.`,
-    },
+    // Armor
+    { assetId: "BP-77", note: `You can't be Judge Dredd without looking like Judge Dredd. B-77 Grand Juror is what we will wear for this build.` },
+    // Primary
+    { assetId: "SG-225SP", note: `Breaker S&P is our crowd clear weapon. When our enemies start swarming we put them down with a relentless stream of Fully automatic shotgun firepower.` },
+    // Secondary
+    { assetId: "P-92", note: `P-92 Warrant is our secondary. It is the iconic Lawgiver pistol. The auto aim is useful for flyers or for shooting at enemies concealed by spore clouds.` },
+    // Throwable
+    { assetId: "G-4", note: `Gas grenades are our version of the Stumm Gas Grenades. Use them to deny enemy movements, or confuse them long enough to pump rounds into them.` },
+    // Stratagems and other items
+    { assetId: "M-102", note: `The FRV is our Paddy Wagon. Roll up, sirens blazing! Zip through the Mega Cities in style` },
+    { assetId: "B-100", note: `This is our "Total Annihilation Device". Use this for breaches, or when you are being overwhelmed!` },
+    { assetId: "LAS-98", note: `This is our "Stub Gun". Our laser that can cut through anything. Use this for any Medium or Heavies that our other guns can't handle, as well as objectives like Spore Spewers or Shrieker Nests.` },
+    { assetId: "OPS", note: `The OPS is a shell fired from our Manta Tank, giving us additional firepower for any Heavies or Objectives we need to take care of. Quick CD means you should use it often.` },
   ],
   links: {
     reddit: "https://www.reddit.com/r/HellDads/comments/1lapc4p/judge_dredd_build/",

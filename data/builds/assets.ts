@@ -1521,9 +1521,9 @@ export const ASSETS = {
   "EAT-17": {
     role: LoadoutRole.Stratagem,
     name: "EAT-17 Expendable Anti-tank",
-    image: "https://helldivers.wiki.gg/images/thumb/a/a1/EAT-17_Expendable_Anti-tank_Stratagem_Icon.png/256px-EAT-17_Expendable_Anti-tank_Stratagem_Icon.png",
+    image: "https://helldivers.wiki.gg/images/Expendable_Anti-Tank_Stratagem_Icon.png",
     description: "A disposable anti-tank rocket launcher.",
-    wiki: "https://helldivers.wiki.gg/wiki/EAT-17_Expendable_Anti-tank",
+    wiki: "https://helldivers.wiki.gg/wiki/EAT-17_Expendable_Anti-Tank",
   },
   "EAT-700": {
     role: LoadoutRole.Stratagem,
@@ -1593,7 +1593,7 @@ export const ASSETS = {
   "M-105": {
     role: LoadoutRole.Stratagem,
     name: "M-105 Stalwart",
-    image: "https://helldivers.wiki.gg/images/thumb/4/49/M-105_Stalwart_Stratagem_Icon.png/256px-M-105_Stalwart_Stratagem_Icon.png",
+    image: "https://helldivers.wiki.gg/images/Stalwart_Stratagem_Icon.png",
     description: "A lightweight machine gun for mobile support.",
     wiki: "https://helldivers.wiki.gg/wiki/M-105_Stalwart",
   },

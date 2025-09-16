@@ -1,9 +1,29 @@
 import { z } from "zod";
 
-// Import builds here
+// Import builds here and below at the ALL_BUILDS array
 import { threeSwordStyleBuild } from "./builds/3-sword-style-build";
 import { judgeDreddBuild } from "./builds/judge-dredd-build";
 import { squidSlayerBuild } from "./builds/squid-slayer-build";
+import { exterminatorBuild } from "./builds/exterminator-build";
+import { salamanderBuild } from "./builds/salamander-build";
+import { summonerBuild } from "./builds/summoner-build";
+import { airTrafficControllerBuild } from "./builds/air-traffic-controller-build";
+import { antiPredatorStrainBuild } from "./builds/anti-predator-strain-build";
+import { reinhardtBuild } from "./builds/reinhardt-build";
+import { heavyGunnerBuild } from "./builds/heavy-gunner-build";
+import { laserPointerBuild } from "./builds/laser-pointer-build";
+import { emplacementJockeyBuild } from "./builds/emplacement-jockey-build";
+import { doomSlayerBuild } from "./builds/doom-slayer-build";
+import { fortyMmOfFreedomBuild } from "./builds/40mm-of-freedom-build";
+import { gasWalkerBuild } from "./builds/gas-walker-build";
+import { ghostBuild } from "./builds/ghost-build";
+import { babyDriverBuild } from "./builds/baby-driver-build";
+import { spaceCowboyBuild } from "./builds/space-cowboy-build";
+import { expendablesBuild } from "./builds/expendables-build";
+import { elementalistBuild } from "./builds/elementalist-build";
+import { demolitionistBuild } from "./builds/demolitionist-build";
+import { mechDriverBuild } from "./builds/mech-driver-build";
+import { sniperBuild } from "./builds/sniper-build";
 
 export type LoadoutEntry = {
   assetId?: string;
@@ -42,7 +62,7 @@ export const BuildSchema = z.object({
       z.object({
         assetId: z.string().optional(),
         note: z.string().optional(),
-      })
+  }),
     )
     .optional(),
   links: z
@@ -59,10 +79,30 @@ const ALL_BUILDS: Build[] = [
   threeSwordStyleBuild,
   judgeDreddBuild,
   squidSlayerBuild,
+  exterminatorBuild,
+  summonerBuild,
+  salamanderBuild,
+  airTrafficControllerBuild,
+  antiPredatorStrainBuild,
+  reinhardtBuild,
+  spaceCowboyBuild,
+  expendablesBuild,
+  elementalistBuild,
+  demolitionistBuild,
+  mechDriverBuild,
+  sniperBuild,
+  heavyGunnerBuild,
+  laserPointerBuild,
+  emplacementJockeyBuild,
+  doomSlayerBuild,
+  fortyMmOfFreedomBuild,
+  gasWalkerBuild,
+  ghostBuild,
+  babyDriverBuild,
 ];
 
 const BUILDS_MAP: Record<string, Build> = Object.fromEntries(
-  ALL_BUILDS.map((b) => [b.slug, b])
+  ALL_BUILDS.map((b) => [b.slug, b]),
 );
 
 export function getAllBuilds(): Build[] {

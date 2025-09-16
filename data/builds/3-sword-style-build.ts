@@ -20,38 +20,19 @@ export const threeSwordStyleBuild: Build = {
   image: "/assets/builds/3-sword-style-build.jpg",
   tags: [],
   loadout: [
-    {
-      assetId: "PH-9",
-      note: "Peak Physique armor is used for the 100% Melee damage and is required for this build",
-    },
-    {
-      assetId: "R-2",
-      note: "The Amendment is used to shoot down flying units and stab anything that gets in the way while doing so",
-    },
-    {
-      assetId: "CQC-2",
-      note: "The Sword is used to cleave through chaff like Hunters or Voteless",
-    },
-    {
-      assetId: "G-142",
-      note: "The Pyro Grenades are great at chaff clear, area denial, and can put in some work on beefy units",
-    },
-    {
-      assetId: "CQC-1",
-      note: "The Flag is our Medium / Heavy killer. We use its stun and precision to lock down and kill anything bigger than the Chaff.",
-    },
-    {
-      assetId: "SH-20",
-      note: "Ballistic Shield is used to block melee and ranged attacks to allow us to get in close to chop and stab things.",
-    },
-    {
-      assetId: "E500",
-      note: "This slot is Flex. I choose 500kg for bugs, Strafe for Illuminate and 110's for Bots.",
-    },
-    {
-      assetId: "ORS",
-      note: "This slot is also Flex. I choose Orbital Rail Cannon for bugs (for BTs), Gas Mines for Illuminate (for anti drop), and Hover Pack for bots so I can ride Factory Striders like a bull.",
-    },
+    // Armor
+    { assetId: "PH-9", note: "Peak Physique armor is used for the 100% Melee damage and is required for this build" },
+    // Primary
+    { assetId: "R-2", note: "The Amendment is used to shoot down flying units and stab anything that gets in the way while doing so" },
+    // Secondary
+    { assetId: "CQC-2", note: "The Sword is used to cleave through chaff like Hunters or Voteless" },
+    // Throwable
+    { assetId: "G-142", note: "The Pyro Grenades are great at chaff clear, area denial, and can put in some work on beefy units" },
+    // Stratagems and other items
+    { assetId: "CQC-1", note: "The Flag is our Medium / Heavy killer. We use its stun and precision to lock down and kill anything bigger than the Chaff." },
+    { assetId: "SH-20", note: "Ballistic Shield is used to block melee and ranged attacks to allow us to get in close to chop and stab things." },
+    { assetId: "E500", note: "This slot is Flex. I choose 500kg for bugs, Strafe for Illuminate and 110's for Bots." },
+    { assetId: "ORS", note: "This slot is also Flex. I choose Orbital Rail Cannon for bugs (for BTs), Gas Mines for Illuminate (for anti drop), and Hover Pack for bots so I can ride Factory Striders like a bull." },
   ],
   links: {
     reddit: "https://www.reddit.com/r/HellDads/comments/1kp6vym/3_sword_style_build/",
