@@ -1215,26 +1215,6 @@ export const ASSETS = {
     wiki: "https://helldivers.wiki.gg/wiki/CQC-30_Stun_Baton",
     warbond: "Truth Enforcers",
   },
-  // ****************************************
-  // ****************************************
-  // ****************************************
-  // ****************************************
-  // ****************************************
-  // ****************************************
-  // ****************************************
-  //adding warbond tags - all done until here
-  // ****************************************
-  // ****************************************
-  // ****************************************
-  // ****************************************
-  // ****************************************
-  // ****************************************
-  // ****************************************
-  // I need you to add the asset type warbond: "warbond name" to this list of assets from Helldivers 2. 
-  // Follow this template on how to add the warbond when needed. 
-  // "GS-17": { role: LoadoutRole.Armor, name: "GS-17 Frontier Marshal", image: "/assets/armor/GS-17_Frontier_Marshal.png", description: "Description needed", wiki: "https://helldivers.wiki.gg/wiki/GS-17_Frontier_Marshal", }, 
-  // If the asset doesn't belong to a warbond, don't add it. Don't add new assets or change any other fields.
-  // Send me the new asset file. I don't need to review here.
   "CQC-42": {
     role: LoadoutRole.Secondary,
     name: "CQC-42 Machete",
@@ -1825,7 +1805,7 @@ export const ASSETS = {
   "SH-20": {
     role: LoadoutRole.Stratagem,
     name: "SH-20 Ballistic Shield Backpack",
-    image: "https://helldivers.wiki.gg/images/thumb/3/3c/SH-20_Ballistic_Shield_Backpack_Stratagem_Icon.png/256px-SH-20_Ballistic_Shield_Backpack_Stratagem_Icon.png",
+    image: "https://helldivers.wiki.gg/images/Ballistic_Shield_Backpack_Stratagem_Icon.png?",
     description: "Provides portable cover against enemy small arms fire.",
     wiki: "https://helldivers.wiki.gg/wiki/SH-20_Ballistic_Shield_Backpack",
   },
