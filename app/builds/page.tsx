@@ -1,9 +1,9 @@
-import { Button } from "@heroui/button";
-import { Card, CardHeader, CardBody, CardFooter } from "@heroui/card";
+import { Card, CardBody } from "@heroui/card";
 import { Image } from "@heroui/image";
 import Link from "next/link";
 
-import { getAllBuilds } from "@/data/builds-index";
+import { getAllBuilds } from "../../data/builds";
+
 import { title } from "@/components/primitives";
 
 export default function BuildsPage() {

@@ -4,8 +4,10 @@ import { Link } from "@heroui/link";
 import { Chip } from "@heroui/chip";
 import { notFound } from "next/navigation";
 
-import { getAsset } from "@/data/assets";
-import { getAllSlugs, getBuildBySlug } from "@/data/builds-index";
+import { getAllSlugs, getBuildBySlug } from "../../../data/builds";
+
+import { getAsset } from "@/data/builds/assets";
+
 import {
   DiscordIcon,
   RedditIcon,
