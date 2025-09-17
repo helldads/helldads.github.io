@@ -237,7 +237,7 @@ export const ASSETS = {
     image: "/assets/armor/CE-101_Guerilla_Gorilla.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/CE-101_Guerilla_Gorilla",
-    warbond: "Viper Commandos",
+    warbond: "Superstore",
   },
   "CM-09": {
     role: LoadoutRole.Armor,
@@ -269,7 +269,7 @@ export const ASSETS = {
     image: "/assets/armor/CM-17_Butcher.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/CM-17_Butcher",
-    warbond: "Viper Commandos",
+    warbond: "Superstore",
   },
   "CM-21": {
     role: LoadoutRole.Armor,
@@ -542,7 +542,7 @@ export const ASSETS = {
     image: "/assets/armor/PH-56_Jaguar.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/PH-56_Jaguar",
-    warbond: "Viper Commandos",
+    warbond: "Superstore",
   },
   "PH-202": {
     role: LoadoutRole.Armor,
@@ -1158,7 +1158,7 @@ export const ASSETS = {
     image: "/assets/secondary/LAS-58_Talon.png",
     description: "A laser weapon with improved range and damage.",
     wiki: "https://helldivers.wiki.gg/wiki/LAS-58_Talon",
-    warbond: "Urban Legends",
+    warbond: "Boderline Justice",
   },
   "PLAS-15": {
     role: LoadoutRole.Secondary,
@@ -1500,7 +1500,7 @@ export const ASSETS = {
   "APW-1": {
     role: LoadoutRole.Stratagem,
     name: "APW-1 Anti-Materiel Rifle",
-    image: "https://helldivers.wiki.gg/images/thumb/a/a7/APW-1_Anti-Materiel_Rifle_Stratagem_Icon.png/256px-APW-1_Anti-Materiel_Rifle_Stratagem_Icon.png",
+    image: "https://helldivers.wiki.gg/images/Anti-Materiel_Rifle_Stratagem_Icon.png",
     description: "A high-powered rifle for long-range precision shots.",
     wiki: "https://helldivers.wiki.gg/wiki/APW-1_Anti-Materiel_Rifle",
   },
@@ -1544,7 +1544,7 @@ export const ASSETS = {
   "GL-21": {
     role: LoadoutRole.Stratagem,
     name: "GL-21 Grenade Launcher",
-    image: "https://helldivers.wiki.gg/images/thumb/4/4c/GL-21_Grenade_Launcher_Stratagem_Icon.png/256px-GL-21_Grenade_Launcher_Stratagem_Icon.png",
+    image: "https://helldivers.wiki.gg/images/Grenade_Launcher_Stratagem_Icon.png",
     description: "A versatile grenade launcher for area damage.",
     wiki: "https://helldivers.wiki.gg/wiki/GL-21_Grenade_Launcher",
   },
@@ -1608,7 +1608,7 @@ export const ASSETS = {
   "MG-206": {
     role: LoadoutRole.Stratagem,
     name: "MG-206 Heavy Machine Gun",
-    image: "https://helldivers.wiki.gg/images/thumb/f/f5/MG-206_Heavy_Machine_Gun_Stratagem_Icon.png/256px-MG-206_Heavy_Machine_Gun_Stratagem_Icon.png",
+    image: "https://helldivers.wiki.gg/images/Heavy_Machine_Gun_Stratagem_Icon.png",
     description: "A heavy machine gun for sustained suppression.",
     wiki: "https://helldivers.wiki.gg/wiki/MG-206_Heavy_Machine_Gun",
   },
@@ -1798,7 +1798,7 @@ export const ASSETS = {
   "B-1": {
     role: LoadoutRole.Stratagem,
     name: "B-1 Supply Pack",
-    image: "https://helldivers.wiki.gg/images/thumb/6/6b/B-1_Supply_Pack_Stratagem_Icon.png/256px-B-1_Supply_Pack_Stratagem_Icon.png",
+    image: "https://helldivers.wiki.gg/images/Supply_Pack_Stratagem_Icon.png",
     description: "A backpack that provides ammunition to teammates.",
     wiki: "https://helldivers.wiki.gg/wiki/B-1_Supply_Pack",
   },

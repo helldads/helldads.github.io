@@ -12,18 +12,42 @@ export const demolitionistBuild: Build = {
   tags: ["demolitionist", "grenade-launcher", "supply-pack", "ultimatum", "thermite", "engineering-armor", "dominator", "blitzer"],
   loadout: [
     // Armor
-    { assetId: "ENGINEERING", note: "Engineering Armor helps you control the Grenade Launchers recoil and gives you 2 more Thermite for those Heavies" },
+    {
+      assetId: "CE-27",
+      note: "Engineering Armor helps you control the Grenade Launchers recoil and gives you 2 more Thermite for those Heavies",
+    },
     // Primary
-    { assetId: "DOMINATOR", note: "Any Primary will do. You need something to do some heavy lifting. I like Jar 5 on bots, or Blitzer on bugs. They can handle everything hunder Heavies" },
+    {
+      assetId: "JAR-5",
+      note: "Any Primary will do. You need something to do some heavy lifting. I like Jar 5 on bots, or Blitzer on bugs. They can handle everything hunder Heavies",
+    },
     // Secondary
-    { assetId: "ULTIMATUM", note: "Used for Bile Titans, Factory Striders, and any Objectives that needer bigger firepower" },
+    {
+      assetId: "GP-20",
+      note: "Used for Bile Titans, Factory Striders, and any Objectives that needer bigger firepower",
+    },
     // Throwable
-    { assetId: "THERMITE", note: "Used on Chargers, Hulks, and any other Heavies that need blowing up." },
+    {
+      assetId: "G-123",
+      note: "Used on Chargers, Hulks, and any other Heavies that need blowing up.",
+    },
     // Stratagems
-    { assetId: "GRENADE-LAUNCHER", note: "Cant be the Demolitionist without the Grenade Launcher. Will obliterate everything under Heavies in waves." },
-    { assetId: "SUPPLY-PACK", note: "Supply Pack keeps your Grenade Launcher fed and turns it into a never ending stream of explosions. Not to mention all the free Ultimatums and Thermite." },
-    { assetId: "M-120", note: "120 is your Medium sized demolition cooldown. Use this on Medium or Small bases, or pair it with 380 for a quick stop to breaches or bot drops." },
-    { assetId: "M-380", note: "380 is the biggest of Booms! This will absolutely eliminate a large base or Bot Drop / Bug Breach to include all of the heavies (usually)." },
+    {
+      assetId: "GL-21",
+      note: "Cant be the Demolitionist without the Grenade Launcher. Will obliterate everything under Heavies in waves.",
+    },
+    {
+      assetId: "B-1",
+      note: "Supply Pack keeps your Grenade Launcher fed and turns it into a never ending stream of explosions. Not to mention all the free Ultimatums and Thermite.",
+    },
+    {
+      assetId: "O120HB",
+      note: "120 is your Medium sized demolition cooldown. Use this on Medium or Small bases, or pair it with 380 for a quick stop to breaches or bot drops.",
+    },
+    {
+      assetId: "O380HB",
+      note: "380 is the biggest of Booms! This will absolutely eliminate a large base or Bot Drop / Bug Breach to include all of the heavies (usually).",
+    },
   ],
   links: {
     reddit: "",
