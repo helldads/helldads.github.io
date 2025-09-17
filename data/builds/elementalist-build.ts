@@ -8,7 +8,7 @@ export const elementalistBuild: Build = {
     `You are the Elementalist, Master of Elements and King of Area Denial! Your job is absolute battlefield control. Is your team holding a position and being surrounded by enemies? Surround yourself with fire and gas and prevent the enemies advance! Is that a breach? Not any more! Gas Mines and an Orbital Napalm Barrage will make sure that 50sq meters is inaccessible. Got a couple of patrols wandering your way? A quick Orbital Gas and Eagle Napalm will make sure they cannot pass. No matter the situation, your role is to deny enemy movement by pairing Gas and Fire. For smaller engagements, Orbital Gas and Eagle Napalm pair great together. For those really big fights, Gas Mines and Orbital Napalm Barrage go together. And for itty bitty groups like POIs, Gas Mines and your Breaker Incendiary should do just fine. Wherever you go, you put up walls of Fire and Gas to keep your team safe, this will eliminate all threats under Heavies. You bring an Ultimatum for those times when you cannot escape a Heavy, but most Heavies should be left to your team. There is flexibility in the pairings, as the Cooldowns don’t line up perfectly. So if Gas Mines are up but ONB is not, throw an Eagle in there. Got Eagle Napalm but no Orbital Gas? Throw some Gas Grenades. Mix and Match, but make sure to pair Gas and Fire for the confusion plus double DOT damage.`,
   ],
   weakness: `This build is Pure Chaff clear and Area Denial. You do not have an answer for heavies. It is advised to follow your AT Helldiver and protect them with your awesome Fire and Gas power.`,
-  image: "/assets/builds/elementalist-build.jpg",
+  image: "/assets/builds/The_Elementalist_Build.jpg",
   tags: [
     "elementalist",
     "area-denial",
@@ -59,9 +59,9 @@ export const elementalistBuild: Build = {
     },
   ],
   links: {
-    reddit: "",
+    reddit: "https://www.reddit.com/r/HellDads/comments/1kdrta7/build_a_day_day_22/",
     full: "",
-    highlights: "",
-    discord: "",
+    highlights: "https://www.youtube.com/watch?v=rP5pgLMxJzo",
+    discord: "https://discord.com/channels/1301285072896266252/1368195986454872115",
   },
 };

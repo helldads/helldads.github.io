@@ -5,7 +5,7 @@ import { threeSwordStyleBuild } from "./builds/3-sword-style-build";
 import { judgeDreddBuild } from "./builds/judge-dredd-build";
 import { squidSlayerBuild } from "./builds/squid-slayer-build";
 import { exterminatorBuild } from "./builds/exterminator-build";
-import { salamanderBuild } from "./builds/salamander-build";
+// import { salamanderBuild } from "./builds/salamander-build"; // salamandar is missing the image. I can't find it on reddit or discord
 import { summonerBuild } from "./builds/summoner-build";
 import { airTrafficControllerBuild } from "./builds/air-traffic-controller-build";
 import { antiPredatorStrainBuild } from "./builds/anti-predator-strain-build";
@@ -81,7 +81,7 @@ const ALL_BUILDS: Build[] = [
   squidSlayerBuild,
   exterminatorBuild,
   summonerBuild,
-  salamanderBuild,
+  // salamanderBuild,
   airTrafficControllerBuild,
   antiPredatorStrainBuild,
   reinhardtBuild,

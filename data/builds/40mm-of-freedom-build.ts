@@ -8,7 +8,7 @@ export const fortyMmOfFreedomBuild: Build = {
     `This is the Jack of All trades build. You carry a Big Gun, you drive a Mech with 4 Big Guns, you have a pet Big Gun and your ship shoots a Big Shotgun. You are not subtle, but you pack a 40mm punch. Autocannon will handle every enemy, every objective (Spore Spewers, Shrieker Nests, AA Guns, Mortars, Broadcast Tower), every Bug hole / Fabricator. When you need a little extra help shooting things, plop down your Autocannon Turret so you and your buddy can Plap Plap together. If that is not enough firepower (It rarely isn’t), Call down Big Bertha and let her 4 40mm Autocannons rip. 100 rounds each arm is enough firepower to turn any situation from FUBAR to a walk on the beach. Clear those Fortresses / Mega Nests, stop the Drop / Breach, or just walk around as a Mech Cavalry support for your team. When out of the Mech, Orbital Airburst is used to soften / clear large groups. Drops / Breaches, Patrols, Bases, etc. 100 sec CD means you should use it often. Dynamite perform the same role, but as a Grenade. They have the biggest radius and some serious damage. Chuck them in bases, chuck them in breaches, chuck them at patrols, etc. Follow up the carnage with some Autocannon rounds at whatever is still standing. The Senator is basically used to quick swap if your AC clip is empty and your target is still standing. Swap and pop and then reload when clear. The Halt is your free stun. Leave it on stun rounds, start with a stun and finish with the AC. On bugs, this thing will let you stop a charger and then go shoot its butt. (PRO TIP) In settings, set weapon wheel to push (not long press) and change the keybinding, then change the keybinding for Cycle Right to the same key, now you can change rounds with 1 push of a button`,
   ],
   weakness: `On Bots, you can handle everything with some good accuracy. However, on Bugs you need to be a little more tactical to take out the heavier enemies. Other than that, this build should handle everything the game has to offer, although ammo economy can be rough if you are busy. Be sure to loot POIs and drop Resupply often.`,
-  image: "/assets/builds/40mm-of-freedom-build.jpg",
+  image: "/assets/builds/40mm_To_Freedom_Build.jpg",
   tags: [
     "autocannon",
     "mech",
@@ -59,9 +59,9 @@ export const fortyMmOfFreedomBuild: Build = {
     },
   ],
   links: {
-    reddit: "",
+    reddit: "https://www.reddit.com/r/HellDads/comments/1k6xj0z/build_a_day_day_13/",
     full: "",
-    highlights: "",
-    discord: "",
+    highlights: "https://www.youtube.com/watch?v=YcmfRLwp5E4",
+    discord: "https://discord.com/channels/1301285072896266252/1363646953723793650",
   },
 };

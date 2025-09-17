@@ -8,7 +8,7 @@ export const doomSlayerBuild: Build = {
     `You are the DOOM SLAYER. Wield your Shotgun and Chainsaw (axe) and hack away at those Terminid Demons. Jumppack works as your Doom Slayer Double Jump. Use it for some sick aerial shots or to close the gap on your foes. The Quasar is your BFG, charge up and blow those Heavies to bits! Got a Bile Titan on your tail? Let your Ballista rip with an Orbital Rail Cannon shot. And when you find yourself against overwhelming odds, open the gates of hell themselves with an Orbital Napalm Barrage. This is a high Octane, high mobile, shoot, hack and slash build. So get in there and Slay some Terminids.`,
   ],
   weakness: `This build is up close and personal and as such you might take a beating. Be ready to stim and be ready to resupply and find more when you are out. Quasar helps with heavies, but since you only have Quasar and an Orbital Rail Cannon, when there’s a lot of Heavies around there’s not much you can do.`,
-  image: "/assets/builds/doom-slayer-build.jpg",
+  image: "/assets/builds/Doom_Slayer_Build.jpg",
   tags: [
     "doom-slayer",
     "quasar",
@@ -60,9 +60,9 @@ export const doomSlayerBuild: Build = {
     },
   ],
   links: {
-    reddit: "",
+    reddit: "https://www.reddit.com/r/HellDads/comments/1k7rk2i/build_a_day_day_14/",
     full: "",
-    highlights: "",
-    discord: "",
+    highlights: "https://www.youtube.com/watch?v=4tCus-yG40o",
+    discord: "https://discord.com/channels/1301285072896266252/1364241410273837169",
   },
 };

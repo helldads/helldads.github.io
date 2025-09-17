@@ -1735,7 +1735,7 @@ export const ASSETS = {
   },
 
   // SENTRY STRATAGEMS
-  "A/FLAM-40": {
+  "FS": {
     role: LoadoutRole.Stratagem,
     name: "A/FLAM-40 Flame Sentry",
     image: "https://helldivers.wiki.gg/images/thumb/9/90/Flame_Sentry_Stratagem_Icon.png/256px-Flame_Sentry_Stratagem_Icon.png",
@@ -1743,7 +1743,7 @@ export const ASSETS = {
     wiki: "https://helldivers.wiki.gg/wiki/Flame_Sentry",
     warbond: "Urban Legends",
   },
-  "A/LAS-98": {
+  "LS": {
     role: LoadoutRole.Stratagem,
     name: "Laser Sentry",
     image: "https://helldivers.wiki.gg/images/thumb/0/06/Laser_Sentry_Stratagem_Icon.png/256px-Laser_Sentry_Stratagem_Icon.png",
@@ -1857,11 +1857,10 @@ export const ASSETS = {
   },
   "AX/AR-23": {
     role: LoadoutRole.Stratagem,
-    name: "AX/AR-23 \"Guard Dog\" Dog Breath",
-    image: "https://helldivers.wiki.gg/images/thumb/8/84/Guard_Dog_Dog_Breath_Stratagem_Icon.png/256px-Guard_Dog_Dog_Breath_Stratagem_Icon.png",
-    description: "A flame-based version of the Guard Dog drone.",
-    wiki: "https://helldivers.wiki.gg/wiki/AX/TX-13_%22Guard_Dog%22_Dog_Breath",
-    warbond: "Chemical Agents",
+    name: "AX/AR-23 \"Guard Dog\"",
+    image: "https://helldivers.wiki.gg/images/Guard_Dog_Stratagem_Icon.png",
+    description: "An autonomous drone equipped with a Liberator assault rifle, providing 360° cover. Returns to backpack to rearm.",
+    wiki: "https://helldivers.wiki.gg/wiki/AX/AR-23_%22Guard_Dog%22",
   },
   "AX/ARC-3": {
     role: LoadoutRole.Stratagem,

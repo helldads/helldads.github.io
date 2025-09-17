@@ -2,7 +2,7 @@ import { Build } from "../builds";
 
 export const salamanderBuild: Build = {
   slug: "salamander-build",
-  title: "King of the Kill – R&D's Salamander Build",
+  title: "King of the Kill - R&D's Salamander Build",
   slogan: "Claim the most kills for your HellDads subfaction!",
   description: [
     `This build is brought to you by ShiLong, Battalion Commander of the Research & Destruction Science Team of the HellDads. We are currently in the midst of a Battle of Factions called the King of the Kill, the objective to claim the most kills for your HellDads subfaction. This build brings the most carnage to the battlefield to claim the most kills in a mission. If you want to be the master of flames, slayer of bugs, the King of the Kill, then this build is for you. The Dickle is our main weapon. Crank up the heat and put down as much chaff and Medium enemies as possible. To counter the “fire” effects of the Dickle we will be bringing the Heavy Fire Resist Armor, make that Dickle Tickle. To assist with our eradication, the MG Turret is there to double our firepower. You Dickle the Medium units while the MG sprays the light. To keep our turret safe and to control the battlefield we will be deploying Gas Grenades. These will wipe out all smaller units while keeping the Medium and Heavy units confused. To keep your back covered, we bring the Gas Guard Dog. While you’re focused on Dickling things, the Gas Dog will roam around confusing anything that gets close to you. The main focus of this build is to kill as much Chaff as possible, but sometimes those annoying Bile Titans get in the way. Thats why we bring the EAT-17. Drop it down, take out the Heavies, and get back to racking up those kills. And you cant be the King of the Kill without the Orbital Napalm Barrage. Every single breach should get an ONB. That’s a guaranteed 100+ killstreak. When the killing is done and all thats left to do is close some bug hole, we bust out the Grenade Pistol. Now go! Lay waste to the fields of battle and claim the title, King of the Kill.`,
@@ -61,7 +61,7 @@ export const salamanderBuild: Build = {
   links: {
     reddit: "",
     full: "",
-    highlights: "",
+    highlights: "https://www.youtube.com/watch?v=4fNZ79YDWkI",
     discord: "",
   },
 };

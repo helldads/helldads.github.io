@@ -8,7 +8,7 @@ export const demolitionistBuild: Build = {
     `You are the Demolitionist, the bringer of the booms. Your main focus is Objectives. Is there a Nest or a Base? You are the one to close the Holes and the Fabricators while your team lays down cover fire. With the Grenade Launcher in your hands and a Supply Pack on your back, you have enough explosives to bring down the house. Once the Objective is clear, back up your team with some explosive crowd clearing capabilities. Your 120 will help you Demo medium and small bases, while your 380 will help you Demo large ones. If there is no base to dismantle, the 120 and 380 make a great counter to any breach / drop that decides to get in your way. Throw in a couple of clips from your Grenade Launcher and that breach or drop is gone. Wen you come across some Elites, like Bile Titans or Factory Striders, your Ultimatum makes quick work of them, for the standard Heavies like Chargers and Hulks, you have Thermite. And when those little guys get too close a simple Primary like the Dominator or Blitzer should be more then enough. Engineering Armor allows you to control the recoil of the Grenade Launcher better and gives you 2 more Thermite for even more booms. Now go, show the enemies of democracy why you are called, The Demolitionist.`
   ],
   weakness: `You have no anti Air, Gunships and Shriekers will be annoying. Also, your only AT is Thermite and the Ultimatum, if you get a map with a lot of Hulks or Chargers and other Heavies, its going to be a bid tedious, luckily you have that Supply Pack.`,
-  image: "/assets/builds/demolitionist-build.jpg",
+  image: "/assets/builds/The_Demolitionist_Build.jpg",
   tags: ["demolitionist", "grenade-launcher", "supply-pack", "ultimatum", "thermite", "engineering-armor", "dominator", "blitzer"],
   loadout: [
     // Armor
@@ -50,9 +50,9 @@ export const demolitionistBuild: Build = {
     },
   ],
   links: {
-    reddit: "",
+    reddit: "https://www.reddit.com/r/HellDads/comments/1kd09tz/build_a_day_day_21/",
     full: "",
-    highlights: "",
-    discord: "",
+    highlights: "https://www.youtube.com/watch?v=WyReHr0kVyY",
+    discord: "https://discord.com/channels/1301285072896266252/1367916950876983558",
   },
 };
