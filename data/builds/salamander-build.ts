@@ -22,12 +22,12 @@ export const salamanderBuild: Build = {
   loadout: [
     // Armor
     {
-      assetId: "HFR-1",
+      assetId: "I-44",
       note: "Heavy Fire Resist Armor is our go to for this build, since the Dickle will light us on fire, we want to be as fire resistant as possible",
     },
     // Primary
     {
-      assetId: "DICKLE",
+      assetId: "LAS-17",
       note: "The Double Edge Sickle (aka the Dickle) is your primary weapon. Let it Rip, let the heat build up, catch fire and do more damage!",
     },
     // Secondary
@@ -46,7 +46,7 @@ export const salamanderBuild: Build = {
       note: "MG Turret is there to amplify our firepower. Since we are aiming for the most kills, dropping this every chance we get will help us tremendously",
     },
     {
-      assetId: "GGD-1",
+      assetId: "AX/AR-23",
       note: "Gas Guard Dog is the ultimate defense! It will keep enemies off your back while you plow them with your Dickle",
     },
     {

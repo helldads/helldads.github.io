@@ -31,8 +31,8 @@ export const antiPredatorStrainBuild: Build = {
     },
     // Primary
     {
-      assetId: "M-105",
-      note: "Stalwart is our weapon of choice for countering the Predator Strain. 250 rounds means you wont run out against the swarms, 1200 RPM means you can put them down quickly, and Mobile Reload means you wont get stuck when out of ammo",
+      assetId: "ARC-12",
+      note: "Blitzer is King of the Predator Strain. This will knockback and stun those pesky bugs, all with infinite ammo (no need to reload and expose yourself!)",
     },
     // Secondary
     {
@@ -46,19 +46,19 @@ export const antiPredatorStrainBuild: Build = {
     },
     // Stratagems
     {
-      assetId: "AX/TX-13",
-      note: "Gas Guard Dog is the Ultimate defense for Predator Strain. It will crowd control for you without you having to take your finger off the trigger.",
+      assetId: "M-105",
+      note: "Stalwart is our weapon of choice for countering the Predator Strain. 250 rounds means you wont run out against the swarms, 1200 RPM means you can put them down quickly, and Mobile Reload means you wont get stuck when out of ammo",
     },
     {
-      assetId: "ARC-12",
-      note: "Blitzer is King of the Predator Strain. This will knockback and stun those pesky bugs, all with infinite ammo (no need to reload and expose yourself!)",
+      assetId: "AX/TX-13",
+      note: "Gas Guard Dog is the Ultimate defense for Predator Strain. It will crowd control for you without you having to take your finger off the trigger.",
     },
     {
       assetId: "EAT-17",
       note: "EAT-17 is a great AT weapon for us. We don’t need to sacrifice our Stalwart, just drop and use when needed and pick up the Stalwart when done",
     },
     {
-      assetId: "ONBS",
+      assetId: "ONB",
       note: "Orbital Napalm is our Anti-Breach option. Why let 1000 Stalkers come out of a breach when we can just burn it. Use this for every breach.",
     },
   ],

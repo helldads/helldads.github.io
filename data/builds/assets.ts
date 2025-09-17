@@ -454,7 +454,7 @@ export const ASSETS = {
     image: "/assets/armor/GS-11_Democracys_Deputy.png",
     description: "Increases sidearms reload speed by 40%. Sidearm draw/holster speed increased by 50%. Sidearm recoil reduced by 70%.",
     wiki: "https://helldivers.wiki.gg/wiki/GS-11_Democracy%27s_Deputy",
-    warbond: "Freedom's Flame",
+    warbond: "Borderline Justice",
   },
   "GS-17": {
     role: LoadoutRole.Armor,
@@ -462,7 +462,7 @@ export const ASSETS = {
     image: "/assets/armor/GS-17_Frontier_Marshal.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/GS-17_Frontier_Marshal",
-    warbond: "Freedom's Flame",
+    warbond: "Borderline Justice",
   },
   "GS-66": {
     role: LoadoutRole.Armor,
@@ -470,7 +470,7 @@ export const ASSETS = {
     image: "/assets/armor/GS-66_Lawmaker.png",
     description: "Description needed",
     wiki: "https://helldivers.wiki.gg/wiki/GS-66_Lawmaker",
-    warbond: "Freedom's Flame",
+    warbond: "Borderline Justice",
   },
   "I-09": {
     role: LoadoutRole.Armor,
@@ -1349,6 +1349,7 @@ export const ASSETS = {
     image: "/assets/throwable/TED-63_Dynamite.png",
     description: "Classic dynamite sticks with high explosive power.",
     wiki: "https://helldivers.wiki.gg/wiki/TED-63_Dynamite",
+    warbond: "Borderline Justice",
   },
 
   // ORBITAL SUPPORT STRATAGEMS
@@ -1394,7 +1395,7 @@ export const ASSETS = {
     description: "A moving barrage that walks across the battlefield.",
     wiki: "https://helldivers.wiki.gg/wiki/Orbital_Walking_Barrage",
   },
-  "OLS": {
+  "OL": {
     role: LoadoutRole.Stratagem,
     name: "Orbital Laser",
     image: "https://helldivers.wiki.gg/images/thumb/c/c1/Orbital_Laser_Stratagem_Icon.png/256px-Orbital_Laser_Stratagem_Icon.png",
@@ -1415,9 +1416,9 @@ export const ASSETS = {
     description: "Creates a smoke screen to obscure vision.",
     wiki: "https://helldivers.wiki.gg/wiki/Orbital_Smoke_Barrage",
   },
-  "OEMSM": {
+  "OES": {
     role: LoadoutRole.Stratagem,
-    name: "Orbital EMS Mortar",
+    name: "Orbital EMS Strike",
     image: "https://helldivers.wiki.gg/images/thumb/9/9e/Orbital_EMS_Strike_Stratagem_Icon.png/256px-Orbital_EMS_Strike_Stratagem_Icon.png",
     description: "An electromagnetic pulse mortar that disables electronics.",
     wiki: "https://helldivers.wiki.gg/wiki/Orbital_EMS_Strike",
@@ -1429,7 +1430,7 @@ export const ASSETS = {
     description: "Deploys toxic gas clouds over the target area.",
     wiki: "https://helldivers.wiki.gg/wiki/Orbital_Gas_Strike",
   },
-  "ONBS": {
+  "ONB": {
     role: LoadoutRole.Stratagem,
     name: "Orbital Napalm Barrage",
     image: "https://helldivers.wiki.gg/images/thumb/f/f1/Orbital_Napalm_Barrage_Stratagem_Icon.png/256px-Orbital_Napalm_Barrage_Stratagem_Icon.png",
@@ -1600,7 +1601,7 @@ export const ASSETS = {
   "MG-43": {
     role: LoadoutRole.Stratagem,
     name: "MG-43 Machine Gun",
-    image: "https://helldivers.wiki.gg/images/thumb/0/0b/MG-43_Machine_Gun_Stratagem_Icon.png/256px-MG-43_Machine_Gun_Stratagem_Icon.png",
+    image: "https://helldivers.wiki.gg/images/Machine_Gun_Stratagem_Icon.png",
     description: "A reliable machine gun for sustained fire support.",
     wiki: "https://helldivers.wiki.gg/wiki/MG-43_Machine_Gun",
   },
@@ -1610,6 +1611,13 @@ export const ASSETS = {
     image: "https://helldivers.wiki.gg/images/thumb/f/f5/MG-206_Heavy_Machine_Gun_Stratagem_Icon.png/256px-MG-206_Heavy_Machine_Gun_Stratagem_Icon.png",
     description: "A heavy machine gun for sustained suppression.",
     wiki: "https://helldivers.wiki.gg/wiki/MG-206_Heavy_Machine_Gun",
+  },
+  "MLS-4X": {
+    role: LoadoutRole.Stratagem,
+    name: "MLS-4X Commando",
+    image: "https://helldivers.wiki.gg/images/Commando_Stratagem_Icon.png",
+    description: "An expendable missile launcher equipped with four laser-guided missiles.",
+    wiki: "https://helldivers.wiki.gg/wiki/MLS-4X_Commando",
   },
   "MS-11": {
     role: LoadoutRole.Stratagem,
@@ -1835,9 +1843,10 @@ export const ASSETS = {
   "LIFT-860K": {
     role: LoadoutRole.Stratagem,
     name: "LIFT-860 Hover Pack",
-    image: "https://helldivers.wiki.gg/images/thumb/7/73/LIFT-860_Hover_Pack_Stratagem_Icon.png/256px-LIFT-860_Hover_Pack_Stratagem_Icon.png",
+    image: "https://helldivers.wiki.gg/images/Hover_Pack_Stratagem_Icon.png",
     description: "Propels the wearer in the air for extended flight time.",
     wiki: "https://helldivers.wiki.gg/wiki/LIFT-860_Hover_Pack",
+    warbond: "Borderline Justice",
   },
   "AX/LAS-5": {
     role: LoadoutRole.Stratagem,
@@ -1851,7 +1860,8 @@ export const ASSETS = {
     name: "AX/AR-23 \"Guard Dog\" Dog Breath",
     image: "https://helldivers.wiki.gg/images/thumb/8/84/Guard_Dog_Dog_Breath_Stratagem_Icon.png/256px-Guard_Dog_Dog_Breath_Stratagem_Icon.png",
     description: "A flame-based version of the Guard Dog drone.",
-    wiki: "https://helldivers.wiki.gg/wiki/AX/AR-23_%22Guard_Dog%22_Dog_Breath",
+    wiki: "https://helldivers.wiki.gg/wiki/AX/TX-13_%22Guard_Dog%22_Dog_Breath",
+    warbond: "Chemical Agents",
   },
   "AX/ARC-3": {
     role: LoadoutRole.Stratagem,

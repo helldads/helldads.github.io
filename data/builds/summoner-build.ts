@@ -20,8 +20,8 @@ export const summonerBuild: Build = {
     // Throwable
     { assetId: "G-50", note: "Seeker Grenades are our flying bomb minions. Tag a target, and let them fly." },
     // Stratagems and other items
-    { assetId: "RS", note: "Rocket Turret is the most efficient minion you have. He has the most range, and will kill the most enemies if placed in a great location. It is best to protect this minion with your MG Turret, they are best friends." },
     { assetId: "AX/LAS-5", note: "Gun Dog Backpack is our mobile friend. You stun, He shoots! Wherever you go, he will be there!" },
+    { assetId: "RS", note: "Rocket Turret is the most efficient minion you have. He has the most range, and will kill the most enemies if placed in a great location. It is best to protect this minion with your MG Turret, they are best friends." },
     { assetId: "MGS", note: "MG Turret is your fastest turret and will be summoned frequently. It is also your chaff killing option. Summon this minion frequently." },
     { assetId: "ACS", note: "Autocannon Turret is your bursty minion. If you need more oomph this friend comes out! This minion is absolutely capable of handling itself alone, but will add additional power when needed." },
   ],

@@ -15,7 +15,7 @@ export const babyDriverBuild: Build = {
     "380mm-barrage",
     "orbital-laser",
     "loyalist",
-    "xbow",
+    "CB-9",
     "democracy-protects",
   "seeker-grenade",
   ],
@@ -50,7 +50,7 @@ export const babyDriverBuild: Build = {
         note: "380mm Barrage: Flex cooldown. Drop and drive away to skip drops/breaches/bases.",
       },
       {
-        assetId: "OLS",
+        assetId: "OL",
         note: "Orbital Laser: Wipe bases from the car. Seat swap to throw and keep moving.",
       },
       {

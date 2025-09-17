@@ -12,18 +12,18 @@ export const reinhardtBuild: Build = {
   tags: ["tank", "support", "shield", "protection", "crowd-control", "heavy-armor", "crossbow", "ultimatum", "thermite"],
   loadout: [
     // Armor
-    { assetId: "FS-55", note: "FS-55 Devastator armor is preferred as it gives you explosive resistance. Your shield will block bullets, your body will block explosives." },
+    { assetId: "FS-55", note: "The FS-55 Devastator armor is preferred as it gives you explosive resistance. Your shield will block projectiles, your armor will help with explosions." },
     // Primary
-    { assetId: "XBOW", note: "The Xbow is your main weapon and pairs great with the Directional Shield. Handles most bots and closes Fabricators." },
+    { assetId: "CB-9", note: "The crossbow is your main weapon and pairs well with the Directional Shield. Handles most bots and closes Fabricators." },
     // Secondary
-    { assetId: "ULTIMATUM", note: "Ultimatum to take care of Objectives and Heavies, but more importantly to deal with Factory Striders when our team cant." },
+    { assetId: "GP-20", note: "We bring the Ultimatum to take care of objectives and heavies, but more importantly to deal with Factory Striders when your team can't." },
     // Throwable
     { assetId: "G-123", note: "Thermite is used to take out any Heavies when our team is lacking or if you find yourself alone." },
     // Stratagems
-    { assetId: "DSHIELD", note: "The Directional Shield is your main defensive weapon. You will use this to protect teammates. Look for a Helldiver under fire and rush over to block for them." },
+    { assetId: "SH-51", note: "The Directional Shield is your main defensive weapon. You will use this to protect teammates. Look for a Helldiver under fire and rush over to block for them." },
     { assetId: "SGR", note: "The Shield Generator Relay is used when your Directional Shield is not enough, usually for Bot Drops, or if you find yourself taking fire from multiple directions." },
-    { assetId: "EAGLE-STRAFE", note: "Eagle Strafe is Reinhardts “Fire Strike”. Use this to send a wave of destruction towards your enemies. Keep aiming down sights to keep the shield up while throwing strategems." },
-    { assetId: "OEMS", note: "Orbital EMS is Reinhardts “Earthshatter”. Use this to stun bot drops or troublesome groups of enemies so your team can mop them up easily." },
+    { assetId: "ESR", note: `Eagle Strafe is Reinhardt’s “Fire Strike”. Use this to send a wave of damage towards your enemies. Keep aiming down sights to keep the shield up while using stratagems.` },
+    { assetId: "OES", note: `Orbital EMS is Reinhardt’s “Earthshatter”. Use this to stun bot drops or troublesome groups of enemies so your team can handle them easily.` },
   ],
   links: {
     reddit: "",

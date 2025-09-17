@@ -20,10 +20,10 @@ export const exterminatorBuild: Build = {
      // Throwable
      { assetId: "G-123", note: "Thermite is our AT option, mainly for the Chargers. Gas them up, stick em with Thermite and forget about them." },
      // Stratagems and other items
+     { assetId: "TX-41", note: "Sterilizer is our Main Weapon. We will be running around making sure everything has a heavy dose of Gas. If everything looks confused we can swap to the Torcher to add some fire." },
      { assetId: "MD-8", note: "Gas Mines are our big Anti-Breach Gas ability. Throw them down for every breach to make sure everything coming out is dazed and confused." },
      { assetId: "OGS", note: "Orbital Gas Strike is there to help us Crowd Control 2 different directions. Throw Gas Strike one way, go spray the other." },
      { assetId: "ORS", note: "Orbital Rail Cannon Strike is our best bet against Bile Titans. We aren’t the teams AT, but we can assist when needed. Take out a particularly annoying BT or just save yourself from one if alone." },
-     { assetId: "TX-41", note: "Sterilizer is our Main Weapon. We will be running around making sure everything has a heavy dose of Gas. If everything looks confused we can swap to the Torcher to add some fire." },
   ],
   links: {
     reddit: "",
