@@ -22,39 +22,39 @@ export const ghostBuild: Build = {
     // Armor
     {
       assetId: "SC-34",
-      note: "SC-34 Infiltrator: This armor will make you invisible to your enemies. You can practically walk right past them!",
+      note: "This armor will make you invisible to your enemies. You can practically walk right past them!",
     },
     // Primary
     {
       assetId: "CB-9",
-      note: "CB-9 Exploding Crossbow: Mainly for closing Holes / Fabricators, or taking care of Spore Spewers and Shrieker nests. It is also great for distracting and luring enemies.",
+      note: "This is mainly for closing Holes / Fabricators, or taking care of Spore Spewers and Shrieker nests. It is also great for distracting and luring enemies.",
     },
     // Secondary
     {
       assetId: "P-4",
-      note: "P-4 Senator: This is your main weapon. It has one of the lowest sound profiles and will give you the most bang for your buck per shot while still being quiet.",
+      note: "This is your main weapon. It has one of the lowest sound profiles and will give you the most bang for your buck per shot while still being quiet",
     },
     // Throwable
     {
       assetId: "G-3",
-      note: "G-3 Smoke: Smoke Grenades are your instant get out of jail free cards. Hold the Grenade until it pops in your hand to create a personal stealth bubble.",
+      note: "Smoke Grenades are your instant get out of jail free cards. Hold the Grenade until it pops in your hand to create a personal stealth bubble.",
     },
     // Stratagems
     {
       assetId: "ESS",
-      note: "Eagle Smoke Strike: This is the best smoke in the game. It is predictable and the line it makes can be used to create walls or hallways of smoke. Use this liberally to hide your intentions.",
+      note: "This is the best smoke in the game. It is predictable and the line it makes can be used to create walls or hallways of smoke. Use this liberally to hide your intentions.",
     },
     {
-      assetId: "OSB",
-      note: "Orbital Smoke Barrage: Pair with Eagle for a larger area of concealment.",
+      assetId: "OSS",
+      note: "This smoke isn’t as good as the Eagle, but it is good to pair with Eagle since it can be thrown at the same time giving you a larger area of concealment",
     },
     {
       assetId: "LIFT-850",
-      note: "LIFT-850 Jump Pack: Helps you zoom around the map and escape trouble quickly.",
+      note: "Jump Pack will help you zoom around the map and will help you get out of trouble should you be spotted. Use this to disengage once Line of Site is broken with smoke.",
     },
     {
-      assetId: "SH-20",
-      note: "SH-20 Ballistic Shield Backpack: Makeshift distractor. Enemies will target the generator and try to destroy it. Use to distract while you hide in smoke and take care of objectives.",
+      assetId: "SGR",
+      note: "Shield Generator Relay: Provides a large area of protection. Use as a fallback or to cover objectives while you sneak around.",
     },
   ],
   links: {

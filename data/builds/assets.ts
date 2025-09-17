@@ -1409,12 +1409,12 @@ export const ASSETS = {
     description: "A high-velocity railcannon strike from orbit.",
     wiki: "https://helldivers.wiki.gg/wiki/Orbital_Railcannon_Strike",
   },
-  "OSB": {
+  "OSS": {
     role: LoadoutRole.Stratagem,
-    name: "Orbital Smoke Barrage",
-    image: "https://helldivers.wiki.gg/images/thumb/4/47/Orbital_Smoke_Barrage_Stratagem_Icon.png/256px-Orbital_Smoke_Barrage_Stratagem_Icon.png",
+    name: "Orbital Smoke Strike",
+    image: "https://helldivers.wiki.gg/images/Orbital_Smoke_Strike_Stratagem_Icon.png",
     description: "Creates a smoke screen to obscure vision.",
-    wiki: "https://helldivers.wiki.gg/wiki/Orbital_Smoke_Barrage",
+    wiki: "https://helldivers.wiki.gg/wiki/Orbital_Smoke_Strike",
   },
   "OES": {
     role: LoadoutRole.Stratagem,
@@ -1493,7 +1493,7 @@ export const ASSETS = {
   "AC-8": {
     role: LoadoutRole.Stratagem,
     name: "AC-8 Autocannon",
-    image: "https://helldivers.wiki.gg/images/thumb/3/3c/AC-8_Autocannon_Stratagem_Icon.png/256px-AC-8_Autocannon_Stratagem_Icon.png",
+    image: "https://helldivers.wiki.gg/images/Autocannon_Stratagem_Icon.png",
     description: "A rapid-firing cannon effective against medium armor.",
     wiki: "https://helldivers.wiki.gg/wiki/AC-8_Autocannon",
   },
@@ -1559,14 +1559,14 @@ export const ASSETS = {
   "GR-8": {
     role: LoadoutRole.Stratagem,
     name: "GR-8 Recoilless Rifle",
-    image: "https://helldivers.wiki.gg/images/thumb/b/b6/GR-8_Recoilless_Rifle_Stratagem_Icon.png/256px-GR-8_Recoilless_Rifle_Stratagem_Icon.png",
+    image: "https://helldivers.wiki.gg/images/Recoilless_Rifle_Stratagem_Icon.png",
     description: "A powerful anti-tank rifle that requires teamwork to reload.",
     wiki: "https://helldivers.wiki.gg/wiki/GR-8_Recoilless_Rifle",
   },
   "FLAM-40": {
     role: LoadoutRole.Stratagem,
     name: "FLAM-40 Flamethrower",
-    image: "https://helldivers.wiki.gg/images/thumb/4/42/FLAM-40_Flamethrower_Stratagem_Icon.png/256px-FLAM-40_Flamethrower_Stratagem_Icon.png",
+    image: "https://helldivers.wiki.gg/images/Flamethrower_Stratagem_Icon.png",
     description: "Burns enemies with sustained flame attacks.",
     wiki: "https://helldivers.wiki.gg/wiki/FLAM-40_Flamethrower",
   },
@@ -1587,7 +1587,7 @@ export const ASSETS = {
   "LAS-99": {
     role: LoadoutRole.Stratagem,
     name: "LAS-99 Quasar Cannon",
-    image: "https://helldivers.wiki.gg/images/thumb/7/76/LAS-99_Quasar_Cannon_Stratagem_Icon.png/256px-LAS-99_Quasar_Cannon_Stratagem_Icon.png",
+    image: "https://helldivers.wiki.gg/images/Quasar_Cannon_Stratagem_Icon.png",
     description: "A powerful laser cannon with a long charge time.",
     wiki: "https://helldivers.wiki.gg/wiki/LAS-99_Quasar_Cannon",
   },
@@ -1670,7 +1670,7 @@ export const ASSETS = {
   "E/AT-12": {
     role: LoadoutRole.Stratagem,
     name: "E/AT-12 Anti-Tank Emplacement",
-    image: "https://helldivers.wiki.gg/images/thumb/3/30/Anti-Tank_Emplacement_Stratagem_Icon.png/256px-Anti-Tank_Emplacement_Stratagem_Icon.png",
+    image: "https://helldivers.wiki.gg/images/E_AT-12_Anti-Tank_Emplacement_Stratagem_Icon.png",
     description: "A stationary anti-tank gun for defensive positions.",
     wiki: "https://helldivers.wiki.gg/wiki/Anti-Tank_Emplacement",
     warbond: "Urban Legends",
@@ -1691,10 +1691,10 @@ export const ASSETS = {
   },
   "GB": {
     role: LoadoutRole.Stratagem,
-    name: "Grenadier Battlement",
-    image: "https://helldivers.wiki.gg/images/thumb/b/b5/Grenadier_Battlement_Stratagem_Icon.png/256px-Grenadier_Battlement_Stratagem_Icon.png",
+    name: "E/GL-21 Grenadier Battlement",
+    image: "https://helldivers.wiki.gg/images/GL-21_Grenadier_Battlement_Stratagem_Icon.png",
     description: "A defensive position with grenade launchers.",
-    wiki: "https://helldivers.wiki.gg/wiki/Grenadier_Battlement",
+    wiki: "https://helldivers.wiki.gg/wiki/E/GL-21_Grenadier_Battlement",
   },
   "TT": {
     role: LoadoutRole.Stratagem,
@@ -1836,7 +1836,7 @@ export const ASSETS = {
   "LIFT-850": {
     role: LoadoutRole.Stratagem,
     name: "LIFT-850 Jump Pack",
-    image: "https://helldivers.wiki.gg/images/thumb/5/5b/LIFT-850_Jump_Pack_Stratagem_Icon.png/256px-LIFT-850_Jump_Pack_Stratagem_Icon.png",
+    image: "https://helldivers.wiki.gg/images/Jump_Pack_Stratagem_Icon.png",
     description: "Allows the user to make powered jumps over obstacles.",
     wiki: "https://helldivers.wiki.gg/wiki/LIFT-850_Jump_Pack",
   },

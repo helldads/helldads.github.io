@@ -23,39 +23,39 @@ export const gasWalkerBuild: Build = {
     // Armor
     {
       assetId: "AF-50",
-      note: "Makes you immune to gas. Essential for walking through your own clouds.",
+      note: "This armor will make you Immune to GAS! This is your secret weapon for being the “Gas Walker”.",
     },
     // Primary
     {
       assetId: "CB-9",
-      note: "Used for closing bug holes/fabricators and picking off distant enemies.",
+      note: "The crossbow is used just to close Fabricators and Bug Holes and to shoot the random enemy that you dont feel like waddling over to burn to a crisp (too far away in that chunky armor amirite?), and the Ultimatum is mainly for Titan bug holes or Objectives.",
     },
     // Secondary
     {
       assetId: "GP-20",
-      note: "Mainly for closing Titan bug holes or objectives.",
+      note: "This is mainly for closing Holes / Fabricators, or taking care of Spore Spewers and Shrieker nests",
     },
     // Throwable
     {
       assetId: "G-4",
-      note: "Keep the gas flowing. Use for patrols and filling gaps in your gas field.",
+      note: "Gas Grenades help you keep the Gas flowing. If you run into a Patrol its better to lob one of these then waste a Strategem. They will also fill out any holes in your gas field",
     },
     // Stratagems
     {
-      assetId: "MD-8",
-      note: "Biggest area of gas. Deploy when assaulting or defending positions.",
+      assetId: "FLAM-40",
+      note: "Flamer is your stratagem weapon. It kills literally EVERYTHING. Hulks (shoot their legs or back), Tanks (between the treads in the back), Factory Strider / Bile Titan (in the belly). Cook them all!",
     },
     {
       assetId: "AX/TX-13",
-      note: "Best doggo for cleaning up stragglers and helping with small units.",
+      note: "The Best Doggo. This will help you with small amounts of units (like a single Hulk). It will also go after anyone who’s gas effect has run out, or anyone who has missed the mines / orbital.",
+    },
+    {
+      assetId: "MD-8",
+      note: "This is your biggest area of Gas. Whenever assaulting a position or stopping a Breach / Drop, this should be the first thing you deploy.",
     },
     {
       assetId: "OGS",
-      note: "Orbital gas for covering large areas not protected by mines.",
-    },
-      {
-      assetId: "FLAM-40",
-      note: "Flamethrower: Kills everything. Use for all enemy types, aim for weak spots on heavies.",
+      note: "This is your Gas on demand. If your mines are on Cooldown, or there are enemies outside of your mine field throw this on them. This should be deployed before engaging the enemy",
     },
   ],
   links: {

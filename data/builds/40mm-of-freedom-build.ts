@@ -17,45 +17,45 @@ export const fortyMmOfFreedomBuild: Build = {
     "airburst",
     "dynamite",
     "senator",
-  "halt",
+    "halt",
   ],
   loadout: [
     // Armor
     {
       assetId: "B-27",
-      note: "Fortified Commando armor for recoil reduction and explosion resistance.",
+      note: "You are looking for Fortified in your armor. The recoil reduction helps substantially with follow up shots of the AC and explosion resist helps you survive up close shots (or missiles)",
     },
     // Primary
     {
-      assetId: "AC-8",
-      note: "Autocannon: Main weapon. Handles all enemies and objectives. Reload with at least 1 round left to speed up reload animation.",
+      assetId: "SG-20",
+      note: "The Halt stays on Stun (unless you deem it necessary to change). Whip this out for a quick stun on your target, then swap back to that AC for a Plap Plap.",
     },
     // Secondary
     {
       assetId: "P-4",
-      note: "Senator: Quick swap to finish off targets when out of AC ammo.",
+      note: "The Senator is basically used to quick swap if your AC clip is empty and your target is still standing. Swap and pop and then reload when clear.",
     },
     // Throwable
     {
       assetId: "TED-63",
-      note: "Dynamite: Biggest radius grenade for crowd clear. Use in bases, breaches, patrols.",
+      note: "Dynamite perform the same role, but as a Grenade. They have the biggest radius and some serious damage. Chuck them in bases, chuck them in breaches, chuck them at patrols, etc.",
     },
     // Stratagems
     {
+      assetId: "AC-8",
+      note: "This is your main weapon. It handles everything. Kill all enemies, close bug holes / fabricators, destroy objectives like spore spewers, shrieker nests, AA guns, Mortars etc. Reload with at least 1 round left to speed up reload animation",
+    },
+    {
       assetId: "EXO-45",
-      note: "Big Bertha (Patriot Exosuit): Mech with 4 autocannons. Use for heavy firepower and clearing tough objectives.",
+      note: "This is your power flex. 40mm guns on a suit of armor. Things not going well? Drop this bad boy in and clean house.",
     },
     {
       assetId: "ACS",
-      note: "Autocannon Sentry: Drop for extra autocannon firepower. Great for team support.",
+      note: "This is your firepower amplifier. Need even more 40mm Plap Plaps? Drop this down next to you and double your AC firepower.",
     },
     {
       assetId: "OAB",
-      note: "Orbital Airburst for softening/clearing large groups. 100 sec cooldown.",
-    },
-    {
-      assetId: "SG-20",
-      note: "Halt: Stun rounds for stopping tough enemies. Start with stun, finish with autocannon.",
+      note: "While these rounds aren’t 40mm, they sure do feel like AC rounds on impact. 100 sec CD makes this a great breach / drop / base / patrol clear. Throw it early, Throw it often.",
     },
   ],
   links: {

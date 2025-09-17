@@ -21,42 +21,42 @@ export const babyDriverBuild: Build = {
   ],
   loadout: [
     // Armor
-      {
-        assetId: "DP-53",
-        note: "Savior of the Free: Any armor works, but this might save you if the car blows up.",
-      },
+    {
+      assetId: "DP-53",
+      note: "Any armor will work. Democracy Protects might save you if the Car blows up though",
+    },
     // Primary
-      {
-        assetId: "CB-9",
-        note: "Exploding Crossbow: Any primary works. Preferred for seat swap bug hole popping.",
-      },
+    {
+      assetId: "CB-9",
+      note: "Any Primary will work. I prefer the Xbow since you can seat swap and pop bug holes with it.",
+    },
     // Secondary
-      {
-        assetId: "GR-8",
-        note: "Recoilless Rifle: Used to kill heavies and for 'Jousting' while driving.",
-      },
+    {
+      assetId: "PLAS-15",
+      note: "This is mainly used to flip your car over without blowing it up. Give the tire a love tap and your car should be ready to roll.",
+    },
     // Throwable
-      {
-        assetId: "G-50",
-        note: "Seeker Grenade: Great for Jousting. Will follow FRV and not blow it up.",
-      },
+    {
+      assetId: "G-50",
+      note: "Seeker Grenades make a great addition to the Jousting capabilities of this build. They will not blow up the FRV and will follow you as you drive",
+    },
     // Stratagems
-      {
-        assetId: "M-102",
-        note: "FRV: Can't be the driver without the Fast Recon Vehicle. Use as mobile HMG emplacement.",
-      },
-      {
-        assetId: "O380HB",
-        note: "380mm Barrage: Flex cooldown. Drop and drive away to skip drops/breaches/bases.",
-      },
-      {
-        assetId: "OL",
-        note: "Orbital Laser: Wipe bases from the car. Seat swap to throw and keep moving.",
-      },
-      {
-        assetId: "PLAS-15",
-        note: "Loyalist: Used to flip the car over without blowing it up. Tap the tire to reset.",
-      },
+    {
+      assetId: "GR-8",
+      note: "This is used to kill Heavies (obviously) and to “Joust” while driving.",
+    },
+    {
+      assetId: "M-102",
+      note: "You can’t be the driver without the FRV. Remember it has an HMG on back, you can park it and use it like a mobile HMG emplacement.",
+    },
+    {
+      assetId: "O380HB",
+      note: "380 is your flex Cooldown. If there’s a drop or breach you don’t want to deal with, drop this and drive away. Want to skip a base? Drop it and drive away.",
+    },
+    {
+      assetId: "OL",
+      note: "Orbital Laser is used to wipe bases from the car. With or without friends, drive up to a base, throw the laser, move on to the next location. With seat swapping you don’t even need to get out!",
+    },
   ],
   links: {
     reddit: "",
