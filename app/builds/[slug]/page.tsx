@@ -1,3 +1,4 @@
+import { Button } from "@heroui/button"; // CardFooter, CardHeader
 import { Card, CardBody } from "@heroui/card"; // CardFooter, CardHeader
 import { Image } from "@heroui/image";
 import { Link } from "@heroui/link";
@@ -46,7 +47,7 @@ export default async function BuildPage({
     : null;
 
   return (
-    <div className="py-6 space-y-6">
+    <div className="space-y-6">
       {highlightsVideoId ? (
         <div className="relative aspect-video">
           <iframe

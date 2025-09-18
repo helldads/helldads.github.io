@@ -1,5 +1,6 @@
 import { Image } from "@heroui/image";
 import { Link } from "@heroui/link";
+import { Button } from "@heroui/button";
 import { Card, CardBody } from "@heroui/card";
 import { Divider } from "@heroui/divider";
 
@@ -9,8 +10,10 @@ import {
   DiscordIcon,
   PhotoIcon,
   RedditIcon,
-  VideoIcon,
   TextDocumentIcon,
+  TikTokIcon,
+  VideoIcon,
+  YoutubeIcon,
 } from "@/components/icons";
 
 export default function AboutPage() {
@@ -76,7 +79,8 @@ export default function AboutPage() {
         >
           post
         </Link>{" "}
-        by u/Dispenser-of-Liberty on October 29, 2024, in the Helldivers 2
+        by u/Dispenser-of-Liberty on{" "}
+        <time dateTime="2024-10-29">October 29, 2024</time>, in the Helldivers 2
         Subreddit. Sharing the challenges of gaming while parenting, he struck a
         chord with fellow Helldivers. The response was overwhelming, sparking
         the creation of a dedicated space for parents in the Helldivers
@@ -117,14 +121,14 @@ export default function AboutPage() {
       />
 
       <h3 className="text-1xl font-extrabold mt-12 mb-6">
-        Milestones We Achieved Together:
+        Milestones We Achieved Together In The First 6 Weeks:
       </h3>
 
       <ul className="space-y-4 mt-4">
         <li className="flex gap-4">
           <RedditIcon />
           <div className="text-left">
-            <strong>Surpassing 1,000 members</strong> in just six weeks.
+            <strong>Surpassing 1,000 members</strong> on Reddit.
           </div>
         </li>
         <li className="flex gap-4">
@@ -144,10 +148,9 @@ export default function AboutPage() {
         <li className="flex gap-4">
           <TextDocumentIcon />
           <div className="text-left">
-            <strong>
-              <Link href="/dadtionary">The Dadtionary</Link>
-            </strong>{" "}
-            a living glossary for our community.
+            <strong>The Dadtionary</strong> a living glossary for our community
+            which later became the <Link href="/essentials">Essentials</Link>{" "}
+            Guide.
           </div>
         </li>
         <li className="flex gap-4">
@@ -221,7 +224,256 @@ export default function AboutPage() {
         democracy. We participate in joint operations, complete community
         orders, and contribute to the broader Helldivers 2 events.
       </p>
+
+      <p className="leading-relaxed mt-4">
+        Shortly after we joined the Freedom Alliance, the Illuminate fleet
+        launched a surprise attack on Super Earth in December. In the face of
+        that threat, more Helldivers joined our ranks and new contributors
+        brought fresh energy, creativity, and organisation to the Parental
+        Corps.
+      </p>
+
+      <h2 className="text-2xl font-semibold mt-12">
+        Founding of Official Divisions
+      </h2>
+      <p className="leading-relaxed mt-4">
+        To help our members represent their favourite ways of playing
+        Helldivers, we founded our first four divisions end of{" "}
+        <time dateTime="2025-02">February&apos;25</time>:
+      </p>
+      <ul className="space-y-4 mt-4">
+        <li className="flex gap-4">
+          <Image
+            className="inline"
+            height="24"
+            src="/assets/helldads-logo-diaper-division.svg"
+            width="24"
+          />
+          <div className="text-left">
+            <strong>44th S.H.T.</strong> &ndash;{" "}
+            <Link
+              isExternal
+              showAnchorIcon
+              href="https://discord.com/channels/1301285072896266252/1345040640949489674/1345091078411518025"
+            >
+              “Diaper Division”
+            </Link>
+          </div>
+        </li>
+        <li className="flex gap-4">
+          <Image
+            className="inline"
+            height="24"
+            src="/assets/helldads-logo-baldzerkers.svg"
+            width="24"
+          />
+          <div className="text-left">
+            <strong>101st B.A.L.D.</strong> &ndash;{" "}
+            <Link
+              isExternal
+              showAnchorIcon
+              href="https://discord.com/channels/1301285072896266252/1345040640949489674/1345091078411518025"
+            >
+              “Baldzerkers”
+            </Link>
+          </div>
+        </li>
+        <li className="flex gap-4">
+          <Image
+            className="inline"
+            height="24"
+            src="/assets/helldads-logo-science-team.svg"
+            width="24"
+          />
+          <div className="text-left">
+            <strong>HellDads R&amp;D</strong> &ndash;{" "}
+            <Link
+              isExternal
+              showAnchorIcon
+              href="https://discord.com/channels/1301285072896266252/1345040640949489674/1345091078411518025"
+            >
+              “Science Team”
+            </Link>
+          </div>
+        </li>
+        <li className="flex gap-4">
+          <Image
+            className="inline"
+            height="24"
+            src="/assets/helldads-logo-crayon-commandos.svg"
+            width="24"
+          />
+          <div className="text-left">
+            <strong>31st R.E.A.P.</strong> &ndash;{" "}
+            <Link
+              isExternal
+              showAnchorIcon
+              href="https://discord.com/channels/1301285072896266252/1345040640949489674/1345091078411518025"
+            >
+              “Crayon Commandos”
+            </Link>{" "}
+          </div>
+        </li>
+        <li className="flex gap-4">
+          <Image
+            className="inline"
+            height="24"
+            src="/assets/helldads-logo-snack.svg"
+            width="24"
+          />
+          <div className="text-left">
+            <strong>103rd L.D.D.</strong> &ndash;{" "}
+            <Link
+              isExternal
+              showAnchorIcon
+              href="https://discord.com/channels/1301285072896266252/1345040640949489674/1345091078411518025"
+            >
+              “S.N.A.C.K. Division” (Est.{" "}
+              <time dateTime="2025-07">July&apos;25</time>)
+            </Link>
+          </div>
+        </li>
+      </ul>
+
+      <h2 className="text-2xl font-semibold mt-12">Our Video Channels</h2>
+      <p className="leading-relaxed mt-4">
+        With more people united, Reddit and Discord filled with awesome clips
+        and highlights. That momentum created the demand for a dedicated YouTube
+        and Tiktok channels to showcase community moments — from battlefield
+        diaries and shorts to community submissions and Freedom Alliance events.
+        These channels have been steadily growing ever since.
+        <div className="flex gap-2 items-center mt-4">
+          <Button
+            isExternal
+            as={Link}
+            className="text-large bg-[#CD201F] text-white border-neutral-50"
+            href={siteConfig.links.youtube}
+            variant="bordered"
+            radius="md"
+            size="lg"
+          >
+            <YoutubeIcon /> YouTube
+          </Button>
+          <Button
+            isExternal
+            as={Link}
+            className="text-large bg-black text-white border-neutral-50"
+            href={siteConfig.links.tiktok}
+            variant="bordered"
+            radius="md"
+            size="lg"
+          >
+            <TikTokIcon /> TikTok
+          </Button>
+        </div>
+      </p>
+
+      <h2 className="text-2xl font-semibold mt-12">Community Events</h2>
+      <p className="leading-relaxed my-4">
+        Our first community event,{" "}
+        <Link
+          isExternal
+          showAnchorIcon
+          href="https://www.reddit.com/r/HellDads/comments/1j7etfj/helldads_operation_iron_veil_march_1417th/"
+        >
+          Operation Iron Veil
+        </Link>
+        , was a huge success. It included a dedicated teaser and an aftermath
+        video, and it even caught the attention of some{" "}
+        <Link
+          isExternal
+          showAnchorIcon
+          href="https://n4g.com/articles/helldivers-2-we-are-born-for-war-helldads-present-operation-iron-veil-their-first-community-event/"
+        >
+          gaming news blogs
+        </Link>
+        , bringing more visibility and growth to our humble community.
+      </p>
+
+      <div className="relative aspect-video">
+        <iframe
+          allowFullScreen
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          className="w-full h-full rounded-xl"
+          frameBorder="0"
+          referrerPolicy="strict-origin-when-cross-origin"
+          src="https://www.youtube.com/embed/raB7vjOirtM?modestbranding=1&showinfo=0&rel=0&controls=1&disablekb=0&fs=1&cc_load_policy=0&iv_load_policy=3&autohide=1&color=white&theme=dark"
+          title="OPERATION: IRON VEIL"
+        />
+      </div>
+
+      <h2 className="text-2xl font-semibold mt-12">Helldivers 2 Builds</h2>
+      <p className="leading-relaxed mt-4">
+        The most visible content outside our community took off when{" "}
+        <Link
+          isExternal
+          showAnchorIcon
+          href="https://www.reddit.com/user/SES-SpearofDemocracy/"
+        >
+          u/SES-SpearofDemocracy "Quifoo"
+        </Link>
+        joined the video team and began publishing{" "}
+        <Link
+          isExternal
+          showAnchorIcon
+          href="https://www.youtube.com/playlist?list=PLKnnPdtXz2FHPsjVy3r2N4p0KynMc72oE"
+        >
+          Helldivers 2 Builds
+        </Link>
+        . What started as an experiment "one build per day for 30 days" quickly
+        became a reliable foundation for further growth. Today we have over{" "}
+        <strong>50+</strong> builds covering a wide range of loadouts and
+        playstyles for every kind of Helldiver.
+      </p>
+      <Button
+        as={Link}
+        className="text-large mt-4"
+        color="primary"
+        href="/builds"
+        radius="md"
+        size="lg"
+      >
+        <TextDocumentIcon /> Open Builds
+      </Button>
+
+      <h2 className="text-2xl font-semibold mt-12">Our Website</h2>
+
+      <p>
+        In <time dateTime="2025-02">February 2025</time>, the HellDads website
+        was created as a gift to the community by{" "}
+        <Link
+          isExternal
+          showAnchorIcon
+          href="https://www.reddit.com/user/r-volk/"
+        >
+          u/r-volk
+        </Link>
+        , launching in parallel with our YouTube channel. It became our home
+        base, creating visibility for the community and bridging the gap between
+        Reddit, Discord, and YouTube.
+      </p>
+
+      <p>
+        In <time dateTime="2025-08">August 2025</time>,{" "}
+        <strong>WingedStrainer</strong> joined the web development team. With
+        joint forces we expanded the site even further: we released the{" "}
+        <Link href="/essentials">Essentials</Link> guide packed with helpful
+        tips and tricks as part of our{" "}
+        <Link
+          isExternal
+          showAnchorIcon
+          href="https://discord.com/channels/1301285072896266252/1409613376090538099"
+        >
+          HellDads Academy
+        </Link>{" "}
+        programme, and we launched the
+        <Link href="/builds">Builds</Link> page to showcase the many beautiful
+        loadouts that
+        <strong>Quifoo</strong> and the wider community have crafted over time.
+      </p>
+
       <Divider className="my-12" />
+
       <div className="flex flex-col items-center text-center justify-center">
         <Image
           isBlurred
@@ -235,6 +487,11 @@ export default function AboutPage() {
           (Latin for &quot;Fathers of Hell&quot;)
         </div>
       </div>
+      <p className="leading-relaxed italic text-center mt-6">
+        From a handful of parents to a 10k+ community with engaging events,
+        helpful content and amazing people — we’re still growing, still
+        overtired, and still spreading Managed Democracy whenever possible.
+      </p>
     </div>
   );
 }

@@ -388,8 +388,9 @@ export default function LegalPage() {
           <CardBody className="px-3 py-0">
             <p>
               Special thanks to the contributors of the Helldivers Wiki for
-              providing images and reference material used in our builds
-              section. <HeartFilledIcon className="inline" />
+              providing images and reference material used in our{" "}
+              <Link href="/builds">Builds</Link> section.{" "}
+              <HeartFilledIcon className="inline" />
             </p>
             <Divider className="my-2" />
             <p className="text-small py-2 text-gray-500">

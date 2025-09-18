@@ -76,7 +76,9 @@ export const Navbar = () => {
                   "data-[active=true]:text-primary data-[active=true]:font-semibold",
                 )}
                 color="foreground"
-                data-active={item.href == pathname}
+                data-active={
+                  pathname == item.href || pathname.startsWith(`${item.href}/`)
+                }
                 href={item.href}
               >
                 {item.label}
