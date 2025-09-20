@@ -69,7 +69,6 @@ export default async function BuildPage({
       {(build.links || build.image) && (
         <section className="space-y-1">
           <Divider />
-          {/* <h2 className="text-xl font-semibold">Links</h2> */}
           <div className="flex gap-4 flex-wrap py-2">
             {build.links?.reddit && (
               <Link
@@ -148,9 +147,9 @@ export default async function BuildPage({
       {build.loadout && build.loadout.length > 0 && (
         <section className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {build.loadout?.map((entry, i) => {
-            const asset = getAsset(entry.assetId);
+            if (!entry.assetId) return null;
+            const asset = getAsset(entry.assetId as Parameters<typeof getAsset>[0]);
 
-            // temporary exit to skip missing assets
             if (!asset)
               return (
                 <Card key={i} radius="sm">
