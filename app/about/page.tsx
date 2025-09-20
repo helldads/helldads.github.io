@@ -32,19 +32,21 @@ export default function AboutPage() {
       <Card className="mt-6">
         <CardBody className="leading-relaxed text-center">
           <h2 className="font-semibold">Our Mission</h2>
-          Raising the next generation of Helldivers and building<br></br>the
-          most supportive family‑driven community of Super Earth.
+          Raising the next generation of Helldivers and building
+          <br />
+          the most supportive family‑driven community of Super Earth.
         </CardBody>
       </Card>
-      <p className="leading-relaxed mt-2 font-medium text-center "></p>
-      <Image
-        isBlurred
-        alt="HellDads saluting the community logo"
-        className="my-12 leading-relaxed"
-        height="414"
-        src="/assets/helldads-salute-logo.webp"
-        width="736"
-      />
+      <p className="leading-relaxed mt-2 font-medium text-center ">
+        <Image
+          isBlurred
+          alt="HellDads saluting the community logo"
+          className="my-12 leading-relaxed"
+          height="414"
+          src="/assets/helldads-salute-logo.webp"
+          width="736"
+        />
+      </p>
       <p className="leading-relaxed mt-4">
         <strong>Does this sound like you?</strong>
       </p>
@@ -348,9 +350,9 @@ export default function AboutPage() {
             as={Link}
             className="text-large bg-[#CD201F] text-white border-neutral-50"
             href={siteConfig.links.youtube}
-            variant="bordered"
             radius="md"
             size="lg"
+            variant="bordered"
           >
             <YoutubeIcon /> YouTube
           </Button>
@@ -359,9 +361,9 @@ export default function AboutPage() {
             as={Link}
             className="text-large bg-black text-white border-neutral-50"
             href={siteConfig.links.tiktok}
-            variant="bordered"
             radius="md"
             size="lg"
+            variant="bordered"
           >
             <TikTokIcon /> TikTok
           </Button>
@@ -410,7 +412,7 @@ export default function AboutPage() {
           showAnchorIcon
           href="https://www.reddit.com/user/SES-SpearofDemocracy/"
         >
-          u/SES-SpearofDemocracy "Quifoo"
+          u/SES-SpearofDemocracy &quot;Quifoo&quot;
         </Link>
         joined the video team and began publishing{" "}
         <Link
@@ -420,10 +422,10 @@ export default function AboutPage() {
         >
           Helldivers 2 Builds
         </Link>
-        . What started as an experiment "one build per day for 30 days" quickly
-        became a reliable foundation for further growth. Today we have over{" "}
-        <strong>50+</strong> builds covering a wide range of loadouts and
-        playstyles for every kind of Helldiver.
+        . What started as an experiment &quot;one build per day for 30
+        days&quot; quickly became a reliable foundation for further growth.
+        Today we have over <strong>50+</strong> builds covering a wide range of
+        loadouts and playstyles for every kind of Helldiver.
       </p>
       <Button
         as={Link}

@@ -138,7 +138,7 @@ export const ABBREVIATIONS = [
   },
   {
     abbr: "BRB",
-    full: "Be Right Back", 
+    full: "Be Right Back",
     description: "A quick heads-up that you'll be away but not for long.",
   },
   {
@@ -149,7 +149,8 @@ export const ABBREVIATIONS = [
   {
     abbr: "GG / GD",
     full: "Good Game / Good Dive",
-    description: "A friendly way to say, \"Well played!\" or \"Good job!\" to everyone after a mission, win or lose.",
+    description:
+      'A friendly way to say, "Well played!" or "Good job!" to everyone after a mission, win or lose.',
   },
   {
     abbr: "GTG",
@@ -159,7 +160,7 @@ export const ABBREVIATIONS = [
   {
     abbr: "GN / GN8",
     full: "Good Night",
-    description: "A simple way to say \"good night\".",
+    description: 'A simple way to say "good night".',
   },
   {
     abbr: "LOL / ROFL",
@@ -181,15 +182,18 @@ export const ABBREVIATIONS = [
 export const GAMING_TERMS = [
   {
     term: "Aggro",
-    description: "When you accidentally (or intentionally) annoy the enemy so much that they come straight for you.",
+    description:
+      "When you accidentally (or intentionally) annoy the enemy so much that they come straight for you.",
   },
   {
     term: "Buff",
-    description: "A boost to a player's abilities or weapons, like an improvement.",
+    description:
+      "A boost to a player's abilities or weapons, like an improvement.",
   },
   {
     term: "Camp",
-    description: "To stay in one spot, waiting for something to happen, likely waiting to ambush someone.",
+    description:
+      "To stay in one spot, waiting for something to happen, likely waiting to ambush someone.",
   },
   {
     term: "Damage Per Second (DPS)",
@@ -197,7 +201,8 @@ export const GAMING_TERMS = [
   },
   {
     term: "Drop In / Drop Out",
-    description: "Commonly used for joining or leaving a game or voice channel.",
+    description:
+      "Commonly used for joining or leaving a game or voice channel.",
   },
   {
     term: "Experience Points (XP)",
@@ -205,11 +210,12 @@ export const GAMING_TERMS = [
   },
   {
     term: "Farming / Grind",
-    description: "Repeating an activity over and over to achieve something, like collecting samples to unlock upgrades or super credits for the store.",
+    description:
+      "Repeating an activity over and over to achieve something, like collecting samples to unlock upgrades or super credits for the store.",
   },
   {
     term: "Hit Points / Health Points (HP)",
-    description: "This is how much \"life\" your character or enemies have.",
+    description: 'This is how much "life" your character or enemies have.',
   },
   {
     term: "Heads-Up Display (HUD)",
@@ -217,31 +223,38 @@ export const GAMING_TERMS = [
   },
   {
     term: "Lag",
-    description: "That frustrating delay between action and response, often related to a poor network connection.",
+    description:
+      "That frustrating delay between action and response, often related to a poor network connection.",
   },
   {
     term: "1337 (Leet)",
-    description: "This is gamer speak for \"elite,\" with numbers replacing letters.",
+    description:
+      'This is gamer speak for "elite," with numbers replacing letters.',
   },
   {
     term: "Loot",
-    description: "Things you can pick up along the way, also commonly known as Samples, Super Credits and Medals. Not to be confused with the loadout from your fallen squad members.",
+    description:
+      "Things you can pick up along the way, also commonly known as Samples, Super Credits and Medals. Not to be confused with the loadout from your fallen squad members.",
   },
   {
     term: "Loot Ninja",
-    description: "Squad member (you know who you are!) who grabs all the goodies on the battlefield before anybody else has the chance. Good thing is, that most loot is evenly shared with the whole squad anyway, such as Super Credits, Requisition Slits, Medals and Samples.",
+    description:
+      "Squad member (you know who you are!) who grabs all the goodies on the battlefield before anybody else has the chance. Good thing is, that most loot is evenly shared with the whole squad anyway, such as Super Credits, Requisition Slits, Medals and Samples.",
   },
   {
     term: "Meta",
-    description: "The \"Most Effective Tactic Available.\", also used to describe the best gear in the game.",
+    description:
+      'The "Most Effective Tactic Available.", also used to describe the best gear in the game.',
   },
   {
     term: "Nerf",
-    description: "When an ability or weapon is made weaker, often to balance the game.",
+    description:
+      "When an ability or weapon is made weaker, often to balance the game.",
   },
   {
     term: "Non-Player Character (NPC)",
-    description: "These are computer-controlled characters in the game on your Super Destroyer, SEAF troops or civilians.",
+    description:
+      "These are computer-controlled characters in the game on your Super Destroyer, SEAF troops or civilians.",
   },
   {
     term: "Noob / Newbie",
@@ -253,18 +266,22 @@ export const GAMING_TERMS = [
   },
   {
     term: "Player vs Environment / Player vs Player (PvE / PvP)",
-    description: "PvE is going up against in-game challenges; PvP is when you face off against other players. All Helldivers hopefully play PvE like HellDads do and don't team kill each other!",
+    description:
+      "PvE is going up against in-game challenges; PvP is when you face off against other players. All Helldivers hopefully play PvE like HellDads do and don't team kill each other!",
   },
   {
     term: "Respawn / Reinforcement",
-    description: "Getting back into action, after being reinforced and stepping out of your hellpod. Another dive, another life!",
+    description:
+      "Getting back into action, after being reinforced and stepping out of your hellpod. Another dive, another life!",
   },
   {
     term: "Tank",
-    description: "The player who absorbs all the damage and takes the hits for the team.",
+    description:
+      "The player who absorbs all the damage and takes the hits for the team.",
   },
   {
     term: "Team Kill (TK)",
-    description: "This refers to a player accidentally (or sometimes deliberately) taking out a teammate in-game.",
+    description:
+      "This refers to a player accidentally (or sometimes deliberately) taking out a teammate in-game.",
   },
 ];

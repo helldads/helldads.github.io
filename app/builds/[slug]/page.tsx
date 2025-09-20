@@ -1,21 +1,18 @@
-import { Button } from "@heroui/button"; // CardFooter, CardHeader
 import { Card, CardBody } from "@heroui/card"; // CardFooter, CardHeader
+import { Chip } from "@heroui/chip";
+import { Divider } from "@heroui/react";
 import { Image } from "@heroui/image";
 import { Link } from "@heroui/link";
-import { Chip } from "@heroui/chip";
 import { notFound } from "next/navigation";
 
-import { getAllSlugs, getBuildBySlug } from "../../../data/builds";
-
-import { getAsset } from "@/data/builds/assets";
-
+import { getAllSlugs, getBuildBySlug } from "@/data/builds";
+import { getAsset } from "@/data/assets";
 import {
   DiscordIcon,
   RedditIcon,
   YoutubeIcon,
   PhotoIcon,
 } from "@/components/icons";
-import { Divider } from "@heroui/react";
 
 // Prebuild static paths
 export function generateStaticParams() {
@@ -81,10 +78,10 @@ export default async function BuildPage({
                 href={build.links.reddit}
               >
                 <Chip
+                  className="py-5 px-0.5 transition-discrete transition-colors hover:border-[#fc4301]"
                   radius="sm"
                   size="lg"
                   variant="bordered"
-                  className="py-5 px-0.5 transition-discrete transition-colors hover:border-[#fc4301]"
                 >
                   <span className="flex items-center gap-2 whitespace-nowrap">
                     <RedditIcon className="text-[#fc4301]" /> Discuss on Reddit
@@ -99,10 +96,10 @@ export default async function BuildPage({
                 href={build.links.discord}
               >
                 <Chip
+                  className="py-5 px-0.5 transition-discrete transition-colors hover:border-indigo-500"
                   radius="sm"
                   size="lg"
                   variant="bordered"
-                  className="py-5 px-0.5 transition-discrete transition-colors hover:border-indigo-500"
                 >
                   <span className="flex items-center gap-2 whitespace-nowrap">
                     <DiscordIcon className="text-indigo-500" /> Discuss on
@@ -118,10 +115,10 @@ export default async function BuildPage({
                 href={build.links.full}
               >
                 <Chip
+                  className="py-5 px-0.5 transition-discrete transition-colors hover:border-red-500"
                   radius="sm"
                   size="lg"
                   variant="bordered"
-                  className="py-5 px-0.5 transition-discrete transition-colors hover:border-red-500"
                 >
                   <span className="flex items-center gap-2 whitespace-nowrap">
                     <YoutubeIcon className="text-red-500" /> Watch Full Video
@@ -132,10 +129,10 @@ export default async function BuildPage({
             {build.image && (
               <Link isExternal aria-label="Open Image" href={build.image}>
                 <Chip
+                  className="py-5 px-0.5 transition-discrete transition-colors hover:border-green-500"
                   radius="sm"
                   size="lg"
                   variant="bordered"
-                  className="py-5 px-0.5 transition-discrete transition-colors hover:border-green-500"
                 >
                   <span className="flex items-center gap-2 whitespace-nowrap">
                     <PhotoIcon className="text-green-500" /> Download Poster
@@ -177,15 +174,19 @@ export default async function BuildPage({
                     )}
                   </div>
                   <div className="flex flex-col gap-2">
-                    <Link
-                      isExternal
-                      showAnchorIcon
-                      className="text-md font-bold text-yellow-500 tracking-wide"
-                      href={asset.wiki}
-                      title="Open Helldivers Wiki"
-                    >
-                      {asset.name}
-                    </Link>
+                    {asset.wiki ? (
+                      <Link
+                        isExternal
+                        showAnchorIcon
+                        className="text-md font-bold text-yellow-500 tracking-wide"
+                        href={asset.wiki || "#"}
+                        title="Open Helldivers Wiki"
+                      >
+                        {asset.name}
+                      </Link>
+                    ) : (
+                      <span>{asset.name}</span>
+                    )}
                     {(entry.note || asset.description) && (
                       <p className="text-sm opacity-90">
                         {entry.note ?? asset.description}
@@ -193,17 +194,17 @@ export default async function BuildPage({
                     )}
                     <div className="flex flex-wrap flex-row gap-2 mt-auto">
                       <Chip
+                        className="max-w-fit px-2 opacity-60"
                         size="sm"
                         variant="bordered"
-                        className="max-w-fit px-2 opacity-60"
                       >
                         {asset.role}
                       </Chip>
                       {asset.warbond && (
                         <Chip
+                          className="max-w-fit px-2 opacity-60"
                           size="sm"
                           variant="bordered"
-                          className="max-w-fit px-2 opacity-60"
                         >
                           {asset.warbond}
                         </Chip>

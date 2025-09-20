@@ -2,6 +2,7 @@ import { Link } from "@heroui/link";
 import { Button } from "@heroui/button";
 import { Card, CardHeader, CardBody } from "@heroui/card";
 import { Code } from "@heroui/code";
+
 import { siteConfig } from "@/config/site";
 import { title } from "@/components/primitives";
 import { DiscordIcon, RedditIcon } from "@/components/icons";
@@ -215,12 +216,12 @@ export default function CodeOfConductPage() {
             You can use the following button to open Reddit and write a Mod
             Mail:
             <Button
+              isExternal
+              showAnchorIcon
               as={Link}
               className="my-6"
               color="danger"
               href="https://www.reddit.com/message/compose?to=r/HellDads"
-              isExternal
-              showAnchorIcon
             >
               Message Mods
             </Button>

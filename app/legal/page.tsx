@@ -404,7 +404,6 @@ export default function LegalPage() {
               assets we use.
             </p>
           </CardBody>
-          <CardFooter className="gap-3 text-small grayscale-50"></CardFooter>
         </Card>
       </div>
       <p className="italic mt-6 text-center">

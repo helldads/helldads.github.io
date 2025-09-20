@@ -60,9 +60,9 @@ export const BuildSchema = z.object({
   loadout: z
     .array(
       z.object({
-        assetId: z.string().optional(),
+        assetId: z.string(),
         note: z.string().optional(),
-  }),
+      }),
     )
     .optional(),
   links: z
