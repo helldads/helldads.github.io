@@ -221,10 +221,10 @@ export default async function BuildPage({
       )}
 
       {/* Wrapper: 1 col on mobile, 4 cols on lg */}
-      <div className="my-8 grid grid-cols-1 gap-6 lg:grid-cols-4 text-justify">
+      <div className="my-8 grid grid-cols-1 gap-16 lg:grid-cols-3">
         {/* Left: paragraphs (3/4 on lg, full if no weakness) */}
         <div
-          className={`${build.weakness ? "lg:col-span-3" : "lg:col-span-4"}`}
+          className={`${build.weakness ? "lg:col-span-2" : "lg:col-span-3"}`}
         >
           {build.description && (
             <div>
@@ -247,7 +247,7 @@ export default async function BuildPage({
         {/* Right: weakness (1/4 on lg, stacked on mobile) */}
         {build.weakness && (
           <aside className="lg:col-span-1">
-            <div className="rounded-lg border border-gray-400 p-4">
+            <div className="rounded-lg border border-gray-400 p-6 text-sm opacity-90">
               <h2 className="block mb-1 text-2xl font-semibold tracking-tight">
                 Weakness
               </h2>
