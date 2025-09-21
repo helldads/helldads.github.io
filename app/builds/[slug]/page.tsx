@@ -228,6 +228,9 @@ export default async function BuildPage({
         >
           {build.description && (
             <div>
+              <h2 className="block mb-1 text-2xl font-semibold tracking-tight">
+                Playstyle
+              </h2>
               {Array.isArray(build.description) ? (
                 build.description.map((paragraph, index) => (
                   <p key={index} className="my-4">
@@ -245,7 +248,9 @@ export default async function BuildPage({
         {build.weakness && (
           <aside className="lg:col-span-1">
             <div className="rounded-lg border border-gray-400 p-4">
-              <strong className="block mb-1">Weakness</strong>
+              <h2 className="block mb-1 text-2xl font-semibold tracking-tight">
+                Weakness
+              </h2>
               <p>{build.weakness}</p>
             </div>
           </aside>

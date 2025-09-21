@@ -3,9 +3,8 @@ import { Build } from "../builds";
 export const threeSwordStyleBuild: Build = {
   slug: "3-sword-style-build",
   title: "3 Sword Style Build",
-  slogan: "",
+  slogan: "Become Roranora Zoro and wield 3 Melee weapons!",
   description: [
-    `Three Sword Style! Become Roranora Zoro and wield 3 Melee weapons!`,
     `The Amendment with its bayonet, the Sword, and the Flag! This is a melee build, and a variation of the Spartan Build using the new Flag. While I do wish the Flag did more damage to fit the role of Med / Heavy killer better, it does allow us to bring more than one Melee weapon, and here is why you would want to do that.`,
     `The Amendment helps us with any flying units that are out of reach of our blades. Shoot down Shriekers or Flying Overseers with it. If any chaff get in your way while trying to shoot, you poke their face off with that bayonet.`,
     `The sword is our chaff clear. Got packs of Voteless or Hunters? Cleave them down with ease with the Sword.`,
