@@ -1367,7 +1367,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "Orbital Precision Strike",
     image:
-      "https://helldivers.wiki.gg/images/thumb/e/ec/Orbital_Precision_Strike_Stratagem_Icon.png/256px-Orbital_Precision_Strike_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/Orbital_Precision_Strike_Stratagem_Icon.png/256px-Orbital_Precision_Strike_Stratagem_Icon.png",
     description:
       "A precise orbital strike that delivers a concentrated blast at the target location.",
     wiki: "https://helldivers.wiki.gg/wiki/Orbital_Precision_Strike",
@@ -1376,7 +1376,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "Orbital Gatling Barrage",
     image:
-      "https://helldivers.wiki.gg/images/thumb/e/ec/Orbital_Gatling_Barrage_Stratagem_Icon.png/256px-Orbital_Gatling_Barrage_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/Orbital_Gatling_Barrage_Stratagem_Icon.png/256px-Orbital_Gatling_Barrage_Stratagem_Icon.png",
     description: "A devastating barrage of 23mm shells from above.",
     wiki: "https://helldivers.wiki.gg/wiki/Orbital_Gatling_Barrage",
   },
@@ -1384,7 +1384,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "Orbital Airburst Strike",
     image:
-      "https://helldivers.wiki.gg/images/thumb/1/1c/Orbital_Airburst_Strike_Stratagem_Icon.png/256px-Orbital_Airburst_Strike_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/Orbital_Airburst_Strike_Stratagem_Icon.png/256px-Orbital_Airburst_Strike_Stratagem_Icon.png",
     description:
       "An orbital strike that detonates above ground for maximum area coverage.",
     wiki: "https://helldivers.wiki.gg/wiki/Orbital_Airburst_Strike",
@@ -1393,7 +1393,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "Orbital 120mm HE Barrage",
     image:
-      "https://helldivers.wiki.gg/images/thumb/8/87/Orbital_120mm_HE_Barrage_Stratagem_Icon.png/256px-Orbital_120mm_HE_Barrage_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/Orbital_120mm_HE_Barrage_Stratagem_Icon.png/256px-Orbital_120mm_HE_Barrage_Stratagem_Icon.png",
     description: "A sustained barrage of 120mm high-explosive shells.",
     wiki: "https://helldivers.wiki.gg/wiki/Orbital_120mm_HE_Barrage",
   },
@@ -1401,7 +1401,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "Orbital 380mm HE Barrage",
     image:
-      "https://helldivers.wiki.gg/images/thumb/6/64/Orbital_380mm_HE_Barrage_Stratagem_Icon.png/256px-Orbital_380mm_HE_Barrage_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/Orbital_380mm_HE_Barrage_Stratagem_Icon.png/256px-Orbital_380mm_HE_Barrage_Stratagem_Icon.png",
     description:
       "A devastating barrage of massive 380mm high-explosive shells.",
     wiki: "https://helldivers.wiki.gg/wiki/Orbital_380mm_HE_Barrage",
@@ -1410,7 +1410,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "Orbital Walking Barrage",
     image:
-      "https://helldivers.wiki.gg/images/thumb/b/be/Orbital_Walking_Barrage_Stratagem_Icon.png/256px-Orbital_Walking_Barrage_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/Orbital_Walking_Barrage_Stratagem_Icon.png/256px-Orbital_Walking_Barrage_Stratagem_Icon.png",
     description: "A moving barrage that walks across the battlefield.",
     wiki: "https://helldivers.wiki.gg/wiki/Orbital_Walking_Barrage",
   },
@@ -1418,7 +1418,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "Orbital Laser",
     image:
-      "https://helldivers.wiki.gg/images/thumb/c/c1/Orbital_Laser_Stratagem_Icon.png/256px-Orbital_Laser_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/Orbital_Laser_Stratagem_Icon.png/256px-Orbital_Laser_Stratagem_Icon.png",
     description: "A focused laser beam from orbit that tracks targets.",
     wiki: "https://helldivers.wiki.gg/wiki/Orbital_Laser",
   },
@@ -1426,7 +1426,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "Orbital Railcannon Strike",
     image:
-      "https://helldivers.wiki.gg/images/thumb/a/a8/Orbital_Railcannon_Strike_Stratagem_Icon.png/256px-Orbital_Railcannon_Strike_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/Orbital_Railcannon_Strike_Stratagem_Icon.png/256px-Orbital_Railcannon_Strike_Stratagem_Icon.png",
     description: "A high-velocity railcannon strike from orbit.",
     wiki: "https://helldivers.wiki.gg/wiki/Orbital_Railcannon_Strike",
   },
@@ -1442,7 +1442,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "Orbital EMS Strike",
     image:
-      "https://helldivers.wiki.gg/images/thumb/9/9e/Orbital_EMS_Strike_Stratagem_Icon.png/256px-Orbital_EMS_Strike_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/Orbital_EMS_Strike_Stratagem_Icon.png/256px-Orbital_EMS_Strike_Stratagem_Icon.png",
     description: "An electromagnetic pulse mortar that disables electronics.",
     wiki: "https://helldivers.wiki.gg/wiki/Orbital_EMS_Strike",
   },
@@ -1450,7 +1450,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "Orbital Gas Strike",
     image:
-      "https://helldivers.wiki.gg/images/thumb/2/26/Orbital_Gas_Strike_Stratagem_Icon.png/256px-Orbital_Gas_Strike_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/Orbital_Gas_Strike_Stratagem_Icon.png/256px-Orbital_Gas_Strike_Stratagem_Icon.png",
     description: "Deploys toxic gas clouds over the target area.",
     wiki: "https://helldivers.wiki.gg/wiki/Orbital_Gas_Strike",
   },
@@ -1458,7 +1458,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "Orbital Napalm Barrage",
     image:
-      "https://helldivers.wiki.gg/images/thumb/f/f1/Orbital_Napalm_Barrage_Stratagem_Icon.png/256px-Orbital_Napalm_Barrage_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/Orbital_Napalm_Barrage_Stratagem_Icon.png/256px-Orbital_Napalm_Barrage_Stratagem_Icon.png",
     description: "Covers the area in burning napalm for area denial.",
     wiki: "https://helldivers.wiki.gg/wiki/Orbital_Napalm_Barrage",
   },
@@ -1468,7 +1468,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "Eagle Airstrike",
     image:
-      "https://helldivers.wiki.gg/images/thumb/4/4b/Eagle_Airstrike_Stratagem_Icon.png/256px-Eagle_Airstrike_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/Eagle_Airstrike_Stratagem_Icon.png/256px-Eagle_Airstrike_Stratagem_Icon.png",
     description:
       "Unleashes a powerful bombardment of six bombs in a straight line.",
     wiki: "https://helldivers.wiki.gg/wiki/Eagle_Airstrike",
@@ -1477,7 +1477,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "Eagle Strafing Run",
     image:
-      "https://helldivers.wiki.gg/images/thumb/8/85/Eagle_Strafing_Run_Stratagem_Icon.png/256px-Eagle_Strafing_Run_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/Eagle_Strafing_Run_Stratagem_Icon.png/256px-Eagle_Strafing_Run_Stratagem_Icon.png",
     description:
       "Calls the Eagle in to fire a barrage of anti-tank, high-explosive shells.",
     wiki: "https://helldivers.wiki.gg/wiki/Eagle_Strafing_Run",
@@ -1486,7 +1486,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "Eagle Cluster Bomb",
     image:
-      "https://helldivers.wiki.gg/images/thumb/7/7a/Eagle_Cluster_Bomb_Stratagem_Icon.png/256px-Eagle_Cluster_Bomb_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/Eagle_Cluster_Bomb_Stratagem_Icon.png/256px-Eagle_Cluster_Bomb_Stratagem_Icon.png",
     description: "Drops cluster bombs that spread over a wide area.",
     wiki: "https://helldivers.wiki.gg/wiki/Eagle_Cluster_Bomb",
   },
@@ -1494,7 +1494,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "Eagle Napalm Airstrike",
     image:
-      "https://helldivers.wiki.gg/images/thumb/4/44/Eagle_Napalm_Airstrike_Stratagem_Icon.png/256px-Eagle_Napalm_Airstrike_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/Eagle_Napalm_Airstrike_Stratagem_Icon.png/256px-Eagle_Napalm_Airstrike_Stratagem_Icon.png",
     description: "Drops napalm canisters that create burning areas.",
     wiki: "https://helldivers.wiki.gg/wiki/Eagle_Napalm_Airstrike",
   },
@@ -1502,7 +1502,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "Eagle Smoke Strike",
     image:
-      "https://helldivers.wiki.gg/images/thumb/6/63/Eagle_Smoke_Strike_Stratagem_Icon.png/256px-Eagle_Smoke_Strike_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/Eagle_Smoke_Strike_Stratagem_Icon.png/256px-Eagle_Smoke_Strike_Stratagem_Icon.png",
     description: "Deploys smoke canisters to create concealment.",
     wiki: "https://helldivers.wiki.gg/wiki/Eagle_Smoke_Strike",
   },
@@ -1510,7 +1510,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "Eagle 110mm Rocket Pods",
     image:
-      "https://helldivers.wiki.gg/images/thumb/7/7c/Eagle_110mm_Rocket_Pods_Stratagem_Icon.png/256px-Eagle_110mm_Rocket_Pods_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/Eagle_110mm_Rocket_Pods_Stratagem_Icon.png/256px-Eagle_110mm_Rocket_Pods_Stratagem_Icon.png",
     description: "Fires a salvo of 110mm rockets at the target area.",
     wiki: "https://helldivers.wiki.gg/wiki/Eagle_110mm_Rocket_Pods",
   },
@@ -1518,7 +1518,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "Eagle 500kg Bomb",
     image:
-      "https://helldivers.wiki.gg/images/thumb/f/f9/Eagle_500kg_Bomb_Stratagem_Icon.png/256px-Eagle_500kg_Bomb_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/Eagle_500kg_Bomb_Stratagem_Icon.png/256px-Eagle_500kg_Bomb_Stratagem_Icon.png",
     description: "Drops a massive 500kg bomb for maximum destruction.",
     wiki: "https://helldivers.wiki.gg/wiki/Eagle_500kg_Bomb",
   },
@@ -1543,7 +1543,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "ARC-3 Arc Thrower",
     image:
-      "https://helldivers.wiki.gg/images/thumb/8/8a/ARC-3_Arc_Thrower_Stratagem_Icon.png/256px-ARC-3_Arc_Thrower_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/Arc_Thrower_Stratagem_Icon.png/256px-Arc_Thrower_Stratagem_Icon.png",
     description: "An electrical weapon that chains between targets.",
     wiki: "https://helldivers.wiki.gg/wiki/ARC-3_Arc_Thrower",
   },
@@ -1579,7 +1579,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "FAF-14 Spear",
     image:
-      "https://helldivers.wiki.gg/images/thumb/d/d0/FAF-14_Spear_Stratagem_Icon.png/256px-FAF-14_Spear_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/Spear_Stratagem_Icon.png/256px-Spear_Stratagem_Icon.png",
     description: "A guided missile launcher for precision strikes.",
     wiki: "https://helldivers.wiki.gg/wiki/FAF-14_Spear",
   },
@@ -1619,7 +1619,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "RS-422 Railgun",
     image:
-      "https://helldivers.wiki.gg/images/thumb/c/c9/RS-422_Railgun_Stratagem_Icon.png/256px-RS-422_Railgun_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/Railgun_Stratagem_Icon.png/256px-Railgun_Stratagem_Icon.png",
     description: "A charged weapon that fires electromagnetic projectiles.",
     wiki: "https://helldivers.wiki.gg/wiki/RS-422_Railgun",
   },
@@ -1627,7 +1627,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "LAS-98 Laser Cannon",
     image:
-      "https://helldivers.wiki.gg/images/thumb/5/51/Laser_Cannon_Stratagem_Icon.png/256px-Laser_Cannon_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/Laser_Cannon_Stratagem_Icon.png/256px-Laser_Cannon_Stratagem_Icon.png",
     description: "A laser weapon that builds up heat to penetrate armor.",
     wiki: "https://helldivers.wiki.gg/wiki/LAS-98_Laser_Cannon",
   },
@@ -1736,7 +1736,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "HMG Emplacement",
     image:
-      "https://helldivers.wiki.gg/images/thumb/b/b2/HMG_Emplacement_Stratagem_Icon.png/256px-HMG_Emplacement_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/HMG_Emplacement_Stratagem_Icon.png/256px-HMG_Emplacement_Stratagem_Icon.png",
     description: "A heavy machine gun emplacement for area control.",
     wiki: "https://helldivers.wiki.gg/wiki/HMG_Emplacement",
   },
@@ -1744,7 +1744,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "Shield Generator Relay",
     image:
-      "https://helldivers.wiki.gg/images/thumb/e/e9/Shield_Generator_Relay_Stratagem_Icon.png/256px-Shield_Generator_Relay_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/Shield_Generator_Relay_Stratagem_Icon.png/256px-Shield_Generator_Relay_Stratagem_Icon.png",
     description: "Creates a protective energy shield dome.",
     wiki: "https://helldivers.wiki.gg/wiki/Shield_Generator_Relay",
   },
@@ -1760,7 +1760,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "Tesla Tower",
     image:
-      "https://helldivers.wiki.gg/images/thumb/9/99/Tesla_Tower_Stratagem_Icon.png/256px-Tesla_Tower_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/Tesla_Tower_Stratagem_Icon.png/256px-Tesla_Tower_Stratagem_Icon.png",
     description: "An electrical tower that chains lightning between enemies.",
     wiki: "https://helldivers.wiki.gg/wiki/Tesla_Tower",
   },
@@ -1770,7 +1770,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "Anti-Personnel Minefield",
     image:
-      "https://helldivers.wiki.gg/images/thumb/5/5c/Anti-Personnel_Minefield_Stratagem_Icon.png/256px-Anti-Personnel_Minefield_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/Anti-Personnel_Minefield_Stratagem_Icon.png/256px-Anti-Personnel_Minefield_Stratagem_Icon.png",
     description: "Deploys mines that detonate when enemies approach.",
     wiki: "https://helldivers.wiki.gg/wiki/Anti-Personnel_Minefield",
   },
@@ -1778,7 +1778,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "Anti-Tank Mines",
     image:
-      "https://helldivers.wiki.gg/images/thumb/6/64/Anti-Tank_Mines_Stratagem_Icon.png/256px-Anti-Tank_Mines_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/MD-17_Anti-Tank_Mines_Stratagem_Icon.png/256px-MD-17_Anti-Tank_Mines_Stratagem_Icon.png",
     description: "Heavy mines designed to destroy vehicles.",
     wiki: "https://helldivers.wiki.gg/wiki/Anti-Tank_Mines",
   },
@@ -1786,7 +1786,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "Incendiary Minefield",
     image:
-      "https://helldivers.wiki.gg/images/thumb/4/45/Incendiary_Minefield_Stratagem_Icon.png/256px-Incendiary_Minefield_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/Incendiary_Mines_Stratagem_Icon.png/256px-Incendiary_Mines_Stratagem_Icon.png",
     description: "Mines that create fire when detonated.",
     wiki: "https://helldivers.wiki.gg/wiki/Incendiary_Minefield",
   },
@@ -1804,7 +1804,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "A/FLAM-40 Flame Sentry",
     image:
-      "https://helldivers.wiki.gg/images/thumb/9/90/Flame_Sentry_Stratagem_Icon.png/256px-Flame_Sentry_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/A_FLAM-40_Flame_Sentry_Stratagem_Icon.png/256px-A_FLAM-40_Flame_Sentry_Stratagem_Icon.png",
     description: "An automated sentry that burns enemies with flames.",
     wiki: "https://helldivers.wiki.gg/wiki/Flame_Sentry",
     warbond: "Urban Legends",
@@ -1813,7 +1813,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "Laser Sentry",
     image:
-      "https://helldivers.wiki.gg/images/thumb/0/06/Laser_Sentry_Stratagem_Icon.png/256px-Laser_Sentry_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/A_LAS-98_Laser_Sentry_Stratagem_Icon.png/256px-A_LAS-98_Laser_Sentry_Stratagem_Icon.png",
     description: "A sentry that fires precise laser beams.",
     wiki: "https://helldivers.wiki.gg/wiki/Laser_Sentry",
     warbond: "Control Group",
@@ -1822,7 +1822,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "Machine Gun Sentry",
     image:
-      "https://helldivers.wiki.gg/images/thumb/7/73/Machine_Gun_Sentry_Stratagem_Icon.png/256px-Machine_Gun_Sentry_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/Machine_Gun_Sentry_Stratagem_Icon.png/256px-Machine_Gun_Sentry_Stratagem_Icon.png",
     description: "An automated machine gun for area suppression.",
     wiki: "https://helldivers.wiki.gg/wiki/Machine_Gun_Sentry",
   },
@@ -1830,7 +1830,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "Gatling Sentry",
     image:
-      "https://helldivers.wiki.gg/images/thumb/1/1f/Gatling_Sentry_Stratagem_Icon.png/256px-Gatling_Sentry_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/Gatling_Sentry_Stratagem_Icon.png/256px-Gatling_Sentry_Stratagem_Icon.png",
     description: "A high-rate-of-fire gatling gun sentry.",
     wiki: "https://helldivers.wiki.gg/wiki/Gatling_Sentry",
   },
@@ -1838,7 +1838,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "Mortar Sentry",
     image:
-      "https://helldivers.wiki.gg/images/thumb/1/1e/Mortar_Sentry_Stratagem_Icon.png/256px-Mortar_Sentry_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/Mortar_Sentry_Stratagem_Icon.png/256px-Mortar_Sentry_Stratagem_Icon.png",
     description: "An indirect fire sentry with explosive shells.",
     wiki: "https://helldivers.wiki.gg/wiki/Mortar_Sentry",
   },
@@ -1846,7 +1846,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "Autocannon Sentry",
     image:
-      "https://helldivers.wiki.gg/images/thumb/5/59/Autocannon_Sentry_Stratagem_Icon.png/256px-Autocannon_Sentry_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/Autocannon_Sentry_Stratagem_Icon.png/256px-Autocannon_Sentry_Stratagem_Icon.png",
     description: "A sentry armed with an autocannon.",
     wiki: "https://helldivers.wiki.gg/wiki/Autocannon_Sentry",
   },
@@ -1854,7 +1854,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "Rocket Sentry",
     image:
-      "https://helldivers.wiki.gg/images/thumb/e/e5/Rocket_Sentry_Stratagem_Icon.png/256px-Rocket_Sentry_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/Rocket_Sentry_Stratagem_Icon.png/256px-Rocket_Sentry_Stratagem_Icon.png",
     description: "A sentry that fires anti-armor rockets.",
     wiki: "https://helldivers.wiki.gg/wiki/Rocket_Sentry",
   },
@@ -1862,7 +1862,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "EMS Mortar Sentry",
     image:
-      "https://helldivers.wiki.gg/images/thumb/b/bd/EMS_Mortar_Sentry_Stratagem_Icon.png/256px-EMS_Mortar_Sentry_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/AM-23_EMS_Mortar_Sentry_Stratagem_Icon.png/256px-AM-23_EMS_Mortar_Sentry_Stratagem_Icon.png",
     description: "A mortar sentry that fires EMP shells.",
     wiki: "https://helldivers.wiki.gg/wiki/EMS_Mortar_Sentry",
   },
@@ -1897,7 +1897,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "SH-51 Directional Shield",
     image:
-      "https://helldivers.wiki.gg/images/thumb/3/35/SH-51_Directional_Shield_Stratagem_Icon.png/256px-SH-51_Directional_Shield_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/SH-51_Directional_Shield_Stratagem_Icon.png/256px-SH-51_Directional_Shield_Stratagem_Icon.png",
     description: "A directional energy shield for protection.",
     wiki: "https://helldivers.wiki.gg/wiki/SH-51_Directional_Shield",
     warbond: "Urban Legends",
@@ -1930,7 +1930,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: 'AX/LAS-5 "Guard Dog" Rover',
     image:
-      "https://helldivers.wiki.gg/images/thumb/b/b4/Guard_Dog_Rover_Stratagem_Icon.png/256px-Guard_Dog_Rover_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/Guard_Dog_Rover_Stratagem_Icon.png/256px-Guard_Dog_Rover_Stratagem_Icon.png",
     description: "An automated drone that fires laser beams at enemies.",
     wiki: "https://helldivers.wiki.gg/wiki/AX/LAS-5_%22Guard_Dog%22_Rover",
   },
@@ -1946,7 +1946,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: 'AX/ARC-3 "Guard Dog" K-9',
     image:
-      "https://helldivers.wiki.gg/images/thumb/3/3b/Guard_Dog_K9_Stratagem_Icon.png/256px-Guard_Dog_K9_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/AX_ARC-3_%22Guard_Dog%22_K-9_Stratagem_Icon.png/256px-AX_ARC-3_%22Guard_Dog%22_K-9_Stratagem_Icon.png",
     description: "An arc-based version of the Guard Dog drone.",
     wiki: "https://helldivers.wiki.gg/wiki/AX/ARC-3_%22Guard_Dog%22_K-9",
     warbond: "Force of Law",
@@ -1967,7 +1967,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "M-102 Fast Reconnaissance Vehicle",
     image:
-      "https://helldivers.wiki.gg/images/thumb/5/52/M-102_Fast_Recon_Vehicle_Stratagem_Icon.png/256px-M-102_Fast_Recon_Vehicle_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/M-102_Fast_Recon_Vehicle_Stratagem_Icon.png/256px-M-102_Fast_Recon_Vehicle_Stratagem_Icon.png",
     description: "A fast vehicle for rapid battlefield reconnaissance.",
     wiki: "https://helldivers.wiki.gg/wiki/M-102_Fast_Reconnaissance_Vehicle",
   },
@@ -1975,7 +1975,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "EXO-45 Patriot Exosuit",
     image:
-      "https://helldivers.wiki.gg/images/thumb/0/02/EXO-45_Patriot_Exosuit_Stratagem_Icon.png/256px-EXO-45_Patriot_Exosuit_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/EXO-45_Patriot_Exosuit_Stratagem_Icon.png/256px-EXO-45_Patriot_Exosuit_Stratagem_Icon.png",
     description: "A powered exoskeleton with heavy weaponry.",
     wiki: "https://helldivers.wiki.gg/wiki/EXO-45_Patriot_Exosuit",
   },
@@ -1983,7 +1983,7 @@ export const ASSETS = {
     role: LoadoutRole.Stratagem,
     name: "EXO-49 Emancipator Exosuit",
     image:
-      "https://helldivers.wiki.gg/images/thumb/5/59/EXO-49_Emancipator_Exosuit_Stratagem_Icon.png/256px-EXO-49_Emancipator_Exosuit_Stratagem_Icon.png",
+      "https://helldivers.wiki.gg/images/thumb/EXO-49_Emancipator_Exosuit_Stratagem_Icon.png/256px-EXO-49_Emancipator_Exosuit_Stratagem_Icon.png",
     description: "An advanced exosuit with superior firepower.",
     wiki: "https://helldivers.wiki.gg/wiki/EXO-49_Emancipator_Exosuit",
   },
