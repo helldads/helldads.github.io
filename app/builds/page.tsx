@@ -30,6 +30,7 @@ export default function BuildsPage() {
                   alt={title}
                   className="mr-auto rounded-none"
                   src={image}
+                  title={title}
                 />
               )}
               <CardBody className="flex flex-col gap-1">

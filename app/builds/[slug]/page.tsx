@@ -148,7 +148,9 @@ export default async function BuildPage({
         <section className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {build.loadout?.map((entry, i) => {
             if (!entry.assetId) return null;
-            const asset = getAsset(entry.assetId as Parameters<typeof getAsset>[0]);
+            const asset = getAsset(
+              entry.assetId as Parameters<typeof getAsset>[0],
+            );
 
             if (!asset)
               return (
@@ -169,6 +171,7 @@ export default async function BuildPage({
                         className="flex max-w-[110px] max-h-[120px]"
                         radius="sm"
                         src={asset.image}
+                        title={asset.description}
                       />
                     )}
                   </div>
@@ -217,25 +220,37 @@ export default async function BuildPage({
         </section>
       )}
 
-      {build.description && (
-        <div className="my-8">
-          {Array.isArray(build.description) ? (
-            build.description.map((paragraph, index) => (
-              <p key={index} className="my-2">
-                {paragraph}
-              </p>
-            ))
-          ) : (
-            <p>{build.description}</p>
+      {/* Wrapper: 1 col on mobile, 4 cols on lg */}
+      <div className="my-8 grid grid-cols-1 gap-6 lg:grid-cols-4 text-justify">
+        {/* Left: paragraphs (3/4 on lg, full if no weakness) */}
+        <div
+          className={`${build.weakness ? "lg:col-span-3" : "lg:col-span-4"}`}
+        >
+          {build.description && (
+            <div>
+              {Array.isArray(build.description) ? (
+                build.description.map((paragraph, index) => (
+                  <p key={index} className="my-4">
+                    {paragraph}
+                  </p>
+                ))
+              ) : (
+                <p>{build.description}</p>
+              )}
+            </div>
           )}
         </div>
-      )}
-      {build.weakness && (
-        <div className="rounded-lg border p-4">
-          <strong>Weakness</strong>
-          <p>{build.weakness}</p>
-        </div>
-      )}
+
+        {/* Right: weakness (1/4 on lg, stacked on mobile) */}
+        {build.weakness && (
+          <aside className="lg:col-span-1">
+            <div className="rounded-lg border border-gray-400 p-4">
+              <strong className="block mb-1">Weakness</strong>
+              <p>{build.weakness}</p>
+            </div>
+          </aside>
+        )}
+      </div>
 
       <p className="text-xs text-gray-500 text-center">
         The Helldiver asset images on our build pages are provided in

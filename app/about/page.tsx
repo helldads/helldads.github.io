@@ -37,16 +37,14 @@ export default function AboutPage() {
           the most supportive family‑driven community of Super Earth.
         </CardBody>
       </Card>
-      <p className="leading-relaxed mt-2 font-medium text-center ">
-        <Image
-          isBlurred
-          alt="HellDads saluting the community logo"
-          className="my-12 leading-relaxed"
-          height="414"
-          src="/assets/helldads-salute-logo.webp"
-          width="736"
-        />
-      </p>
+      <Image
+        isBlurred
+        alt="HellDads saluting the community logo"
+        className="my-12 leading-relaxed"
+        height="414"
+        src="/assets/helldads-salute-logo.webp"
+        width="736"
+      />
       <p className="leading-relaxed mt-4">
         <strong>Does this sound like you?</strong>
       </p>
