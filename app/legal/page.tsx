@@ -231,9 +231,9 @@ export default function LegalPage() {
         .
       </p>
 
-      <h3 className="text-lg font-semibold mt-4">Attributions</h3>
+      <h3 className="text-lg font-semibold my-4">Attributions</h3>
 
-      <div className="gap-2 grid grid-cols-2">
+      <div className="gap-4 grid md:grid-cols-2">
         <Card className="">
           <CardHeader className="justify-between">
             <div className="flex gap-5">
