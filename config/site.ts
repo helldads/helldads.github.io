@@ -47,10 +47,6 @@ export const siteConfig = {
       href: "/essentials",
     },
     {
-      label: "Loadouts",
-      href: "/loadouts",
-    },
-    {
       label: "Reddit",
       href: "https://reddit.com/r/HellDads",
       isExternal: true,

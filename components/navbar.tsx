@@ -123,6 +123,7 @@ export const Navbar = () => {
             Join us on Reddit
           </Button>
         </NavbarItem>
+        <NavbarMenuToggle className="lg:hidden" />
       </NavbarContent>
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
