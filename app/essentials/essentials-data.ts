@@ -46,7 +46,7 @@ export const TIPS = [
       "You can hit targets up to 500m with anti-tank weapons, before their projectile disappears.",
       "Mechs are immune to shockwaves and gas damage, also highly resistant to fire damage.",
       "Mechs can easily crush smaller enemies by simply walking over them. Medium enemies might need a melee stomp.",
-      "The Vitality Enhancement booster combined with the Advanced Filtration passive gives 100% immunity to gas damage."
+      "The Vitality Enhancement booster combined with the Advanced Filtration passive gives 100% immunity to gas damage.",
     ],
   },
   {
@@ -72,7 +72,7 @@ export const TIPS = [
       "The stim pistol can't shoot through shields backpacks, you have to stim them manually.",
       "The shield backpack also works in mechs and emplacements, granting you an additional protection layer.",
       "You can stim other Helldivers in critical condition (below 50% HP or injured). If you hear 'I NEED STIMS!', help them out.",
-      "You can still use SEAF artillery after the mission timer runs out, even once the Super Destroyers have left orbit."
+      "You can still use SEAF artillery after the mission timer runs out, even once the Super Destroyers have left orbit.",
     ],
   },
   {
@@ -101,7 +101,7 @@ export const TIPS = [
       "The FRV can be flipped back on its wheels with explosive shockwaves, e.g. grenades or crossbow.",
       "You can use the outer shockwave of an explosion, to free Helldivers who got stuck somewhere.",
       "The VG-70 Variable can be used for rocket jumps, switch to full fire mode, jump, and shoot backwards to boost your distance.",
-      "Aiming backwards with two-handed weapons makes you turn around and walking backwards, but most can be fired without the need to aim first, allowing you to keep on sprinting."
+      "Aiming backwards with two-handed weapons makes you turn around and walking backwards, but most can be fired without the need to aim first, allowing you to keep on sprinting.",
     ],
   },
   {
@@ -141,7 +141,7 @@ export const TIPS = [
       "Avoid the Localization Confusion booster on Eradicate missions, it may reduce spawn rates so much that you can’t finish in time.",
       "The UAV Recon booster stacks with Scout/Unflinching bonuses, letting you scan areas more thoroughly for enemies and side objectives.",
       "A Helldiver without a backpack is like Freedom without Managed Democracy. Always check with your team if an extra backpack is available, especially after cooldown.",
-      "You can't use stratagems or reinforce Helldivers during ION storms."
+      "You can't use stratagems or reinforce Helldivers during ION storms.",
     ],
   },
   {
@@ -167,7 +167,7 @@ export const TIPS = [
       "Tanks can be easily destroyed from behind, their engine compartment between the tracks is a less obvious weakspot.",
       "Automaton anti-tank cannons (Annihilator Tanks, Factory Striders, Cannon Towers) can destroy Stratagem Jammers and Detector Towers. Take cover behind them, luring them to fire at these structures.",
       "Place sentry stratagems inside Automaton bunkers, the hellpod lands on top, leaving your sentry or emplacement in a strong position.",
-      "You can destroy the double gunship facbricators at once, by placeing the hellbomb exactly between them."
+      "You can destroy the double gunship facbricators at once, by placeing the hellbomb exactly between them.",
     ],
   },
   {
@@ -185,7 +185,7 @@ export const TIPS = [
       "Bile Titans are known for killing their own, while spewing their bile.",
       "Use the Muscle Enhancement booster, to counter act the slow effect from acid spits.",
       "Mobility is key to success.",
-      "Killing Chargers with a GL-21 Grenade Launcher is easier if you bounce the grenade under them."
+      "Killing Chargers with a GL-21 Grenade Launcher is easier if you bounce the grenade under them.",
     ],
   },
   {
@@ -199,7 +199,7 @@ export const TIPS = [
       "Orbital Gas Strikes can destroy landed warp ships.",
       "A single Pyro grenade can take out Harvesters, when positioned between his legs.",
       "The Eagle Strafing Run can kill a Leviathan in a single flyby, but at least two-third of the shots need to hit.",
-      "Diversion is key to success."
+      "Diversion is key to success.",
     ],
   },
 ];

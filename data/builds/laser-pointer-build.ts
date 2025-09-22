@@ -59,9 +59,11 @@ export const laserPointerBuild: Build = {
     },
   ],
   links: {
-    reddit: "https://www.reddit.com/r/HellDads/comments/1m95b3l/updated_laser_pointer_build/",
+    reddit:
+      "https://www.reddit.com/r/HellDads/comments/1m95b3l/updated_laser_pointer_build/",
     full: "https://www.youtube.com/watch?v=4hEdVPo_gJc",
     highlights: "https://www.youtube.com/watch?v=KRobyT4_X70",
-    discord: "https://discord.com/channels/1301285072896266252/1398347971313012787",
+    discord:
+      "https://discord.com/channels/1301285072896266252/1398347971313012787",
   },
 };
