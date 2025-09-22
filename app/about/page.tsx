@@ -438,7 +438,7 @@ export default function AboutPage() {
 
       <h2 className="text-2xl font-semibold mt-12">Our Website</h2>
 
-      <p>
+      <p className="leading-relaxed mt-4">
         In <time dateTime="2025-02">February 2025</time>, the HellDads website
         was created as a gift to the community by{" "}
         <Link
@@ -453,12 +453,18 @@ export default function AboutPage() {
         Reddit, Discord, and YouTube.
       </p>
 
-      <p>
+      <p className="leading-relaxed mt-4">
         In <time dateTime="2025-08">August 2025</time>,{" "}
-        <strong>WingedStrainer</strong> joined the web development team. With
-        joint forces we expanded the site even further: we released the{" "}
-        <Link href="/essentials">Essentials</Link> guide packed with helpful
-        tips and tricks as part of our{" "}
+        <Link
+          isExternal
+          showAnchorIcon
+          href="https://www.reddit.com/user/Winged_Strainer/"
+        >
+          u/Winged_Strainer
+        </Link>{" "}
+        joined the web development team. With joint forces we expanded the site
+        even further: we released the <Link href="/essentials">Essentials</Link>{" "}
+        guide packed with helpful tips and tricks as part of our{" "}
         <Link
           isExternal
           showAnchorIcon
@@ -466,10 +472,9 @@ export default function AboutPage() {
         >
           HellDads Academy
         </Link>{" "}
-        programme, and we launched the
-        <Link href="/builds">Builds</Link> page to showcase the many beautiful
-        loadouts that
-        <strong>Quifoo</strong> and the wider community have crafted over time.
+        programme, and we launched the <Link href="/builds">Builds</Link> page
+        to showcase the many beautiful loadouts that <strong>Quifoo</strong> and
+        the wider community have crafted over time.
       </p>
 
       <Divider className="my-12" />
@@ -489,8 +494,7 @@ export default function AboutPage() {
       </div>
       <p className="leading-relaxed italic text-center mt-6">
         From a handful of parents to a 10k+ community with engaging events,
-        helpful content and amazing people — we’re still growing, still
-        overtired, and still spreading Managed Democracy whenever possible.
+        helpful content and amazing people. Thank You All!
       </p>
     </div>
   );
