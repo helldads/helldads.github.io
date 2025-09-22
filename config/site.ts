@@ -12,10 +12,10 @@ export const siteConfig = {
       label: "About",
       href: "/about",
     },
-    // {
-    //   label: "Briefings",
-    //   href: "/briefings",
-    // },
+    {
+      label: "Builds",
+      href: "/builds",
+    },
     {
       label: "Code of Conduct",
       href: "/code-of-conduct",
@@ -33,6 +33,10 @@ export const siteConfig = {
     {
       label: "About",
       href: "/about",
+    },
+    {
+      label: "Builds",
+      href: "/builds",
     },
     {
       label: "Code of Conduct",

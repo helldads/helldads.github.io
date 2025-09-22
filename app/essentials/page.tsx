@@ -1,6 +1,6 @@
 "use client";
 /* eslint-disable prettier/prettier */
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { Button } from "@heroui/button";
 import { Image } from "@heroui/image";
 import { Link } from "@heroui/link";
@@ -22,8 +22,9 @@ export default function EssentialsPage() {
   };
 
   const getSectionVisibility = (sectionName: string) => {
-    if (activeFilter === null) return 'visible';
-    return activeFilter === sectionName ? 'visible' : 'invisible absolute';
+    if (activeFilter === null) return "visible";
+
+    return activeFilter === sectionName ? "visible" : "invisible absolute";
   };
 
   return (
@@ -42,9 +43,12 @@ export default function EssentialsPage() {
               HellDads. Proudly curated by the R&amp;D Science Team.
             </p>
           </div>
-          <Card className="w-full max-w-md mb-6 md:mb-0 md:w-[420px]" radius="sm">
+          <Card
+            className="w-full max-w-md mb-6 md:mb-0 md:w-[420px]"
+            radius="sm"
+          >
             <CardHeader className="flex items-center gap-3">
-              <Image className="mr-auto" width={64} src={CONTRIB.avatar} />
+              <Image className="mr-auto" src={CONTRIB.avatar} width={64} />
               <div className="flex flex-col">
                 <span className="text-sm font-semibold">{CONTRIB.name}</span>
                 <span className="text-xs text-foreground/60">
@@ -92,7 +96,7 @@ export default function EssentialsPage() {
       <Divider />
 
       {/* Tips & Tricks */}
-      <section id="tips" className="mx-auto max-w-6xl py-10 md:py-14">
+      <section className="mx-auto max-w-6xl py-10 md:py-14" id="tips">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
           <h2 className="text-2xl font-semibold tracking-tight">
             Tips &amp; Tricks
@@ -103,7 +107,7 @@ export default function EssentialsPage() {
         <div className="flex gap-2 mt-6 flex-wrap">
           <Button
             color="warning"
-            radius="sm" 
+            radius="sm"
             size="md"
             variant={activeFilter === null ? "solid" : "bordered"}
             onPress={() => setActiveFilter(null)}
@@ -114,7 +118,7 @@ export default function EssentialsPage() {
             <Button
               key={n}
               color={activeFilter === c.name ? c.color : "default"}
-              radius="sm" 
+              radius="sm"
               size="md"
               variant={activeFilter === c.name ? "solid" : "bordered"}
               onPress={() => handleFilterClick(c.name)}
@@ -127,10 +131,10 @@ export default function EssentialsPage() {
         {/* Sections Container */}
         <div className="relative">
           {TIPS.map((c, n) => (
-            <div 
-              key={n} 
-              id={c.name} 
+            <div
+              key={n}
               className={`mt-12 scroll-mt-24 transition-opacity duration-300 ${getSectionVisibility(c.name)}`}
+              id={c.name}
             >
               <h3 className="mb-6 flex items-center gap-2 text-lg font-semibold">
                 {c.name}
@@ -142,7 +146,7 @@ export default function EssentialsPage() {
                       {t}
                     </CardHeader>
                     <CardFooter className="pt-0 text-sm text-foreground/80">
-                      <Chip size="sm" variant="flat" color={c.color}>
+                      <Chip color={c.color} size="sm" variant="flat">
                         {c.name}
                       </Chip>
                     </CardFooter>
@@ -155,9 +159,9 @@ export default function EssentialsPage() {
       </section>
 
       <Divider />
-      
+
       {/* Gaming Terms */}
-      <section id="terms" className="mx-auto max-w-6xl py-10 md:py-14">
+      <section className="mx-auto max-w-6xl py-10 md:py-14" id="terms">
         <div className="flex flex-col">
           <h2 className="text-2xl font-semibold tracking-tight">
             Gaming Terms
@@ -166,10 +170,14 @@ export default function EssentialsPage() {
             {GAMING_TERMS.map((term, i) => (
               <Card key={i} radius="sm">
                 <CardHeader className="flex flex-col items-start gap-2">
-                  <span className="font-bold text-yellow-500 tracking-wide">{term.term}</span>
+                  <span className="font-bold text-yellow-500 tracking-wide">
+                    {term.term}
+                  </span>
                 </CardHeader>
                 <CardBody className="pt-0">
-                  <p className="text-sm text-foreground/80">{term.description}</p>
+                  <p className="text-sm text-foreground/80">
+                    {term.description}
+                  </p>
                 </CardBody>
               </Card>
             ))}
@@ -180,7 +188,7 @@ export default function EssentialsPage() {
       <Divider />
 
       {/* Abbreviations */}
-      <section id="abbreviations" className="mx-auto max-w-6xl py-10 md:py-14">
+      <section className="mx-auto max-w-6xl py-10 md:py-14" id="abbreviations">
         <div className="flex flex-col">
           <h2 className="text-2xl font-semibold tracking-tight">
             Chat Abbreviations
@@ -193,18 +201,24 @@ export default function EssentialsPage() {
               <Card key={i} radius="sm">
                 <CardHeader className="flex items-start">
                   <div className="flex flex-col">
-                    <span className="font-bold text-yellow-500 tracking-wide">{abbr.abbr}: </span>
-                    <span className="text-sm font-semibold tracking-wide">{abbr.full}</span>
+                    <span className="font-bold text-yellow-500 tracking-wide">
+                      {abbr.abbr}:{" "}
+                    </span>
+                    <span className="text-sm font-semibold tracking-wide">
+                      {abbr.full}
+                    </span>
                   </div>
                 </CardHeader>
                 <CardBody className="pt-0">
-                  <p className="text-sm text-foreground/80">{abbr.description}</p>
+                  <p className="text-sm text-foreground/80">
+                    {abbr.description}
+                  </p>
                 </CardBody>
               </Card>
             ))}
           </div>
         </div>
-      </section>      
+      </section>
     </div>
   );
 }

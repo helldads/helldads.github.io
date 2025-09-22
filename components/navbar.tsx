@@ -76,7 +76,9 @@ export const Navbar = () => {
                   "data-[active=true]:text-primary data-[active=true]:font-semibold",
                 )}
                 color="foreground"
-                data-active={item.href == pathname}
+                data-active={
+                  pathname == item.href || pathname.startsWith(`${item.href}/`)
+                }
                 href={item.href}
               >
                 {item.label}
@@ -121,6 +123,7 @@ export const Navbar = () => {
             Join us on Reddit
           </Button>
         </NavbarItem>
+        <NavbarMenuToggle className="hidden sm:flex md:flex lg:hidden" />
       </NavbarContent>
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">

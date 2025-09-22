@@ -46,7 +46,7 @@ export const TIPS = [
       "You can hit targets up to 500m with anti-tank weapons, before their projectile disappears.",
       "Mechs are immune to shockwaves and gas damage, also highly resistant to fire damage.",
       "Mechs can easily crush smaller enemies by simply walking over them. Medium enemies might need a melee stomp.",
-      "The Vitality Enhancement booster combined with the Advanced Filtration passive gives 100% immunity to gas damage."
+      "The Vitality Enhancement booster combined with the Advanced Filtration passive gives 100% immunity to gas damage.",
     ],
   },
   {
@@ -72,7 +72,7 @@ export const TIPS = [
       "The stim pistol can't shoot through shields backpacks, you have to stim them manually.",
       "The shield backpack also works in mechs and emplacements, granting you an additional protection layer.",
       "You can stim other Helldivers in critical condition (below 50% HP or injured). If you hear 'I NEED STIMS!', help them out.",
-      "You can still use SEAF artillery after the mission timer runs out, even once the Super Destroyers have left orbit."
+      "You can still use SEAF artillery after the mission timer runs out, even once the Super Destroyers have left orbit.",
     ],
   },
   {
@@ -101,7 +101,7 @@ export const TIPS = [
       "The FRV can be flipped back on its wheels with explosive shockwaves, e.g. grenades or crossbow.",
       "You can use the outer shockwave of an explosion, to free Helldivers who got stuck somewhere.",
       "The VG-70 Variable can be used for rocket jumps, switch to full fire mode, jump, and shoot backwards to boost your distance.",
-      "Aiming backwards with two-handed weapons makes you turn around and walking backwards, but most can be fired without the need to aim first, allowing you to keep on sprinting."
+      "Aiming backwards with two-handed weapons makes you turn around and walking backwards, but most can be fired without the need to aim first, allowing you to keep on sprinting.",
     ],
   },
   {
@@ -141,7 +141,7 @@ export const TIPS = [
       "Avoid the Localization Confusion booster on Eradicate missions, it may reduce spawn rates so much that you can’t finish in time.",
       "The UAV Recon booster stacks with Scout/Unflinching bonuses, letting you scan areas more thoroughly for enemies and side objectives.",
       "A Helldiver without a backpack is like Freedom without Managed Democracy. Always check with your team if an extra backpack is available, especially after cooldown.",
-      "You can't use stratagems or reinforce Helldivers during ION storms."
+      "You can't use stratagems or reinforce Helldivers during ION storms.",
     ],
   },
   {
@@ -167,7 +167,7 @@ export const TIPS = [
       "Tanks can be easily destroyed from behind, their engine compartment between the tracks is a less obvious weakspot.",
       "Automaton anti-tank cannons (Annihilator Tanks, Factory Striders, Cannon Towers) can destroy Stratagem Jammers and Detector Towers. Take cover behind them, luring them to fire at these structures.",
       "Place sentry stratagems inside Automaton bunkers, the hellpod lands on top, leaving your sentry or emplacement in a strong position.",
-      "You can destroy the double gunship facbricators at once, by placeing the hellbomb exactly between them."
+      "You can destroy the double gunship facbricators at once, by placeing the hellbomb exactly between them.",
     ],
   },
   {
@@ -185,7 +185,7 @@ export const TIPS = [
       "Bile Titans are known for killing their own, while spewing their bile.",
       "Use the Muscle Enhancement booster, to counter act the slow effect from acid spits.",
       "Mobility is key to success.",
-      "Killing Chargers with a GL-21 Grenade Launcher is easier if you bounce the grenade under them."
+      "Killing Chargers with a GL-21 Grenade Launcher is easier if you bounce the grenade under them.",
     ],
   },
   {
@@ -199,7 +199,7 @@ export const TIPS = [
       "Orbital Gas Strikes can destroy landed warp ships.",
       "A single Pyro grenade can take out Harvesters, when positioned between his legs.",
       "The Eagle Strafing Run can kill a Leviathan in a single flyby, but at least two-third of the shots need to hit.",
-      "Diversion is key to success."
+      "Diversion is key to success.",
     ],
   },
 ];
@@ -212,7 +212,7 @@ export const ABBREVIATIONS = [
   },
   {
     abbr: "BRB",
-    full: "Be Right Back", 
+    full: "Be Right Back",
     description: "A quick heads-up that you'll be away but not for long.",
   },
   {
@@ -223,7 +223,8 @@ export const ABBREVIATIONS = [
   {
     abbr: "GG / GD",
     full: "Good Game / Good Dive",
-    description: "A friendly way to say, \"Well played!\" or \"Good job!\" to everyone after a mission, win or lose.",
+    description:
+      'A friendly way to say, "Well played!" or "Good job!" to everyone after a mission, win or lose.',
   },
   {
     abbr: "GTG",
@@ -233,7 +234,7 @@ export const ABBREVIATIONS = [
   {
     abbr: "GN / GN8",
     full: "Good Night",
-    description: "A simple way to say \"good night\".",
+    description: 'A simple way to say "good night".',
   },
   {
     abbr: "LOL / ROFL",
@@ -255,15 +256,18 @@ export const ABBREVIATIONS = [
 export const GAMING_TERMS = [
   {
     term: "Aggro",
-    description: "When you accidentally (or intentionally) annoy the enemy so much that they come straight for you.",
+    description:
+      "When you accidentally (or intentionally) annoy the enemy so much that they come straight for you.",
   },
   {
     term: "Buff",
-    description: "A boost to a player's abilities or weapons, like an improvement.",
+    description:
+      "A boost to a player's abilities or weapons, like an improvement.",
   },
   {
     term: "Camp",
-    description: "To stay in one spot, waiting for something to happen, likely waiting to ambush someone.",
+    description:
+      "To stay in one spot, waiting for something to happen, likely waiting to ambush someone.",
   },
   {
     term: "Damage Per Second (DPS)",
@@ -271,7 +275,8 @@ export const GAMING_TERMS = [
   },
   {
     term: "Drop In / Drop Out",
-    description: "Commonly used for joining or leaving a game or voice channel.",
+    description:
+      "Commonly used for joining or leaving a game or voice channel.",
   },
   {
     term: "Experience Points (XP)",
@@ -279,11 +284,12 @@ export const GAMING_TERMS = [
   },
   {
     term: "Farming / Grind",
-    description: "Repeating an activity over and over to achieve something, like collecting samples to unlock upgrades or super credits for the store.",
+    description:
+      "Repeating an activity over and over to achieve something, like collecting samples to unlock upgrades or super credits for the store.",
   },
   {
     term: "Hit Points / Health Points (HP)",
-    description: "This is how much \"life\" your character or enemies have.",
+    description: 'This is how much "life" your character or enemies have.',
   },
   {
     term: "Heads-Up Display (HUD)",
@@ -291,31 +297,38 @@ export const GAMING_TERMS = [
   },
   {
     term: "Lag",
-    description: "That frustrating delay between action and response, often related to a poor network connection.",
+    description:
+      "That frustrating delay between action and response, often related to a poor network connection.",
   },
   {
     term: "1337 (Leet)",
-    description: "This is gamer speak for \"elite,\" with numbers replacing letters.",
+    description:
+      'This is gamer speak for "elite," with numbers replacing letters.',
   },
   {
     term: "Loot",
-    description: "Things you can pick up along the way, also commonly known as Samples, Super Credits and Medals. Not to be confused with the loadout from your fallen squad members.",
+    description:
+      "Things you can pick up along the way, also commonly known as Samples, Super Credits and Medals. Not to be confused with the loadout from your fallen squad members.",
   },
   {
     term: "Loot Ninja",
-    description: "Squad member (you know who you are!) who grabs all the goodies on the battlefield before anybody else has the chance. Good thing is, that most loot is evenly shared with the whole squad anyway, such as Super Credits, Requisition Slits, Medals and Samples.",
+    description:
+      "Squad member (you know who you are!) who grabs all the goodies on the battlefield before anybody else has the chance. Good thing is, that most loot is evenly shared with the whole squad anyway, such as Super Credits, Requisition Slits, Medals and Samples.",
   },
   {
     term: "Meta",
-    description: "The \"Most Effective Tactic Available.\", also used to describe the best gear in the game.",
+    description:
+      'The "Most Effective Tactic Available.", also used to describe the best gear in the game.',
   },
   {
     term: "Nerf",
-    description: "When an ability or weapon is made weaker, often to balance the game.",
+    description:
+      "When an ability or weapon is made weaker, often to balance the game.",
   },
   {
     term: "Non-Player Character (NPC)",
-    description: "These are computer-controlled characters in the game on your Super Destroyer, SEAF troops or civilians.",
+    description:
+      "These are computer-controlled characters in the game on your Super Destroyer, SEAF troops or civilians.",
   },
   {
     term: "Noob / Newbie",
@@ -327,18 +340,22 @@ export const GAMING_TERMS = [
   },
   {
     term: "Player vs Environment / Player vs Player (PvE / PvP)",
-    description: "PvE is going up against in-game challenges; PvP is when you face off against other players. All Helldivers hopefully play PvE like HellDads do and don't team kill each other!",
+    description:
+      "PvE is going up against in-game challenges; PvP is when you face off against other players. All Helldivers hopefully play PvE like HellDads do and don't team kill each other!",
   },
   {
     term: "Respawn / Reinforcement",
-    description: "Getting back into action, after being reinforced and stepping out of your hellpod. Another dive, another life!",
+    description:
+      "Getting back into action, after being reinforced and stepping out of your hellpod. Another dive, another life!",
   },
   {
     term: "Tank",
-    description: "The player who absorbs all the damage and takes the hits for the team.",
+    description:
+      "The player who absorbs all the damage and takes the hits for the team.",
   },
   {
     term: "Team Kill (TK)",
-    description: "This refers to a player accidentally (or sometimes deliberately) taking out a teammate in-game.",
+    description:
+      "This refers to a player accidentally (or sometimes deliberately) taking out a teammate in-game.",
   },
 ];
