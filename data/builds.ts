@@ -25,6 +25,10 @@ import { demolitionistBuild } from "./builds/demolitionist-build";
 import { mechDriverBuild } from "./builds/mech-driver-build";
 import { sniperBuild } from "./builds/sniper-build";
 
+// testing stratagems build
+// import { allStratagemsBuild } from "./builds/all-stratagems-build"; // remember to uncomment in the ALL_BUILDS array below
+
+
 export type LoadoutEntry = {
   assetId?: string;
   note?: string;
@@ -99,6 +103,7 @@ const ALL_BUILDS: Build[] = [
   gasWalkerBuild,
   ghostBuild,
   babyDriverBuild,
+  // allStratagemsBuild, // testing stratagems build
 ];
 
 const BUILDS_MAP: Record<string, Build> = Object.fromEntries(
