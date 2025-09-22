@@ -79,25 +79,62 @@ export default function AboutPage() {
         >
           post
         </Link>{" "}
-        by u/Dispenser-of-Liberty on{" "}
-        <time dateTime="2024-10-29">October 29, 2024</time>, in the Helldivers 2
-        Subreddit. Sharing the challenges of gaming while parenting, he struck a
-        chord with fellow Helldivers. The response was overwhelming, sparking
-        the creation of a dedicated space for parents in the Helldivers
-        community.
+        by{" "}
+        <Link
+          isExternal
+          showAnchorIcon
+          href="https://www.reddit.com/user/Dispenser-of-Liberty/"
+        >
+          u/Dispenser-of-Liberty
+        </Link>{" "}
+        on <time dateTime="2024-10-29">October 29, 2024</time>, in the
+        Helldivers 2 Subreddit. Sharing the challenges of gaming while
+        parenting, he struck a chord with fellow Helldivers. The response was
+        overwhelming, sparking the creation of a dedicated space for parents in
+        the Helldivers community.
       </p>
       <p className="leading-relaxed mt-4">
-        When u/r-volk offered to help establish a subreddit, the{" "}
+        When{" "}
+        <Link
+          isExternal
+          showAnchorIcon
+          href="https://www.reddit.com/user/r-volk/"
+        >
+          u/r-volk
+        </Link>{" "}
+        offered to help establish a subreddit, the{" "}
         <Link isExternal showAnchorIcon href={siteConfig.links.reddit}>
           HellDads
         </Link>{" "}
         were officially born. What started with a handful of members quickly
         grew to include parents, grandparents, aunts and uncles, and supportive
-        allies from around the world. Early moderators like u/Asherjade and
-        u/Potential_Chicken_58 joined from related subreddits, helping steer the
-        community in the early days. With the help of u/Nemesis-0529, our
-        Discord server soon followed, providing real‑time communication for
-        in‑game coordination and casual conversation. Nowadays, we have many
+        allies from around the world. Early moderators like{" "}
+        <Link
+          isExternal
+          showAnchorIcon
+          href="https://www.reddit.com/user/Asherjade/"
+        >
+          u/Asherjade
+        </Link>{" "}
+        and
+        <Link
+          isExternal
+          showAnchorIcon
+          href="https://www.reddit.com/user/Potential_Chicken_58/"
+        >
+          u/Potential_Chicken_58
+        </Link>{" "}
+        joined from related subreddits, helping steer the community in the early
+        days. With the help of{" "}
+        <Link
+          isExternal
+          showAnchorIcon
+          href="https://www.reddit.com/user/Nemesis-0529/"
+        >
+          u/Nemesis-0529
+        </Link>
+        , our Discord server soon followed, providing real‑time communication
+        for in‑game coordination and casual conversation. Nowadays, we have many
         more volunteers who stepped up for leading our sub-factions or taking
         care of other tasks, helping to foster our community.
       </p>
@@ -342,31 +379,31 @@ export default function AboutPage() {
         and Tiktok channels to showcase community moments — from battlefield
         diaries and shorts to community submissions and Freedom Alliance events.
         These channels have been steadily growing ever since.
-        <div className="flex gap-2 items-center mt-4">
-          <Button
-            isExternal
-            as={Link}
-            className="text-large bg-[#CD201F] text-white border-neutral-50"
-            href={siteConfig.links.youtube}
-            radius="md"
-            size="lg"
-            variant="bordered"
-          >
-            <YoutubeIcon /> YouTube
-          </Button>
-          <Button
-            isExternal
-            as={Link}
-            className="text-large bg-black text-white border-neutral-50"
-            href={siteConfig.links.tiktok}
-            radius="md"
-            size="lg"
-            variant="bordered"
-          >
-            <TikTokIcon /> TikTok
-          </Button>
-        </div>
       </p>
+      <div className="flex gap-2 items-center mt-4">
+        <Button
+          isExternal
+          as={Link}
+          className="text-large bg-[#CD201F] text-white border-neutral-50"
+          href={siteConfig.links.youtube}
+          radius="md"
+          size="lg"
+          variant="bordered"
+        >
+          <YoutubeIcon /> YouTube
+        </Button>
+        <Button
+          isExternal
+          as={Link}
+          className="text-large bg-black text-white border-neutral-50"
+          href={siteConfig.links.tiktok}
+          radius="md"
+          size="lg"
+          variant="bordered"
+        >
+          <TikTokIcon /> TikTok
+        </Button>
+      </div>
 
       <h2 className="text-2xl font-semibold mt-12">Community Events</h2>
       <p className="leading-relaxed my-4">
