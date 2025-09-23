@@ -1,4 +1,13 @@
+import { Metadata } from "next";
+
 import { title } from "@/components/primitives";
+
+export const metadata: Metadata = {
+  title: "Divisions",
+  alternates: {
+    canonical: "/divisions",
+  },
+};
 
 export default function DivisionsPage() {
   return (

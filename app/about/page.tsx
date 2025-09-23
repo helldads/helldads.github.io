@@ -3,6 +3,7 @@ import { Link } from "@heroui/link";
 import { Button } from "@heroui/button";
 import { Card, CardBody } from "@heroui/card";
 import { Divider } from "@heroui/divider";
+import { Metadata } from "next";
 
 import { siteConfig } from "@/config/site";
 import { title } from "@/components/primitives";
@@ -15,6 +16,13 @@ import {
   VideoIcon,
   YoutubeIcon,
 } from "@/components/icons";
+
+export const metadata: Metadata = {
+  title: "About",
+  alternates: {
+    canonical: "/about",
+  },
+};
 
 export default function AboutPage() {
   return (

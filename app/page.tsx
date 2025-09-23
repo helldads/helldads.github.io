@@ -3,10 +3,17 @@ import { Image } from "@heroui/image";
 import { Button } from "@heroui/button";
 import { Divider } from "@heroui/divider";
 import { Card, CardBody, CardHeader, CardFooter } from "@heroui/card";
+import { Metadata } from "next";
 
 import { siteConfig } from "@/config/site";
 import { DiscordIcon, RedditIcon, YoutubeIcon } from "@/components/icons";
 import StatsCard from "@/components/statscard";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
 
 export default function Home() {
   return (
