@@ -4,9 +4,18 @@ import { Divider } from "@heroui/divider";
 import { Card, CardHeader, CardBody, CardFooter } from "@heroui/card";
 import { Avatar } from "@heroui/avatar";
 import { Button } from "@heroui/button";
+import { Metadata } from "next";
 
 import { title } from "@/components/primitives";
 import { HeartFilledIcon } from "@/components/icons";
+
+export const metadata: Metadata = {
+  title: "Legal Information",
+  description: "Legal information for the HellDads community website.",
+  alternates: {
+    canonical: "/legal",
+  },
+};
 
 export default function LegalPage() {
   return (

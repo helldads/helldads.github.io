@@ -1,10 +1,18 @@
 import { Card, CardBody } from "@heroui/card";
 import { Image } from "@heroui/image";
 import Link from "next/link";
+import { Metadata } from "next";
 
 import { getAllBuilds } from "../../data/builds";
 
 import { title } from "@/components/primitives";
+
+export const metadata: Metadata = {
+  title: "Builds",
+  alternates: {
+    canonical: "/builds",
+  },
+};
 
 export default function BuildsPage() {
   const builds = getAllBuilds(); // static at build time

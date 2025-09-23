@@ -3,10 +3,18 @@ import { Button } from "@heroui/button";
 import { Card, CardHeader, CardBody } from "@heroui/card";
 import { Code } from "@heroui/code";
 import { Divider } from "@heroui/divider";
+import { Metadata } from "next";
 
 import { siteConfig } from "@/config/site";
 import { title } from "@/components/primitives";
 import { DiscordIcon, LinkIcon, RedditIcon } from "@/components/icons";
+
+export const metadata: Metadata = {
+  title: "Code of Conduct",
+  alternates: {
+    canonical: "/code-of-conduct",
+  },
+};
 
 export default function CodeOfConductPage() {
   return (

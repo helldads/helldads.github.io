@@ -4,6 +4,7 @@ import { Divider } from "@heroui/react";
 import { Image } from "@heroui/image";
 import { Link } from "@heroui/link";
 import { notFound } from "next/navigation";
+import { Metadata } from "next";
 
 import { getAllSlugs, getBuildBySlug } from "@/data/builds";
 import { getAsset } from "@/data/assets";
@@ -13,6 +14,35 @@ import {
   YoutubeIcon,
   PhotoIcon,
 } from "@/components/icons";
+
+type Props = {
+  params: Promise<{ slug: string }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const build = getBuildBySlug(slug);
+
+  if (!build) {
+    return {
+      title: "Build Not Found",
+      alternates: {
+        canonical: `/builds/${slug}`,
+      },
+    };
+  }
+
+  return {
+    title: build.title,
+    description:
+      typeof build.description === "string"
+        ? build.description
+        : build.description?.[0] || build.slogan, // Use first paragraph or slogan as description
+    alternates: {
+      canonical: `/builds/${slug}`,
+    },
+  };
+}
 
 // Prebuild static paths
 export function generateStaticParams() {
