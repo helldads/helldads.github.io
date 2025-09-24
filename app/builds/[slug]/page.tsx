@@ -81,9 +81,9 @@ export default async function BuildPage({
             allowFullScreen
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             className="w-full h-full rounded-xl"
-            frameBorder="0"
+            id="ytplayer"
             referrerPolicy="strict-origin-when-cross-origin"
-            src={`https://www.youtube.com/embed/${highlightsVideoId}?modestbranding=1&showinfo=0&rel=0&controls=1&disablekb=0&fs=1&cc_load_policy=0&iv_load_policy=3&autohide=1&color=white&theme=dark`}
+            src={`https://www.youtube.com/embed/${highlightsVideoId}?autoplay=1&cc_load_policy=0&fs=0&iv_load_policy=1&list=PLKnnPdtXz2FHPsjVy3r2N4p0KynMc72oE&loop=0&origin=https%3A%2F%2Fwww.helldads.org&rel=1&widget_referrer=https%3A%2F%2Fwww.helldads.org`}
             title={`${build.title} - Highlights`}
           />
         </div>
