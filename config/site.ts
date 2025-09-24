@@ -7,6 +7,7 @@ export const siteConfig = {
   url: "https://www.helldads.org",
   logo: "/assets/helldads-logo.svg",
   analytics: "G-GK3MK919V7",
+  analyticsDebugMode: process.env.NODE_ENV == "development",
   navItems: [
     {
       label: "About",
