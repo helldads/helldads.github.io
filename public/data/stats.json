@@ -1,10 +1,10 @@
 {
-  "reddit": { "subscribers": 5000, "active_user_count": 10 },
+  "reddit": { "subscribers": 9400 },
   "discord": {
-    "approximate_member_count": 1000,
-    "approximate_presence_count": 150
+    "approximate_member_count": 1850,
+    "approximate_presence_count": 300
   },
-  "tiktok": { "follower_count": 1500, "video_count": 100 },
-  "youtube": { "subscriber_count": 500, "video_count": 100 },
-  "lastUpdated": "2025-06-01T00:00:00Z"
+  "tiktok": { "follower_count": 1560, "video_count": 130 },
+  "youtube": { "subscriber_count": 788, "video_count": 180 },
+  "lastUpdated": "2025-09-24T00:00:00Z"
 }
