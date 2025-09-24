@@ -61,7 +61,10 @@ export default function RootLayout({
             </footer>
           </div>
         </Providers>
-        <GoogleAnalytics gaId={siteConfig.analytics} />
+        <GoogleAnalytics
+          gaId={siteConfig.analytics}
+          debugMode={siteConfig.analyticsDebugMode}
+        />
       </body>
     </html>
   );
