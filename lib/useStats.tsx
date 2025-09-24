@@ -6,7 +6,6 @@ export default function useStats() {
   const [stats, setStats] = useState<{
     reddit: {
       subscribers: number;
-      active_user_count: number;
     };
     discord: {
       approximate_member_count: number;
