@@ -27,7 +27,7 @@ export default function LegalPage() {
       <h2 className="text-xl font-semibold mt-6">
         1. Legal Notice (Impressum)
       </h2>
-      <p>
+      <p className="mt-3 mb-6">
         This website is a non-commercial fan project maintained by volunteers of
         the HellDads gaming community. It is hosted on{" "}
         <Link isExternal showAnchorIcon href="https://pages.github.io">
@@ -49,7 +49,7 @@ export default function LegalPage() {
       </p>
 
       <h3 className="text-lg font-semibold mt-4">Contact</h3>
-      <p>
+      <p className="mt-3 mb-6">
         For inquiries, please reach out via email at{" "}
         <Link isExternal showAnchorIcon href="mailto:patres.inferni@gmail.com">
           patres.inferni@gmail.com
@@ -66,7 +66,7 @@ export default function LegalPage() {
       </p>
 
       <h3 className="text-lg font-semibold mt-4">Hosting Provider</h3>
-      <p>
+      <p className="mt-3 mb-6">
         <strong>GitHub, Inc.</strong>
         <br />
         88 Colin P. Kelly Jr. Street
@@ -79,37 +79,75 @@ export default function LegalPage() {
       <h2 className="text-xl font-semibold">2. Privacy Policy</h2>
 
       <h3 className="text-lg font-semibold mt-4">Data Collection</h3>
-      <p>
-        This website does not actively collect personal data. However, GitHub
-        Pages may log IP addresses and technical details for security and
-        operational purposes. Additionally, we use{" "}
+      <p className="mt-3 mb-6">
+        This website does not require registration and does not actively collect
+        personal data. Our hosting provider (GitHub Pages) may log IP addresses
+        and technical details (e.g. user agent, referrer) for security and
+        operational purposes. We use{" "}
+        <Link
+          isExternal
+          showAnchorIcon
+          href="https://developers.google.com/tag-platform/tag-manager"
+        >
+          Google Tag Manager (GTM)
+        </Link>{" "}
+        to load{" "}
         <Link
           isExternal
           showAnchorIcon
           href="https://developers.google.com/analytics"
         >
-          Google Analytics
+          Google Analytics 4 (GA4)
         </Link>{" "}
-        to gain insights into our audience, with anonymised tracking in
-        compliance with GDPR.
+        for audience insights. GA4 is configured for anonymised measurement in
+        alignment with{" "}
+        <Link
+          isExternal
+          showAnchorIcon
+          href="https://commission.europa.eu/law/law-topic/data-protection_en"
+        >
+          GDPR
+        </Link>{" "}
+        and international data privacy best practices.
+      </p>
+      <p className="mt-3 mb-6">
+        We also embed third-party media (e.g.{" "}
+        <Link
+          isExternal
+          showAnchorIcon
+          href="https://www.youtube.com/intl/en_us/howyoutubeworks/our-commitments/protecting-user-data/"
+        >
+          YouTube
+        </Link>
+        ). When you interact with such embeds, those providers may process usage
+        data in line with their own policies.
       </p>
 
       <h3 className="text-lg font-semibold mt-4">Data Usage</h3>
-      <p>
-        All automatically collected data is used solely for website
-        functionality and security. We do not track visitors, sell data, or
-        display targeted advertisements.
+      <p className="mt-3 mb-6">
+        Automatically collected data is used solely to operate, secure, and to
+        understand aggregate usage (e.g. page views, popular content) to improve
+        the website. We do not build user profiles, sell data, or display
+        targeted advertisements.
+      </p>
+
+      <h3 className="text-lg font-semibold mt-4">
+        Cookies and Similar Technologies
+      </h3>
+      <p className="mt-3 mb-6">
+        Analytics and embedded media may set cookies or use local storage to
+        function. You can block or delete these via your browser settings.
       </p>
 
       <h3 className="text-lg font-semibold mt-4">Third-Party Services</h3>
-      <p>
+      <p className="mt-3 mb-6">
         This website may display content and provide links to third-party
         platforms, including <strong>Reddit, Discord, and YouTube</strong>.
         These services process data according to their own privacy policies.
       </p>
 
       <h3 className="text-lg font-semibold mt-4">User Rights</h3>
-      <p>
+      <p className="mt-3 mb-6">
         If you have concerns about data processing, you may contact{" "}
         <Link isExternal showAnchorIcon href="mailto:patres.inferni@gmail.com">
           patres.inferni@gmail.com
@@ -124,32 +162,32 @@ export default function LegalPage() {
       <Divider className="my-4" />
 
       <h2 className="text-xl font-semibold">3. Terms of Use</h2>
-      <ul className="list-disc pl-6">
-        <li>
+      <ul className="list-disc pl-6 my-6">
+        <li className="mb-3">
           This website is provided <strong>&quot;as is&quot;</strong>, without
           warranties of any kind.
         </li>
-        <li>
+        <li className="mb-3">
           The community and moderators are not liable for user-generated content
           on third-party platforms linked from this website.
         </li>
-        <li>
+        <li className="mb-3">
           Any inappropriate content reported to us will be reviewed and may be
           removed at our discretion.
         </li>
-        <li>
+        <li className="mb-3">
           By using this site, you acknowledge that it is an{" "}
           <strong>unofficial fan project</strong> with no formal affiliation.
         </li>
-        <li>
+        <li className="mb-3">
           All content is voluntarily provided by the community and respects the
           rights of original creators.
         </li>
-        <li>
+        <li className="mb-3">
           We do not collect personal information; all communication is handled
           through our social media platforms.
         </li>
-        <li>
+        <li className="mb-3">
           Any conflicts should be reported via email or the related platform.
         </li>
       </ul>
@@ -159,8 +197,8 @@ export default function LegalPage() {
       <h2 className="text-xl font-semibold">
         4. Copyright & Trademark Disclaimer
       </h2>
-      <ul className="list-disc pl-6">
-        <li>
+      <ul className="list-disc pl-6 my-6">
+        <li className="mb-3">
           &quot;Helldivers 2&quot; and related assets are the property of{" "}
           <Link
             isExternal
@@ -176,11 +214,11 @@ export default function LegalPage() {
           .
         </li>
 
-        <li>
+        <li className="mb-3">
           This fan website does not claim ownership of these trademarks and
           operates under <strong>fair use principles</strong>.
         </li>
-        <li>
+        <li className="mb-3">
           If any copyright holders wish for specific content to be removed,
           please contact{" "}
           <Link
@@ -199,11 +237,11 @@ export default function LegalPage() {
       <h2 className="text-xl font-semibold">
         5. License for Community-Created Content &amp; Media
       </h2>
-      <p>
+      <p className="mt-3 mb-6">
         All content, images and media created by the HellDads community, unless
         stated otherwise, are licensed under the:
       </p>
-      <p>
+      <p className="mt-3 mb-6">
         <strong>
           <Link
             isExternal
@@ -214,7 +252,7 @@ export default function LegalPage() {
           </Link>
         </strong>
       </p>
-      <p>
+      <p className="mt-3 mb-6">
         This means you are free to share and adapt the material as long as you
         provide proper attribution, do not use it for commercial purposes, and
         distribute any modified content under the same license.
@@ -232,7 +270,7 @@ export default function LegalPage() {
         </Link>
       </div>
 
-      <p>
+      <p className="mt-3 mb-6">
         For inquiries regarding media usage, please contact{" "}
         <Link isExternal showAnchorIcon href="mailto:patres.inferni@gmail.com">
           patres.inferni@gmail.com
@@ -275,52 +313,52 @@ export default function LegalPage() {
             </Button>
           </CardHeader>
           <CardBody className="px-3 py-0">
-            <p>
+            <p className="mt-3 mb-6">
               Special thanks to Chechin, the artist behind our community logo
               and many other assets that enrich the Helldivers community.{" "}
               <HeartFilledIcon className="inline" />
             </p>
             <ul className="text-small">
-              <li>
+              <li className="mb-3">
                 <Link href="/assets/helldads-logo-150x150.png">
                   helldads-logo-150x150.png
                 </Link>
               </li>
-              <li>
+              <li className="mb-3">
                 <Link href="/assets/helldads-logo.svg">helldads-logo.svg</Link>
               </li>
-              <li>
+              <li className="mb-3">
                 <Link href="/assets/emoji-helldad.png">emoji-helldad.png</Link>
               </li>
-              <li>
+              <li className="mb-3">
                 <Link href="/assets/emoji-junior-cadet.webp">
                   emoji-junior-cadet.webp
                 </Link>
               </li>
-              <li>
+              <li className="mb-3">
                 <Link href="/assets/emoji-triplets.webp">
                   emoji-triplets.webp
                 </Link>
               </li>
-              <li>
+              <li className="mb-3">
                 <Link href="/assets/emoji-twins.webp">emoji-twins.webp</Link>
               </li>
-              <li>
+              <li className="mb-3">
                 <Link href="/assets/freedom-alliance-logo.webp">
                   freedom-alliance-logo.webp
                 </Link>
               </li>
-              <li>
+              <li className="mb-3">
                 <Link href="/assets/freedomalliance-logo.webp">
                   freedomalliance-logo.webp
                 </Link>
               </li>
-              <li>
+              <li className="mb-3">
                 <Link href="/assets/helldads-1000-members.webp">
                   helldads-1000-members.webp
                 </Link>
               </li>
-              <li>
+              <li className="mb-3">
                 <Link href="/assets/join-the-helldads.webp">
                   join-the-helldads.webp
                 </Link>
@@ -395,7 +433,7 @@ export default function LegalPage() {
             </Button>
           </CardHeader>
           <CardBody className="px-3 py-0">
-            <p>
+            <p className="mt-3 mb-6">
               Special thanks to the contributors of the Helldivers Wiki for
               providing images and reference material used in our{" "}
               <Link href="/builds">Builds</Link> section.{" "}
