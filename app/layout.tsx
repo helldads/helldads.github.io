@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
 
 import { Metadata, Viewport } from "next";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 import clsx from "clsx";
 import { Link } from "@heroui/link";
 
@@ -45,6 +45,7 @@ export default function RootLayout({
           fontSans.variable,
         )}
       >
+        {siteConfig.gtmId && <GoogleTagManager gtmId={siteConfig.gtmId} />}
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div className="relative flex flex-col h-screen">
             <Navbar />
@@ -62,7 +63,6 @@ export default function RootLayout({
             </footer>
           </div>
         </Providers>
-        <GoogleAnalytics gaId={siteConfig.analytics} />
       </body>
     </html>
   );

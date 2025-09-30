@@ -3,10 +3,11 @@
 @source '../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
 @custom-variant dark (&:is(.dark *));
 
-.helper-red {
-  background-color: red;
-}
-.helper-dark {
-  background-color: #333;
+html {
+  scroll-behavior: smooth;
 }
 
+.red-helper {
+  border: 1px solid red;
+  background-color: #830000;
+}
