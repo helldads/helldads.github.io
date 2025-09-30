@@ -4,7 +4,7 @@ export default function DadtionaryLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div>{children}</div>
+    <section>{children}</section>
   );
 }
 
