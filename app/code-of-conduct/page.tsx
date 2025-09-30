@@ -21,7 +21,31 @@ import backgroundImage from "../../public/assets/helldads-embrace-science.webp";
 export default function CodeOfConductPage() {
   return (
     <div>
-      <h1 className={title()}>Code of Conduct</h1>
+      
+      {/* Hero section */}
+      <div className="relative isolate overflow-hidden bg-gray-900" style={{
+          backgroundImage: `url(${backgroundImage.src})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}>
+        <div
+          className="absolute left-[calc(50%-4rem)] top-10 -z-10 transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)]"
+          aria-hidden="true"
+          >
+            <div className="aspect-[3/1] bg-gradient-to-t from-yellow-800 to-black opacity-60">
+          </div>
+        </div>
+        <div className="mt-[-50px] flex h-[20rem] items-center justify-center">
+          <div className="max-w-full flex-shrink-0 px-4 text-center lg:mx-0 lg:max-w-3xl lg:pt-8">
+            <h1 className="text-5xl font-bold tracking-tight text-white sm:text-6xl pt-40 text-shadow-lg/40">
+              Code of Conduct
+            </h1>
+          </div>
+        </div>
+      </div>{/* End hero */}
+      
+      
+      
       <p className="my-6">
         The HellDads community exists to bring together parenting Helldivers,
         like‑minded gamers, and supportive allies. Whether on Reddit, Discord,
