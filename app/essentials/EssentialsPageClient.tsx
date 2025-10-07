@@ -14,9 +14,6 @@ import { title } from "@/components/primitives";
 import { siteConfig } from "@/config/site";
 import { DiscordIcon } from "@/components/icons";
 
-import HeroHeader from "@/components/heroHeader";
-import backgroundImage from "../../public/assets/helldads-embrace-science.webp";
-
 export default function EssentialsPageClient() {
   const [activeFilter, setActiveFilter] = useState<string | null>(null);
 
@@ -191,7 +188,10 @@ export default function EssentialsPageClient() {
       <Divider />
 
       {/* Abbreviations */}
-      <section className="mx-auto max-w-7xl px-6 py-10 md:py-14" id="abbreviations">
+      <section
+        className="mx-auto max-w-7xl px-6 py-10 md:py-14"
+        id="abbreviations"
+      >
         <div className="flex flex-col">
           <h2 className="text-2xl font-semibold tracking-tight">
             Chat Abbreviations

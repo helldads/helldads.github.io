@@ -5,11 +5,10 @@ import { Card, CardBody } from "@heroui/card";
 import { Divider } from "@heroui/divider";
 import { Metadata } from "next";
 
-import { siteConfig } from "@/config/site";
-
-import HeroHeader from "@/components/heroHeader";
 import backgroundImage from "../../public/assets/helldads-embrace-science.webp";
 
+import { siteConfig } from "@/config/site";
+import HeroHeader from "@/components/heroHeader";
 import {
   DiscordIcon,
   PhotoIcon,
@@ -31,19 +30,19 @@ export default function AboutPage() {
   return (
     <div>
       <HeroHeader
-        title={String(metadata.title ?? "")}
         backgroundImage={{ src: backgroundImage.src }}
+        title={String(metadata.title ?? "")}
       />
 
       <div className="max-w-5xl mx-auto mt-12 px-6">
         <p className="leading-relaxed mt-4">
-          HellDads is a global, family‑friendly community where gaming and family
-          life unite. We welcome all kinds of parents, relatives, and like‑minded
-          Helldivers who juggle real‑life responsibilities with the thrill of
-          serving Super Earth whenever time allows. No one here needs to apologise
-          for stepping away to make a bottle, change a diaper, or taking care of
-          their beloved ones &ndash; because here at the Parental Corps, family
-          always comes first.
+          HellDads is a global, family‑friendly community where gaming and
+          family life unite. We welcome all kinds of parents, relatives, and
+          like‑minded Helldivers who juggle real‑life responsibilities with the
+          thrill of serving Super Earth whenever time allows. No one here needs
+          to apologise for stepping away to make a bottle, change a diaper, or
+          taking care of their beloved ones &ndash; because here at the Parental
+          Corps, family always comes first.
         </p>
         <Card className="mt-6">
           <CardBody className="leading-relaxed text-center pb-8 px-8">
@@ -54,8 +53,11 @@ export default function AboutPage() {
               src="/assets/helldads-logo-textured.webp"
               width="360"
             />
-            <h2 className="text-5xl font-semibold mb-4 helldads-title">Our Mission</h2>
-            Raising the next generation of Helldivers and building the most supportive family‑driven community of Super Earth.
+            <h2 className="text-5xl font-semibold mb-4 helldads-title">
+              Our Mission
+            </h2>
+            Raising the next generation of Helldivers and building the most
+            supportive family‑driven community of Super Earth.
           </CardBody>
         </Card>
         <p className="leading-relaxed mt-4">
@@ -103,8 +105,8 @@ export default function AboutPage() {
           on <time dateTime="2024-10-29">October 29, 2024</time>, in the
           Helldivers 2 Subreddit. Sharing the challenges of gaming while
           parenting, he struck a chord with fellow Helldivers. The response was
-          overwhelming, sparking the creation of a dedicated space for parents in
-          the Helldivers community.
+          overwhelming, sparking the creation of a dedicated space for parents
+          in the Helldivers community.
         </p>
         <p className="leading-relaxed mt-4">
           When{" "}
@@ -120,8 +122,8 @@ export default function AboutPage() {
             HellDads
           </Link>{" "}
           were officially born. What started with a handful of members quickly
-          grew to include parents, grandparents, aunts and uncles, and supportive
-          allies from around the world. Early moderators like{" "}
+          grew to include parents, grandparents, aunts and uncles, and
+          supportive allies from around the world. Early moderators like{" "}
           <Link
             isExternal
             showAnchorIcon
@@ -137,8 +139,8 @@ export default function AboutPage() {
           >
             u/Potential_Chicken_58
           </Link>{" "}
-          joined from related subreddits, helping steer the community in the early
-          days. With the help of{" "}
+          joined from related subreddits, helping steer the community in the
+          early days. With the help of{" "}
           <Link
             isExternal
             showAnchorIcon
@@ -147,9 +149,9 @@ export default function AboutPage() {
             u/Nemesis-0529
           </Link>
           , our Discord server soon followed, providing real‑time communication
-          for in‑game coordination and casual conversation. Nowadays, we have many
-          more volunteers who stepped up for leading our sub-factions or taking
-          care of other tasks, helping to foster our community.
+          for in‑game coordination and casual conversation. Nowadays, we have
+          many more volunteers who stepped up for leading our sub-factions or
+          taking care of other tasks, helping to foster our community.
         </p>
         <h2 className="text-2xl font-semibold mt-12">
           A Community Built on Family Values
@@ -157,8 +159,8 @@ export default function AboutPage() {
         <p className="leading-relaxed mt-4">
           Our <Link href="/code-of-conduct">Code of Conduct</Link> ensures that
           all members can do their part without guilt or judgement when family
-          duties come first. This has created a supportive, inclusive space where
-          everyone is welcome.
+          duties come first. This has created a supportive, inclusive space
+          where everyone is welcome.
         </p>
 
         <Image
@@ -198,9 +200,9 @@ export default function AboutPage() {
           <li className="flex gap-4">
             <TextDocumentIcon />
             <div className="text-left">
-              <strong>The Dadtionary</strong> a living glossary for our community
-              which later became the <Link href="/essentials">Essentials</Link>{" "}
-              Guide.
+              <strong>The Dadtionary</strong> a living glossary for our
+              community which later became the{" "}
+              <Link href="/essentials">Essentials</Link> Guide.
             </div>
           </li>
           <li className="flex gap-4">
@@ -388,10 +390,10 @@ export default function AboutPage() {
         <h2 className="text-2xl font-semibold mt-12">Our Video Channels</h2>
         <p className="leading-relaxed mt-4">
           With more people united, Reddit and Discord filled with awesome clips
-          and highlights. That momentum created the demand for a dedicated YouTube
-          and Tiktok channels to showcase community moments — from battlefield
-          diaries and shorts to community submissions and Freedom Alliance events.
-          These channels have been steadily growing ever since.
+          and highlights. That momentum created the demand for a dedicated
+          YouTube and Tiktok channels to showcase community moments — from
+          battlefield diaries and shorts to community submissions and Freedom
+          Alliance events. These channels have been steadily growing ever since.
         </p>
         <div className="flex gap-2 items-center mt-4">
           <Button
@@ -472,8 +474,8 @@ export default function AboutPage() {
           </Link>
           . What started as an experiment &quot;one build per day for 30
           days&quot; quickly became a reliable foundation for further growth.
-          Today we have over <strong>50+</strong> builds covering a wide range of
-          loadouts and playstyles for every kind of Helldiver.
+          Today we have over <strong>50+</strong> builds covering a wide range
+          of loadouts and playstyles for every kind of Helldiver.
         </p>
         <Button
           as={Link}
@@ -499,8 +501,8 @@ export default function AboutPage() {
             u/r-volk
           </Link>
           , launching in parallel with our YouTube channel. It became our home
-          base, creating visibility for the community and bridging the gap between
-          Reddit, Discord, and YouTube.
+          base, creating visibility for the community and bridging the gap
+          between Reddit, Discord, and YouTube.
         </p>
 
         <p className="leading-relaxed mt-4">
@@ -512,9 +514,10 @@ export default function AboutPage() {
           >
             u/Winged_Strainer
           </Link>{" "}
-          joined the web development team. With joint forces we expanded the site
-          even further: we released the <Link href="/essentials">Essentials</Link>{" "}
-          guide packed with helpful tips and tricks as part of our{" "}
+          joined the web development team. With joint forces we expanded the
+          site even further: we released the{" "}
+          <Link href="/essentials">Essentials</Link> guide packed with helpful
+          tips and tricks as part of our{" "}
           <Link
             isExternal
             showAnchorIcon
@@ -523,8 +526,8 @@ export default function AboutPage() {
             HellDads Academy
           </Link>{" "}
           programme, and we launched the <Link href="/builds">Builds</Link> page
-          to showcase the many beautiful loadouts that <strong>Quifoo</strong> and
-          the wider community have crafted over time.
+          to showcase the many beautiful loadouts that <strong>Quifoo</strong>{" "}
+          and the wider community have crafted over time.
         </p>
 
         <Divider className="my-12" />
