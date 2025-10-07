@@ -19,23 +19,19 @@ export default function Home() {
   return (
     <section className="w-full text-center pb-12">
       {/* Full-width Image */}
-      <div className="w-full">
+      <div className="w-full flex justify-center">
         <Image
           alt="Join the HellDads banner"
-          className="w-full h-auto object-cover rounded-5g max-h-[250px] sm:max-h-[350px] md:max-h-[720px]"
-          height={600}
+          className="w-full h-auto rounded-5g max-w-7xl px-6"
           src="/assets/join-the-helldads.webp"
-          width={1920}
         />
       </div>
 
       {/* Title */}
-      <h1 className="text-3xl my-12 md:text-5xl font-bold">
-        Join the HellDads!
-      </h1>
+      <h1 className="text-4xl my-12 md:text-6xl">Join the HellDads!</h1>
 
       {/* 3-Column Teaser Section */}
-      <div className="drop-shadow-2xl grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 max-w-6xl mx-auto">
+      <div className="drop-shadow-2xl grid grid-cols-1 lg:grid-cols-3 gap-6 mt-12 max-w-7xl px-6 mx-auto">
         {/* Card 1: Reddit */}
         <Card
           isFooterBlurred
@@ -151,8 +147,8 @@ export default function Home() {
         </Card>
       </div>
 
-      {/* 2-Column Teaser Section */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 max-w-6xl mx-auto">
+      {/* 3-Column Teaser Section */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-12 max-w-7xl px-6 mx-auto">
         <Card className="col-span-1">
           <CardHeader className="flex gap-3">
             <Image

@@ -6,6 +6,7 @@ import { Divider } from "@heroui/divider";
 import { Metadata } from "next";
 
 import { siteConfig } from "@/config/site";
+
 import HeroHeader from "@/components/heroHeader";
 import backgroundImage from "../../public/assets/helldads-embrace-science.webp";
 
@@ -34,7 +35,7 @@ export default function AboutPage() {
         backgroundImage={{ src: backgroundImage.src }}
       />
 
-      <div className="max-w-4xl mx-auto mt-12 px-4">
+      <div className="max-w-5xl mx-auto mt-12 px-6">
         <p className="leading-relaxed mt-4">
           HellDads is a global, family‑friendly community where gaming and family
           life unite. We welcome all kinds of parents, relatives, and like‑minded

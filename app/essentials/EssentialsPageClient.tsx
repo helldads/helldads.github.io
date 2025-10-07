@@ -30,7 +30,7 @@ export default function EssentialsPageClient() {
   return (
     <div>
       {/* Intro */}
-      <section className="mx-auto max-w-6xl py-10 md:py-14">
+      <section className="mx-auto max-w-7xl py-10 md:py-14">
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <div>
             <h1 className={title()}>Essentials</h1>

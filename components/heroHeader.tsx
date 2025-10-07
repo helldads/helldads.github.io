@@ -8,7 +8,7 @@ type HeroHeaderProps = {
 const HeroHeader: React.FC<HeroHeaderProps> = ({ title, backgroundImage }) => {
   return (
     <header
-      className="relative isolate overflow-hidden bg-gray-900"
+      className="relative isolate overflow-hidden bg-gray-900 max-w-7xl mx-auto xl:rounded-2xl shadow-xl"
       style={{
         backgroundImage: `url(${backgroundImage.src})`,
         backgroundSize: "cover",
@@ -23,7 +23,7 @@ const HeroHeader: React.FC<HeroHeaderProps> = ({ title, backgroundImage }) => {
       </div>
       <div className="flex h-[20rem] items-end justify-center pb-8">
         <div className="max-w-full flex-shrink-0 lg:mx-0 lg:max-w-3xl">
-          <h1 className="text-center text-5xl font-bold tracking-tight text-white sm:text-6xl text-shadow-lg/40">
+          <h1 className="text-center text-5xl font-bold tracking-loose text-white sm:text-6xl text-shadow-lg/40">
             {title}
           </h1>
         </div>

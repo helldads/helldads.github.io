@@ -13,7 +13,7 @@ html {
   background-color: #830000;
 }
 
-h1.font-bold {
+h1, .helldads-logo {
   font-family: 'Chakra Petch', sans-serif;
-  font-weight: 600;
+  font-weight: 700;
 }

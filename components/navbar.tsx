@@ -71,7 +71,7 @@ export const Navbar = () => {
               src="/assets/helldads-logo.svg"
               width={48}
             />
-            <p className="font-semibold text-2xl">HellDads</p>
+            <span className="text-3xl helldads-logo">HellDads</span>
           </NextLink>
         </NavbarBrand>
         <ul className="hidden lg:flex gap-4 justify-start ml-2">

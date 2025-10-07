@@ -22,7 +22,7 @@ export default function CodeOfConductPage() {
   return (
     <div>
       <HeroHeader
-        title="Code of Conduct"
+        title={metadata.title}
         backgroundImage={{ src: backgroundImage.src }}
       />
       
