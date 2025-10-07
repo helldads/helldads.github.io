@@ -5,7 +5,8 @@ import { Metadata } from "next";
 
 import { getAllBuilds } from "../../data/builds";
 
-import { title } from "@/components/primitives";
+import HeroHeader from "@/components/heroHeader";
+import backgroundImage from "../../public/assets/helldads-embrace-science.webp";
 
 export const metadata: Metadata = {
   title: "Builds",
@@ -19,8 +20,12 @@ export default function BuildsPage() {
 
   return (
     <div>
-      <h1 className={title()}>Builds</h1>
-      <div className="grid gap-4 mt-6 md:mt-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <HeroHeader
+        title={metadata.title}
+        backgroundImage={{ src: backgroundImage.src }}
+      />
+
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-7xl mx-auto mt-12 p-6">
         {builds.map(({ slug, title, slogan, image }) => (
           <Link key={slug} className="flex rounded-sm" href={`/builds/${slug}`}>
             <Card

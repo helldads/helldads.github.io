@@ -8,15 +8,15 @@ import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 import { DiscordIcon, LinkIcon, RedditIcon } from "@/components/icons";
 
+import HeroHeader from "@/components/heroHeader";
+import backgroundImage from "../../public/assets/helldads-embrace-science.webp";
+
 export const metadata: Metadata = {
   title: "Code of Conduct",
   alternates: {
     canonical: "/code-of-conduct",
   },
 };
-
-import backgroundImage from "../../public/assets/helldads-embrace-science.webp";
-import HeroHeader from "@/components/heroHeader";
 
 export default function CodeOfConductPage() {
   return (
@@ -27,7 +27,7 @@ export default function CodeOfConductPage() {
       />
       
       {/* Page Content */}
-      <div className="max-w-4xl mx-auto mt-12 px-4">
+      <div className="max-w-5xl mx-auto mt-12 px-6">
         <p className="my-6">
           The HellDads community exists to bring together parenting Helldivers,
           like‑minded gamers, and supportive allies. Whether on Reddit, Discord,

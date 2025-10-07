@@ -3,7 +3,5 @@ export default function DivisionsLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <section>{children}</section>
-  );
+  return <section>{children}</section>;
 }
