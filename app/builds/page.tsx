@@ -6,7 +6,7 @@ import { Metadata } from "next";
 import { getAllBuilds } from "../../data/builds";
 
 import HeroHeader from "@/components/heroHeader";
-import backgroundImage from "../../public/assets/helldads-embrace-science.webp";
+import backgroundImage from "../../public/assets/helldads-salute-city-from-hill.jpg";
 
 export const metadata: Metadata = {
   title: "Builds",

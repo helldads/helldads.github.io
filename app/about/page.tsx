@@ -46,21 +46,18 @@ export default function AboutPage() {
           always comes first.
         </p>
         <Card className="mt-6">
-          <CardBody className="leading-relaxed text-center">
-            <h2 className="font-semibold">Our Mission</h2>
-            Raising the next generation of Helldivers and building
-            <br />
-            the most supportive family‑driven community of Super Earth.
+          <CardBody className="leading-relaxed text-center pb-8 px-8">
+            <Image
+              alt="HellDads community logo"
+              className="mx-auto"
+              height="360"
+              src="/assets/helldads-logo-textured.webp"
+              width="360"
+            />
+            <h2 className="text-5xl font-semibold mb-4 helldads-title">Our Mission</h2>
+            Raising the next generation of Helldivers and building the most supportive family‑driven community of Super Earth.
           </CardBody>
         </Card>
-        <Image
-          isBlurred
-          alt="HellDads saluting the community logo"
-          className="my-12 leading-relaxed"
-          height="414"
-          src="/assets/helldads-salute-logo.webp"
-          width="736"
-        />
         <p className="leading-relaxed mt-4">
           <strong>Does this sound like you?</strong>
         </p>
@@ -549,6 +546,7 @@ export default function AboutPage() {
           From a handful of parents to a 10k+ community with engaging events,
           helpful content and amazing people. Thank You All!
         </p>
+        <Divider className="my-12" />
       </div>
     </div>
   );
