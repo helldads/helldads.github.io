@@ -14,7 +14,7 @@ export default function DivisionsPage() {
   return (
     <div>
       <HeroHeader
-        title={metadata.title}
+        title={String(metadata.title ?? "")}
         backgroundImage={{ src: backgroundImage.src }}
       />
       <p className="my-6">PLACEHOLDER</p>

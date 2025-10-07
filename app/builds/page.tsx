@@ -21,7 +21,7 @@ export default function BuildsPage() {
   return (
     <div>
       <HeroHeader
-        title={metadata.title}
+        title={String(metadata.title ?? "")}
         backgroundImage={{ src: backgroundImage.src }}
       />
 

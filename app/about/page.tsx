@@ -31,7 +31,7 @@ export default function AboutPage() {
   return (
     <div>
       <HeroHeader
-        title={metadata.title}
+        title={String(metadata.title ?? "")}
         backgroundImage={{ src: backgroundImage.src }}
       />
 

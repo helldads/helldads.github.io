@@ -22,7 +22,7 @@ export default function CodeOfConductPage() {
   return (
     <div>
       <HeroHeader
-        title={metadata.title}
+        title={String(metadata.title ?? "")}
         backgroundImage={{ src: backgroundImage.src }}
       />
       
