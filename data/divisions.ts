@@ -1,16 +1,17 @@
 import { z } from "zod";
 
 // Import divisions here and below at the ALL_DIVISIONS array
-import { summonerBuild } from "./divisions/summoner-build";
+import { scienceTeam } from "./divisions/science-team";
+import { subtitle } from "@/components/primitives";
+import { ta } from "zod/v4/locales/index.cjs";
 
 const ALL_DIVISIONS: Division[] = [
-  summonerBuild,
+  scienceTeam,
 ];
 
 const DIVISIONS_MAP: Record<string, Division> = Object.fromEntries(
   ALL_DIVISIONS.map((b) => [b.slug, b]),
 );
-
 
 export type LoadoutEntry = {
   assetId?: string;
@@ -18,45 +19,50 @@ export type LoadoutEntry = {
 };
 
 export type DivisionLinks = {
-  full?: string; // long-form video
-  highlights?: string; // short highlights video
-  reddit?: string;
+  // full?: string; // long-form video
+  // highlights?: string; // short highlights video
+  // reddit?: string;
   discord?: string;
 };
 
 export type Division = {
   slug: string; // keep explicit slug to allow renames of keys later
   title: string;
+  subtitle?: string;
   slogan?: string;
-  description?: string | string[]; // markdown or array of paragraphs
-  weakness?: string;
+  tactics?: string | string[]; // markdown or array of paragraphs
+  formation?: string | string[]; // markdown or array of paragraphs
+  // description?: string | string[]; // markdown or array of paragraphs
+  // weakness?: string;
   image?: string; // path under /public
-  tags?: string[];
-  loadout?: LoadoutEntry[];
+  // tags?: string[];
+  // loadout?: LoadoutEntry[];
   links?: DivisionLinks;
 };
 
 export const DivisionsSchema = z.object({
   slug: z.string().min(1),
   title: z.string().min(1),
-  slogan: z.string().optional(),
-  description: z.union([z.string(), z.array(z.string())]).optional(),
-  weakness: z.string().optional(),
+  subtitle: z.string().optional(),
+  tactics: z.union([z.string(), z.array(z.string())]).optional(),
+  formation: z.union([z.string(), z.array(z.string())]).optional(),
+  // description: z.union([z.string(), z.array(z.string())]).optional(),
+  // weakness: z.string().optional(),
   image: z.string().optional(),
-  tags: z.array(z.string()).optional(),
-  loadout: z
-    .array(
-      z.object({
-        assetId: z.string(),
-        note: z.string().optional(),
-      }),
-    )
-    .optional(),
+  // tags: z.array(z.string()).optional(),
+  // loadout: z
+  //   .array(
+  //     z.object({
+  //       assetId: z.string(),
+  //       note: z.string().optional(),
+  //     }),
+  //   )
+  //   .optional(),
   links: z
     .object({
-      reddit: z.union([z.literal(""), z.string().trim().url()]),
-      full: z.union([z.literal(""), z.string().trim().url()]),
-      highlights: z.union([z.literal(""), z.string().trim().url()]),
+      // reddit: z.union([z.literal(""), z.string().trim().url()]),
+      // full: z.union([z.literal(""), z.string().trim().url()]),
+      // highlights: z.union([z.literal(""), z.string().trim().url()]),
       discord: z.union([z.literal(""), z.string().trim().url()]),
     })
     .optional(),
