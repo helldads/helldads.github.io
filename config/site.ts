@@ -20,10 +20,10 @@ export const siteConfig = {
       label: "Code of Conduct",
       href: "/code-of-conduct",
     },
-    // {
-    //   label: "Divisions",
-    //   href: "/divisions",
-    // },
+    {
+      label: "Divisions",
+      href: "/divisions",
+    },
     {
       label: "Essentials",
       href: "/essentials",
