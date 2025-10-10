@@ -30,7 +30,7 @@ export default function EssentialsPageClient() {
   return (
     <div>
       {/* Intro */}
-      <section className="mx-auto max-w-6xl py-10 md:py-14">
+      <section className="mx-auto max-w-7xl py-10 md:py-14 px-6 space-y-4">
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <div>
             <h1 className={title()}>Essentials</h1>
@@ -70,14 +70,14 @@ export default function EssentialsPageClient() {
             </CardFooter>
           </Card>
         </div>
-        <div className="flex gap-2 mb-4 flex-wrap">
+        <div className="flex gap-2 flex-wrap">
           <Link href="#tips">
             <Chip radius="sm" size="lg" variant="bordered">
               Tips &amp; Tricks
             </Chip>
           </Link>
         </div>
-        <div className="flex gap-2 mb-4 flex-wrap">
+        <div className="flex gap-2 flex-wrap">
           <Link href="#terms">
             <Chip radius="sm" size="lg" variant="bordered">
               Gaming Terms
@@ -96,7 +96,7 @@ export default function EssentialsPageClient() {
       <Divider />
 
       {/* Tips & Tricks */}
-      <section className="mx-auto max-w-6xl py-10 md:py-14" id="tips">
+      <section className="mx-auto max-w-7xl px-6 py-10 md:py-14" id="tips">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
           <h2 className="text-2xl font-semibold tracking-tight">
             Tips &amp; Tricks
@@ -161,7 +161,7 @@ export default function EssentialsPageClient() {
       <Divider />
 
       {/* Gaming Terms */}
-      <section className="mx-auto max-w-6xl py-10 md:py-14" id="terms">
+      <section className="mx-auto max-w-7xl px-6 py-10 md:py-14" id="terms">
         <div className="flex flex-col">
           <h2 className="text-2xl font-semibold tracking-tight">
             Gaming Terms
@@ -188,7 +188,10 @@ export default function EssentialsPageClient() {
       <Divider />
 
       {/* Abbreviations */}
-      <section className="mx-auto max-w-6xl py-10 md:py-14" id="abbreviations">
+      <section
+        className="mx-auto max-w-7xl px-6 py-10 md:py-14"
+        id="abbreviations"
+      >
         <div className="flex flex-col">
           <h2 className="text-2xl font-semibold tracking-tight">
             Chat Abbreviations

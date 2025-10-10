@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 
-import { title } from "@/components/primitives";
+import backgroundImage from "../../public/assets/helldads-embrace-science.webp";
+
+import HeroHeader from "@/components/heroHeader";
 
 export const metadata: Metadata = {
   title: "Divisions",
@@ -12,7 +14,10 @@ export const metadata: Metadata = {
 export default function DivisionsPage() {
   return (
     <div>
-      <h1 className={title()}>Divisions</h1>
+      <HeroHeader
+        backgroundImage={{ src: backgroundImage.src }}
+        title={String(metadata.title ?? "")}
+      />
       <p className="my-6">PLACEHOLDER</p>
     </div>
   );
