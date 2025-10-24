@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 import { getAllBuilds } from "../../data/builds";
-import backgroundImage from "../../public/assets/helldads-salute-city-from-hill.jpg";
+import backgroundImage from "../../public/assets/helldads-salute-city-from-top-of-the-hill.jpg";
 
 import HeroHeader from "@/components/heroHeader";
 
