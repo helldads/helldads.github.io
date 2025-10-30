@@ -1,6 +1,7 @@
 import { z } from "zod";
 
 // Import builds here and below at the ALL_BUILDS array
+import { anniversaryCelebrationBuild } from "./builds/anniversary-celebration-build";
 import { threeSwordStyleBuild } from "./builds/3-sword-style-build";
 import { judgeDreddBuild } from "./builds/judge-dredd-build";
 import { squidSlayerBuild } from "./builds/squid-slayer-build";
@@ -27,7 +28,6 @@ import { sniperBuild } from "./builds/sniper-build";
 
 // testing stratagems build
 // import { allStratagemsBuild } from "./builds/all-stratagems-build"; // remember to uncomment in the ALL_BUILDS array below
-
 
 export type LoadoutEntry = {
   assetId?: string;
@@ -80,6 +80,7 @@ export const BuildSchema = z.object({
 });
 
 const ALL_BUILDS: Build[] = [
+  anniversaryCelebrationBuild,
   threeSwordStyleBuild,
   judgeDreddBuild,
   squidSlayerBuild,
