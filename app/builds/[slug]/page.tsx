@@ -74,16 +74,16 @@ export default async function BuildPage({
     : null;
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-10 max-w-7xl px-6 mx-auto mt-2">
       {highlightsVideoId ? (
         <div className="relative aspect-video">
           <iframe
             allowFullScreen
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             className="w-full h-full rounded-xl"
             id="ytplayer"
             referrerPolicy="strict-origin-when-cross-origin"
-            src={`https://www.youtube.com/embed/${highlightsVideoId}?autoplay=1&cc_load_policy=0&fs=0&iv_load_policy=1&enablejsapi=1&list=PLKnnPdtXz2FHPsjVy3r2N4p0KynMc72oE&loop=0&origin=https%3A%2F%2Fwww.helldads.org&rel=1&widget_referrer=https%3A%2F%2Fwww.helldads.org`}
+            src={`https://www.youtube.com/embed/${highlightsVideoId}?cc_load_policy=0&fs=0&iv_load_policy=1&enablejsapi=1&list=PLKnnPdtXz2FHPsjVy3r2N4p0KynMc72oE&loop=0&origin=https%3A%2F%2Fwww.helldads.org&rel=1&widget_referrer=https%3A%2F%2Fwww.helldads.org`}
             title={`${build.title} - Highlights`}
           />
         </div>

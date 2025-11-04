@@ -4,8 +4,9 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 import { getAllBuilds } from "../../data/builds";
+import backgroundImage from "../../public/assets/helldads-salute-city-from-top-of-the-hill.jpg";
 
-import { title } from "@/components/primitives";
+import HeroHeader from "@/components/heroHeader";
 
 export const metadata: Metadata = {
   title: "Builds",
@@ -19,8 +20,12 @@ export default function BuildsPage() {
 
   return (
     <div>
-      <h1 className={title()}>Builds</h1>
-      <div className="grid gap-4 mt-6 md:mt-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <HeroHeader
+        backgroundImage={{ src: backgroundImage.src }}
+        title={String(metadata.title ?? "")}
+      />
+
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-7xl mx-auto mt-12 p-6">
         {builds.map(({ slug, title, slogan, image }) => (
           <Link key={slug} className="flex rounded-sm" href={`/builds/${slug}`}>
             <Card
