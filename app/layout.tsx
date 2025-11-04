@@ -51,9 +51,7 @@ export default function RootLayout({
             <Navbar />
 
             {/* <main className="container mx-auto max-w-7xl px-6 grow w-full"> */}
-            <main className="container-full grow w-full">
-              {children}
-            </main>
+            <main className="container-full grow w-full">{children}</main>
             <footer className="w-full flex items-center justify-center py-3">
               <p className="text-default-600 text-center italic">
                 &copy; HellDads {new Date().getFullYear()}, non-commercial fan
