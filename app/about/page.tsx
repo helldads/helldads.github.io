@@ -584,8 +584,8 @@ export default function AboutPage() {
         <ol className="space-y-2 list-decimal list-inside">
           <li>
             <strong>Official HellDads Merch</strong>: In collaboration with our
-            original HellDad Chechin, the lead designer of the Freedom Alliance,
-            we prepared an exclusive pre-launch access to his upcoming{" "}
+            original HellDad Chechin, the Creative Director of the Freedom
+            Alliance, we prepared an exclusive pre-launch access to his upcoming{" "}
             <Link
               isExternal
               showAnchorIcon
