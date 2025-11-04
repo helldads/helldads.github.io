@@ -35,7 +35,7 @@ export default function AboutPage() {
       />
 
       <div className="max-w-5xl mx-auto mt-12 px-6">
-        <div className="grid grid-cols-12 gap-6 md:gap-4 items-center justify-center">
+        <div className="grid grid-cols-12 gap-6 lg:gap-8 items-center justify-center">
           <div className="flex flex-col col-span-12 lg:col-span-8">
             <p className="leading-relaxed mt-4 text-xl">
               HellDads is a global, family‑friendly community where gaming and
@@ -79,7 +79,7 @@ export default function AboutPage() {
               shadow="sm"
             >
               <CardBody>
-                <div className="grid gap-6 sm:grid-cols-3 lg:grid-cols-1 sm:items-center">
+                <div className="grid gap-6 lg:gap-0 sm:grid-cols-3 lg:grid-cols-1 items-center">
                   <div className="flex justify-center">
                     <Image
                       alt="HellDads community logo"
@@ -187,9 +187,7 @@ export default function AboutPage() {
           isBlurred
           alt="HellDads are celebrating 1000 members after only six weeks!"
           className="mt-12 leading-relaxed"
-          height="414"
           src="/assets/helldads-1000-members.webp"
-          width="736"
         />
 
         <h3 className="text-1xl font-extrabold mt-12 mb-6">
@@ -548,6 +546,82 @@ export default function AboutPage() {
           programme, and we launched the <Link href="/builds">Builds</Link> page
           to showcase the many beautiful loadouts that <strong>Quifoo</strong>{" "}
           and the wider community have crafted over time.
+        </p>
+
+        <Image
+          isBlurred
+          alt="HellDads are celebrating 1000 members after only six weeks!"
+          className="mt-12 leading-relaxed"
+          src="/assets/helldads-anniversary-2025.webp"
+        />
+
+        <h2 className="text-2xl font-semibold mt-12">
+          One Year of Freedom, Family, and Friendship
+        </h2>
+        <p className="leading-relaxed mt-4">
+          The 29th October 2025 marked our first anniversary, and we want to
+          take a moment to thank every member of this community. When the
+          HellDads were founded in 2024, we started as a small group of
+          overtired parents looking for a place to share our love for Helldivers
+          and our struggles with the daily realities of family life. Since then,
+          we have grown into one of the largest and most supportive
+          family‑driven communities in the Freedom Alliance, reaching over
+          11,111 members on Reddit and nearly 2,222 members on Discord.
+        </p>
+        <h2 className="leading-relaxed mt-4 helldads-title pb-2">
+          To celebrate our anniversary, we introduced two new highlights:
+        </h2>
+        <ol className="space-y-2 list-decimal list-inside">
+          <li>
+            <strong>Official HellDads Merch</strong>: In collaboration with our
+            original HellDad Chechin, the lead designer of the Freedom Alliance,
+            we prepared an exclusive pre-launch access to his upcoming{" "}
+            <Link
+              isExternal
+              showAnchorIcon
+              href="https://www.themostwantedmerch.com/helldads/"
+            >
+              Most Wanted Merch Store
+            </Link>
+            . You can now order official HellDads T-Shirts to show your support
+            while spreading Managed Democracy in the real world. We receive no
+            financial benefit from these sales but are proud to give back to
+            someone who has contributed so much to the community.
+          </li>
+          <li>
+            <strong>HellDads Spotify Channel</strong>: We launched music
+            playlists on{" "}
+            <Link
+              isExternal
+              showAnchorIcon
+              href="https://open.spotify.com/user/31dfjdrxpeqnesgngqqfpgqttevm"
+            >
+              HellDads Spotify
+            </Link>
+            , moderated via the{" "}
+            <Link
+              isExternal
+              showAnchorIcon
+              href="https://discord.com/channels/1301285072896266252/1424668772664479764"
+            >
+              #📻-libertea-radio
+            </Link>{" "}
+            channel on Discord. Everyone is welcome to share their favourite
+            songs to help build the ultimate playlist for diving and parenting.
+          </li>
+        </ol>
+
+        <p className="leading-relaxed mt-4">
+          Behind all these achievements are the people who make this community
+          special. From those who simply enjoy a few missions with friends to
+          those who create and share content to help others, your contributions
+          make the HellDads experience what it is.
+        </p>
+        <p className="leading-relaxed mt-4">
+          On behalf of all moderators, commanders, and founding members:{" "}
+          <strong>THANK YOU</strong> for being part of this journey. We are
+          proud to stand beside you and deeply grateful for the kindness,
+          humour, and dedication that keep this community thriving.
         </p>
 
         <Divider className="my-12" />
