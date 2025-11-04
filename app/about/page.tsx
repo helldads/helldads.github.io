@@ -413,6 +413,16 @@ export default function AboutPage() {
           battlefield diaries and shorts to community submissions and Freedom
           Alliance events. These channels have been steadily growing ever since.
         </p>
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full rounded-2xl shadow-md"
+          src="/assets/helldads-one-true-flag-planting.mp4"
+          title="HellDads planting a flag and doing the chest bumb emote."
+        />
+
         <div className="flex gap-2 items-center mt-4">
           <Button
             isExternal
