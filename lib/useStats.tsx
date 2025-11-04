@@ -34,6 +34,7 @@ export default function useStats() {
 
       setStats(data);
     } catch (error) {
+      // eslint-disable-next-line no-console
       console.error("Error loading stats:", error);
     } finally {
       setLastFetchAttempt(Date.now()); // Update last attempt time
