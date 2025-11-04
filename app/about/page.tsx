@@ -35,53 +35,73 @@ export default function AboutPage() {
       />
 
       <div className="max-w-5xl mx-auto mt-12 px-6">
-        <p className="leading-relaxed mt-4">
-          HellDads is a global, family‑friendly community where gaming and
-          family life unite. We welcome all kinds of parents, relatives, and
-          like‑minded Helldivers who juggle real‑life responsibilities with the
-          thrill of serving Super Earth whenever time allows. No one here needs
-          to apologise for stepping away to make a bottle, change a diaper, or
-          taking care of their beloved ones &ndash; because here at the Parental
-          Corps, family always comes first.
-        </p>
-        <Card className="mt-6">
-          <CardBody className="leading-relaxed text-center pb-8 px-8">
-            <Image
-              alt="HellDads community logo"
-              className="mx-auto"
-              height="360"
-              src="/assets/helldads-logo-textured.webp"
-              width="360"
-            />
-            <h2 className="text-5xl font-semibold mb-4 helldads-title">
-              Our Mission
+        <div className="grid grid-cols-12 gap-6 md:gap-4 items-center justify-center">
+          <div className="flex flex-col col-span-12 lg:col-span-8">
+            <p className="leading-relaxed mt-4 text-xl">
+              HellDads is a global, family‑friendly community where gaming and
+              family life unite. We welcome all kinds of parents, relatives, and
+              like‑minded Helldivers who juggle real‑life responsibilities with
+              the thrill of serving Super Earth whenever time allows. No one
+              here needs to apologise for stepping away to make a bottle, change
+              a diaper, or taking care of their beloved ones &ndash; because
+              here at the Parental Corps, family always comes first.
+            </p>
+            <h2 className="leading-relaxed mt-4 helldads-title">
+              Does this sound like you?
             </h2>
-            Raising the next generation of Helldivers and building the most
-            supportive family‑driven community of Super Earth.
-          </CardBody>
-        </Card>
-        <p className="leading-relaxed mt-4">
-          <strong>Does this sound like you?</strong>
-        </p>
-        <ul className="list-[square] pl-5 mb-6">
-          <li>You only get fourty minutes of drop time a month.</li>
-          <li>You just play with one half of the headset over your ears.</li>
-          <li>You go AFK to make a bottle or put the kids back to bed.</li>
-          <li>You whisper on the mic.</li>
-          <li>You play between the hours of 8 pm and 11 pm.</li>
-          <li>
-            You can never seem to be on the same schedule as fellow Helldivers.
-          </li>
-          <li>
-            <strong>
-              But when you drop… you drop hard. Those fourty minutes are pure
-              democracy!
-            </strong>
-          </li>
-        </ul>
-        <p className="leading-relaxed mt-4">
-          If you nodded along, then you’re probably one of us.
-        </p>
+            <ul className="list-[square] pl-5 mb-6">
+              <li>You only get fourty minutes of drop time a month.</li>
+              <li>
+                You just play with one half of the headset over your ears.
+              </li>
+              <li>You go AFK to make a bottle or put the kids back to bed.</li>
+              <li>You whisper on the mic.</li>
+              <li>You play between the hours of 8 pm and 11 pm.</li>
+              <li>
+                You can never seem to be on the same schedule as fellow
+                Helldivers.
+              </li>
+              <li>
+                <strong>
+                  But when you drop… you drop hard. Those fourty minutes are
+                  pure democracy!
+                </strong>
+              </li>
+            </ul>
+            <p className="leading-relaxed mt-4">
+              If you nodded along, then you’re probably one of us.
+            </p>
+          </div>
+          <div className="col-span-12 lg:col-span-4">
+            <Card
+              isBlurred
+              className="border-none bg-background/60 dark:bg-default-100/50"
+              shadow="sm"
+            >
+              <CardBody>
+                <div className="grid gap-6 sm:grid-cols-3 lg:grid-cols-1 sm:items-center">
+                  <div className="flex justify-center">
+                    <Image
+                      alt="HellDads community logo"
+                      className="mx-auto w-72"
+                      src="/assets/helldads-logo-textured.webp"
+                    />
+                  </div>
+                  <div className="sm:col-span-2">
+                    <h2 className="mb-4 helldads-title text-left">
+                      Our Mission
+                    </h2>
+                    <p className="text-2xl font-thin">
+                      Raising the next generation of Helldivers and building the
+                      most supportive family‑driven community of Super Earth.
+                    </p>
+                  </div>
+                </div>
+              </CardBody>
+            </Card>
+          </div>
+        </div>
+
         <h2 className="text-2xl font-semibold mt-12">
           History of Our Founding and Early Days
         </h2>
