@@ -2,7 +2,7 @@ import { Build } from "../builds";
 
 export const spellswordBuild: Build = {
   slug: "spellsword-build",
-  title: "Spellshord Build",
+  title: "Spellsword Build",
   slogan: "You are a warrior mage!",
   description: [
     `This is the Final Form of all my Melee Builds. After countless tweaking and adjusting (and "fixes"), I have perfected it (until new weapons or buffs of course!). I give you, The Spellsword! You are a warrior mage! Don your shield and spear and wield the forces of magic to decimate your foes!`,
