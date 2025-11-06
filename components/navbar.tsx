@@ -11,9 +11,9 @@ import {
 } from "@heroui/navbar";
 import { Button } from "@heroui/button";
 import { Image } from "@heroui/image";
-import { Kbd } from "@heroui/kbd";
+// import { Kbd } from "@heroui/kbd";
 import { Link } from "@heroui/link";
-import { Input } from "@heroui/input";
+// import { Input } from "@heroui/input";
 import { link as linkStyles } from "@heroui/theme";
 import NextLink from "next/link";
 import { usePathname } from "next/navigation";
@@ -23,7 +23,7 @@ import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
 import {
   DiscordIcon,
-  SearchIcon,
+  //  SearchIcon,
   RedditIcon,
   YoutubeIcon,
 } from "@/components/icons";
@@ -31,6 +31,8 @@ import {
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
+  /*
+  // Search currently not needed
   const searchInput = (
     <Input
       aria-label="Search"
@@ -51,6 +53,7 @@ export const Navbar = () => {
       type="search"
     />
   );
+  */
 
   const pathname = usePathname();
 

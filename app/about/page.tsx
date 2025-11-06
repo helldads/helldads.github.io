@@ -35,53 +35,73 @@ export default function AboutPage() {
       />
 
       <div className="max-w-5xl mx-auto mt-12 px-6">
-        <p className="leading-relaxed mt-4">
-          HellDads is a global, family‑friendly community where gaming and
-          family life unite. We welcome all kinds of parents, relatives, and
-          like‑minded Helldivers who juggle real‑life responsibilities with the
-          thrill of serving Super Earth whenever time allows. No one here needs
-          to apologise for stepping away to make a bottle, change a diaper, or
-          taking care of their beloved ones &ndash; because here at the Parental
-          Corps, family always comes first.
-        </p>
-        <Card className="mt-6">
-          <CardBody className="leading-relaxed text-center pb-8 px-8">
-            <Image
-              alt="HellDads community logo"
-              className="mx-auto"
-              height="360"
-              src="/assets/helldads-logo-textured.webp"
-              width="360"
-            />
-            <h2 className="text-5xl font-semibold mb-4 helldads-title">
-              Our Mission
+        <div className="grid grid-cols-12 gap-6 lg:gap-8 items-center justify-center">
+          <div className="flex flex-col col-span-12 lg:col-span-8">
+            <p className="leading-relaxed mt-4 text-xl">
+              HellDads is a global, family‑friendly community where gaming and
+              family life unite. We welcome all kinds of parents, relatives, and
+              like‑minded Helldivers who juggle real‑life responsibilities with
+              the thrill of serving Super Earth whenever time allows. No one
+              here needs to apologise for stepping away to make a bottle, change
+              a diaper, or taking care of their beloved ones &ndash; because
+              here at the Parental Corps, family always comes first.
+            </p>
+            <h2 className="leading-relaxed mt-4 helldads-title">
+              Does this sound like you?
             </h2>
-            Raising the next generation of Helldivers and building the most
-            supportive family‑driven community of Super Earth.
-          </CardBody>
-        </Card>
-        <p className="leading-relaxed mt-4">
-          <strong>Does this sound like you?</strong>
-        </p>
-        <ul className="list-[square] pl-5 mb-6">
-          <li>You only get fourty minutes of drop time a month.</li>
-          <li>You just play with one half of the headset over your ears.</li>
-          <li>You go AFK to make a bottle or put the kids back to bed.</li>
-          <li>You whisper on the mic.</li>
-          <li>You play between the hours of 8 pm and 11 pm.</li>
-          <li>
-            You can never seem to be on the same schedule as fellow Helldivers.
-          </li>
-          <li>
-            <strong>
-              But when you drop… you drop hard. Those fourty minutes are pure
-              democracy!
-            </strong>
-          </li>
-        </ul>
-        <p className="leading-relaxed mt-4">
-          If you nodded along, then you’re probably one of us.
-        </p>
+            <ul className="list-[square] pl-5 mb-6">
+              <li>You only get fourty minutes of drop time a month.</li>
+              <li>
+                You just play with one half of the headset over your ears.
+              </li>
+              <li>You go AFK to make a bottle or put the kids back to bed.</li>
+              <li>You whisper on the mic.</li>
+              <li>You play between the hours of 8 pm and 11 pm.</li>
+              <li>
+                You can never seem to be on the same schedule as fellow
+                Helldivers.
+              </li>
+              <li>
+                <strong>
+                  But when you drop… you drop hard. Those fourty minutes are
+                  pure democracy!
+                </strong>
+              </li>
+            </ul>
+            <p className="leading-relaxed mt-4">
+              If you nodded along, then you’re probably one of us.
+            </p>
+          </div>
+          <div className="col-span-12 lg:col-span-4">
+            <Card
+              isBlurred
+              className="border-none bg-background/60 dark:bg-default-100/50"
+              shadow="sm"
+            >
+              <CardBody>
+                <div className="grid gap-6 lg:gap-0 sm:grid-cols-3 lg:grid-cols-1 items-center">
+                  <div className="flex justify-center">
+                    <Image
+                      alt="HellDads community logo"
+                      className="mx-auto w-72"
+                      src="/assets/helldads-logo-textured.webp"
+                    />
+                  </div>
+                  <div className="sm:col-span-2">
+                    <h2 className="mb-4 helldads-title text-left">
+                      Our Mission
+                    </h2>
+                    <p className="text-2xl font-thin">
+                      Raising the next generation of Helldivers and building the
+                      most supportive family‑driven community of Super Earth.
+                    </p>
+                  </div>
+                </div>
+              </CardBody>
+            </Card>
+          </div>
+        </div>
+
         <h2 className="text-2xl font-semibold mt-12">
           History of Our Founding and Early Days
         </h2>
@@ -167,9 +187,7 @@ export default function AboutPage() {
           isBlurred
           alt="HellDads are celebrating 1000 members after only six weeks!"
           className="mt-12 leading-relaxed"
-          height="414"
           src="/assets/helldads-1000-members.webp"
-          width="736"
         />
 
         <h3 className="text-1xl font-extrabold mt-12 mb-6">
@@ -395,6 +413,16 @@ export default function AboutPage() {
           battlefield diaries and shorts to community submissions and Freedom
           Alliance events. These channels have been steadily growing ever since.
         </p>
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full rounded-2xl shadow-md"
+          src="/assets/helldads-one-true-flag-planting.mp4"
+          title="HellDads planting a flag and doing the chest bumb emote."
+        />
+
         <div className="flex gap-2 items-center mt-4">
           <Button
             isExternal
@@ -528,6 +556,82 @@ export default function AboutPage() {
           programme, and we launched the <Link href="/builds">Builds</Link> page
           to showcase the many beautiful loadouts that <strong>Quifoo</strong>{" "}
           and the wider community have crafted over time.
+        </p>
+
+        <Image
+          isBlurred
+          alt="HellDads are celebrating 1000 members after only six weeks!"
+          className="mt-12 leading-relaxed"
+          src="/assets/helldads-anniversary-2025.webp"
+        />
+
+        <h2 className="text-2xl font-semibold mt-12">
+          One Year of Freedom, Family, and Friendship
+        </h2>
+        <p className="leading-relaxed mt-4">
+          The 29th October 2025 marked our first anniversary, and we want to
+          take a moment to thank every member of this community. When the
+          HellDads were founded in 2024, we started as a small group of
+          overtired parents looking for a place to share our love for Helldivers
+          and our struggles with the daily realities of family life. Since then,
+          we have grown into one of the largest and most supportive
+          family‑driven communities in the Freedom Alliance, reaching over
+          11,111 members on Reddit and nearly 2,222 members on Discord.
+        </p>
+        <h2 className="leading-relaxed mt-4 helldads-title pb-2">
+          To celebrate our anniversary, we introduced two new highlights:
+        </h2>
+        <ol className="space-y-2 list-decimal list-inside">
+          <li>
+            <strong>Official HellDads Merch</strong>: In collaboration with our
+            original HellDad Chechin, the Creative Director of the Freedom
+            Alliance, we prepared an exclusive pre-launch access to his upcoming{" "}
+            <Link
+              isExternal
+              showAnchorIcon
+              href="https://www.themostwantedmerch.com/helldads/"
+            >
+              Most Wanted Merch Store
+            </Link>
+            . You can now order official HellDads T-Shirts to show your support
+            while spreading Managed Democracy in the real world. We receive no
+            financial benefit from these sales but are proud to give back to
+            someone who has contributed so much to the community.
+          </li>
+          <li>
+            <strong>HellDads Spotify Channel</strong>: We launched music
+            playlists on{" "}
+            <Link
+              isExternal
+              showAnchorIcon
+              href="https://open.spotify.com/user/31dfjdrxpeqnesgngqqfpgqttevm"
+            >
+              HellDads Spotify
+            </Link>
+            , moderated via the{" "}
+            <Link
+              isExternal
+              showAnchorIcon
+              href="https://discord.com/channels/1301285072896266252/1424668772664479764"
+            >
+              #📻-libertea-radio
+            </Link>{" "}
+            channel on Discord. Everyone is welcome to share their favourite
+            songs to help build the ultimate playlist for diving and parenting.
+          </li>
+        </ol>
+
+        <p className="leading-relaxed mt-4">
+          Behind all these achievements are the people who make this community
+          special. From those who simply enjoy a few missions with friends to
+          those who create and share content to help others, your contributions
+          make the HellDads experience what it is.
+        </p>
+        <p className="leading-relaxed mt-4">
+          On behalf of all moderators, commanders, and founding members:{" "}
+          <strong>THANK YOU</strong> for being part of this journey. We are
+          proud to stand beside you and deeply grateful for the kindness,
+          humour, and dedication that keep this community thriving.
         </p>
 
         <Divider className="my-12" />
