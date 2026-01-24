@@ -33,12 +33,12 @@ export default function Home() {
 
       {/* Event Callout */}
       <Callout
-        title="HellBall Tournament"
-        subtitle="Starting 14th February"
-        thumbnailSrc="/assets/hellball-tournament-thumbnail.jpg"
-        thumbnailAlt=""
-        href="/hellball"
         cta="Get ready"
+        href="/hellball"
+        subtitle="Starting 14th February"
+        thumbnailAlt=""
+        thumbnailSrc="/assets/hellball-tournament-thumbnail.jpg"
+        title="HellBall Tournament"
       />
 
       {/* 3-Column Teaser Section */}

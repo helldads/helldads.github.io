@@ -4,7 +4,6 @@ import { Button } from "@heroui/button";
 import { Card, CardBody, CardHeader } from "@heroui/card";
 import { Metadata } from "next";
 
-import { siteConfig } from "@/config/site";
 import { DiscordIcon, TextDocumentIcon } from "@/components/icons";
 
 const highlightsVideoId = "boA4MXg-7v0";
@@ -46,7 +45,7 @@ export default function HellballPage() {
             requires affiliation with a HellDads Division, the event itself is
             fully public, and all citizens of Super Earth are encouraged to
             follow the tournament through our{" "}
-            <Link href={discordChannel} isExternal showAnchorIcon>
+            <Link isExternal showAnchorIcon href={discordChannel}>
               official channels and live streams
             </Link>
             .
@@ -132,24 +131,24 @@ export default function HellballPage() {
                     In 2084, in an attempt to control violence among deep space
                     Helldivers, the{" "}
                     <Link
-                      href="https://helldivers.wiki.gg/wiki/Super_Earth_Armed_Forces"
-                      showAnchorIcon
                       isExternal
+                      showAnchorIcon
+                      href="https://helldivers.wiki.gg/wiki/Super_Earth_Armed_Forces"
                     >
                       Super Earth Armed Forces
                     </Link>{" "}
                     legalized no-holds-bared fighting.{" "}
                     <Link
-                      href="https://helldivers.wiki.gg/wiki/Permacura"
-                      showAnchorIcon
                       isExternal
+                      showAnchorIcon
+                      href="https://helldivers.wiki.gg/wiki/Permacura"
                     >
                       PermaCura Corporation
                     </Link>
                     , working with the SEAF, established a series of leagues and
-                    bloody public exhibitions. The fight's popularity grew with
-                    their brutality. Soon, PermaCura discovered that the public
-                    matches were their most profitable enterprise.
+                    bloody public exhibitions. The fight&apos;s popularity grew
+                    with their brutality. Soon, PermaCura discovered that the
+                    public matches were their most profitable enterprise.
                   </p>
                   <p className="font-light pt-2 ">
                     The professional league was formed; a cabal of the most
@@ -268,7 +267,7 @@ export default function HellballPage() {
         <p className="leading-relaxed">
           Please follow our dedicated event channel for the HellBall Tournament
           <sup>STM</sup> on{" "}
-          <Link href={discordChannel} isExternal showAnchorIcon>
+          <Link isExternal showAnchorIcon href={discordChannel}>
             Discord
           </Link>
           . Here we will make all major announcements, coordinate the matches
@@ -354,10 +353,11 @@ export default function HellballPage() {
           without notice, justification, or explanation.
         </p>
         <p>
-          "HellBall" is a proud Super Trademark (STM) of Super Earth, protected
-          under the vigilant oversight of the Ministry of Unity and the HellDads
-          Parental Corps. Any unauthorized use, replication, or deviation is
-          considered an act of treason and will be dealt with accordingly.
+          &quot;HellBall&quot; is a proud Super Trademark (STM) of Super Earth,
+          protected under the vigilant oversight of the Ministry of Unity and
+          the HellDads Parental Corps. Any unauthorized use, replication, or
+          deviation is considered an act of treason and will be dealt with
+          accordingly.
         </p>
         <p>
           This event is a non-commercial fan project maintained by volunteers of

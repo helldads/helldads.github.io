@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Card, CardBody, Button } from "@heroui/react"; // HeroUI
 
 export default function Callout({
@@ -19,8 +20,6 @@ export default function Callout({
   return (
     <div className="fixed bottom-20 right-4 z-50">
       <Card
-        shadow="lg"
-        radius="lg"
         className={[
           // Fixed size across all breakpoints (no responsive sizing)
           "w-[320px] h-[96px]",
@@ -28,25 +27,27 @@ export default function Callout({
           "border border-default-200 bg-background/90 backdrop-blur",
           "overflow-hidden",
         ].join(" ")}
+        radius="lg"
+        shadow="lg"
       >
         <CardBody className="p-0">
           <div className="relative flex h-full w-full items-center gap-3 px-3">
             {/* Whole card clickable */}
             <Link
-              href={href}
-              className="absolute inset-0 z-10"
               aria-label={`${title} – open event page`}
+              className="absolute inset-0 z-10"
+              href={href}
             />
 
             {/* Thumbnail */}
             <div className="relative z-20 h-[64px] w-[64px] shrink-0 overflow-hidden rounded-md border border-default-200">
               {/* Use next/image if you prefer; plain img keeps this drop-in simple */}
               <Link href={href}>
-                <img
-                  src={thumbnailSrc}
+                <Image
                   alt={thumbnailAlt}
                   className="h-full w-full object-cover"
                   loading="lazy"
+                  src={thumbnailSrc}
                 />
               </Link>
             </div>
@@ -76,6 +77,9 @@ export default function Callout({
             </div>
 
             <button
+              aria-label="Dismiss callout"
+              className="relative z-20 ml-1 inline-flex h-8 w-8 items-center justify-center rounded-md text-foreground/60 hover:bg-default-100 hover:text-foreground"
+              title="Dismiss"
               type="button"
               onClick={(e) => {
                 // Prevent the overlay Link from triggering navigation
@@ -83,11 +87,8 @@ export default function Callout({
                 e.stopPropagation();
                 setIsOpen(false);
               }}
-              className="relative z-20 ml-1 inline-flex h-8 w-8 items-center justify-center rounded-md text-foreground/60 hover:bg-default-100 hover:text-foreground"
-              aria-label="Dismiss callout"
-              title="Dismiss"
             >
-              <span className="text-lg leading-none" aria-hidden="true">
+              <span aria-hidden="true" className="text-lg leading-none">
                 ×
               </span>
             </button>
