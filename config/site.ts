@@ -17,6 +17,10 @@ export const siteConfig = {
       href: "/builds",
     },
     {
+      label: "HellBall",
+      href: "/hellball",
+    },
+    {
       label: "Code of Conduct",
       href: "/code-of-conduct",
     },
@@ -37,6 +41,10 @@ export const siteConfig = {
     {
       label: "Builds",
       href: "/builds",
+    },
+    {
+      label: "HellBall",
+      href: "/hellball",
     },
     {
       label: "Code of Conduct",
