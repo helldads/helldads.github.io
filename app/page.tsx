@@ -6,6 +6,7 @@ import { Card, CardBody, CardHeader, CardFooter } from "@heroui/card";
 import { Metadata } from "next";
 
 import { siteConfig } from "@/config/site";
+import Callout from "@/components/callout";
 import { DiscordIcon, RedditIcon, YoutubeIcon } from "@/components/icons";
 import StatsCard from "@/components/statscard";
 
@@ -29,6 +30,16 @@ export default function Home() {
 
       {/* Title */}
       <h1 className="text-4xl my-12 md:text-6xl">Join the HellDads!</h1>
+
+      {/* Event Callout */}
+      <Callout
+        cta="Get ready"
+        href="/hellball"
+        subtitle="Starting 14th February"
+        thumbnailAlt=""
+        thumbnailSrc="/assets/hellball-tournament-thumbnail.jpg"
+        title="HellBall Tournament"
+      />
 
       {/* 3-Column Teaser Section */}
       <div className="drop-shadow-2xl grid grid-cols-1 lg:grid-cols-3 gap-6 mt-12 max-w-7xl px-6 mx-auto">
