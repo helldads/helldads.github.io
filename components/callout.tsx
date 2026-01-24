@@ -2,7 +2,6 @@
 
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { Card, CardBody, Button } from "@heroui/react"; // HeroUI
 
 export default function Callout({
@@ -43,7 +42,7 @@ export default function Callout({
             <div className="relative z-20 h-[64px] w-[64px] shrink-0 overflow-hidden rounded-md border border-default-200">
               {/* Use next/image if you prefer; plain img keeps this drop-in simple */}
               <Link href={href}>
-                <Image
+                <img
                   alt={thumbnailAlt}
                   className="h-full w-full object-cover"
                   loading="lazy"
