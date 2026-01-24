@@ -2,22 +2,10 @@ import { Image } from "@heroui/image";
 import { Link } from "@heroui/link";
 import { Button } from "@heroui/button";
 import { Card, CardBody, CardHeader } from "@heroui/card";
-import { Divider } from "@heroui/divider";
 import { Metadata } from "next";
 
-import backgroundImage from "../../public/assets/hellball-tournament-logo.webp";
-
 import { siteConfig } from "@/config/site";
-import HeroHeader from "@/components/heroHeader";
-import {
-  DiscordIcon,
-  PhotoIcon,
-  RedditIcon,
-  TextDocumentIcon,
-  TikTokIcon,
-  VideoIcon,
-  YoutubeIcon,
-} from "@/components/icons";
+import { DiscordIcon, TextDocumentIcon } from "@/components/icons";
 
 const highlightsVideoId = "boA4MXg-7v0";
 const discordChannel =
