@@ -998,11 +998,21 @@ export const ASSETS = {
     wiki: "https://helldivers.wiki.gg/wiki/LAS-5_Scythe",
     warbond: "Helldivers Mobilize!",
   },
+  "LAS-13": {
+    role: LoadoutRole.Primary,
+    name: "LAS-13 Trident",
+    image: "/assets/primary/LAS-13_Trident.png",
+    description:
+      "This time-honored shotgun-like weapon has been improved since the First Galactic War, and now fires six beams instead of three.",
+    wiki: "https://helldivers.wiki.gg/wiki/LAS-13_Trident",
+    warbond: "Siege Breakers",
+  },
   "LAS-16": {
     role: LoadoutRole.Primary,
     name: "LAS-16 Sickle",
     image: "/assets/primary/LAS-16_Sickle.png",
-    description: "A pulsed laser rifle with unlimited ammunition.",
+    description:
+      "A laser rifle, firing in short bursts. Does not need reloading, but if it overheats a new heat sink must be fitted.",
     wiki: "https://helldivers.wiki.gg/wiki/LAS-16_Sickle",
     warbond: "Cutting Edge",
   },
@@ -1010,7 +1020,8 @@ export const ASSETS = {
     role: LoadoutRole.Primary,
     name: "LAS-17 Double-Edge Sickle",
     image: "/assets/primary/LAS-17_Double-Edge_Sickle.png",
-    description: "An advanced laser rifle with dual beam capability.",
+    description:
+      "A LAS-16 Sickle model with all overheating protections conveniently removed, allowing for far longer bursts of fire. Does more damage when overheating, at the cost of slightly burning the user.",
     wiki: "https://helldivers.wiki.gg/wiki/LAS-17_Double-Edge_Sickle",
     warbond: "Servants of Freedom",
   },
@@ -1329,6 +1340,15 @@ export const ASSETS = {
     wiki: "https://helldivers.wiki.gg/wiki/G-142_Pyrotech",
     warbond: "Masters of Ceremony",
   },
+  "G-SH-39": {
+    role: LoadoutRole.Throwable,
+    name: "G/SH-39 Shield",
+    image: "/assets/throwable/G-SH-39_Shield.png",
+    description:
+      "A throwable emplacement that generates a spherical, projectile-blocking shield on impact. Has a limited lifetime once deployed.",
+    wiki: "https://helldivers.wiki.gg/wiki/G/SH-39_Shield",
+    warbond: "Siege Breakers",
+  },
   "K-2": {
     role: LoadoutRole.Throwable,
     name: "K-2 Throwing Knife",
@@ -1519,12 +1539,30 @@ export const ASSETS = {
     wiki: "https://helldivers.wiki.gg/wiki/CQC-1_One_True_Flag",
     warbond: "Masters of Ceremony",
   },
+  "CQC-20": {
+    role: LoadoutRole.Stratagem,
+    name: "CQC-20 Breaching Hammer",
+    image: "/assets/stratagem/CQC-20_Breaching_Hammer.png",
+    description:
+      "A sledgehammer that can be wielded with or without an explosive charge attached to its head.",
+    wiki: "A sledgehammer that can be wielded with or without an explosive charge attached to its head.",
+    warbond: "Siege Breakers",
+  },
   "EAT-17": {
     role: LoadoutRole.Stratagem,
     name: "EAT-17 Expendable Anti-tank",
     image: "/assets/stratagem/Expendable_Anti-Tank_Stratagem_Icon.png",
     description: "A disposable anti-tank rocket launcher.",
     wiki: "https://helldivers.wiki.gg/wiki/EAT-17_Expendable_Anti-Tank",
+  },
+  "EAT-411": {
+    role: LoadoutRole.Stratagem,
+    name: "EAT-411 Leveller",
+    image: "/assets/stratagem/EAT-411_Leveller.png",
+    description:
+      "A single-use weapon firing a high-yield missile. Discarded after every use.",
+    wiki: "https://helldivers.wiki.gg/wiki/EAT-411_Leveller",
+    warbond: "Siege Breakers",
   },
   "EAT-700": {
     role: LoadoutRole.Stratagem,
@@ -1642,7 +1680,8 @@ export const ASSETS = {
   "RL-77": {
     role: LoadoutRole.Stratagem,
     name: "RL-77 Airburst Rocket Launcher",
-    image: "/assets/stratagem/RL-77_Airburst_Rocket_Launcher_Stratagem_Icon.png",
+    image:
+      "/assets/stratagem/RL-77_Airburst_Rocket_Launcher_Stratagem_Icon.png",
     description: "Fires rockets that explode above targets.",
     wiki: "https://helldivers.wiki.gg/wiki/RL-77_Airburst_Rocket_Launcher",
   },
@@ -1844,14 +1883,14 @@ export const ASSETS = {
   "LIFT-850": {
     role: LoadoutRole.Stratagem,
     name: "LIFT-850 Jump Pack",
-  image: "/assets/stratagem/Jump_Pack_Stratagem_Icon.png",
+    image: "/assets/stratagem/Jump_Pack_Stratagem_Icon.png",
     description: "Allows the user to make powered jumps over obstacles.",
     wiki: "https://helldivers.wiki.gg/wiki/LIFT-850_Jump_Pack",
   },
   "LIFT-860K": {
     role: LoadoutRole.Stratagem,
     name: "LIFT-860 Hover Pack",
-  image: "/assets/stratagem/Hover_Pack_Stratagem_Icon.png",
+    image: "/assets/stratagem/Hover_Pack_Stratagem_Icon.png",
     description: "Propels the wearer in the air for extended flight time.",
     wiki: "https://helldivers.wiki.gg/wiki/LIFT-860_Hover_Pack",
     warbond: "Borderline Justice",
@@ -1866,7 +1905,7 @@ export const ASSETS = {
   "AX/AR-23": {
     role: LoadoutRole.Stratagem,
     name: 'AX/AR-23 "Guard Dog"',
-  image: "/assets/stratagem/Guard_Dog_Stratagem_Icon.png",
+    image: "/assets/stratagem/Guard_Dog_Stratagem_Icon.png",
     description:
       "An autonomous drone equipped with a Liberator assault rifle, providing 360° cover. Returns to backpack to rearm.",
     wiki: "https://helldivers.wiki.gg/wiki/AX/AR-23_%22Guard_Dog%22",
