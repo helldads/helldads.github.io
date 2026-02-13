@@ -579,6 +579,15 @@ export const ASSETS = {
     wiki: "https://helldivers.wiki.gg/wiki/RE-2310_Honorary_Guard",
     warbond: "Masters of Ceremony",
   },
+  "RS-89": {
+    role: LoadoutRole.Armor,
+    name: "RS-89 Shadow Paragon",
+    image: "/assets/armor/RS-89_Shadow_Paragon.png",
+    description:
+      "Armor befitting infiltrators of all caliber. Inspired by mythical Democracy-dispensers, whose meticulously undocumented operations remain an inspiration to all students of stealth.",
+    wiki: "https://helldivers.wiki.gg/wiki/RS-89_Shadow_Paragon",
+    warbond: "Redacted Regiment",
+  },
   "SA-04": {
     role: LoadoutRole.Armor,
     name: "SA-04 Combat Technician",
