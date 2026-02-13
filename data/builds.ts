@@ -1,6 +1,7 @@
 import { z } from "zod";
 
 // Import builds here and below at the ALL_BUILDS array
+import { falloutBuild } from "./builds/fallout-build";
 import { spellswordBuild } from "./builds/spellsword-build";
 import { anniversaryCelebrationBuild } from "./builds/anniversary-celebration-build";
 import { threeSwordStyleBuild } from "./builds/3-sword-style-build";
@@ -81,6 +82,7 @@ export const BuildSchema = z.object({
 });
 
 const ALL_BUILDS: Build[] = [
+  falloutBuild,
   spellswordBuild,
   anniversaryCelebrationBuild,
   threeSwordStyleBuild,
