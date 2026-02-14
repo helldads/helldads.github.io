@@ -1223,6 +1223,15 @@ export const ASSETS = {
     description: "A versatile hatchet for close-quarters combat.",
     wiki: "https://helldivers.wiki.gg/wiki/CQC-5_Combat_Hatchet",
   },
+  "CQC-9": {
+    role: LoadoutRole.Secondary,
+    name: "CQC-9 Defoliation Tool",
+    image: "/assets/stratagem/CQC-9_Defoliation_Tool.png",
+    description:
+      "A useful field-clearing tool for removing trees, obstacles, and unlucky foes.",
+    wiki: "https://helldivers.wiki.gg/wiki/CQC-9_Defoliation_Tool",
+    warbond: "Python Commandos",
+  },
   "CQC-19": {
     role: LoadoutRole.Secondary,
     name: "CQC-19 Stun Lance",

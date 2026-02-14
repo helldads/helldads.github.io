@@ -4,6 +4,7 @@ import { z } from "zod";
 import { paladinBuild } from "./builds/paladin-build";
 import { falloutBuild } from "./builds/fallout-build";
 import { smokeWalkerBuild } from "./builds/smoke-walker-build";
+import { deadSilentBuild } from "./builds/dead-silent-build";
 import { spellswordBuild } from "./builds/spellsword-build";
 import { anniversaryCelebrationBuild } from "./builds/anniversary-celebration-build";
 import { threeSwordStyleBuild } from "./builds/3-sword-style-build";
@@ -88,6 +89,7 @@ const ALL_BUILDS: Build[] = [
   paladinBuild,
   falloutBuild,
   smokeWalkerBuild,
+  deadSilentBuild,
   spellswordBuild,
   anniversaryCelebrationBuild,
   threeSwordStyleBuild,
