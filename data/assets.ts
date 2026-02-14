@@ -835,9 +835,19 @@ export const ASSETS = {
     role: LoadoutRole.Primary,
     name: "AR-32 Pacifier",
     image: "/assets/primary/AR-32_Pacifier.png",
-    description: "A suppressed assault rifle for stealth operations.",
+    description:
+      "A large-capacity assault rifle firing humane stun rounds. Reports of lethal incidents have been thoroughly debunked.",
     wiki: "https://helldivers.wiki.gg/wiki/AR-32_Pacifier",
     warbond: "Force of Law",
+  },
+  "AR-59": {
+    role: LoadoutRole.Primary,
+    name: "AR-59 Suppressor",
+    image: "/assets/primary/AR-59_Suppressor.png",
+    description:
+      "A fully automatic assault rifle featuring a non-removable suppressor and subsonic ammunition. Slower rounds allow low-profile operation.",
+    wiki: "https://helldivers.wiki.gg/wiki/AR-59_Suppressor",
+    warbond: "Redacted Regiment",
   },
   "AR-61": {
     role: LoadoutRole.Primary,
@@ -1373,6 +1383,15 @@ export const ASSETS = {
     description: "Classic dynamite sticks with high explosive power.",
     wiki: "https://helldivers.wiki.gg/wiki/TED-63_Dynamite",
     warbond: "Borderline Justice",
+  },
+  "TM-1": {
+    role: LoadoutRole.Throwable,
+    name: "TM-1 Lure Mine",
+    image: "/assets/throwable/TM-1_Lure_Mine.png",
+    description:
+      "A throwable anti-personnel mine, capable of adhering to most surfaces. Upon deployment, emits lights and sounds which attract nearby hostiles to its proximity-activated detonator.",
+    wiki: "https://helldivers.wiki.gg/wiki/TM-1_Lure_Mine",
+    warbond: "Redacted Regiment",
   },
 
   // ORBITAL SUPPORT STRATAGEMS
