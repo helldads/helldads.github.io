@@ -1,8 +1,9 @@
 import { z } from "zod";
 
 // Import builds here and below at the ALL_BUILDS array
+import { paladinBuild } from "./builds/paladin-build";
 import { falloutBuild } from "./builds/fallout-build";
-import { spartanBuild } from "./builds/spartan-build";
+import { smokeWalkerBuild } from "./builds/smoke-walker-build";
 import { spellswordBuild } from "./builds/spellsword-build";
 import { anniversaryCelebrationBuild } from "./builds/anniversary-celebration-build";
 import { threeSwordStyleBuild } from "./builds/3-sword-style-build";
@@ -20,6 +21,7 @@ import { emplacementJockeyBuild } from "./builds/emplacement-jockey-build";
 import { doomSlayerBuild } from "./builds/doom-slayer-build";
 import { fortyMmOfFreedomBuild } from "./builds/40mm-of-freedom-build";
 import { gasWalkerBuild } from "./builds/gas-walker-build";
+import { spartanBuild } from "./builds/spartan-build";
 import { ghostBuild } from "./builds/ghost-build";
 import { babyDriverBuild } from "./builds/baby-driver-build";
 import { spaceCowboyBuild } from "./builds/space-cowboy-build";
@@ -83,8 +85,9 @@ export const BuildSchema = z.object({
 });
 
 const ALL_BUILDS: Build[] = [
+  paladinBuild,
   falloutBuild,
-  spartanBuild,
+  smokeWalkerBuild,
   spellswordBuild,
   anniversaryCelebrationBuild,
   threeSwordStyleBuild,
@@ -102,6 +105,7 @@ const ALL_BUILDS: Build[] = [
   demolitionistBuild,
   mechDriverBuild,
   sniperBuild,
+  spartanBuild,
   heavyGunnerBuild,
   laserPointerBuild,
   emplacementJockeyBuild,
