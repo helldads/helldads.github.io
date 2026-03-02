@@ -857,6 +857,14 @@ export const ASSETS = {
     wiki: "https://helldivers.wiki.gg/wiki/AR-61_Tenderizer",
     warbond: "Polar Patriots",
   },
+  "ARC-12": {
+    role: LoadoutRole.Primary,
+    name: "ARC-12 Blitzer",
+    image: "/assets/primary/ARC-12_Blitzer.png",
+    description: "An electrical weapon that chains lightning between enemies.",
+    wiki: "https://helldivers.wiki.gg/wiki/ARC-12_Blitzer",
+    warbond: "Cutting Edge",
+  },
   "BR-14": {
     role: LoadoutRole.Primary,
     name: "BR-14 Adjudicator",
@@ -865,44 +873,65 @@ export const ASSETS = {
     wiki: "https://helldivers.wiki.gg/wiki/BR-14_Adjudicator",
     warbond: "Democratic Detonation",
   },
-  "StA-11": {
+  "CB-9": {
     role: LoadoutRole.Primary,
-    name: "StA-11 SMG",
-    image: "/assets/primary/StA-11_SMG.png",
-    description: "A compact submachine gun for close-quarters combat.",
-    wiki: "https://helldivers.wiki.gg/wiki/StA-11_SMG",
+    name: "CB-9 Exploding Crossbow",
+    image: "/assets/primary/CB-9_Exploding_Crossbow.png",
+    description: "A silent crossbow that fires explosive bolts.",
+    wiki: "https://helldivers.wiki.gg/wiki/CB-9_Exploding_Crossbow",
+    warbond: "Democratic Detonation",
   },
-  "StA-52": {
+  "FLAM-66": {
     role: LoadoutRole.Primary,
-    name: "StA-52 Assault Rifle",
-    image: "/assets/primary/StA-52_Assault_Rifle.png",
-    description: "A reliable assault rifle with balanced performance.",
-    wiki: "https://helldivers.wiki.gg/wiki/StA-52_Assault_Rifle",
-    warbond: "Cutting Edge",
+    name: "FLAM-66 Torcher",
+    image: "/assets/primary/FLAM-66_Torcher.png",
+    description:
+      "A flamethrower for close-range area denial and crowd control.",
+    wiki: "https://helldivers.wiki.gg/wiki/FLAM-66_Torcher",
+    warbond: "Freedom's Flame",
   },
-  "SMG-32": {
+  "JAR-5": {
     role: LoadoutRole.Primary,
-    name: "SMG-32 Reprimand",
-    image: "/assets/primary/SMG-32_Reprimand.png",
-    description: "A high-rate-of-fire submachine gun for close combat.",
-    wiki: "https://helldivers.wiki.gg/wiki/SMG-32_Reprimand",
-    warbond: "Truth Enforcers",
+    name: "JAR-5 Dominator",
+    image: "/assets/primary/JAR-5_Dominator.png",
+    description: "A heavy rifle with explosive rounds.",
+    wiki: "https://helldivers.wiki.gg/wiki/JAR-5_Dominator",
+    warbond: "Steeled Veterans",
   },
-  "SMG-37": {
+  "LAS-5": {
     role: LoadoutRole.Primary,
-    name: "SMG-37 Defender",
-    image: "/assets/primary/SMG-37_Defender.png",
-    description: "A compact submachine gun for close-quarters combat.",
-    wiki: "https://helldivers.wiki.gg/wiki/SMG-37_Defender",
+    name: "LAS-5 Scythe",
+    image: "/assets/primary/LAS-5_Scythe.png",
+    description: "A continuous beam laser rifle that overheats with use.",
+    wiki: "https://helldivers.wiki.gg/wiki/LAS-5_Scythe",
     warbond: "Helldivers Mobilize!",
   },
-  "SMG-72": {
+  "LAS-13": {
     role: LoadoutRole.Primary,
-    name: "SMG-72 Pummeler",
-    image: "/assets/primary/SMG-72_Pummeler.png",
-    description: "A concussive submachine gun that staggers enemies.",
-    wiki: "https://helldivers.wiki.gg/wiki/SMG-72_Pummeler",
-    warbond: "Polar Patriots",
+    name: "LAS-13 Trident",
+    image: "/assets/primary/LAS-13_Trident.png",
+    description:
+      "This time-honored shotgun-like weapon has been improved since the First Galactic War, and now fires six beams instead of three.",
+    wiki: "https://helldivers.wiki.gg/wiki/LAS-13_Trident",
+    warbond: "Siege Breakers",
+  },
+  "LAS-16": {
+    role: LoadoutRole.Primary,
+    name: "LAS-16 Sickle",
+    image: "/assets/primary/LAS-16_Sickle.png",
+    description:
+      "A laser rifle, firing in short bursts. Does not need reloading, but if it overheats a new heat sink must be fitted.",
+    wiki: "https://helldivers.wiki.gg/wiki/LAS-16_Sickle",
+    warbond: "Cutting Edge",
+  },
+  "LAS-17": {
+    role: LoadoutRole.Primary,
+    name: "LAS-17 Double-Edge Sickle",
+    image: "/assets/primary/LAS-17_Double-Edge_Sickle.png",
+    description:
+      "A LAS-16 Sickle model with all overheating protections conveniently removed, allowing for far longer bursts of fire. Does more damage when overheating, at the cost of slightly burning the user.",
+    wiki: "https://helldivers.wiki.gg/wiki/LAS-17_Double-Edge_Sickle",
+    warbond: "Servants of Freedom",
   },
   M7S: {
     role: LoadoutRole.Primary,
@@ -918,6 +947,14 @@ export const ASSETS = {
     image: "/assets/primary/MA5C_Assault_Rifle.png",
     description: "A heavy assault rifle with sustained fire capability.",
     wiki: "https://helldivers.wiki.gg/wiki/MA5C_Assault_Rifle",
+    warbond: "ODST",
+  },
+  M90A: {
+    role: LoadoutRole.Primary,
+    name: "M90A Shotgun",
+    image: "/assets/primary/M90A_Shotgun.png",
+    description: "A military-grade shotgun with reliable performance.",
+    wiki: "https://helldivers.wiki.gg/wiki/M90A_Shotgun",
     warbond: "ODST",
   },
   "SG-8": {
@@ -985,64 +1022,45 @@ export const ASSETS = {
     wiki: "https://helldivers.wiki.gg/wiki/SG-451_Cookout",
     warbond: "Freedom's Flame",
   },
-  M90A: {
+
+  "SMG-32": {
     role: LoadoutRole.Primary,
-    name: "M90A Shotgun",
-    image: "/assets/primary/M90A_Shotgun.png",
-    description: "A military-grade shotgun with reliable performance.",
-    wiki: "https://helldivers.wiki.gg/wiki/M90A_Shotgun",
-    warbond: "ODST",
+    name: "SMG-32 Reprimand",
+    image: "/assets/primary/SMG-32_Reprimand.png",
+    description: "A high-rate-of-fire submachine gun for close combat.",
+    wiki: "https://helldivers.wiki.gg/wiki/SMG-32_Reprimand",
+    warbond: "Truth Enforcers",
   },
-  "JAR-5": {
+  "SMG-37": {
     role: LoadoutRole.Primary,
-    name: "JAR-5 Dominator",
-    image: "/assets/primary/JAR-5_Dominator.png",
-    description: "A heavy rifle with explosive rounds.",
-    wiki: "https://helldivers.wiki.gg/wiki/JAR-5_Dominator",
-    warbond: "Steeled Veterans",
-  },
-  "CB-9": {
-    role: LoadoutRole.Primary,
-    name: "CB-9 Exploding Crossbow",
-    image: "/assets/primary/CB-9_Exploding_Crossbow.png",
-    description: "A silent crossbow that fires explosive bolts.",
-    wiki: "https://helldivers.wiki.gg/wiki/CB-9_Exploding_Crossbow",
-    warbond: "Democratic Detonation",
-  },
-  "LAS-5": {
-    role: LoadoutRole.Primary,
-    name: "LAS-5 Scythe",
-    image: "/assets/primary/LAS-5_Scythe.png",
-    description: "A continuous beam laser rifle that overheats with use.",
-    wiki: "https://helldivers.wiki.gg/wiki/LAS-5_Scythe",
+    name: "SMG-37 Defender",
+    image: "/assets/primary/SMG-37_Defender.png",
+    description: "A compact submachine gun for close-quarters combat.",
+    wiki: "https://helldivers.wiki.gg/wiki/SMG-37_Defender",
     warbond: "Helldivers Mobilize!",
   },
-  "LAS-13": {
+  "SMG-72": {
     role: LoadoutRole.Primary,
-    name: "LAS-13 Trident",
-    image: "/assets/primary/LAS-13_Trident.png",
-    description:
-      "This time-honored shotgun-like weapon has been improved since the First Galactic War, and now fires six beams instead of three.",
-    wiki: "https://helldivers.wiki.gg/wiki/LAS-13_Trident",
-    warbond: "Siege Breakers",
+    name: "SMG-72 Pummeler",
+    image: "/assets/primary/SMG-72_Pummeler.png",
+    description: "A concussive submachine gun that staggers enemies.",
+    wiki: "https://helldivers.wiki.gg/wiki/SMG-72_Pummeler",
+    warbond: "Polar Patriots",
   },
-  "LAS-16": {
+  "StA-11": {
     role: LoadoutRole.Primary,
-    name: "LAS-16 Sickle",
-    image: "/assets/primary/LAS-16_Sickle.png",
-    description:
-      "A laser rifle, firing in short bursts. Does not need reloading, but if it overheats a new heat sink must be fitted.",
-    wiki: "https://helldivers.wiki.gg/wiki/LAS-16_Sickle",
+    name: "StA-11 SMG",
+    image: "/assets/primary/StA-11_SMG.png",
+    description: "A compact submachine gun for close-quarters combat.",
+    wiki: "https://helldivers.wiki.gg/wiki/StA-11_SMG",
+  },
+  "StA-52": {
+    role: LoadoutRole.Primary,
+    name: "StA-52 Assault Rifle",
+    image: "/assets/primary/StA-52_Assault_Rifle.png",
+    description: "A reliable assault rifle with balanced performance.",
+    wiki: "https://helldivers.wiki.gg/wiki/StA-52_Assault_Rifle",
     warbond: "Cutting Edge",
-  },
-  "LAS-17": {
-    role: LoadoutRole.Primary,
-    name: "LAS-17 Double-Edge Sickle",
-    image: "/assets/primary/LAS-17_Double-Edge_Sickle.png",
-    description:
-      "A LAS-16 Sickle model with all overheating protections conveniently removed, allowing for far longer bursts of fire. Does more damage when overheating, at the cost of slightly burning the user.",
-    wiki: "https://helldivers.wiki.gg/wiki/LAS-17_Double-Edge_Sickle",
-    warbond: "Servants of Freedom",
   },
   "PLAS-1": {
     role: LoadoutRole.Primary,
@@ -1069,22 +1087,14 @@ export const ASSETS = {
     wiki: "https://helldivers.wiki.gg/wiki/PLAS-101_Purifier",
     warbond: "Polar Patriots",
   },
-  "ARC-12": {
+  "R-72": {
     role: LoadoutRole.Primary,
-    name: "ARC-12 Blitzer",
-    image: "/assets/primary/ARC-12_Blitzer.png",
-    description: "An electrical weapon that chains lightning between enemies.",
-    wiki: "https://helldivers.wiki.gg/wiki/ARC-12_Blitzer",
-    warbond: "Cutting Edge",
-  },
-  "FLAM-66": {
-    role: LoadoutRole.Primary,
-    name: "FLAM-66 Torcher",
-    image: "/assets/primary/FLAM-66_Torcher.png",
+    name: "R-72 Censor",
+    image: "/assets/primary/R-72_Censor.png",
     description:
-      "A flamethrower for close-range area denial and crowd control.",
-    wiki: "https://helldivers.wiki.gg/wiki/FLAM-66_Torcher",
-    warbond: "Freedom's Flame",
+      "A mid-range precision rifle. Equipped with an integrated suppressor and subsonic rounds for barely-detectable operation.",
+    wiki: "https://helldivers.wiki.gg/wiki/R-72_Censor",
+    warbond: "Redacted Regiment",
   },
   "VG-70": {
     role: LoadoutRole.Primary,
@@ -1126,6 +1136,15 @@ export const ASSETS = {
     description: "A high-capacity submachine gun for close combat.",
     wiki: "https://helldivers.wiki.gg/wiki/P-19_Redeemer",
     warbond: "Helldivers Mobilize!",
+  },
+  "P-35": {
+    role: LoadoutRole.Secondary,
+    name: "P-35 Re-Educator",
+    image: "/assets/secondary/P-35_Re-Educator.png",
+    description:
+      "A dart-firing pistol. Each of its six rounds administers a gaseous chemical agent, harmful to hostiles whether organic or artificial, that also induces a state of delirium in the target.",
+    wiki: "https://helldivers.wiki.gg/wiki/P-35_Re-Educator",
+    warbond: "Redacted Regiment",
   },
   "P-72": {
     role: LoadoutRole.Secondary,
@@ -1223,6 +1242,15 @@ export const ASSETS = {
     description: "A versatile hatchet for close-quarters combat.",
     wiki: "https://helldivers.wiki.gg/wiki/CQC-5_Combat_Hatchet",
   },
+  "CQC-9": {
+    role: LoadoutRole.Secondary,
+    name: "CQC-9 Defoliation Tool",
+    image: "/assets/stratagem/CQC-9_Defoliation_Tool.png",
+    description:
+      "A useful field-clearing tool for removing trees, obstacles, and unlucky foes.",
+    wiki: "https://helldivers.wiki.gg/wiki/CQC-9_Defoliation_Tool",
+    warbond: "Python Commandos",
+  },
   "CQC-19": {
     role: LoadoutRole.Secondary,
     name: "CQC-19 Stun Lance",
@@ -1248,6 +1276,15 @@ export const ASSETS = {
   },
 
   // THROWABLE STRATAGEMS
+  "B-MD-C4": {
+    role: LoadoutRole.Throwable,
+    name: "B/MD C4 Pack",
+    image: "/assets/stratagem/B_MD_C4_Pack.png",
+    description:
+      "A backpack containing six adhesive C4 charges and a handheld wireless electronic detonator. Charges can be deployed and detonated individually, or as multiple simultaneous blasts.",
+    wiki: "https://helldivers.wiki.gg/wiki/B/MD_C4_Pack",
+    warbond: "Redacted Regiment",
+  },
   "G-3": {
     role: LoadoutRole.Throwable,
     name: "G-3 Smoke",
