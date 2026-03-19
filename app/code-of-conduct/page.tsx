@@ -95,6 +95,12 @@ export default function CodeOfConductPage() {
           communication styles. No harassment, insults, racism, trolling, or
           inappropriate language.
         </p>
+        <p className="my-6">
+          Younger members (“HellSpawns”) under the age of 16 are welcome as part
+          of our community when participating together with a parent or legal
+          guardian. Parents are responsible for their child’s behaviour and
+          ensuring these rules are followed at all times.
+        </p>
 
         <h2
           className="text-2xl font-semibold mt-12"
