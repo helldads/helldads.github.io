@@ -33,12 +33,12 @@ export default function Home() {
 
       {/* Event Callout */}
       <Callout
-        cta="Get ready"
-        href="/hellball"
-        subtitle="Starting 14th February"
+        cta="Join now"
+        href="https://discord.gg/helldads"
+        subtitle="Until 27th April"
         thumbnailAlt=""
-        thumbnailSrc="/assets/hellball-tournament-thumbnail.jpg"
-        title="HellBall Tournament"
+        thumbnailSrc="/assets/emoji-helldad-x.png"
+        title="King of the Kill"
       />
 
       {/* 3-Column Teaser Section */}

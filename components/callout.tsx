@@ -39,7 +39,7 @@ export default function Callout({
             />
 
             {/* Thumbnail */}
-            <div className="relative z-20 h-[64px] w-[64px] shrink-0 overflow-hidden rounded-md border border-default-200">
+            <div className="relative z-20 h-[64px] w-[64px] shrink-0 overflow-hidden rounded-md border border-default-200 bg-neutral-800">
               {/* Use next/image if you prefer; plain img keeps this drop-in simple */}
               <Link href={href}>
                 <img
