@@ -35,7 +35,7 @@ export default function Home() {
       <Callout
         cta="Visit now"
         href="https://hd2clans.com/clan/66"
-        subtitle="Statistocs, clan orders and fleet updates."
+        subtitle="Events, statistics and fleet updates."
         thumbnailAlt="Logo of the Freedom Alliance"
         thumbnailSrc="/assets/freedomalliance-logo.webp"
         title="Helldivers 2 Clan Hub"
