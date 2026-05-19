@@ -33,12 +33,12 @@ export default function Home() {
 
       {/* Event Callout */}
       <Callout
-        cta="Join now"
-        href="https://discord.gg/helldads"
-        subtitle="Until 27th April"
-        thumbnailAlt=""
-        thumbnailSrc="/assets/emoji-helldad-x.png"
-        title="King of the Kill"
+        cta="Visit now"
+        href="https://hd2clans.com/clan/66"
+        subtitle="Events, statistics and fleet updates."
+        thumbnailAlt="Logo of the Freedom Alliance"
+        thumbnailSrc="/assets/freedomalliance-logo.webp"
+        title="Helldivers 2 Clan Hub"
       />
 
       {/* 3-Column Teaser Section */}
