@@ -14,6 +14,7 @@ import {
   YoutubeIcon,
   PhotoIcon,
 } from "@/components/icons";
+import { getBuildSocialMetadata } from "@/lib/metadata";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -33,14 +34,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
+    ...getBuildSocialMetadata(build),
     title: build.title,
-    description:
-      typeof build.description === "string"
-        ? build.description
-        : build.description?.[0] || build.slogan, // Use first paragraph or slogan as description
-    alternates: {
-      canonical: `/builds/${slug}`,
-    },
   };
 }
 

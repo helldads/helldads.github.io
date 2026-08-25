@@ -10,8 +10,10 @@ import { Providers } from "./providers";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
+import { siteSocialMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = {
+  ...siteSocialMetadata,
   title: {
     default: siteConfig.name,
     template: `%s - ${siteConfig.name}`,
@@ -21,7 +23,7 @@ export const metadata: Metadata = {
     canonical: "/",
     languages: {},
   },
-  description: siteConfig.description,
+  description: siteConfig.shortDescription,
 };
 
 export const viewport: Viewport = {
