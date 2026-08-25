@@ -12,13 +12,15 @@ type SocialImage = {
   width: number;
   height: number;
   alt: string;
+  type: string;
 };
 
 export const defaultSocialImage: SocialImage = {
-  url: "/assets/join-the-helldads.webp",
-  width: 1280,
-  height: 720,
+  url: "/assets/og/helldads.webp",
+  width: 1200,
+  height: 630,
   alt: "HellDads community banner",
+  type: "image/webp",
 };
 
 export function createSocialMetadata({
@@ -64,16 +66,17 @@ export function getBuildSocialMetadata(build: Build): Metadata {
     pathname: `/builds/${build.slug}`,
     image: build.image
       ? {
-          url: build.image,
-          width: 940,
-          height: 788,
-          alt: `${build.title} poster`,
+          url: `/assets/og/builds/${build.slug}.webp`,
+          width: 1200,
+          height: 630,
+          alt: `${build.title} social preview card`,
+          type: "image/webp",
         }
       : undefined,
   });
 }
 
-function getBuildSocialDescription(build: Build): string {
+export function getBuildSocialDescription(build: Build): string {
   const description =
     typeof build.description === "string"
       ? build.description
