@@ -3,7 +3,9 @@
  "version": "0.0.1",
  "private": true,
  "scripts": {
-  "dev": "next dev --turbopack",
+  "dev": "npm run generate:og-images && next dev --turbopack",
+  "generate:og-images": "node scripts/generate-og-images.cjs",
+  "prebuild": "npm run generate:og-images",
   "build": "next build",
   "start": "next start",
   "lint": "eslint . --ext .ts,.tsx -c .eslintrc.json --fix"
@@ -57,6 +59,7 @@
   "eslint-plugin-unused-imports": "4.1.4",
   "postcss": "8.4.49",
   "prettier": "3.3.3",
+  "sharp": "^0.34.3",
   "tailwind-variants": "0.1.20",
   "tailwindcss": "^4.1.11",
   "typescript": "5.6.3"
