@@ -37,6 +37,7 @@ import { overwatchBuild } from "./builds/overwatch-build";
 import { bobaFettBuild } from "./builds/boba-fett-build";
 import { holdTheLineBuild } from "./builds/hold-the-line-build";
 import { watchMyFeetBuild } from "./builds/watch-my-feet-build";
+import { armageddonBuild } from "./builds/armageddon-build";
 
 // testing stratagems build
 // import { allStratagemsBuild } from "./builds/all-stratagems-build"; // remember to uncomment in the ALL_BUILDS array below
@@ -117,6 +118,7 @@ const ALL_BUILDS: Build[] = [
   bobaFettBuild,
   holdTheLineBuild,
   watchMyFeetBuild,
+  armageddonBuild,
   mechDriverBuild,
   sniperBuild,
   spartanBuild,
