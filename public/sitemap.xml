@@ -128,7 +128,12 @@
     </url>
     <url>
         <loc>https://www.helldads.org/builds/chk-chk-boom-build</loc>
-        <lastmod>2026-02-14T16:42:27+00:00</lastmod>
+        <lastmod>2026-08-26T09:20:16+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.helldads.org/builds/overwatch-build</loc>
+        <lastmod>2026-08-26T09:20:16+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
