@@ -13,7 +13,7 @@ export const deadSilentBuild: Build = {
   ],
   weakness: `This build can go 0 Bot Drops and minimal aggro, but also has the tools to get into a fire fight if needed.`,
   image: "/assets/builds/Dead_Silent_Build.webp",
-  tags: ["stealth"],
+  tags: ["bots", "light", "stealth", "projectiles", "explosions"],
   loadout: [
     // Armor
     {

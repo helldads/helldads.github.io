@@ -10,15 +10,14 @@ export const heavyGunnerBuild: Build = {
   weakness: `This build is ammo hungry, and even with peak physique the recoil takes a bit of practice to control. Lay down (or crouch) and fire in bursts (1,2,3 - 1,2,3 - 1,2,3). Other then that you should handle everything just fine, lots of stim, lots of stuns, lots of bullets. You may struggle with heavies until you get comfortable hitting their weakspots, but once you do you will be unstoppable. When in doubt, drop the HMG Emplacement.`,
   image: "/assets/builds/The_Heavy_Gunner_Build.jpg",
   tags: [
-    "heavy-gunner",
-    "hmg",
-    "peak-physique",
-    "supply-pack",
-    "stun-grenade",
-    "talon",
-    "eruptor",
-    "gatling-barrage",
-    "hmg-emplacement",
+    "bugs",
+    "bots",
+    "light",
+    "assault",
+    "support",
+    "projectiles",
+    "explosions",
+    "energy",
   ],
   loadout: [
     // Armor

@@ -11,13 +11,13 @@ export const armageddonBuild: Build = {
     "You have no anti Air and longish CDs (although if you save them for breaches and big bases you should have the firepower each time). In between Uses you will have to rely on your Primary, Secondary and Grenades (and of course your team).",
   image: "/assets/builds/Armageddon_Build.jpg",
   tags: [
-    "terminids",
-    "automatons",
-    "orbital",
-    "barrage",
-    "explosives",
-    "area-denial",
-    "thermite",
+    "bugs",
+    "bots",
+    "medium",
+    "assault",
+    "projectiles",
+    "explosions",
+    "fire",
   ],
   loadout: [
     // Armor

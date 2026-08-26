@@ -9,16 +9,7 @@ export const gasWalkerBuild: Build = {
   ],
   weakness: `This build takes some tact, some preparation, and some planning. While it is absolute democracy to run around and burn everything while walking through clouds of poisonous gas, you will have to plan out your assaults and get your gas in place to make it work. Unexpected bot drops on your head, or Rambo charging into bases will not end well. If your Gas is on CD and you are out of Gas Grenades you will also find yourself in a pinch, so with that heavy armor and reliance on gas you are going to have to take it a bit slowerThe crossbow can kill gunships, but its a little tough.`,
   image: "/assets/builds/Gas_Walker_Build.jpg",
-  tags: [
-    "flamer",
-    "doggo",
-    "gas-mine",
-    "orbital-gas",
-    "gas-grenade",
-    "CB-9",
-    "ultimatum",
-    "gas-immune-armor",
-  ],
+  tags: ["bugs", "bots", "heavy", "assault", "explosions", "gas", "fire"],
   loadout: [
     // Armor
     {

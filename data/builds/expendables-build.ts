@@ -10,15 +10,15 @@ export const expendablesBuild: Build = {
   weakness: `Since you need to call in your AT options, there is a bit of a delay between seeing a Heavy and Killing a Heavy. If you are being chased to Timbuktu it might be difficult to get your AT down and out. Flyers can also be annoying, you will have to be a crackshot with your Talon or crossbow.`,
   image: "/assets/builds/The_Expendables_Build.jpg",
   tags: [
-    "expendables",
-    "commando",
-    "eat-17",
-    "hellbomb",
-    "mg-turret",
-    "CB-9",
-    "talon",
+    "bugs",
+    "bots",
+    "light",
+    "assault",
+    "mechanic",
+    "projectiles",
+    "explosions",
     "gas",
-    "street-armor",
+    "energy",
   ],
   loadout: [
     // Armor

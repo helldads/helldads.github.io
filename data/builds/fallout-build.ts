@@ -11,7 +11,15 @@ export const falloutBuild: Build = {
   ],
   weakness: `This build does not have much anti-air for the Bot / Squid fronts. Unless you bring a Medium Pen Primary to deal with them. It also struggles with bug holes. If you are the only one closing holes you are going to have to use PODs and waste big explosions just to close a few.`,
   image: "/assets/builds/Fallout_Build.webp",
-  tags: [],
+  tags: [
+    "bugs",
+    "bots",
+    "squids",
+    "medium",
+    "assault",
+    "explosions",
+    "energy",
+  ],
   loadout: [
     // Armor
     {

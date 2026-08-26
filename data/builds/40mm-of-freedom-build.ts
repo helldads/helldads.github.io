@@ -10,14 +10,13 @@ export const fortyMmOfFreedomBuild: Build = {
   weakness: `On Bots, you can handle everything with some good accuracy. However, on Bugs you need to be a little more tactical to take out the heavier enemies. Other than that, this build should handle everything the game has to offer, although ammo economy can be rough if you are busy. Be sure to loot POIs and drop Resupply often.`,
   image: "/assets/builds/40mm_To_Freedom_Build.jpg",
   tags: [
-    "autocannon",
-    "mech",
-    "turret",
-    "big-bertha",
-    "airburst",
-    "dynamite",
-    "senator",
-    "halt",
+    "bugs",
+    "bots",
+    "medium",
+    "assault",
+    "mechanic",
+    "projectiles",
+    "explosions",
   ],
   loadout: [
     // Armor

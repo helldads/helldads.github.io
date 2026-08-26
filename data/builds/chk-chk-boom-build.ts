@@ -10,15 +10,7 @@ export const chkChkBoomBuild: Build = {
   weakness:
     "NONE, this build stomps bots into the ground, then blows them up with the MOABs and strolls away from the ashes.",
   image: "/assets/builds/Chk_Chk_Boom_Build.webp",
-  tags: [
-    "automatons",
-    "railgun",
-    "explosives",
-    "hellbomb",
-    "thermite",
-    "fabricators",
-    "barrage",
-  ],
+  tags: ["bots", "medium", "assault", "projectiles", "explosions"],
   loadout: [
     // Armor
     {

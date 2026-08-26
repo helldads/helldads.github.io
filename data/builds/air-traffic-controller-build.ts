@@ -10,15 +10,13 @@ export const airTrafficControllerBuild: Build = {
   weakness: `Eagle-1 never misses, but that means she never misses you either. This build does not do well with Danger close, and kind of like the Armageddon Build, is a pseudo support build. You will amplify your team by bringing 16 Eagles to every fight.`,
   image: "/assets/builds/Air_Traffic_Controller_Build.jpg",
   tags: [
-    "eagle-1",
+    "bugs",
+    "bots",
+    "heavy",
     "support",
-    "air-strike",
-    "crowd-control",
-    "flex",
-    "stun",
-    "engineering",
-    "eruptor",
-    "talon",
+    "projectiles",
+    "explosions",
+    "energy",
   ],
   loadout: [
     // Armor

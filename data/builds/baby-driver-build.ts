@@ -10,14 +10,15 @@ export const babyDriverBuild: Build = {
   weakness: `Your teammates can Kill You! Yes you read that right, but this is more on you then them. If someone refuses to get in when its Hot, just leave them. Spending too long to “save” someone will cost you your life or worse, your FRV. If someone wants to get out and run, so be it. You will see them at the objective, and it will probably be done by the time they get there. This also isn’t exactly an offensive build. To be a good driver you need to be ready to move the car / pick people up. Getting out to fight means you risk losing the car, or missing an opportunity to save someone. Hang out, let your team work, and be ready to leap into action. You are the getaway driver.`,
   image: "/assets/builds/Baby_Driver_Build.jpg",
   tags: [
-    "recoiless-rifle",
-    "frv",
-    "380mm-barrage",
-    "orbital-laser",
-    "loyalist",
-    "CB-9",
-    "democracy-protects",
-    "seeker-grenade",
+    "bugs",
+    "bots",
+    "squids",
+    "medium",
+    "mechanic",
+    "support",
+    "projectiles",
+    "explosions",
+    "energy",
   ],
   loadout: [
     // Armor

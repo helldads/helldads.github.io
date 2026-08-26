@@ -10,14 +10,13 @@ export const demolitionistBuild: Build = {
   weakness: `You have no anti Air, Gunships and Shriekers will be annoying. Also, your only AT is Thermite and the Ultimatum, if you get a map with a lot of Hulks or Chargers and other Heavies, its going to be a bid tedious, luckily you have that Supply Pack.`,
   image: "/assets/builds/The_Demolitionist_Build.jpg",
   tags: [
-    "demolitionist",
-    "grenade-launcher",
-    "supply-pack",
-    "ultimatum",
-    "thermite",
-    "engineering-armor",
-    "dominator",
-    "blitzer",
+    "bugs",
+    "bots",
+    "heavy",
+    "assault",
+    "support",
+    "projectiles",
+    "explosions",
   ],
   loadout: [
     // Armor

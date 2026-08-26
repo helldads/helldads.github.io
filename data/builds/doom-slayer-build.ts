@@ -10,15 +10,14 @@ export const doomSlayerBuild: Build = {
   weakness: `This build is up close and personal and as such you might take a beating. Be ready to stim and be ready to resupply and find more when you are out. Quasar helps with heavies, but since you only have Quasar and an Orbital Rail Cannon, when there’s a lot of Heavies around there’s not much you can do.`,
   image: "/assets/builds/Doom_Slayer_Build.jpg",
   tags: [
-    "doom-slayer",
-    "quasar",
-    "jumppack",
-    "orbital-rail-cannon",
-    "napalm-barrage",
-    "axe",
-    "shotgun",
-    "doom",
-    "frag-grenade",
+    "bugs",
+    "bots",
+    "light",
+    "assault",
+    "projectiles",
+    "explosions",
+    "fire",
+    "energy",
   ],
   loadout: [
     // Armor

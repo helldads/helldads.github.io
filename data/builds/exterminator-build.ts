@@ -10,7 +10,7 @@ export const exterminatorBuild: Build = {
   ],
   weakness: `This is a Quasi Support build, you have tools to help you deal with just about everything, but you will perform much better supporting teammates. The AT is lacking with this (and Bile Titans and Impalers can’t be Crowd Controlled) so you will be relying on your team to kill them, while you keep everything else Dazed and Confused.`,
   image: "/assets/builds/The_Exterminator_Build.jpg",
-  tags: ["support", "crowd-control", "bugs", "gas", "fire", "dot"],
+  tags: ["bugs", "heavy", "support", "explosions", "gas", "fire"],
   loadout: [
     // Armor
     {

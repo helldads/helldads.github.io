@@ -11,13 +11,13 @@ export const bobaFettBuild: Build = {
     "Not much anti Air. The hoverpack takes some getting used too, landing will be a bit slow and can leave you vulnerable.",
   image: "/assets/builds/Boba_Fett_Build.jpg",
   tags: [
-    "terminids",
-    "hoverpack",
+    "bugs",
+    "medium",
+    "assault",
+    "projectiles",
+    "explosions",
     "fire",
-    "explosives",
-    "crossbow",
-    "thermite",
-    "anti-tank",
+    "energy",
   ],
   loadout: [
     // Armor

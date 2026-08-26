@@ -9,16 +9,7 @@ export const elementalistBuild: Build = {
   ],
   weakness: `This build is Pure Chaff clear and Area Denial. You do not have an answer for heavies. It is advised to follow your AT Helldiver and protect them with your awesome Fire and Gas power.`,
   image: "/assets/builds/The_Elementalist_Build.jpg",
-  tags: [
-    "elementalist",
-    "area-denial",
-    "gas",
-    "fire",
-    "ultimatum",
-    "breaker-incendiary",
-    "engineering-armor",
-    "gas-grenades",
-  ],
+  tags: ["bugs", "heavy", "support", "explosions", "gas", "fire"],
   loadout: [
     // Armor
     {

@@ -9,15 +9,7 @@ export const ghostBuild: Build = {
   ],
   weakness: `This build is not really meant for a fight. If you get stuck having to fight you will struggle. It also has no AT, while you can kill Hulks with the senator you will not be killing Factory Striders, Tanks, or Towers. Turrets also don't really care that you are sneaking. Trying to take a Fortress can be difficult as the turrets and Anti Personel turrets seem to just see you regardless. You will need smoke and certain angles / entrances to make it work.`,
   image: "/assets/builds/The_Ghost_Build.jpg",
-  tags: [
-    "eagle-smoke",
-    "smoke-grenade",
-    "jump-pack",
-    "shield-generator",
-    "senator",
-    "CB-9",
-    "stealth-armor",
-  ],
+  tags: ["bots", "light", "stealth", "projectiles", "explosions"],
   loadout: [
     // Armor
     {
