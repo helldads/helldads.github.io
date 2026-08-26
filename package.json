@@ -2,8 +2,12 @@
  "name": "next-app-template",
  "version": "0.0.1",
  "private": true,
+ "engines": {
+  "node": ">=24 <25"
+ },
  "scripts": {
-  "dev": "npm run generate:og-images && next dev --turbopack",
+  "dev": "npm run clean:next && npm run generate:og-images && next dev --turbopack",
+  "clean:next": "node -e \"require('node:fs').rmSync('.next', { recursive: true, force: true })\"",
   "generate:og-images": "node scripts/generate-og-images.cjs",
   "prebuild": "npm run generate:og-images",
   "build": "next build",
@@ -41,7 +45,7 @@
  "devDependencies": {
   "@next/eslint-plugin-next": "15.0.4",
   "@react-types/shared": "3.25.0",
-  "@types/node": "20.5.7",
+  "@types/node": "^24.13.3",
   "@types/react": "18.3.3",
   "@types/react-dom": "18.3.0",
   "@typescript-eslint/eslint-plugin": "8.11.0",
