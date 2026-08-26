@@ -1,46 +1,51 @@
+import type { Asset } from "./assets";
+
 import { z } from "zod";
 
 // Import builds here and below at the ALL_BUILDS array
-import { paladinBuild } from "./builds/paladin-build";
-import { falloutBuild } from "./builds/fallout-build";
-import { smokeWalkerBuild } from "./builds/smoke-walker-build";
-import { deadSilentBuild } from "./builds/dead-silent-build";
-import { missionImpossibleBuild } from "./builds/mission-impossible-build";
-import { spellswordBuild } from "./builds/spellsword-build";
-import { anniversaryCelebrationBuild } from "./builds/anniversary-celebration-build";
-import { threeSwordStyleBuild } from "./builds/3-sword-style-build";
-import { judgeDreddBuild } from "./builds/judge-dredd-build";
-import { squidSlayerBuild } from "./builds/squid-slayer-build";
-import { exterminatorBuild } from "./builds/exterminator-build";
-// import { salamanderBuild } from "./builds/salamander-build"; // salamandar is missing the image. I can't find it on reddit or discord
-import { summonerBuild } from "./builds/summoner-build";
-import { airTrafficControllerBuild } from "./builds/air-traffic-controller-build";
-import { antiPredatorStrainBuild } from "./builds/anti-predator-strain-build";
-import { reinhardtBuild } from "./builds/reinhardt-build";
-import { heavyGunnerBuild } from "./builds/heavy-gunner-build";
-import { laserPointerBuild } from "./builds/laser-pointer-build";
-import { emplacementJockeyBuild } from "./builds/emplacement-jockey-build";
-import { doomSlayerBuild } from "./builds/doom-slayer-build";
+import { ASSETS } from "./assets";
 import { fortyMmOfFreedomBuild } from "./builds/40mm-of-freedom-build";
-import { gasWalkerBuild } from "./builds/gas-walker-build";
-import { spartanBuild } from "./builds/spartan-build";
-import { ghostBuild } from "./builds/ghost-build";
-import { babyDriverBuild } from "./builds/baby-driver-build";
-import { spaceCowboyBuild } from "./builds/space-cowboy-build";
-import { expendablesBuild } from "./builds/expendables-build";
-import { elementalistBuild } from "./builds/elementalist-build";
-import { demolitionistBuild } from "./builds/demolitionist-build";
-import { mechDriverBuild } from "./builds/mech-driver-build";
-import { sniperBuild } from "./builds/sniper-build";
-import { chkChkBoomBuild } from "./builds/chk-chk-boom-build";
-import { overwatchBuild } from "./builds/overwatch-build";
-import { bobaFettBuild } from "./builds/boba-fett-build";
-import { holdTheLineBuild } from "./builds/hold-the-line-build";
-import { watchMyFeetBuild } from "./builds/watch-my-feet-build";
+import { threeSwordStyleBuild } from "./builds/3-sword-style-build";
+import { airTrafficControllerBuild } from "./builds/air-traffic-controller-build";
+import { anniversaryCelebrationBuild } from "./builds/anniversary-celebration-build";
+import { antiPredatorStrainBuild } from "./builds/anti-predator-strain-build";
 import { armageddonBuild } from "./builds/armageddon-build";
+import { babyDriverBuild } from "./builds/baby-driver-build";
+import { bobaFettBuild } from "./builds/boba-fett-build";
+import { chkChkBoomBuild } from "./builds/chk-chk-boom-build";
+import { deadSilentBuild } from "./builds/dead-silent-build";
+import { demolitionistBuild } from "./builds/demolitionist-build";
+import { doomSlayerBuild } from "./builds/doom-slayer-build";
+import { elementalistBuild } from "./builds/elementalist-build";
+import { emplacementJockeyBuild } from "./builds/emplacement-jockey-build";
+import { exterminatorBuild } from "./builds/exterminator-build";
+import { expendablesBuild } from "./builds/expendables-build";
+import { falloutBuild } from "./builds/fallout-build";
+import { gasWalkerBuild } from "./builds/gas-walker-build";
+import { ghostBuild } from "./builds/ghost-build";
+import { heavyGunnerBuild } from "./builds/heavy-gunner-build";
+import { holdTheLineBuild } from "./builds/hold-the-line-build";
+import { judgeDreddBuild } from "./builds/judge-dredd-build";
+import { laserPointerBuild } from "./builds/laser-pointer-build";
+import { mechDriverBuild } from "./builds/mech-driver-build";
+import { missionImpossibleBuild } from "./builds/mission-impossible-build";
+import { overwatchBuild } from "./builds/overwatch-build";
+import { paladinBuild } from "./builds/paladin-build";
+import { reinhardtBuild } from "./builds/reinhardt-build";
+// import { salamanderBuild } from "./builds/salamander-build"; // salamandar is missing the image. I can't find it on reddit or discord
+import { smokeWalkerBuild } from "./builds/smoke-walker-build";
+import { sniperBuild } from "./builds/sniper-build";
+import { spaceCowboyBuild } from "./builds/space-cowboy-build";
+import { spartanBuild } from "./builds/spartan-build";
+import { spellswordBuild } from "./builds/spellsword-build";
+import { squidSlayerBuild } from "./builds/squid-slayer-build";
+import { summonerBuild } from "./builds/summoner-build";
+import { watchMyFeetBuild } from "./builds/watch-my-feet-build";
 
 // testing stratagems build
 // import { allStratagemsBuild } from "./builds/all-stratagems-build"; // remember to uncomment in the ALL_BUILDS array below
+
+const ASSETS_BY_ID: Record<string, Asset | undefined> = ASSETS;
 
 export type LoadoutEntry = {
   assetId?: string;
@@ -64,6 +69,16 @@ export type Build = {
   tags?: string[];
   loadout?: LoadoutEntry[];
   links?: BuildLinks;
+};
+
+export type BuildExplorerItem = {
+  slug: string;
+  title: string;
+  slogan?: string;
+  image?: string;
+  tags: string[];
+  filterTags: string[];
+  searchText: string;
 };
 
 export const BuildSchema = z.object({
@@ -93,44 +108,44 @@ export const BuildSchema = z.object({
 });
 
 const ALL_BUILDS: Build[] = [
-  paladinBuild,
-  falloutBuild,
-  smokeWalkerBuild,
-  deadSilentBuild,
-  missionImpossibleBuild,
-  spellswordBuild,
-  anniversaryCelebrationBuild,
   threeSwordStyleBuild,
-  judgeDreddBuild,
-  squidSlayerBuild,
-  exterminatorBuild,
-  summonerBuild,
-  // salamanderBuild,
-  airTrafficControllerBuild,
-  antiPredatorStrainBuild,
-  reinhardtBuild,
-  spaceCowboyBuild,
-  expendablesBuild,
-  elementalistBuild,
-  demolitionistBuild,
-  chkChkBoomBuild,
-  overwatchBuild,
-  bobaFettBuild,
-  holdTheLineBuild,
-  watchMyFeetBuild,
-  armageddonBuild,
-  mechDriverBuild,
-  sniperBuild,
-  spartanBuild,
-  heavyGunnerBuild,
-  laserPointerBuild,
-  emplacementJockeyBuild,
-  doomSlayerBuild,
   fortyMmOfFreedomBuild,
+  airTrafficControllerBuild,
+  // allStratagemsBuild, // testing stratagems build
+  anniversaryCelebrationBuild,
+  antiPredatorStrainBuild,
+  armageddonBuild,
+  babyDriverBuild,
+  bobaFettBuild,
+  chkChkBoomBuild,
+  deadSilentBuild,
+  demolitionistBuild,
+  doomSlayerBuild,
+  elementalistBuild,
+  emplacementJockeyBuild,
+  exterminatorBuild,
+  expendablesBuild,
+  falloutBuild,
   gasWalkerBuild,
   ghostBuild,
-  babyDriverBuild,
-  // allStratagemsBuild, // testing stratagems build
+  heavyGunnerBuild,
+  holdTheLineBuild,
+  judgeDreddBuild,
+  // salamanderBuild,
+  laserPointerBuild,
+  mechDriverBuild,
+  missionImpossibleBuild,
+  overwatchBuild,
+  paladinBuild,
+  reinhardtBuild,
+  smokeWalkerBuild,
+  sniperBuild,
+  spaceCowboyBuild,
+  spartanBuild,
+  spellswordBuild,
+  squidSlayerBuild,
+  summonerBuild,
+  watchMyFeetBuild,
 ];
 
 const BUILDS_MAP: Record<string, Build> = Object.fromEntries(
@@ -139,6 +154,61 @@ const BUILDS_MAP: Record<string, Build> = Object.fromEntries(
 
 export function getAllBuilds(): Build[] {
   return ALL_BUILDS;
+}
+
+function normalizeSearchText(value: string): string {
+  return value
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase();
+}
+
+function uniqueValues(values: Array<string | undefined>): string[] {
+  return Array.from(new Set(values.filter(Boolean) as string[]));
+}
+
+function getBuildAssets(build: Build) {
+  return uniqueValues(build.loadout?.map((entry) => entry.assetId) ?? []).map(
+    (assetId) => ({
+      assetId,
+      asset: ASSETS_BY_ID[assetId],
+    }),
+  );
+}
+
+export function getBuildExplorerItems(): BuildExplorerItem[] {
+  return ALL_BUILDS.map((build) => {
+    const buildAssets = getBuildAssets(build);
+    const tags = build.tags ?? [];
+    const assetNames = buildAssets.map(({ asset }) => asset?.name);
+    const assetRoles = buildAssets.map(({ asset }) => asset?.role);
+    const assetWarbonds = buildAssets.map(({ asset }) => asset?.warbond);
+    const assetIds = buildAssets.map(({ assetId }) => assetId);
+    const filterTags = tags;
+    const searchText = normalizeSearchText(
+      [
+        build.title,
+        build.slogan,
+        ...tags,
+        ...assetIds,
+        ...assetNames,
+        ...assetRoles,
+        ...assetWarbonds,
+      ]
+        .filter(Boolean)
+        .join(" "),
+    );
+
+    return {
+      slug: build.slug,
+      title: build.title,
+      slogan: build.slogan,
+      image: build.image,
+      tags,
+      filterTags,
+      searchText,
+    };
+  });
 }
 
 export function getBuildBySlug(slug: string): Build | undefined {
