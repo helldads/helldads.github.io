@@ -127,6 +127,36 @@
         <priority>0.80</priority>
     </url>
     <url>
+        <loc>https://www.helldads.org/builds/chk-chk-boom-build</loc>
+        <lastmod>2026-08-26T09:20:16+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.helldads.org/builds/overwatch-build</loc>
+        <lastmod>2026-08-26T09:20:16+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.helldads.org/builds/boba-fett-build</loc>
+        <lastmod>2026-08-26T09:25:48+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.helldads.org/builds/hold-the-line-build</loc>
+        <lastmod>2026-08-26T09:55:34+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.helldads.org/builds/watch-my-feet-build</loc>
+        <lastmod>2026-08-26T10:08:58+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.helldads.org/builds/armageddon-build</loc>
+        <lastmod>2026-08-26T10:21:06+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
         <loc>https://www.helldads.org/builds/mech-driver-build</loc>
         <lastmod>2026-02-14T16:42:27+00:00</lastmod>
         <priority>0.80</priority>

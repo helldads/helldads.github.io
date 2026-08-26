@@ -6,7 +6,7 @@ export const allStratagemsBuild: Build = {
   title: "All Stratagems Build",
   slogan: "Every loadout item in the game.",
   description: [
-    "A build containing every loadout items available in the game. Use this for reference or testing."
+    "A build containing every loadout items available in the game. Use this for reference or testing.",
   ],
   weakness: "No practical use in real missions. Intended for reference only.",
   image: "/assets/builds/all-stratagems-build.jpg",

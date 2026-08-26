@@ -60,9 +60,11 @@ export const emplacementJockeyBuild: Build = {
     },
   ],
   links: {
-    reddit: "https://www.reddit.com/r/HellDads/comments/1k8g911/build_a_day_day_15/",
+    reddit:
+      "https://www.reddit.com/r/HellDads/comments/1k8g911/build_a_day_day_15/",
     full: "",
     highlights: "https://www.youtube.com/watch?v=PxMvIqOdh6s",
-    discord: "https://discord.com/channels/1301285072896266252/1365456826187124777",
+    discord:
+      "https://discord.com/channels/1301285072896266252/1365456826187124777",
   },
 };

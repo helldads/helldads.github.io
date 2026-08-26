@@ -422,11 +422,11 @@ export const ASSETS = {
   },
   "FS-37": {
     role: LoadoutRole.Armor,
-    name: "FS-37 Legionnaire",
+    name: "FS-37 Ravager",
     image: "/assets/armor/FS-37_Ravager.png",
     description:
       "Frontline armor with balanced offensive and defensive capabilities.",
-    wiki: "https://helldivers.wiki.gg/wiki/FS-37_Legionnaire",
+    wiki: "https://helldivers.wiki.gg/wiki/FS-37_Ravager",
   },
   "FS-38": {
     role: LoadoutRole.Armor,

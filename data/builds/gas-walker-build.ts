@@ -59,9 +59,11 @@ export const gasWalkerBuild: Build = {
     },
   ],
   links: {
-    reddit: "https://www.reddit.com/r/HellDads/comments/1k4k4jz/build_a_day_day_10/",
+    reddit:
+      "https://www.reddit.com/r/HellDads/comments/1k4k4jz/build_a_day_day_10/",
     full: "",
     highlights: "https://www.youtube.com/watch?v=mkArAJlUNJY",
-    discord: "https://discord.com/channels/1301285072896266252/1362503620871979233",
+    discord:
+      "https://discord.com/channels/1301285072896266252/1362503620871979233",
   },
 };

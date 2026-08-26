@@ -53,9 +53,11 @@ export const mechDriverBuild: Build = {
     },
   ],
   links: {
-    reddit: "https://www.reddit.com/r/HellDads/comments/1kcamz8/build_a_day_day_20/",
+    reddit:
+      "https://www.reddit.com/r/HellDads/comments/1kcamz8/build_a_day_day_20/",
     full: "",
     highlights: "https://www.youtube.com/watch?v=il12sho2FFY",
-    discord: "https://discord.com/channels/1301285072896266252/1367232110620049508",
+    discord:
+      "https://discord.com/channels/1301285072896266252/1367232110620049508",
   },
 };

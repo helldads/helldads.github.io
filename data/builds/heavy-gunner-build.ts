@@ -60,9 +60,11 @@ export const heavyGunnerBuild: Build = {
     },
   ],
   links: {
-    reddit: "https://www.reddit.com/r/HellDads/comments/1ka38sy/build_a_day_day_17/",
+    reddit:
+      "https://www.reddit.com/r/HellDads/comments/1ka38sy/build_a_day_day_17/",
     full: "",
     highlights: "https://www.youtube.com/watch?v=6Jyfgp804Co",
-    discord: "https://discord.com/channels/1301285072896266252/1366200071665750026",
+    discord:
+      "https://discord.com/channels/1301285072896266252/1366200071665750026",
   },
 };

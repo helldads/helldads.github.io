@@ -64,6 +64,7 @@ export const reinhardtBuild: Build = {
       "https://www.reddit.com/r/HellDads/comments/1kg63yy/build_a_day_day_25/",
     full: "",
     highlights: "https://www.youtube.com/watch?v=bxIXui0yRZ4",
-    discord: "https://discord.com/channels/1301285072896266252/1369321802366713996",
+    discord:
+      "https://discord.com/channels/1301285072896266252/1369321802366713996",
   },
 };

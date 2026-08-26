@@ -60,7 +60,8 @@ export const sniperBuild: Build = {
     },
   ],
   links: {
-    reddit: "https://www.reddit.com/r/HellDads/comments/1kblms9/build_a_day_day_19/",
+    reddit:
+      "https://www.reddit.com/r/HellDads/comments/1kblms9/build_a_day_day_19/",
     full: "",
     highlights: "https://www.youtube.com/watch?v=n53ao-hOJmw",
     discord: "https://www.youtube.com/watch?v=n53ao-hOJmw",
