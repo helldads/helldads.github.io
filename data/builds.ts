@@ -34,6 +34,7 @@ import { mechDriverBuild } from "./builds/mech-driver-build";
 import { sniperBuild } from "./builds/sniper-build";
 import { chkChkBoomBuild } from "./builds/chk-chk-boom-build";
 import { overwatchBuild } from "./builds/overwatch-build";
+import { bobaFettBuild } from "./builds/boba-fett-build";
 
 // testing stratagems build
 // import { allStratagemsBuild } from "./builds/all-stratagems-build"; // remember to uncomment in the ALL_BUILDS array below
@@ -111,6 +112,7 @@ const ALL_BUILDS: Build[] = [
   demolitionistBuild,
   chkChkBoomBuild,
   overwatchBuild,
+  bobaFettBuild,
   mechDriverBuild,
   sniperBuild,
   spartanBuild,
