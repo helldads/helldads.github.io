@@ -17,6 +17,8 @@ import { Popover, PopoverContent, PopoverTrigger } from "@heroui/popover";
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 
+import { BUILD_TAG_GROUPS, getBuildTagLabel } from "@/lib/build-tags";
+
 type SortDirection = "asc" | "desc";
 
 type BuildFilters = {
@@ -24,14 +26,9 @@ type BuildFilters = {
   sortDirection: SortDirection;
 };
 
-type TagGroup = {
-  label: string;
-  tags: string[];
-};
-
 declare global {
   interface Window {
-    dataLayer?: Array<Record<string, unknown>>;
+    dataLayer?: Object[];
   }
 }
 
@@ -40,34 +37,12 @@ const DEFAULT_FILTERS: BuildFilters = {
   query: "",
   sortDirection: "asc",
 };
-const TAG_GROUPS: TagGroup[] = [
-  {
-    label: "Factions",
-    tags: ["bugs", "bots", "squids"],
-  },
-  {
-    label: "Class",
-    tags: ["light", "medium", "heavy"],
-  },
-  {
-    label: "Role",
-    tags: ["assault", "mechanic", "stealth", "support", "sniper"],
-  },
-  {
-    label: "Damage",
-    tags: ["projectiles", "explosions", "gas", "fire", "arc", "energy"],
-  },
-];
 
 function normalizeSearchText(value: string): string {
   return value
     .normalize("NFKD")
     .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase();
-}
-
-function formatTagLabel(value: string): string {
-  return value.replace(/\b\w/g, (letter) => letter.toUpperCase());
 }
 
 function parseUrlFilters(): BuildFilters | undefined {
@@ -170,7 +145,13 @@ function trackBuildSearch(
 ) {
   if (typeof window === "undefined") return;
 
-  window.dataLayer?.push({
+  if (!window.dataLayer) {
+    if (!Object.isExtensible(window)) return;
+
+    window.dataLayer = [];
+  }
+
+  window.dataLayer.push({
     event: "build_search",
     build_search_query: filters.query.trim(),
     build_search_result_count: resultCount,
@@ -187,9 +168,8 @@ export default function BuildsExplorer({
   const [filters, setFilters] = useState<BuildFilters>(DEFAULT_FILTERS);
   const [isReady, setIsReady] = useState(false);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
-  const analyticsEventKeyRef = useRef("");
+  const analyticsTrackedKeyRef = useRef("");
   const analyticsSourceRef = useRef("load");
-  const analyticsTimeoutRef = useRef<ReturnType<typeof setTimeout>>();
 
   useEffect(() => {
     setFilters(parseUrlFilters() ?? getStoredFilters());
@@ -240,20 +220,18 @@ export default function BuildsExplorer({
       sortDirection: filters.sortDirection,
     });
 
-    if (eventKey === analyticsEventKeyRef.current) return;
+    if (eventKey === analyticsTrackedKeyRef.current) return;
 
-    analyticsEventKeyRef.current = eventKey;
-    window.clearTimeout(analyticsTimeoutRef.current);
-    analyticsTimeoutRef.current = window.setTimeout(() => {
-      trackBuildSearch(
-        analyticsSourceRef.current,
-        filters,
-        filteredBuilds.length,
-      );
+    const source = analyticsSourceRef.current;
+    const timeoutId = window.setTimeout(() => {
+      if (eventKey === analyticsTrackedKeyRef.current) return;
+
+      trackBuildSearch(source, filters, filteredBuilds.length);
+      analyticsTrackedKeyRef.current = eventKey;
       analyticsSourceRef.current = "input";
     }, 500);
 
-    return () => window.clearTimeout(analyticsTimeoutRef.current);
+    return () => window.clearTimeout(timeoutId);
   }, [filteredBuilds.length, filters, isReady]);
 
   function updateFilter(nextFilters: Partial<BuildFilters>, source: string) {
@@ -265,7 +243,10 @@ export default function BuildsExplorer({
   }
 
   function addTagToSearch(tag: string) {
-    updateFilter({ query: addQueryToken(filters.query, tag) }, "tag");
+    updateFilter(
+      { query: addQueryToken(filters.query, getBuildTagLabel(tag)) },
+      "tag",
+    );
     setIsFilterOpen(false);
   }
 
@@ -284,7 +265,7 @@ export default function BuildsExplorer({
 
   const tagPicker = (
     <div className="grid max-h-[22rem] gap-4 overflow-y-auto pr-1">
-      {TAG_GROUPS.map((group) => (
+      {BUILD_TAG_GROUPS.map((group) => (
         <div key={group.label} className="grid gap-2">
           <span className="text-xs font-semibold uppercase text-default-500">
             {group.label}
@@ -297,7 +278,7 @@ export default function BuildsExplorer({
                 type="button"
                 onClick={() => addTagToSearch(tag)}
               >
-                {formatTagLabel(tag)}
+                {getBuildTagLabel(tag)}
               </button>
             ))}
           </div>
@@ -309,7 +290,7 @@ export default function BuildsExplorer({
   if (!isReady) {
     return (
       <div className="mx-auto mt-6 max-w-7xl px-4 sm:px-6">
-        <div className="sticky top-3 z-30 h-[96px] rounded-lg bg-background/90 shadow-xl ring-1 ring-default-200 backdrop-blur" />
+        <div className="sticky top-20 z-30 h-[96px] rounded-lg bg-background/90 shadow-xl ring-1 ring-default-200 backdrop-blur" />
         <div className="min-h-[32rem]" />
       </div>
     );
@@ -317,7 +298,7 @@ export default function BuildsExplorer({
 
   return (
     <div className="mx-auto mt-6 max-w-7xl px-4 sm:px-6">
-      <div className="sticky top-3 z-30 rounded-lg bg-background/95 p-3 shadow-xl ring-1 ring-default-200 backdrop-blur supports-[backdrop-filter]:bg-background/80">
+      <div className="sticky top-20 z-30 rounded-lg bg-background/95 p-3 shadow-xl ring-1 ring-default-200 backdrop-blur supports-[backdrop-filter]:bg-background/80">
         <div className="grid grid-cols-[minmax(0,1fr)_auto] gap-x-2 gap-y-1">
           <Input
             aria-label="Filter builds"
@@ -327,7 +308,7 @@ export default function BuildsExplorer({
             }}
             endContent={
               <span className="text-sm text-default-500 text-nowrap">
-                {filteredBuilds.length} of {builds.length} builds
+                {filteredBuilds.length} of {builds.length}
               </span>
             }
             placeholder="Search names, tags, assets..."
@@ -337,7 +318,7 @@ export default function BuildsExplorer({
                 className="h-5 w-5 shrink-0 text-default-400"
               />
             }
-            type="search"
+            type="text"
             value={filters.query}
             onValueChange={(query) => updateFilter({ query }, "input")}
           />
@@ -458,18 +439,18 @@ export default function BuildsExplorer({
                 </CardBody>
               </Link>
               {tags.length > 0 && (
-                <div className="flex flex-nowrap gap-1 overflow-hidden px-3 pb-3">
+                <div className="flex flex-wrap gap-1 overflow-hidden px-3 pb-3">
                   {tags.map((tag) => (
                     <button
                       key={tag}
-                      aria-label={`Add ${formatTagLabel(tag)} to search`}
-                      className="min-w-0 max-w-[8rem] shrink rounded-sm bg-default-100 px-2 py-1 text-xs transition-colors hover:bg-yellow-500 hover:text-black"
-                      title={formatTagLabel(tag)}
+                      aria-label={`Add ${getBuildTagLabel(tag)} to search`}
+                      className="min-w-0 max-w-[8rem] rounded-sm bg-default-100 px-2 py-1 text-xs transition-colors hover:bg-yellow-500 hover:text-black"
+                      title={getBuildTagLabel(tag)}
                       type="button"
                       onClick={() => addTagToSearch(tag)}
                     >
                       <span className="block truncate whitespace-nowrap">
-                        {formatTagLabel(tag)}
+                        {getBuildTagLabel(tag)}
                       </span>
                     </button>
                   ))}
@@ -482,8 +463,7 @@ export default function BuildsExplorer({
         <div className="flex min-h-[24rem] flex-col items-center justify-center gap-3 py-10 text-center">
           <h2 className="text-2xl font-semibold">No builds found</h2>
           <p className="max-w-md text-default-500">
-            Try a different name, asset, role, or damage
-            type.
+            Try a different name, asset, role, or damage type.
           </p>
           <Button
             className="rounded-sm"

@@ -4,8 +4,8 @@ import { z } from "zod";
 
 // Import builds here and below at the ALL_BUILDS array
 import { ASSETS } from "./assets";
-import { fortyMmOfFreedomBuild } from "./builds/40mm-of-freedom-build";
 import { threeSwordStyleBuild } from "./builds/3-sword-style-build";
+import { fortyMmOfFreedomBuild } from "./builds/40mm-of-freedom-build";
 import { airTrafficControllerBuild } from "./builds/air-traffic-controller-build";
 import { anniversaryCelebrationBuild } from "./builds/anniversary-celebration-build";
 import { antiPredatorStrainBuild } from "./builds/anti-predator-strain-build";
@@ -18,8 +18,8 @@ import { demolitionistBuild } from "./builds/demolitionist-build";
 import { doomSlayerBuild } from "./builds/doom-slayer-build";
 import { elementalistBuild } from "./builds/elementalist-build";
 import { emplacementJockeyBuild } from "./builds/emplacement-jockey-build";
-import { exterminatorBuild } from "./builds/exterminator-build";
 import { expendablesBuild } from "./builds/expendables-build";
+import { exterminatorBuild } from "./builds/exterminator-build";
 import { falloutBuild } from "./builds/fallout-build";
 import { gasWalkerBuild } from "./builds/gas-walker-build";
 import { ghostBuild } from "./builds/ghost-build";
@@ -41,6 +41,8 @@ import { spellswordBuild } from "./builds/spellsword-build";
 import { squidSlayerBuild } from "./builds/squid-slayer-build";
 import { summonerBuild } from "./builds/summoner-build";
 import { watchMyFeetBuild } from "./builds/watch-my-feet-build";
+
+import { getBuildTagSearchTerms } from "@/lib/build-tags";
 
 // testing stratagems build
 // import { allStratagemsBuild } from "./builds/all-stratagems-build"; // remember to uncomment in the ALL_BUILDS array below
@@ -123,8 +125,8 @@ const ALL_BUILDS: Build[] = [
   doomSlayerBuild,
   elementalistBuild,
   emplacementJockeyBuild,
-  exterminatorBuild,
   expendablesBuild,
+  exterminatorBuild,
   falloutBuild,
   gasWalkerBuild,
   ghostBuild,
@@ -180,6 +182,7 @@ export function getBuildExplorerItems(): BuildExplorerItem[] {
   return ALL_BUILDS.map((build) => {
     const buildAssets = getBuildAssets(build);
     const tags = build.tags ?? [];
+    const expandedTags = tags.flatMap(getBuildTagSearchTerms);
     const assetNames = buildAssets.map(({ asset }) => asset?.name);
     const assetRoles = buildAssets.map(({ asset }) => asset?.role);
     const assetWarbonds = buildAssets.map(({ asset }) => asset?.warbond);
@@ -189,7 +192,7 @@ export function getBuildExplorerItems(): BuildExplorerItem[] {
       [
         build.title,
         build.slogan,
-        ...tags,
+        ...expandedTags,
         ...assetIds,
         ...assetNames,
         ...assetRoles,
