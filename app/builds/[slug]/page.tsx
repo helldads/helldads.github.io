@@ -283,8 +283,8 @@ export default async function BuildPage({
       </div>
 
       <p className="text-xs text-gray-500 text-center">
-        The Helldiver asset images on our build pages are provided in
-        cooperation with the{" "}
+        Helldivers assets, names, and other trademarks belong to their respective
+        owners. Build page images are shared with thanks to the{" "}
         <Link
           isExternal
           showAnchorIcon
@@ -293,7 +293,7 @@ export default async function BuildPage({
         >
           Helldivers Wiki
         </Link>{" "}
-        &ndash; see their detail pages for licensing, copyright, and credits.
+        and used under fair use for fan-made guides and appreciation.
       </p>
     </div>
   );
