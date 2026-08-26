@@ -3,7 +3,7 @@ import { Build } from "../builds";
 export const armageddonBuild: Build = {
   slug: "armageddon-build",
   title: "Armageddon Build",
-  slogan: "The end of the world for our enemies.",
+  slogan: "Let’s Have a Blast!",
   description: [
     `You are Armageddon, the end of the world for our enemies. As you approach, their worlds burn. Is there a breach? Then throw a 380, 120, Napalm and Walking. A bug base? Then throw a 380, 120, Napalm and Walking. That Mega Nest? Then throw a 380, 120, Napalm and Walking. When they are off Cooldown you are ready to unload the full force of Super Earth. When they are all on Cooldown your Blitzer (Jar 5 bots) will do all of the heavy lifting for all bugs under Chargers / Hulks. Thermites take care of Chargers, Hulks, and Tanks. The Ultimatum takes out Impalers and Bile Titans and Factory Striders. Show our enemies why they should fear the might of managed democracy.`,
   ],
