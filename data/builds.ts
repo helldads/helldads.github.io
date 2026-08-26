@@ -32,6 +32,7 @@ import { elementalistBuild } from "./builds/elementalist-build";
 import { demolitionistBuild } from "./builds/demolitionist-build";
 import { mechDriverBuild } from "./builds/mech-driver-build";
 import { sniperBuild } from "./builds/sniper-build";
+import { chkChkBoomBuild } from "./builds/chk-chk-boom-build";
 
 // testing stratagems build
 // import { allStratagemsBuild } from "./builds/all-stratagems-build"; // remember to uncomment in the ALL_BUILDS array below
@@ -107,6 +108,7 @@ const ALL_BUILDS: Build[] = [
   expendablesBuild,
   elementalistBuild,
   demolitionistBuild,
+  chkChkBoomBuild,
   mechDriverBuild,
   sniperBuild,
   spartanBuild,
