@@ -5,21 +5,14 @@ export const sniperBuild: Build = {
   title: "The Sniper Build",
   slogan: "One Shot, One Kill.",
   description: [
-    `This build takes strategies from the Stealth Build and Overwatch and mashes them together. You use your hoverpack to get to high ground (out of reach of your enemies), and provide cover for your team by eliminating high priority targets. Using the enemies AI and the distance of your sniper, you can eliminate enemies at objectives one by one without any of them being alerted. Put your MG down when in position to cover your back, it will be an early detection system, letting you know when a patrol is approaching your position. When in a firefight it will also be a useful distraction / chaff clear, while you work on your priority targets. Eagle Strafe makes a great Fabricator clear or shield destroyer, and is a quick crowd clear should you need to remove an unwanted patrol. When changing firing locations, Gas Grenades provide excellent cover and confusion to any enemies that spot you or get in your way. We bring the Grenade Pistol for the few times we have to get in close and close Fabricators and Ships by ourselves. And we use Peak Physique so there is no drag on the AMR (can’t be missing shots on moving targets because your arms are too weak!). The trick to this build is learning priority targets. Priority targets doesn’t necessarily mean killing the biggest thing in the room. It means removing the biggest danger to your team at any given moment. That could mean ignoring the Factory Strider that is turned around and shooting the Heavy Devastator thats about to come around a rock and shred your unaware teammates to pieces. It means shooting that lone Rocket Dev who keeps ragdolling your team, or popping the lone Commissar who is about to call in a flare. Assess the situation, determine which enemy poses the greatest loss of life to your team, and eliminate it.`,
+    `This build takes strategies from the Stealth Build and Overwatch and mashes them together. You use your hoverpack to get to high ground (out of reach of your enemies), and provide cover for your team by eliminating high priority targets. Using the enemies AI and the distance of your sniper, you can eliminate enemies at objectives one by one without any of them being alerted.`,
+    `Put your MG down when in position to cover your back, it will be an early detection system, letting you know when a patrol is approaching your position. When in a firefight it will also be a useful distraction / chaff clear, while you work on your priority targets. Eagle Strafe makes a great Fabricator clear or shield destroyer, and is a quick crowd clear should you need to remove an unwanted patrol.`,
+    `When changing firing locations, Gas Grenades provide excellent cover and confusion to any enemies that spot you or get in your way. We bring the Grenade Pistol for the few times we have to get in close and close Fabricators and Ships by ourselves. And we use Peak Physique so there is no drag on the AMR (can’t be missing shots on moving targets because your arms are too weak!).`,
+    `The trick to this build is learning priority targets. Priority targets doesn’t necessarily mean killing the biggest thing in the room. It means removing the biggest danger to your team at any given moment. That could mean ignoring the Factory Strider that is turned around and shooting the Heavy Devastator thats about to come around a rock and shred your unaware teammates to pieces. It means shooting that lone Rocket Dev who keeps ragdolling your team, or popping the lone Commissar who is about to call in a flare. Assess the situation, determine which enemy poses the greatest loss of life to your team, and eliminate it.`,
   ],
   weakness: `This build is better at long range than CQB, although you can function with enough skill. You are more of a support, covering your team while they work. And while you CAN kill everything in the game, certain heavies like Tanks and Factory Striders are better left to your AT.`,
   image: "/assets/builds/The_Sniper_Build.jpg",
-  tags: [
-    "sniper",
-    "hoverpack",
-    "amr",
-    "mg-sentry",
-    "eagle-strafe",
-    "gas-grenade",
-    "peak-physique",
-    "tenderizer",
-    "gp-31",
-  ],
+  tags: ["all-factions", "light", "sniper", "projectiles", "explosive", "gas"],
   loadout: [
     // Armor
     {

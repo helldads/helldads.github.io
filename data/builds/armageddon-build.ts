@@ -5,18 +5,21 @@ export const armageddonBuild: Build = {
   title: "Armageddon Build",
   slogan: "Let’s Have a Blast!",
   description: [
-    `You are Armageddon, the end of the world for our enemies. As you approach, their worlds burn. Is there a breach? Then throw a 380, 120, Napalm and Walking. A bug base? Then throw a 380, 120, Napalm and Walking. That Mega Nest? Then throw a 380, 120, Napalm and Walking. When they are off Cooldown you are ready to unload the full force of Super Earth. When they are all on Cooldown your Blitzer (Jar 5 bots) will do all of the heavy lifting for all bugs under Chargers / Hulks. Thermites take care of Chargers, Hulks, and Tanks. The Ultimatum takes out Impalers and Bile Titans and Factory Striders. Show our enemies why they should fear the might of managed democracy.`,
+    `You are Armageddon, the end of the world for our enemies. As you approach, their worlds burn.`,
+    `Is there a breach? Then throw a 380, 120, Napalm and Walking. A bug base? Then throw a 380, 120, Napalm and Walking. That Mega Nest? Then throw a 380, 120, Napalm and Walking. When they are off Cooldown you are ready to unload the full force of Super Earth.`,
+    `When they are all on Cooldown your Blitzer (Jar 5 bots) will do all of the heavy lifting for all bugs under Chargers / Hulks. Thermites take care of Chargers, Hulks, and Tanks. The Ultimatum takes out Impalers and Bile Titans and Factory Striders.`,
+    `Show our enemies why they should fear the might of managed democracy.`,
   ],
   weakness:
     "You have no anti Air and longish CDs (although if you save them for breaches and big bases you should have the firepower each time). In between Uses you will have to rely on your Primary, Secondary and Grenades (and of course your team).",
   image: "/assets/builds/Armageddon_Build.jpg",
   tags: [
-    "bugs",
-    "bots",
-    "medium",
+    "terminids",
+    "automatons",
+    "light",
     "assault",
     "projectiles",
-    "explosions",
+    "explosive",
     "fire",
   ],
   loadout: [

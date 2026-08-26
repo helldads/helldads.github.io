@@ -5,19 +5,21 @@ export const overwatchBuild: Build = {
   title: "Overwatch Build",
   slogan: "Overwatch!",
   description: [
-    `Overwatch! You are the protection for your team, covering their six (and their twelve) from a vantage point. Think Sniper, but explosives. Your objective is to find a good vantage point (a hill or objective thats cleared with good sight lines) and cover your teams advance to the next location. The Airburst puts in work on the bot front. One shot, center a patrol, towards the floor will wipe an entire patrol or bot drop (or random group). The range on it is huge allowing you to snipe almost across the map (please dont use Cluster mode). It also has the capabilities of taking out Hulks (shooting over their sholder or under their legs) by having the bomblettes hit the vent. This will allow you to kill a whole patrol, including a hulk, with the right shot. In a pinch it can also close Fabricators with the added benefit of killing everything around it. Rocket turret and AC turret go up when you find your spot, they help you provide cover, and cover your rear while you are lobbing rockets. The AT Emplacement goes down for bot drops, or if you have a really good view of the map so you can clear many bases and objectives from your one location. Thermite comes in handy when dealing with Hulks, Tanks, Turrets, or Fabricators (if you would like to save AB rounds) and the Jar 5 puts in all the leg work needed to protect you in CQB. Ultimatum is used if you have to push an objective like a detector, or jammer, or is used to kill Factory Striders that are too close for comfort (one shot to the gut, with a backwards dive).`,
+    `Overwatch! You are the protection for your team, covering their six (and their twelve) from a vantage point. Think Sniper, but explosives. Your objective is to find a good vantage point (a hill or objective thats cleared with good sight lines) and cover your teams advance to the next location.`,
+    `The Airburst puts in work on the bot front. One shot, center a patrol, towards the floor will wipe an entire patrol or bot drop (or random group). The range on it is huge allowing you to snipe almost across the map (please dont use Cluster mode). It also has the capabilities of taking out Hulks (shooting over their sholder or under their legs) by having the bomblettes hit the vent. This will allow you to kill a whole patrol, including a hulk, with the right shot. In a pinch it can also close Fabricators with the added benefit of killing everything around it.`,
+    `Rocket turret and AC turret go up when you find your spot, they help you provide cover, and cover your rear while you are lobbing rockets. The AT Emplacement goes down for bot drops, or if you have a really good view of the map so you can clear many bases and objectives from your one location.`,
+    `Thermite comes in handy when dealing with Hulks, Tanks, Turrets, or Fabricators (if you would like to save AB rounds) and the Jar 5 puts in all the leg work needed to protect you in CQB. Ultimatum is used if you have to push an objective like a detector, or jammer, or is used to kill Factory Striders that are too close for comfort (one shot to the gut, with a backwards dive).`,
   ],
   weakness:
     "AT and Gunships. Although you have tools at your disposal, a lot of tanks or Factory Striders will pose a problem best suited for another diver when your AT Emplacement is on CD. The same goes for Gunships, although you can kill them with a well placed AB rocket, it is not economically efficient to do so. If there are many and your AT Emplacement is on CD it will become a problem quickly.",
   image: "/assets/builds/Overwatch_Build.jpg",
   tags: [
     "automatons",
-    "overwatch",
-    "airburst",
-    "turret",
-    "emplacement",
-    "explosives",
-    "thermite",
+    "medium",
+    "sniper",
+    "support",
+    "projectiles",
+    "explosive",
   ],
   loadout: [
     // Armor

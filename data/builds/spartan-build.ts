@@ -12,7 +12,14 @@ export const spartanBuild: Build = {
   ],
   weakness: `Shriekers and Spewers / exploding bugs. Shriekers can be taken down with shield and stab but its tedious. Spewers are handled with Xbow, but on maps with spewers there is alot of weapon swapping which can be problematic when theres alot going on (make sure to prioritize them before poking bugs).`,
   image: "/assets/builds/Spartan_Build.webp",
-  tags: [],
+  tags: [
+    "all-factions",
+    "light",
+    "assault",
+    "projectiles",
+    "explosive",
+    "control",
+  ],
   loadout: [
     // Armor
     {

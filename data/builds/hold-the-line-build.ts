@@ -5,19 +5,24 @@ export const holdTheLineBuild: Build = {
   title: "Hold the Line Build",
   slogan: "You shall not pass!",
   description: [
-    `Set up defensive fortifications to stop the enemy advance. If there is a breach, you drop all 3 turrets in a line and cover them with the RR, Blitzer, and Gas Grenades. Turrets do the heavy lifting. RR stops all heavies, Blitzer knocks back any enemies that advance, and Gas Grenades block a path of advance. The Grenade Pistol is perfect for closing holes and saving us RR rounds or Gas Grenades (Which can be used in a pinch). When moving from point to point Gas Grenades give good cover. When attacking Objectives or POIs you can stagger turrets for optimal uptime. Gatling and Rocket pair well together, as the Rocket Sentry wont fire when enemies get too close, so the Gatling will clear the chaff off of it, and the Gatling can’t kill heavies, so the Rocket will handle those. The AC sentry can hold its own, clearing both chaff and heavies, as well as staggering everything nearby. With your turrets up and running and the RR in your hands you will easily solo a breach while your team pushes onward. Set up your fortifications and Hold the Line!`,
+    `Set up defensive fortifications to stop the enemy advance. If there is a breach, you drop all 3 turrets in a line and cover them with the RR, Blitzer, and Gas Grenades. Turrets do the heavy lifting.`,
+    `RR stops all heavies, Blitzer knocks back any enemies that advance, and Gas Grenades block a path of advance. The Grenade Pistol is perfect for closing holes and saving us RR rounds or Gas Grenades (Which can be used in a pinch). When moving from point to point Gas Grenades give good cover.`,
+    `When attacking Objectives or POIs you can stagger turrets for optimal uptime. Gatling and Rocket pair well together, as the Rocket Sentry wont fire when enemies get too close, so the Gatling will clear the chaff off of it, and the Gatling can’t kill heavies, so the Rocket will handle those. The AC sentry can hold its own, clearing both chaff and heavies, as well as staggering everything nearby.`,
+    `With your turrets up and running and the RR in your hands you will easily solo a breach while your team pushes onward. Set up your fortifications and Hold the Line!`,
   ],
   weakness:
     "Flying enemies can be annoying when the Gatling Turret is on Cooldown. You also do not have anything for Titan Holes other than dropping a POD on it.",
   image: "/assets/builds/Hold_the_Line_Build.jpg",
   tags: [
     "terminids",
-    "defense",
-    "turrets",
-    "recoilless-rifle",
+    "medium",
+    "mechanic",
+    "support",
+    "projectiles",
+    "explosive",
     "gas",
-    "anti-tank",
-    "crowd-control",
+    "arc",
+    "control",
   ],
   loadout: [
     // Armor

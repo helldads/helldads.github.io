@@ -16,7 +16,15 @@ export const squidSlayerBuild: Build = {
   ],
   weakness: `The only weakness is really close range. If overseers run up to you you will not be able to hit them with the WASP. But I wouldn't call this a weakness as you can just blast them with that 920 RPM Carbine or with your Senator. Other than that, this build absolutely shuts down the Illuminate with ease.`,
   image: "/assets/builds/squid-slayer-build.jpg",
-  tags: ["illuminate", "anti-vehicle", "shield-stripping", "gas", "sentry"],
+  tags: [
+    "illuminate",
+    "medium",
+    "assault",
+    "support",
+    "projectiles",
+    "explosive",
+    "gas",
+  ],
   loadout: [
     // Armor
     {

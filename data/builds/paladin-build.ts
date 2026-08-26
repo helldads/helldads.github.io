@@ -13,7 +13,7 @@ export const paladinBuild: Build = {
   weakness: `This build has no Anti-air, you can try to hit enemies with the crossbow if needed.
   Additionally, the hammer swing and stim animation are cancelled when you are hit (even though it looks like it goes off). If you are surrounded and getting hit back to back, you may be staggered and unable to explode the hammer or get off a stim. You have to be very careful.`,
   image: "/assets/builds/Paladin_Build.webp",
-  tags: ["Automatons"],
+  tags: ["automatons", "medium", "assault", "support", "explosive", "energy"],
   loadout: [
     // Armor
     {

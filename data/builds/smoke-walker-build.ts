@@ -11,7 +11,14 @@ export const smokeWalkerBuild: Build = {
   ],
   weakness: `This build has none. Railgun is king of the bots and when paired with smoke breaking Al, this makes the bot front insanely easy.`,
   image: "/assets/builds/Smoke_Walker_Build.webp",
-  tags: ["Automatons"],
+  tags: [
+    "automatons",
+    "light",
+    "stealth",
+    "projectiles",
+    "explosive",
+    "control",
+  ],
   loadout: [
     // Armor
     {
