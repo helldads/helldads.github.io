@@ -8,6 +8,7 @@ import { Metadata } from "next";
 
 import { getAllSlugs, getBuildBySlug } from "@/data/builds";
 import { getAsset } from "@/data/assets";
+import { getBuildTagLabel } from "@/lib/build-tags";
 import {
   DiscordIcon,
   RedditIcon,
@@ -88,6 +89,32 @@ export default async function BuildPage({
         <h1 className="text-4xl font-semibold">{build.title}</h1>
         {build.slogan && (
           <p className="opacity-80 text-2xl mt-2">{build.slogan}</p>
+        )}
+        {build.tags && build.tags.length > 0 && (
+          <div className="mt-4 flex flex-wrap gap-2">
+            {build.tags.map((tag) => {
+              const tagLabel = getBuildTagLabel(tag);
+
+              return (
+                <Link
+                  key={tag}
+                  href={`/builds?q=${encodeURIComponent(tagLabel)}`}
+                >
+                  <Chip
+                    className="max-w-[10rem] px-2 transition-colors hover:bg-yellow-500 hover:text-black"
+                    radius="sm"
+                    size="sm"
+                    title={tagLabel}
+                    variant="flat"
+                  >
+                    <span className="block truncate whitespace-nowrap">
+                      {tagLabel}
+                    </span>
+                  </Chip>
+                </Link>
+              );
+            })}
+          </div>
         )}
       </header>
 

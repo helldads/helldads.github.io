@@ -19,7 +19,7 @@ export const missionImpossibleBuild: Build = {
   ],
   weakness: `You have no Anti-Air so take care of Gunship Fabricators quickly and quietly. Ideally you want to be stealthy with the tools, but at the end of the day, you do have big booms if you need them.`,
   image: "/assets/builds/Mission_Impossible_Build.webp",
-  tags: ["stealth", "automatons"],
+  tags: ["automatons", "light", "stealth", "projectiles", "explosive"],
   loadout: [
     // Armor
     {

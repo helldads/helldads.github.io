@@ -17,7 +17,15 @@ export const threeSwordStyleBuild: Build = {
   ],
   weakness: `This build handles most things on most fronts. You will struggle if your teammates don't care about you or pay attention to your position. I am frequently knocked down by Randoms AOE, or have Strategems dropped right next to me. On Illuminate your biggest problem is Meatbags, and you probably want Strafe for the Stingray. On Bugs you can't kill Bile Titans without the ORC or 500, so if there are a bunch of them it gets rough. Bots have a lot of rockets that knock you down, so you have to be strategic and careful about when and how you engage.`,
   image: "/assets/builds/3-sword-style-build.jpg",
-  tags: [],
+  tags: [
+    "all-factions",
+    "light",
+    "assault",
+    "projectiles",
+    "explosive",
+    "fire",
+    "control",
+  ],
   loadout: [
     // Armor
     {

@@ -5,19 +5,23 @@ export const bobaFettBuild: Build = {
   title: "Boba Fett Build",
   slogan: "You are the Mandalorian Boba Fett!",
   description: [
-    `You are the Mandalorian Boba Fett! Take to the skies and rain fire and explosives on your enemies, then whip out your pistol and pew pew pew some heads. The Hoverpack is your bread and butter, fly in the air and let the Xbow rip, wiping patrols and breaches with ease. Or, Fly up and scorch the ground with fire Torching your enemies while laughing meniacally from the safety of the air. When being pushed by something like Hunters, whip out the Talon and Pew Pew some lasers just like Star Wars. Or, just pew pew for the hell of it, the Talon is great. Thermite are for chargers mainly but can flex Impalers and Bile Titans. 110's shine in this build! One 110 and 0.5 sec of Torching a Bile Titans face and he crumples. 110's almost one shot Impalers leaving them very weak for a quick roasting, and a well times 110 will drop a charger (or make it bleed out). And when you need even more fire power, call upon the Death Star and have that laser evaporate your foes.`,
+    `You are the Mandalorian Boba Fett! Take to the skies and rain fire and explosives on your enemies, then whip out your pistol and pew pew pew some heads.`,
+    `The Hoverpack is your bread and butter, fly in the air and let the Xbow rip, wiping patrols and breaches with ease. Or, Fly up and scorch the ground with fire Torching your enemies while laughing meniacally from the safety of the air.`,
+    `When being pushed by something like Hunters, whip out the Talon and Pew Pew some lasers just like Star Wars. Or, just pew pew for the hell of it, the Talon is great.`,
+    `Thermite are for chargers mainly but can flex Impalers and Bile Titans. 110's shine in this build! One 110 and 0.5 sec of Torching a Bile Titans face and he crumples. 110's almost one shot Impalers leaving them very weak for a quick roasting, and a well times 110 will drop a charger (or make it bleed out).`,
+    `And when you need even more fire power, call upon the Death Star and have that laser evaporate your foes.`,
   ],
   weakness:
     "Not much anti Air. The hoverpack takes some getting used too, landing will be a bit slow and can leave you vulnerable.",
   image: "/assets/builds/Boba_Fett_Build.jpg",
   tags: [
     "terminids",
-    "hoverpack",
+    "medium",
+    "assault",
+    "projectiles",
+    "explosive",
     "fire",
-    "explosives",
-    "crossbow",
-    "thermite",
-    "anti-tank",
+    "energy",
   ],
   loadout: [
     // Armor

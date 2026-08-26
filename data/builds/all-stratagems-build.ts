@@ -10,7 +10,25 @@ export const allStratagemsBuild: Build = {
   ],
   weakness: "No practical use in real missions. Intended for reference only.",
   image: "/assets/builds/all-stratagems-build.jpg",
-  tags: ["stratagems", "reference", "all-items"],
+  tags: [
+    "all-factions",
+    "light",
+    "medium",
+    "heavy",
+    "assault",
+    "mechanic",
+    "stealth",
+    "support",
+    "sniper",
+    "projectiles",
+    "explosive",
+    "gas",
+    "fire",
+    "arc",
+    "energy",
+    "plasma",
+    "control",
+  ],
   loadout: Object.entries(ASSETS)
     // .filter(([_, asset]) => asset.role === "Armor")
     // .filter(([_, asset]) => asset.role === "Primary")

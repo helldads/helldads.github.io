@@ -17,7 +17,15 @@ export const judgeDreddBuild: Build = {
   ],
   weakness: `This build is lacking a bit in Hole closing capabilities. The Gas Grenades and OPS and Hellbomb will do it, but when faced with many nests you will need assistance or a Resupply nearby.`,
   image: "/assets/builds/judge-dredd-build.jpg",
-  tags: ["terminids", "movies", "chaff", "demolition", "gas"],
+  tags: [
+    "terminids",
+    "heavy",
+    "assault",
+    "projectiles",
+    "explosive",
+    "gas",
+    "energy",
+  ],
   loadout: [
     // Armor
     {

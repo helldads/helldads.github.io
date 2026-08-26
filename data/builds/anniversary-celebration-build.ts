@@ -12,7 +12,7 @@ export const anniversaryCelebrationBuild: Build = {
   ],
   weakness: `There is no Weakness when celebrating! (Plus it has big explosions)`,
   image: "/assets/builds/HellDads_Anniversary_Celebration_Build.webp",
-  tags: ["expendables", "explosions", "fireworks"],
+  tags: ["all-factions", "medium", "assault", "explosive", "fire", "plasma"],
   loadout: [
     // Armor
     {

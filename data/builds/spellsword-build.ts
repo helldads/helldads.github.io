@@ -14,7 +14,7 @@ export const spellswordBuild: Build = {
   ],
   weakness: `This build requires some practice, and proper positioning, being in the open will get you surrounded.`,
   image: "/assets/builds/Spellsword_Build.jpg",
-  tags: ["melee", "explosions"],
+  tags: ["all-factions", "light", "assault", "explosive", "fire", "control"],
   loadout: [
     // Armor
     {

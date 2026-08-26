@@ -6,11 +6,23 @@ export const exterminatorBuild: Build = {
   slogan:
     "You are the Exterminator! Bring your Gas and put those bugs to rest!",
   description: [
-    `This is a Quasi Support Build, and as such you will be following your team around keeping those nasty bugs gassed up and confused! Gas does 25 dmg per second, and lasts for 10 seconds. That means with 1 pass you can kill all hunters and below. Just spray and forget. We also bring the Torcher Primary to light things on fire. Fire lasts about 3 seconds and does 50 dmg per second (for a total of 150 dmg) and the Torcher does 375 dmg per second.. This means with one pass of gas and one pass of fire we can let all Warriors, Hive Guards, and Stalkers melt to death. Alpha Commanders will take some concentrated fire to their head, or a couple of passes. For Chargers, Impalers, and Bile Titans we bring Thermite. Gas the Chargers, chuck a Thermite and forget about them. To help keep up with the flood of Chargers we are going to bring the Engineering Kit for a total of 5 Thermite. When the Bile Titans are especially annoying, and all you want to do is gas bugs, throw a Orbital Rail Cannon Strike so you don’t have to stop your Crowd Controlling. If you find enemies coming from more than one direction, that’s when we can bust out the Orbital Gas Strike. Throw that bad boy in one direction while you go spray the other. Your team will be protected in a bubble of beautiful green gas. And for the biggest of infestations we throw out the Gas Mines for the biggest cloud of gas you’ve ever seen. Between the Mines, the Gas Strike, and your Sterilizer, you can cover all directions for your team to make sure no bug goes un-gassed. And to help out even further, we will be bringing the Grenade Pistol as our secondary. If you are alone, or your team is swamped, we can take it upon ourselves to close those bug holes. Gas anything in your way as you weave through a nest and pop those holes closed one after another. When your teammates are overwhelmed, they’ll be praising your arrival as you peel all the bugs off of them as, The Exterminator.`,
+    `This is a Quasi Support Build, and as such you will be following your team around keeping those nasty bugs gassed up and confused! Gas does 25 dmg per second, and lasts for 10 seconds. That means with 1 pass you can kill all hunters and below. Just spray and forget.`,
+    `We also bring the Torcher Primary to light things on fire. Fire lasts about 3 seconds and does 50 dmg per second (for a total of 150 dmg) and the Torcher does 375 dmg per second.. This means with one pass of gas and one pass of fire we can let all Warriors, Hive Guards, and Stalkers melt to death. Alpha Commanders will take some concentrated fire to their head, or a couple of passes.`,
+    `For Chargers, Impalers, and Bile Titans we bring Thermite. Gas the Chargers, chuck a Thermite and forget about them. To help keep up with the flood of Chargers we are going to bring the Engineering Kit for a total of 5 Thermite. When the Bile Titans are especially annoying, and all you want to do is gas bugs, throw a Orbital Rail Cannon Strike so you don’t have to stop your Crowd Controlling.`,
+    `If you find enemies coming from more than one direction, that’s when we can bust out the Orbital Gas Strike. Throw that bad boy in one direction while you go spray the other. Your team will be protected in a bubble of beautiful green gas. And for the biggest of infestations we throw out the Gas Mines for the biggest cloud of gas you’ve ever seen. Between the Mines, the Gas Strike, and your Sterilizer, you can cover all directions for your team to make sure no bug goes un-gassed.`,
+    `And to help out even further, we will be bringing the Grenade Pistol as our secondary. If you are alone, or your team is swamped, we can take it upon ourselves to close those bug holes. Gas anything in your way as you weave through a nest and pop those holes closed one after another. When your teammates are overwhelmed, they’ll be praising your arrival as you peel all the bugs off of them as, The Exterminator.`,
   ],
   weakness: `This is a Quasi Support build, you have tools to help you deal with just about everything, but you will perform much better supporting teammates. The AT is lacking with this (and Bile Titans and Impalers can’t be Crowd Controlled) so you will be relying on your team to kill them, while you keep everything else Dazed and Confused.`,
   image: "/assets/builds/The_Exterminator_Build.jpg",
-  tags: ["support", "crowd-control", "bugs", "gas", "fire", "dot"],
+  tags: [
+    "terminids",
+    "medium",
+    "support",
+    "explosive",
+    "gas",
+    "fire",
+    "control",
+  ],
   loadout: [
     // Armor
     {
