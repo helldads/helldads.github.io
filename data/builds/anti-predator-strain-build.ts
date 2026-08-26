@@ -63,9 +63,11 @@ export const antiPredatorStrainBuild: Build = {
     },
   ],
   links: {
-    reddit: "https://www.reddit.com/r/HellDads/comments/1khnjgs/build_a_day_day_27/",
+    reddit:
+      "https://www.reddit.com/r/HellDads/comments/1khnjgs/build_a_day_day_27/",
     full: "",
     highlights: "https://www.youtube.com/watch?v=a1hXutoYUiQ",
-    discord: "https://discord.com/channels/1301285072896266252/1369778565993992203",
+    discord:
+      "https://discord.com/channels/1301285072896266252/1369778565993992203",
   },
 };

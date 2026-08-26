@@ -51,9 +51,11 @@ export const exterminatorBuild: Build = {
     },
   ],
   links: {
-    reddit: "https://www.reddit.com/r/HellDads/comments/1kkaxf9/build_a_day_day_30/",
+    reddit:
+      "https://www.reddit.com/r/HellDads/comments/1kkaxf9/build_a_day_day_30/",
     full: "https://www.youtube.com/watch?v=sYU1UPP3me8",
     highlights: "https://www.youtube.com/watch?v=f5h4q01B-EA",
-    discord: "https://discord.com/channels/1301285072896266252/1371226411389423647",
+    discord:
+      "https://discord.com/channels/1301285072896266252/1371226411389423647",
   },
 };

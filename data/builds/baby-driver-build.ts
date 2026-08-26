@@ -59,9 +59,11 @@ export const babyDriverBuild: Build = {
     },
   ],
   links: {
-    reddit: "https://www.reddit.com/r/HellDads/comments/1k3v77z/build_a_day_day_9/",
+    reddit:
+      "https://www.reddit.com/r/HellDads/comments/1k3v77z/build_a_day_day_9/",
     full: "",
     highlights: "https://www.youtube.com/watch?v=wlAiuMBybTQ",
-    discord: "https://discord.com/channels/1301285072896266252/1362455690991370351",
+    discord:
+      "https://discord.com/channels/1301285072896266252/1362455690991370351",
   },
 };

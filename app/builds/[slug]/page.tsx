@@ -283,8 +283,8 @@ export default async function BuildPage({
       </div>
 
       <p className="text-xs text-gray-500 text-center">
-        Helldivers assets, names, and other trademarks belong to their respective
-        owners. Build page images are shared with thanks to the{" "}
+        Helldivers assets, names, and other trademarks belong to their{" "}
+        respective owners. Build page images are shared with thanks to the{" "}
         <Link
           isExternal
           showAnchorIcon

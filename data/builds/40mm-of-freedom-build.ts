@@ -59,9 +59,11 @@ export const fortyMmOfFreedomBuild: Build = {
     },
   ],
   links: {
-    reddit: "https://www.reddit.com/r/HellDads/comments/1k6xj0z/build_a_day_day_13/",
+    reddit:
+      "https://www.reddit.com/r/HellDads/comments/1k6xj0z/build_a_day_day_13/",
     full: "",
     highlights: "https://www.youtube.com/watch?v=YcmfRLwp5E4",
-    discord: "https://discord.com/channels/1301285072896266252/1363646953723793650",
+    discord:
+      "https://discord.com/channels/1301285072896266252/1363646953723793650",
   },
 };

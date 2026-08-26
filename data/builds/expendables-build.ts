@@ -60,9 +60,11 @@ export const expendablesBuild: Build = {
     },
   ],
   links: {
-    reddit: "https://www.reddit.com/r/HellDads/comments/1kekgb4/build_a_day_day_23/",
+    reddit:
+      "https://www.reddit.com/r/HellDads/comments/1kekgb4/build_a_day_day_23/",
     full: "",
     highlights: "https://www.youtube.com/watch?v=CDGeJqdK-rI",
-    discord: "https://discord.com/channels/1301285072896266252/1368586145436274820",
+    discord:
+      "https://discord.com/channels/1301285072896266252/1368586145436274820",
   },
 };

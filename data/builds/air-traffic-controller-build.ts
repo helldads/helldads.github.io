@@ -60,9 +60,11 @@ export const airTrafficControllerBuild: Build = {
     },
   ],
   links: {
-    reddit: "https://www.reddit.com/r/HellDads/comments/1kim9b0/build_a_day_day_28/",
+    reddit:
+      "https://www.reddit.com/r/HellDads/comments/1kim9b0/build_a_day_day_28/",
     full: "",
     highlights: "https://www.youtube.com/watch?v=APbgeg3JE-g",
-    discord: "https://discord.com/channels/1301285072896266252/1370170807430680627",
+    discord:
+      "https://discord.com/channels/1301285072896266252/1370170807430680627",
   },
 };

@@ -59,7 +59,8 @@ export const spaceCowboyBuild: Build = {
     },
   ],
   links: {
-    reddit: "https://www.reddit.com/r/HellDads/comments/1kfc64f/build_a_day_day_24/",
+    reddit:
+      "https://www.reddit.com/r/HellDads/comments/1kfc64f/build_a_day_day_24/",
     full: "",
     highlights: "https://www.youtube.com/watch?v=hG42tWf-8tA",
     discord: "https://www.youtube.com/watch?v=hG42tWf-8tA",

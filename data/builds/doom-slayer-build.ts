@@ -60,9 +60,11 @@ export const doomSlayerBuild: Build = {
     },
   ],
   links: {
-    reddit: "https://www.reddit.com/r/HellDads/comments/1k7rk2i/build_a_day_day_14/",
+    reddit:
+      "https://www.reddit.com/r/HellDads/comments/1k7rk2i/build_a_day_day_14/",
     full: "",
     highlights: "https://www.youtube.com/watch?v=4tCus-yG40o",
-    discord: "https://discord.com/channels/1301285072896266252/1364241410273837169",
+    discord:
+      "https://discord.com/channels/1301285072896266252/1364241410273837169",
   },
 };
